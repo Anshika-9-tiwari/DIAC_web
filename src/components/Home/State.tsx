@@ -58,7 +58,10 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c]  text-white">
+    <section className="py-14 text-white" style={{
+        backgroundImage:
+          "linear-gradient(108.6deg, rgba(128,23,23,1) 36.5%, rgba(187,187,187,1) 121.9%)",
+      }}>
       <div className="max-w-7xl mx-auto px-6 ">
 
         {/* Heading */}
@@ -67,10 +70,10 @@ export default function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-15"
+          className="text-center mb-18"
         >
           <h2 className="text-3xl font-bold">
-            Our Achievements
+            Launching Industrial Automation  careers for a better <span className="text-orange-300 border-b-2">Tommorrow</span>
           </h2>
         </motion.div>
 
@@ -111,12 +114,12 @@ export default function Stats() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="flex justify-center mt-16"
+            className="flex justify-center mt-14"
             >
             <a
                 href="/brochure.pdf"
                 download
-                className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-yellow-500 shadow-lg  hover:border-r-4 hover:border-t-4 hover:border-r-white hover:border-t-white"
+                className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-yellow-500 shadow-lg transition duration-300 "
             >
                 Download Brochure
             </a>

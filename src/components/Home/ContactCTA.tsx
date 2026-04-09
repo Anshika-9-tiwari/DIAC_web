@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ContactCTA() {
   return (
-    <section className="py-12 bg-[#801717] text-white">
+    <section className="py-12 bg-[#801717] text-white" >
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
 
         {/* Left Content */}
@@ -34,20 +34,13 @@ export default function ContactCTA() {
         </motion.div>
 
         {/* Right Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+        
+        <Link
+          href="/contact"
+          className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition shadow-lg"
         >
-          <Link
-            href="/contact"
-            className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition shadow-lg"
-          >
-            Contact Us
-          </Link>
-        </motion.div>
-
+          Contact Us
+        </Link>
       </div>
     </section>
   );
