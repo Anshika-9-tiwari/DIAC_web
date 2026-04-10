@@ -52,10 +52,10 @@ export default function Companies() {
   return (
     <section className="py-16 bg-gray-50 text-gray-800">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-2xl font-bold mb-2">
-          Our Clients
+        <h2 className="text-3xl font-semibold mb-2">
+          Our Placement Partners
         </h2>
-        <div className="w-13 h-1 bg-red-800 mx-auto  mb-14 rounded"></div>
+        <div className="w-15 h-1 bg-red-800 mx-auto  mb-14 rounded"></div>
 
         <Slider {...settings}>
           {companies.map((logo, index) => (

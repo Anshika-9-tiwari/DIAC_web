@@ -51,7 +51,7 @@ export default function Footer() {
             {jobCourses.map((course, index) => (
               <li
                 key={index}
-                className="hover:text-yellow-400 transition duration-300 cursor-pointer"
+                className="hover:text-red-900 transition duration-300 cursor-pointer"
               >
                 {course}
               </li>
@@ -66,7 +66,7 @@ export default function Footer() {
             {professionalCourses.map((course, index) => (
               <li
                 key={index}
-                className="hover:text-yellow-400 transition duration-300 cursor-pointer"
+                className="hover:text-red-900 transition duration-300 cursor-pointer"
               >
                 {course}
               </li>
@@ -78,22 +78,22 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-5">Contact</h3>
 
-          <div className="flex items-center gap-2 text-gray-400 mb-3 hover:text-yellow-400 transition duration-300 cursor-pointer text-md">
+          <div className="flex items-center gap-2 text-gray-400 mb-3 hover:text-red-900 transition duration-300 cursor-pointer text-md">
             <Mail size={16} className="text-white" />
             <span>training@diac.co.in</span>
           </div>
 
-          <div className="flex items-center gap-2 text-gray-400 mb-2 hover:text-yellow-400 transition duration-300 cursor-pointer text-md">
+          <div className="flex items-center gap-2 text-gray-400 mb-2 hover:text-red-900 transition duration-300 cursor-pointer text-md">
             <Phone size={16} className="text-white" />
             <span>+91 99534 89987</span>
           </div>
 
-          <div className="flex items-center gap-2 text-gray-400 mb-2 hover:text-yellow-400 transition duration-300 cursor-pointer text-md">
+          <div className="flex items-center gap-2 text-gray-400 mb-2 hover:text-red-900 transition duration-300 cursor-pointer text-md">
             <Phone size={16} className="text-white" />
             <span>+91 97112 87737</span>
           </div>
 
-          <div className="flex items-center gap-2 text-gray-400 hover:text-yellow-400 transition duration-300 cursor-pointer text-md">
+          <div className="flex items-center gap-2 text-gray-400 hover:text-red-900 transition duration-300 cursor-pointer text-md">
             <MapPin size={16} className="text-white" />
             <span>Noida Sector 2, India</span>
           </div>
@@ -104,20 +104,20 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-5">Follow Us</h3>
 
           <div className="flex gap-5 text-xl mb-6">
-            <a href="#" className="hover:text-yellow-400">
+            <a href="#" className="hover:text-red-900">
               <FaInstagram />
             </a>
 
-            <a href="#" className="hover:text-yellow-400">
+            <a href="#" className="hover:text-red-900">
               <FaWhatsapp />
             </a>
 
-            <a href="#" className="hover:text-yellow-400">
+            <a href="#" className="hover:text-red-900">
               <FaLinkedin />
             </a>
           </div>
 
-          <button className="px-5 py-2 bg-yellow-400 text-black rounded font-semibold hover:bg-yellow-300 transition">
+          <button className="px-5 py-2 bg-red-900 text-white rounded font-semibold hover:bg-white hover:text-black transition uppercase">
             Free Demo
           </button>
         </div>

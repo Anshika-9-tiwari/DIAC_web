@@ -1,7 +1,7 @@
 "use client";
 
 import { Mail, Phone } from "lucide-react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Topbar() {
   return (
@@ -9,27 +9,25 @@ export default function Topbar() {
       <div className="max-w-8xl mx-auto px-4 md:px-8 py-2 flex flex-col md:flex-row items-center justify-between">
 
         {/* Left Side - Contact */}
-        <div className="flex items-center gap-10 md:gap-6 transition-all duration-300">
-          <a
-            href="mailto:training@diac.co.in"
-            className="flex items-center gap-1 hover:text-yellow-300 transition"
-          >
-            <Mail size={16} />
-            training@diac.co.in
-          </a>
+        <div className="flex items-center gap-10 md:gap-8 transition-all duration-300">
 
           <a
             href="tel:+919953489987"
-            className="flex items-center gap-1 hover:text-yellow-300 transition"
+            className="flex items-center gap-2 transition "
           >
-            <Phone size={16} />
+            <FaWhatsapp size={18} /> / <Phone size={18} />
             +91 99534 89987
           </a>
-        </div>
 
-        {/* Center - Placement */}
-        <div className="hidden md:flex font-semibold text-yellow-300 mt-2 md:mt-0">
-          100% Placement Assistance
+          <a
+            href="mailto:training@diac.co.in"
+            className="flex items-center gap-2 hover:text-yellow-300 transition"
+          >
+            <Mail size={18} />
+            training@diac.co.in
+          </a>
+
+          <p>100% Placement Assistance</p>
         </div>
 
         {/* Right Side - Social Icons */}
@@ -49,6 +47,14 @@ export default function Topbar() {
           >
             <FaInstagram size={20} />
           </a>
+
+          <a 
+            href="https://www.linkedin.com" 
+            target="blank"
+            className="hover:text-yellow-300 transition">
+            <FaLinkedin size={20}/>
+          </a>
+
         </div>
       </div>
     </div>

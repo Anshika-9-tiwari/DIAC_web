@@ -27,12 +27,12 @@ export default function Hero() {
           <div className="text-white">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
               Become Certified in{" "}
-              <span className="text-yellow-500">
+              <span className="text-red-900">
                 Industrial Automation
               </span>
             </h1>
 
-            <p className="mb-10 text-base md:text-lg text-gray-200">
+            <p className="mb-10 text-base md:text-lg text-gray-50">
               Join the best Industrial Automation and Robotics training institute
               in Delhi with 100% placement assistance.
             </p>
@@ -41,7 +41,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/courses"
-                className="bg-yellow-500 text-black px-6 py-3 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-yellow-300 transition"
+                className="bg-red-900 text-white px-6 py-3 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-red-800 transition uppercase border"
               >
                 View Courses
               </Link>

@@ -22,12 +22,12 @@ export default function ContactCTA() {
 
           <div className="flex flex-col sm:flex-row gap-4 text-sm text-gray-200 mt-3">
             <div className="flex items-center gap-2">
-              <Phone size={16} className="text-yellow-400" />
+              <Phone size={16} className="text-gray-100" />
               <span>+91 99534 89987</span>
             </div>
 
             <div className="flex items-center gap-2">
-              <Mail size={16} className="text-yellow-400" />
+              <Mail size={16} className="text-gray-100" />
               <span>training@diac.co.in</span>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function ContactCTA() {
         
         <Link
           href="/contact"
-          className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition shadow-lg"
+          className="bg-white text-black px-6 py-3 rounded-xl font-semibold transition uppercase shadow-lg"
         >
           Contact Us
         </Link>

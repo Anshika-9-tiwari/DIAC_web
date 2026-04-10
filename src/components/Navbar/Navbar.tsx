@@ -47,19 +47,19 @@ export default function Navbar() {
               <li key={index} className="relative group">
                 <Link
                   href={link.href}
-                  className="relative pb-1 transition duration-300 hover:text-red-700"
+                  className="relative pb-1 transition duration-300 hover:text-red-900"
                 >
                   {link.name}
 
                   {/* Underline Hover Effect */}
-                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-800 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
             ))}
 
             {/* Courses Dropdown */}
             <li className="relative group">
-              <div className="flex items-center gap-1 cursor-pointer pb-1 hover:text-red-700 transition duration-300">
+              <div className="flex items-center gap-1 cursor-pointer pb-1 hover:text-red-900 transition duration-300">
                 Courses
                 <ChevronDown
                   size={18}
@@ -78,8 +78,8 @@ export default function Navbar() {
           </ul>
 
          <Link href="/contact">
-           <button className="px-4 py-2 rounded-md bg-yellow-400 text-black font-semibold hover:bg-yellow-300 transition duration-300">
-             Free Demo
+           <button className="px-4 py-2 rounded-md bg-gradient-to-l from-[#801717] to-[#a11c1c] text-white font-semibold hover:bg-red-800 transition duration-300 uppercase">
+             Enquiry now
            </button>
          </Link>
           
@@ -120,8 +120,8 @@ export default function Navbar() {
 
             <li className="p-5">
               <Link href="/contact">
-                <button className="w-full bg-yellow-400 text-black py-2 rounded-xl font-semibold">
-                  Free Demo
+                <button className="w-full bg-red-900 text-white py-2 rounded-xl font-semibold uppercase">
+                  enquiry now
                 </button>
               </Link>
             </li>

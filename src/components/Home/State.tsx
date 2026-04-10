@@ -58,10 +58,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-14 text-white" style={{
-        backgroundImage:
-          "linear-gradient(108.6deg, rgba(128,23,23,1) 36.5%, rgba(187,187,187,1) 121.9%)",
-      }}>
+    <section className="py-14 text-white bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 ">
 
         {/* Heading */}
@@ -73,7 +70,7 @@ export default function Stats() {
           className="text-center mb-18"
         >
           <h2 className="text-3xl font-bold">
-            Launching Industrial Automation  careers for a better <span className="text-orange-300 border-b-2">Tommorrow</span>
+            Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2">Tommorrow</span>
           </h2>
         </motion.div>
 
@@ -94,7 +91,7 @@ export default function Stats() {
                     index !== stats.length - 1 ? "md:border-r-2" : ""
                     }`}
                 >
-                <Icon size={40} className="mb-3 text-yellow-400" />
+                <Icon size={40} className="mb-3" />
 
                 <h3 className="text-2xl md:text-3xl font-bold">
                   {item.value}
@@ -119,7 +116,7 @@ export default function Stats() {
             <a
                 href="/brochure.pdf"
                 download
-                className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-yellow-500 shadow-lg transition duration-300 "
+                className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-red-900 hover:text-white hover:border-2 hover:border-white shadow-lg transition duration-300 "
             >
                 Download Brochure
             </a>
