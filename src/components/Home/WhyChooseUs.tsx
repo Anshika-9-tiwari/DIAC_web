@@ -13,32 +13,32 @@ const advantages = [
   {
     icon: GraduationCap,
     title: "Practical Training",
-    desc: "Hands-on experience with real industrial equipment",
+    desc: "Hands-on experience with real industrial equipment Hands-on experience with real industrial equipment",
   },
   {
     icon: Cpu,
     title: "Live Projects",
-    desc: "Work on real-time automation projects",
+    desc: "Work on real-time automation projects. Hands-on experience with real industrial equipment",
   },
   {
     icon: Briefcase,
     title: "Placement Support",
-    desc: "100% placement assistance for students",
+    desc: "100% placement assistance for students. Hands-on experience with real industrial equipment",
   },
   {
     icon: Users,
     title: "Expert Trainers",
-    desc: "Learn from experienced industry professionals",
+    desc: "Learn from experienced industry professionals. Hands-on experience with real industrial equipment",
   },
   {
     icon: Award,
     title: "Certification",
-    desc: "Industry-recognized certification provided",
+    desc: "Industry-recognized certification provided . Hands-on experience with real industrial equipment",
   },
   {
     icon: ShieldCheck,
     title: "Industry Exposure",
-    desc: "Real industrial visits and exposure",
+    desc: "Real industrial visits and exposure. Hands-on experience with real industrial equipment",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-3">
-            DIAC ``Advantage
+            DIAC Advantage
           </h2>
           <p className="text-gray-600">
             Why students choose us for industrial automation training
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
 
           {advantages.map((item, index) => {
             const Icon = item.icon;
@@ -66,12 +66,10 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="p-6 border-l-4 border-[#801717] rounded-lg bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-300"
+                className="p-6 text-center shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 flex items-center justify-center bg-red-100 rounded-full mb-3">
-                  <Icon className="text-[#801717]" size={22} />
-                </div>
+                <Icon className="text-[#801717] mb-3" size={28} />
 
                 {/* Title */}
                 <h3 className="text-lg font-semibold mb-2">

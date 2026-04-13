@@ -26,7 +26,7 @@ export default function Navbar() {
     <div className="bg-white text-gray-700 sticky top-[40px] z-40 shadow-md">
       
       {/* Navbar */}
-      <div className="max-w-8xl mx-auto px-10 py-5 flex items-center justify-between">
+      <div className="max-w-8xl mx-auto px-10 py-3 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/">

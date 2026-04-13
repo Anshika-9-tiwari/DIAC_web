@@ -58,7 +58,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-14 text-white bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] backdrop-blur-md">
+    <section className="py-14 text-white bg-gray-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 ">
 
         {/* Heading */}

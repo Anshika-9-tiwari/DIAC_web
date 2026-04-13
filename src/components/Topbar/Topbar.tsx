@@ -5,39 +5,46 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Topbar() {
   return (
-    <div className="sticky top-0 z-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] shadow-md backdrop-blur-md text-white text-md border-b-2 border-b-black">
-      <div className="max-w-8xl mx-auto px-4 md:px-8 py-2 flex flex-col md:flex-row items-center justify-between">
+    <div className="sticky top-0 z-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] shadow-md backdrop-blur-md text-white border-b border-black">
+      
+      <div className="max-w-8xl mx-auto px-4 md:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
 
-        {/* Left Side - Contact */}
-        <div className="flex items-center gap-10 md:gap-8 transition-all duration-300">
+        {/* Left Side */}
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-8 text-sm md:text-base">
 
+          {/* Phone */}
           <a
             href="tel:+919953489987"
-            className="flex items-center gap-2 transition "
+            className="flex items-center gap-2 transition"
           >
-            <FaWhatsapp size={18} /> / <Phone size={18} />
-            +91 99534 89987
+            <FaWhatsapp size={16} />/
+            <Phone size={16} />
+            <span className="hidden sm:inline">+91 99534 89987</span>
           </a>
 
+          {/* Email */}
           <a
             href="mailto:training@diac.co.in"
-            className="flex items-center gap-2 hover:text-yellow-300 transition"
+            className="flex items-center gap-2 transition"
           >
-            <Mail size={18} />
-            training@diac.co.in
+            <Mail size={16} />
+            <span className="hidden sm:inline">training@diac.co.in</span>
           </a>
 
-          <p>100% Placement Assistance</p>
+          {/* Placement (Hidden on Mobile) */}
+          <p className="md:block font-sm">
+            100% Placement Assistance
+          </p>
         </div>
 
         {/* Right Side - Social Icons */}
-        <div className="hidden md:flex items-center gap-8 transition-all duration-300 animate-pulse">
+        <div className="hidden md:flex items-center gap-6 animate-pulse">
           <a
             href="https://wa.me/919953489987"
             target="_blank"
             className="hover:text-yellow-300 transition"
           >
-            <FaWhatsapp size={20} />
+            <FaWhatsapp size={18} />
           </a>
 
           <a
@@ -45,18 +52,21 @@ export default function Topbar() {
             target="_blank"
             className="hover:text-yellow-300 transition"
           >
-            <FaInstagram size={20} />
+            <FaInstagram size={18} />
           </a>
 
-          <a 
-            href="https://www.linkedin.com" 
-            target="blank"
-            className="hover:text-yellow-300 transition">
-            <FaLinkedin size={20}/>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            className="hover:text-yellow-300 transition"
+          >
+            <FaLinkedin size={18} />
           </a>
-
         </div>
+
       </div>
     </div>
   );
 }
+
+//className="object-cover group-hover:scale-110 transition duration-300"  transition duration-300

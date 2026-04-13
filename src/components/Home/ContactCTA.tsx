@@ -1,46 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactCTA() {
   return (
-    <section className="py-12 bg-[#801717] text-white" >
-      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
+    <section className="py-16 bg-white text-center px-5">
+      <div className="max-w-3xl border border-gray-300 py-5 rounded-2xl shadow-xl hover:shadow-2xl mx-auto px-6">
 
-        {/* Left Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-2xl lg:text-3xl font-bold mb-2">
-            Have Questions? We’re Here to Help
-          </h2>
+        {/* Heading */}
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Have Questions? Get in Touch With Us
+        </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 text-sm text-gray-200 mt-3">
-            <div className="flex items-center gap-2">
-              <Phone size={16} className="text-gray-100" />
-              <span>+91 99534 89987</span>
-            </div>
+        {/* Subtext */}
+        <p className="text-gray-600 mb-6">
+          Contact our experts to get the right guidance for your career in industrial automation.
+        </p>
 
-            <div className="flex items-center gap-2">
-              <Mail size={16} className="text-gray-100" />
-              <span>training@diac.co.in</span>
-            </div>
+        {/* Contact Info */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-6 text-gray-700">
+          
+          <div className="flex items-center gap-2">
+            <Phone size={18} className="text-[#801717]" />
+            <span>+91 99534 89987</span>
           </div>
-        </motion.div>
 
-        {/* Right Button */}
-        
+          <div className="flex items-center gap-2">
+            <Mail size={18} className="text-[#801717]" />
+            <span>training@diac.co.in</span>
+          </div>
+
+        </div>
+
+        {/* Button */}
         <Link
           href="/contact"
-          className="bg-white text-black px-6 py-3 rounded-xl font-semibold transition uppercase shadow-lg"
+          className="inline-block bg-[#801717] text-white px-8 py-3 rounded font-semibold hover:bg-red-800 transition"
         >
-          Contact Us
+          CONTACT US
         </Link>
+
       </div>
     </section>
   );
