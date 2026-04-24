@@ -117,9 +117,11 @@ export default function Footer() {
             </a>
           </div>
 
-          <button className="px-5 py-2 bg-red-900 text-white rounded font-semibold hover:bg-white hover:text-black transition uppercase">
+          <a href="/contact">
+           <button className="px-5 py-2 bg-red-900 text-white rounded font-semibold hover:bg-white hover:text-black transition uppercase">
             Free Demo
           </button>
+          </a>
         </div>
       </div>
 
