@@ -4,7 +4,7 @@ import { Target, Crosshair, Gem } from "lucide-react";
 
 export default function VisionMission() {
   return (
-    <section className="bg-[#071c2f] text-white py-20">
+    <section className="bg-gradient-to-r from-black via-[#030810] to-gray-950 text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Top Label */}

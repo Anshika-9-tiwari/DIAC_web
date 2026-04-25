@@ -93,7 +93,7 @@ export default function Stats() {
                 >
                 <Icon size={40} className="mb-3" />
 
-                <h3 className="text-2xl md:text-3xl font-bold">
+                <h3 className="text-2xl md:text-3xl font-bold font-serif">
                   {item.value}
                 </h3>
 

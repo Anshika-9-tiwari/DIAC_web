@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-[#071c2f] text-white overflow-hidden">
+    <section className="relative bg-gradient-to-r from-black via-[#030810] to-gray-950 text-white overflow-hidden">
 
       {/* Background Grid Effect */}
       <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]" />
@@ -20,7 +20,7 @@ export default function AboutHero() {
         </p>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 ">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight font-serif mb-6 ">
           Dynamic Institute <br />
           of <br />
           <span className="text-[#801717]">
@@ -83,7 +83,7 @@ export default function AboutHero() {
               key={i}
               className="p-6 text-center border-r border-gray-700 last:border-r-0"
             >
-              <h3 className="text-xl md:text-2xl font-bold text-[#801717]">
+              <h3 className="text-xl md:text-2xl font-bold font-serif text-[#801717]">
                 {item.value}
               </h3>
               <p className="text-xs text-gray-400 mt-1">

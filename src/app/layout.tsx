@@ -57,7 +57,6 @@ export default function RootLayout({
         
         <Topbar />
         <Navbar />
-        <Trusted />
         {children}
         <Footer/>
       </body>

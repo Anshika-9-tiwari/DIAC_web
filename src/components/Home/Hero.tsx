@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 font-serif leading-tight ">
               Become Certified in{" "}
               <span className="text-red-900">
                 Industrial Automation
@@ -65,26 +65,39 @@ export default function Hero() {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="w-full border p-2 rounded"
+                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
               />
 
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full border p-2 rounded"
+                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
               />
 
               <input
                 type="tel"
                 placeholder="Phone"
-                className="w-full border p-2 rounded"
+                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
               />
 
-              <select className="w-full border p-2 rounded">
-                <option>Select Course</option>
-                <option>Industrial Training</option>
-                <option>PLC Training</option>
-                <option>SCADA Training</option>
+              <select
+                className="w-full border border-gray-300 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-[#801717] bg-white"
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Select Course
+                </option>
+
+                <option>PLC Programming & Commissioning</option>
+                <option>SCADA & HMI Training</option>
+                <option>Drives & Motors Training</option>
+                <option>Industrial Robotics Training</option>
+                <option>Process Instrumentation</option>
+                <option>Panel Designing & AutoCAD</option>
+                <option>DCS Training</option>
+                <option>PLC Networking</option>
+                <option>Servo Motors Training</option>
+
               </select>
 
               <button className="w-full bg-[#801717] text-white py-2 rounded font-semibold">

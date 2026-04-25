@@ -25,7 +25,7 @@ export default function PlacementRecord() {
         <div className="grid md:grid-cols-3 border border-gray-300 shadow-md text-center mb-10">
 
           <div className="p-6 border-r border-gray-300">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#801717]">
+            <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#801717]">
               10,000+
             </h3>
             <p className="text-xs text-gray-500 mt-1">
@@ -34,7 +34,7 @@ export default function PlacementRecord() {
           </div>
 
           <div className="p-6 border-r border-gray-300">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#801717]">
+            <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#801717]">
               ₹36 LPA
             </h3>
             <p className="text-xs text-gray-500 mt-1">
@@ -43,7 +43,7 @@ export default function PlacementRecord() {
           </div>
 
           <div className="p-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#801717]">
+            <h3 className="text-2xl md:text-3xl font-bold font-serif text-[#801717]">
               ₹6.9 LPA
             </h3>
             <p className="text-xs text-gray-500 mt-1">
