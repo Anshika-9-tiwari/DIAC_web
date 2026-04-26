@@ -14,9 +14,16 @@ const navLinks = [
 ];
 
 const coursesDropdown = [
-  { name: "Industrial Training", href: "/courses/industrial-training" },
-  { name: "PLC Training", href: "/courses/plc-training" },
-  { name: "SCADA & HMI", href: "/courses/scada" },
+  { name: "Industrial Automation Training", href: "/courses/industrial-automation" },
+  { name: "PLC Programming & Commissioning", href: "/courses/plc-training" },
+  { name: "SCADA & HMI", href: "/courses/scada-and-hmi" },
+  { name: "Drives & Motors Training", href: "/courses/drives-and-motors" },
+  { name: "Process Instrumentation", href: "/courses/process-instrumentation" },
+  { name: "Panel Designing & AutoCAD", href: "/courses/panel-designing-and-autocad" },
+  { name: "DCS Training", href: "/courses/dcs-training" },
+  { name: "PLC Networking", href: "/courses/plc-networking" },
+  { name: "Servo Motors Training", href: "/courses/servo-motors" },
+  { name: "Robotics Training", href: "/courses/robotics-training" },
 ];
 
 export default function Navbar() {

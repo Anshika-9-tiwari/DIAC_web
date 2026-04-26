@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CorporateHero() {
   return (
-    <section className="relative bg-gradient-to-r from-[#801717] to-[#a11c1c] text-white overflow-hidden">
+    <section className="relative bg-gradient-to-r from-[#801717] via-[#a11c1c] to-[#801717] text-white overflow-hidden">
 
       {/* Background Circles */}
       <div className="absolute top-10 right-10 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>

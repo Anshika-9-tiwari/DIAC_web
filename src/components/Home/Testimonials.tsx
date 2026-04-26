@@ -70,7 +70,7 @@ export default function Testimonials() {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition h-full"
               >
                 {/* Stars */}
-                <div className="flex mb-3 text-yellow-400">
+                <div className="flex mb-3 text-red-900">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={18} fill="currentColor" />
                   ))}
