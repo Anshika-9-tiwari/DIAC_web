@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CoursesHero() {
   return (
-    <section className="bg-[#eef2f7] py-24">
+    <section className="bg-[#f5f7fc] py-24">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}

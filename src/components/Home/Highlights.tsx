@@ -41,7 +41,7 @@ export default function Highlights() {
               <div
                 key={index}
                 className={`flex flex-col items-center p-6 m-2  ${
-                    index !== highlights.length - 1 ? "md:border-r-1" : ""
+                    index !== highlights.length - 1 ? "md:border-r-2 md:border-gray-200" : ""
                     }`}
               >
                 <Icon

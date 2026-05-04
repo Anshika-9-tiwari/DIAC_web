@@ -61,13 +61,13 @@ export default function CoursesLayout() {
           </div>
         )}
 
-        {/* MAIN GRID */}
+        {/* desktop GRID */}
         <div className="grid lg:grid-cols-[260px_1fr] gap-15">
 
           {/* SIDEBAR (DESKTOP ONLY) */}
-          <div className="hidden lg:block bg-[#e9edf5] rounded-xl p-4 h-fit sticky top-24">
+          <div className="hidden lg:block bg-[#ffffff] rounded-xl border-2 border-gray-100 shadow-xl p-4 h-fit sticky top-24">
 
-            <div className="px-4 py-3 bg-[#d6deea] rounded-lg text-lg font-semibold">
+            <div className="px-4 py-3 bg-[#ffffff] border-2 border-gray-100 shadow-md rounded-lg text-lg font-semibold">
               All Courses
             </div>
 
@@ -75,7 +75,7 @@ export default function CoursesLayout() {
               <Link
                 key={i}
                 href={`/courses/${course.slug}`}
-                className="block px-4 py-3 rounded-lg text-sm hover:bg-[#dde4ef]"
+                className="block px-4 py-3 rounded-lg text-sm hover:bg-[#f0f2f5]"
               >
                 {course.name}
               </Link>
@@ -93,7 +93,7 @@ export default function CoursesLayout() {
               >
 
                 {/* HEADER */}
-                <div className="bg-[#dfe6f1] p-5 font-semibold text-gray-800">
+                <div className="bg-[#f1f4f8] p-5 font-semibold text-gray-800">
                   {course.name}
                 </div>
 
@@ -121,7 +121,7 @@ export default function CoursesLayout() {
                 <div className="p-5">
                   <Link
                     href={`/courses/${course.slug}`}
-                    className="block text-center border border-[#801717] text-[#801717] py-2 rounded-lg hover:bg-[#801717] hover:text-white transition"
+                    className="block text-center border border-[#801717] text-[#801717] shadow-md py-2 rounded-lg hover:bg-[#801717] hover:text-white transition"
                   >
                     View Details
                   </Link>

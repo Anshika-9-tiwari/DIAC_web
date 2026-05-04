@@ -14,6 +14,7 @@ const navLinks = [
 ];
 
 const coursesDropdown = [
+  { name: "All Courses", href: "/courses" },
   { name: "Industrial Automation Training", href: "/courses/industrial-automation" },
   { name: "PLC Programming & Commissioning", href: "/courses/plc-training" },
   { name: "SCADA & HMI", href: "/courses/scada-and-hmi" },

@@ -1,11 +1,15 @@
-import React from 'react'
+import CourseOverviewSection from "@/components/Courses/coursesSubpages/CourseOverviewSection";
+import CoursesPlacementSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
+import CourseSubpageHero from "@/components/Courses/coursesSubpages/CourseSubpageHero";
 
-const page = () => {
+
+
+export default function CorporatePage() {
   return (
-    <div>
-      hiiiii
-    </div>
-  )
+    <main>
+       <CourseSubpageHero/>
+       <CourseOverviewSection/>
+       <CoursesPlacementSection/>
+    </main>
+  );
 }
-
-export default page
