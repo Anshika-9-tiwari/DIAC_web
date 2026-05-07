@@ -40,8 +40,8 @@ export default function PlacementJourney() {
     <section className="py-20 bg-[#f7f7f7]">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
-        {/* 🔹 LEFT CONTENT */}
-        <div className="max-w-lg  p-5 text-center rounded-lg shadow">
+        {/* LEFT CONTENT */}
+        <div className="max-w-lg  p-5  rounded-lg ">
           <h2 className="text-3xl font-bold mb-6 text-[#0b1f3a]">
             Placement Journey
           </h2>
@@ -55,7 +55,7 @@ export default function PlacementJourney() {
           </button>
         </div>
 
-        {/* 🔹 RIGHT TIMELINE */}
+        {/* RIGHT TIMELINE */}
         <div className="relative">
 
           {/* Vertical Line */}

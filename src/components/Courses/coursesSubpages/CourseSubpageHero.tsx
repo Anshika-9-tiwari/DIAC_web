@@ -1,156 +1,298 @@
 "use client";
 
-import { Star, Calendar, CheckCircle } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Star,
+  Calendar,
+  CheckCircle2,
+} from "lucide-react";
+
+import {
+  FaGoogle,
+} from "react-icons/fa";
+
 
 export default function CourseSubpageHero() {
   return (
-    <section className="bg-[#f4f7fb] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-start">
+    <section className="relative overflow-hidden bg-[#eef3fb] py-16 lg:py-20">
 
-        {/* 🔹 LEFT CONTENT */}
+      {/* BACKGROUND SHAPES */}
+      <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-[#d6e3f7] rotate-45 translate-x-48 -translate-y-16"></div>
+
+      {/* <div className="absolute bottom-0 right-20 w-[300px] h-[300px] bg-[#e7edf7] rotate-45 translate-y-28"></div> */}
+
+      {/* CONTAINER */}
+      <div className="relative max-w-8xl mx-auto px-8 md:px-10 grid lg:grid-cols-[1.2fr_0.8fr] gap-14 items-start">
+
+        {/* =========================
+            LEFT CONTENT
+        ========================== */}
         <div>
 
           {/* TITLE */}
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 bg-[#801717]/10 rounded-full flex items-center justify-center">
-              ⚙️
+          <div className="flex items-center gap-4 mb-8">
+
+            <div className="w-13 h-13 rounded-full bg-white shadow-md flex items-center justify-center">
+              <Image
+                src="/courses/automation.png"
+                alt="Automation"
+                width={35}
+                height={35}
+              />
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
+
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#111827] leading-tight">
               Industrial Automation Course
             </h1>
+
           </div>
 
           {/* DESCRIPTION */}
-          <p className="text-gray-600 mb-12 max-w-2xl">
-            Build your career in Industrial Automation by mastering PLC, SCADA,
-            HMI, Robotics & real-world industrial projects with strong placement support.
+          <p className="text-[19px] leading-[42px] text-[#1f2937] max-w-4xl mb-12">
+            Unlock your potential with our industry-leading Industrial
+            Automation Course. We transform ambitious learners into
+            job-ready automation engineers with hands-on PLC, SCADA,
+            HMI, DCS, and Robotics training along with dedicated
+            placement support.
           </p>
 
           {/* RATINGS */}
-          <div className="flex flex-wrap items-center gap-10 mb-12 text-sm">
+          <div className="flex flex-wrap items-center gap-8 mb-15">
 
-            <div className="flex items-center gap-1 text-red-800">
-              <Star size={16} fill="currentColor" />
-              <Star size={16} fill="currentColor" />
-              <Star size={16} fill="currentColor" />
-              <Star size={16} fill="currentColor" />
-              <Star size={16} fill="currentColor" />
-              <span className="text-gray-700 ml-2">
-                4.8 (8600+ Reviews)
+            {/* STARS */}
+            <div className="flex items-center gap-3">
+
+              <div className="flex text-[#f54d0b] gap-1">
+                <Star size={18} fill="currentColor" />
+                <Star size={18} fill="currentColor" />
+                <Star size={18} fill="currentColor" />
+                <Star size={18} fill="currentColor" />
+                <Star size={18} fill="currentColor" />
+              </div>
+
+              <span className="text-xl font-medium">
+                4.8
               </span>
+
+              <span className="text-gray-600 text-xl">
+                (6354 Reviews)
+              </span>
+
             </div>
 
-            <span className="text-gray-600">Google 4.8</span>
-            <span className="text-gray-600">Justdial 4.7</span>
-            <span className="text-gray-600">Trustpilot 5.0</span>
+            {/* GOOGLE */}
+            <div className="flex items-center gap-3">
+              <FaGoogle className="text-[#4285F4] text-3xl" />
+              <span className="text-xl font-medium">4.8</span>
+            </div>
+
+            {/* JUSTDIAL */}
+            <div className="flex items-center gap-3">
+              <h5 className="font-bold text-2xl text-blue-500">J <span className="text-2xl text-orange-500">D</span></h5>
+              <span className="text-xl font-medium">4.7</span>
+            </div>
+
+            {/* CUSTOM ICON */}
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+              <span className="text-xl font-medium">5.0</span>
+            </div>
+
+            {/* CUSTOM ICON */}
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 rounded-full bg-gradient-to-r from-orange-400 to-red-500"></div>
+              <span className="text-xl font-medium">5.0</span>
+            </div>
+
           </div>
 
-          {/* FEATURES GRID */}
-          <div className="grid grid-cols-2 gap-8 mb-14 text-md">
+          {/* FEATURES */}
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-12 mb-15">
 
-            <div className="flex gap-4">
-              <CheckCircle className="text-[#801717] mt-1" size={18} />
+            {/* ITEM */}
+            <div className="flex items-start gap-4">
+
+              <CheckCircle2
+                className="text-[#801717] mt-1"
+                size={24}
+              />
+
               <div>
-                <p className="font-medium">Job Guarantee Program</p>
-                <p className="text-gray-600 text-xs">
-                  100% Support Until You're Hired
+                <h3 className="font-semibold text-[20px] mb-3">
+                  Job Guarantee Program
+                </h3>
+
+                <p className="text-[17px] text-[#374151] leading-8">
+                  100% Support Until You’re Hired
                 </p>
               </div>
+
             </div>
 
-            <div className="flex gap-4">
-              <CheckCircle className="text-[#801717] mt-1" size={18} />
+            {/* ITEM */}
+            <div className="flex items-start gap-4">
+
+              <CheckCircle2
+                className="text-[#801717] mt-1"
+                size={24}
+              />
+
               <div>
-                <p className="font-medium">Course Duration</p>
-                <p className="text-gray-600 text-xs">
-                  6 Months + Lifetime Access
+                <h3 className="font-semibold text-[20px] mb-3">
+                  Course Duration
+                </h3>
+
+                <p className="text-[17px] text-[#374151] leading-8">
+                  6 Months + Life Time Access
                 </p>
               </div>
+
             </div>
 
-            <div className="flex gap-4">
-              <CheckCircle className="text-[#801717] mt-1" size={18} />
+            {/* ITEM */}
+            <div className="flex items-start gap-4">
+
+              <CheckCircle2
+                className="text-[#801717] mt-1"
+                size={24}
+              />
+
               <div>
-                <p className="font-medium">Expert Mentorship</p>
-                <p className="text-gray-600 text-xs">
+                <h3 className="font-semibold text-[20px] mb-3">
+                  Expert Mentorship
+                </h3>
+
+                <p className="text-[17px] text-[#374151] leading-8">
                   Learn from Industry Experts
                 </p>
               </div>
+
             </div>
 
-            <div className="flex gap-4">
-              <CheckCircle className="text-[#801717] mt-1" size={18} />
+            {/* ITEM */}
+            <div className="flex items-start gap-4">
+
+              <CheckCircle2
+                className="text-[#801717] mt-1"
+                size={24}
+              />
+
               <div>
-                <p className="font-medium">Flexible Learning</p>
-                <p className="text-gray-600 text-xs">
-                  Classroom / Online Modes
+                <h3 className="font-semibold text-[20px] mb-3">
+                  Flexible Learning
+                </h3>
+
+                <p className="text-[17px] text-[#374151] leading-8">
+                  Available in Classroom/Online formats
                 </p>
               </div>
+
             </div>
 
           </div>
 
-          {/* CTA BUTTONS */}
-          <div className="flex flex-wrap gap-6">
-            <button className="bg-[#801717] text-white px-6 py-3 rounded-lg font-medium hover:bg-red-800 transition">
+          {/* BUTTONS */}
+          <div className="flex flex-wrap gap-5">
+
+            {/* BUTTON */}
+            <Link
+              href="/downloads/industrial-automation-syllabus.pdf"
+              className="bg-[#801717] hover:bg-[#801717d9] transition text-white px-12 py-5 rounded-lg font-semibold text-xl"
+            >
               Download Syllabus
-            </button>
+            </Link>
 
-            <button className="border border-[#801717] text-[#801717] px-6 py-3 rounded-lg hover:bg-[#801717] hover:text-white transition">
+            {/* BUTTON */}
+            <Link
+              href="/placement"
+              className="border-2 border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-12 py-5 rounded-lg font-semibold text-xl"
+            >
               Placement Report
-            </button>
+            </Link>
 
-            <button className="border border-gray-400 px-6 py-3 rounded-lg hover:bg-gray-100 transition">
-              Book Free Demo
-            </button>
+            {/* BUTTON */}
+            <Link
+              href="/contact"
+              className="border-2 border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-12 py-5 rounded-lg font-semibold text-xl"
+            >
+              Book Free Demo Session
+            </Link>
+
           </div>
 
         </div>
 
-        {/* 🔹 RIGHT SIDE */}
-        <div className="space-y-6 justify-items-center items-center">
+        {/* =========================
+            RIGHT CONTENT
+        ========================== */}
+        <div className="flex flex-col items-center">
 
           {/* VIDEO */}
-          <div className="relative rounded-xl overflow-hidden shadow-md">
-            <img
-              src="/training-bnner.jpg"
-              alt="Course Video"
-              className="w-full h-[220px] object-cover"
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+
+            <Image
+              src="/images/course-video-thumbnail.jpg"
+              alt="Video"
+              width={700}
+              height={450}
+              className="w-full object-cover"
             />
 
             {/* PLAY BUTTON */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-white/90 p-4 rounded-full shadow">
-                ▶
+            <button className="absolute inset-0 flex items-center justify-center">
+
+              <div className="w-24 h-24 rounded-full bg-white/95 flex items-center justify-center shadow-xl">
+
+                <div className="ml-1 w-0 h-0 border-l-[24px] border-l-[#3b6fc4] border-y-[16px] border-y-transparent"></div>
+
               </div>
-            </div>
+
+            </button>
+
           </div>
 
           {/* NEXT BATCH */}
-          <div className="flex items-center gap-3 bg-[#f1e8e0] text-[#0b1f3a] px-5 py-3 rounded-lg w-fit">
-            <Calendar size={16} />
-            <span className="text-sm font-medium">
-              Next Batch: 2 May, 2026
+          <div className="mt-10 bg-[#f6ddb4] px-10 py-4 flex items-center gap-4 relative border border-[#f6ddb4] rounded-bl-2xl rounded-tr-2xl shadow-md">
+
+            {/* LEFT RIBBON */}
+            {/* <div className="absolute left-[-24px] top-0 border-y-[28px] border-r-[24px] border-y-transparent border-r-[#f6ddb4]"></div> */}
+
+            <span className="text-[20px] font-medium">
+              Next Batch:
             </span>
+
+            <Calendar size={22} />
+
+            <span className="text-[20px]">
+              16 May, 2026
+            </span>
+
           </div>
 
-          {/* CERTIFICATION BOX */}
-          <div className=" w-fit bg-white border rounded-xl p-4 shadow-sm">
-            <p className="text-[#801717] font-semibold text-sm">
-              Accredited by NASSCOM
+          {/* NASSCOM */}
+          <div className="mt-12 bg-white border border-[#d6dce8] rounded-2xl px-8 py-6 shadow-sm">
+
+            <h3 className="text-[#9b1c31] font-bold text-[24px] leading-10">
+              Accredited by NASSCOM,
+            </h3>
+
+            <p className="text-[18px] font-semibold">
+              approved by the Government of India
             </p>
-            <p className="text-gray-600 text-xs">
-              Approved by Government of India
-            </p>
+
           </div>
 
-          {/* MSME LOGO */}
-          <div className="bg-white rounded-xl p-4 shadow-sm w-fit">
-            <img
+          {/* MSME */}
+          <div className="mt-8 bg-white border border-[#d6dce8] rounded-2xl p-5 shadow-sm">
+
+            <Image
               src="/diacred.png"
               alt="MSME"
-              className="h-12 object-contain"
+              width={180}
+              height={180}
             />
+
           </div>
 
         </div>

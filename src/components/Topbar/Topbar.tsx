@@ -5,9 +5,9 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Topbar() {
   return (
-    <div className="sticky top-0 z-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] shadow-md backdrop-blur-md text-white border-b border-black">
+    <div className=" bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] shadow-md backdrop-blur-md text-white border-b border-black">
       
-      <div className="max-w-8xl mx-auto px-4 md:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
+      <div className="max-w-8xl mx-auto px-4 md:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-2">
 
         {/* Left Side */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 md:gap-8 text-sm md:text-base">

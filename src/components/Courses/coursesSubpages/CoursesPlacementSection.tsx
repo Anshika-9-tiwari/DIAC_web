@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PlacementSection() {
 
   /* =========================
-     🔹 COMPANY LOGOS
+     COMPANY LOGOS
   ========================== */
   const companies = [
     { name: "Amazon", logo: "/logos/amazon.png" },
@@ -23,7 +24,7 @@ export default function PlacementSection() {
   ];
 
   /* =========================
-     🔹 PLACEMENT CARDS
+     PLACEMENT CARDS
   ========================== */
   const placements = [
     {
@@ -45,7 +46,7 @@ export default function PlacementSection() {
   ];
 
   /* =========================
-     🔹 TABLE DATA (Reusable)
+     TABLE DATA 
   ========================== */
   const tableHeaders = ["Track", "Weekdays", "Weekends", "Fast Track"];
 
@@ -65,23 +66,23 @@ export default function PlacementSection() {
   ];
 
   return (
-    <section className="py-22 bg-gradient-to-br from-[#eef2ff] via-white to-[#f9fafb]">
-      <div className="max-w-7xl mx-auto px-6 space-y-32">
+    <section className="py-22 bg-gradient-to-br from-[#eef2ff] via-white to-[#f9fafb]" id="placement">
+      <div className="max-w-8xl mx-auto px-6 md:px-15 space-y-32">
 
         {/* =========================
-            🔹 1. STATS + LOGOS
+           1.companyLOGOS
         ========================== */}
         <div className="grid lg:grid-cols-2 gap-12">
 
           {/* LEFT - STATS */}
           <div className="bg-white rounded-xl p-15 shadow-sm">
-            <h3 className="text-2xl font-semibold mb-12 text-center">
+            <h3 className="text-3xl font-semibold mb-15 text-center">
               Placement Stats in Industrial Automation
             </h3>
 
             <div className="space-y-8 text-center">
               <div>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-500 text-md">
                   Maximum salary hike
                 </p>
                 <p className="text-4xl font-bold text-[#801717]">
@@ -90,7 +91,7 @@ export default function PlacementSection() {
               </div>
 
               <div>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-500 text-md">
                   Average salary hike
                 </p>
                 <p className="text-3xl font-semibold text-[#0b1f3a]">
@@ -102,7 +103,7 @@ export default function PlacementSection() {
 
           {/* RIGHT - LOGOS */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">
+            <h3 className="text-3xl font-semibold mb-6">
               Our Students Placed in Top Companies
             </h3>
 
@@ -130,7 +131,7 @@ export default function PlacementSection() {
              2. PLACEMENT HIGHLIGHTS
         ========================== */}
         <div>
-          <h2 className="text-2xl font-bold mb-12 ">
+          <h2 className="text-4xl font-bold mb-15 ">
             Industrial Automation Placement Highlights
           </h2>
 
@@ -173,7 +174,7 @@ export default function PlacementSection() {
 
                   {/* ARROW */}
                   <div className="text-xl text-gray-400">
-                    ➜➜
+                    ➜
                   </div>
 
                   {/* TO */}
@@ -199,10 +200,10 @@ export default function PlacementSection() {
         </div>
 
         {/* =========================
-            🔹 3. BATCH TABLE
+            3. BATCH TABLE
         ========================== */}
         <div>
-          <h2 className="text-2xl font-bold text-center mb-10">
+          <h2 className="text-4xl font-bold text-center mb-10">
             Batches Timing for Industrial Automation Course
           </h2>
 
@@ -241,12 +242,14 @@ export default function PlacementSection() {
             </table>
 
             {/* CTA */}
-            <div className="text-center mt-6">
-              <button className="bg-[#801717] text-white px-6 py-3 rounded-lg hover:bg-red-800 transition">
-                Download Syllabus
-              </button>
+            <div className="text-center mt-10">
+              <Link
+                href="/downloads/industrial-automation-syllabus.pdf">
+                <button className="bg-[#801717] text-white px-6 py-3 rounded-lg hover:bg-red-800 transition cursor-pointer ">
+                   Download Syllabus
+                </button>
+              </Link>
             </div>
-
           </div>
         </div>
 
