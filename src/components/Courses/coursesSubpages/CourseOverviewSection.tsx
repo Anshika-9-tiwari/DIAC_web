@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import { CircleCheckBig } from 'lucide-react';
+
 
 export default function CourseOverviewSection() {
 
   /* =========================
-     🔹 NAV LINKS
+     NAV LINKS
   ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
@@ -21,7 +22,7 @@ export default function CourseOverviewSection() {
   ];
 
   /* =========================
-     🔹 HIGHLIGHTS
+      HIGHLIGHTS
   ========================== */
   const highlights = [
     "100% Placement Support",
@@ -52,8 +53,8 @@ export default function CourseOverviewSection() {
                   href={item.href}
                   className={`py-6 text-[18px] font-medium transition border-b-2  ${
                     index === 0
-                      ? "border-[#3b6fc4] text-[#3b6fc4] "
-                      : "border-transparent hover:text-[#3b6fc4]"
+                      ? "border-[#801717] text-[#801717] "
+                      : "border-transparent hover:text-[#801717]"
                   }`}
                 >
                   {item.label}
@@ -65,7 +66,7 @@ export default function CourseOverviewSection() {
             {/* BUTTON */}
             <Link
               href="/contact"
-              className="hidden lg:flex bg-[#3b6fc4] hover:bg-[#2f5cab] transition text-white px-8 py-4 rounded-md font-semibold"
+              className="hidden lg:flex bg-[#801717] hover:bg-[#6d1313] transition text-white px-8 py-4 rounded-md font-semibold"
             >
               Enroll Now
             </Link>
@@ -83,7 +84,7 @@ export default function CourseOverviewSection() {
         id="overview"
         className="py-16 bg-white"
       >
-        <div className="max-w-8xl mx-auto px-6 md:px-15 grid lg:grid-cols-[1fr_420px] gap-16">
+        <div className="max-w-8xl mx-auto px-6 md:px-12 grid lg:grid-cols-[1fr_420px] gap-14 items-start">
 
           {/* =========================
               LEFT CONTENT
@@ -91,12 +92,12 @@ export default function CourseOverviewSection() {
           <div>
 
             {/* TITLE */}
-            <h2 className="text-5xl font-bold text-[#111827] mb-8 leading-tight">
+            <h2 className="text-4xl font-bold text-[#111827] mb-8 mt-8 leading-tight">
               Industrial Automation Course Overview
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="text-[20px] leading-[44px] text-[#1f2937] mb-12">
+            <p className="text-[18px] leading-[44px] text-[#1f2937] mb-12">
               Our Industrial Automation Course is carefully designed
               to bridge the gap between theoretical and practical
               industrial requirements. Learn PLC, SCADA, HMI,
@@ -105,7 +106,7 @@ export default function CourseOverviewSection() {
             </p>
 
             {/* SUCCESS IMAGE */}
-            <div className="mb-20">
+            <div className="mb-25">
 
               <Image
                 src="/courses/success_img.jpg"
@@ -123,27 +124,27 @@ export default function CourseOverviewSection() {
             <div id="features">
 
               {/* HEADING */}
-              <h2 className="text-5xl font-bold text-[#111827] mb-15 ">
+              <h2 className="text-4xl font-bold text-[#111827] mb-15 ">
                 Key Highlights of Industrial Automation Course
               </h2>
 
               {/* GRID */}
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 gap-8">
 
                 {highlights.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white rounded-xl shadow-sm border border-gray-100 px-6 py-4 flex items-center gap-5 hover:shadow-md transition"
+                    className="bg-white rounded-lg shadow-md border border-gray-50 px-6 py-5 flex items-center gap-5 hover:shadow-lg transition"
                   >
 
                     {/* ICON */}
-                    <CheckCircle2
-                      size={36}
-                      className="text-[#c7d6f2]"
+                    <CircleCheckBig
+                      size={28}
+                      className="text-[#801717]"
                     />
 
                     {/* TEXT */}
-                    <h3 className="text-[20px] font-medium text-[#111827]">
+                    <h3 className="text-[19px] font-medium text-[#111827]">
                       {item}
                     </h3>
 
@@ -159,10 +160,10 @@ export default function CourseOverviewSection() {
           {/* =========================
               RIGHT SIDEBAR
           ========================== */}
-          <div className="space-y-10">
+          <div className="space-y-10 sticky top-30 h-fit">
 
             {/* FORM */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden sticky top-28">
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden ">
 
               {/* TOP */}
               <div className="bg-[#faf3ef] py-8 px-6">
@@ -176,37 +177,37 @@ export default function CourseOverviewSection() {
               {/* FORM */}
               <div className="p-8">
 
-                <form className="space-y-8">
+                <form className="space-y-10">
 
                   {/* INPUT */}
                   <input
                     type="text"
                     placeholder="Your name"
-                    className="w-full border-b border-gray-300 pb-4 text-[20px] focus:outline-none"
+                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
 
                   {/* INPUT */}
                   <input
                     type="email"
                     placeholder="Your email address"
-                    className="w-full border-b border-gray-300 pb-4 text-[20px] focus:outline-none"
+                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
 
                   {/* INPUT */}
                   <input
                     type="tel"
                     placeholder="Phone"
-                    className="w-full border-b border-gray-300 pb-4 text-[20px] focus:outline-none"
+                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
 
                   {/* TEXTAREA */}
                   <textarea
                     rows={3}
                     placeholder="Message"
-                    className="w-full border-b border-gray-300 pb-4 text-[20px] resize-none focus:outline-none"
+                    className="w-full border-b border-gray-300 pb-2 text-[18px] resize-none focus:outline-none"
                   />
 
-                  {/* CAPTCHA
+                  {/* CAPTCHA */}
                   <div className="border rounded-md p-5 bg-[#fafafa]">
                     <div className="flex items-center gap-4">
                       <div className="w-8 h-8 border-2 rounded"></div>
@@ -214,12 +215,12 @@ export default function CourseOverviewSection() {
                         I'm not a robot
                       </span>
                     </div>
-                  </div> */}
+                  </div>
 
                   {/* BUTTON */}
                   <button
                     type="submit"
-                    className="w-full bg-[#3b6fc4] hover:bg-[#2f5cab] transition text-white py-5 rounded-md text-2xl font-semibold"
+                    className="w-full bg-[#801717] hover:bg-[#861616] transition text-white py-4 rounded-xl text-2xl font-semibold cursor-pointer"
                   >
                     Submit
                   </button>
@@ -231,9 +232,9 @@ export default function CourseOverviewSection() {
             </div>
 
             {/* CORPORATE TRAINING */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-10 text-center">
+            <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 text-center ">
 
-              <h3 className="text-4xl font-bold mb-6">
+              <h3 className="text-3xl font-bold mb-5">
                 Corporate Training
               </h3>
 
@@ -243,7 +244,7 @@ export default function CourseOverviewSection() {
 
               <Link
                 href="/corporate-training"
-                className="block bg-[#3b6fc4] hover:bg-[#2f5cab] transition text-white py-5 rounded-md text-2xl font-semibold"
+                className="block bg-[#801717] hover:bg-[#8b1818] transition text-white py-3 rounded-md text-xl font-semibold"
               >
                 Get a quote
               </Link>

@@ -6,7 +6,6 @@ export default function CorporatePage() {
   return (
     <main>
        <CoursesHero/>
-       
     </main>
   );
 }
