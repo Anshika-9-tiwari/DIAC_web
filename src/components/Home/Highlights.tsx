@@ -31,24 +31,24 @@ const highlights = [
 
 export default function Highlights() {
   return (
-    <section className="py-18 bg-white">
-      <div className="max-w-8xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center shadow-lg ">
+    <section className="py-10 bg-white">
+      <div className="max-w-8xl mx-auto px-10 ">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-5 text-center py-2 rounded-lg border border-gray-100 shadow-md">
 
           {highlights.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className={`flex flex-col items-center p-6 m-2  ${
+                className={`flex flex-col items-center p-6 m-3  ${
                     index !== highlights.length - 1 ? "md:border-r-2 md:border-gray-200" : ""
                     }`}
               >
                 <Icon
-                  size={40}
+                  size={45}
                   className="mx-auto mb-3 text-[#801717]"
                 />
-                <h3 className="font-semibold">{item.title}</h3>
+                <h2 className="font-semibold text-lg text-gray-800">{item.title}</h2>
                 <p className="p-2">{item.subtitle}</p>
               </div>
             );

@@ -52,8 +52,8 @@ const item = {
 
 export default function CoursesSection() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-12 bg-white">
+      <div className="max-w-8xl mx-auto px-20">
 
         {/* Heading Animation */}
         <motion.div
@@ -61,12 +61,12 @@ export default function CoursesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-18"
         >
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             <span className="text-red-800">DIAC</span> Courses
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-700 text-[18px]">
             Explore industry-oriented courses designed for real-world skills
           </p>
         </motion.div>
@@ -88,7 +88,7 @@ export default function CoursesSection() {
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 group"
             >
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-50 overflow-hidden">
                 <Image
                   src={course.image}
                   alt={course.title}
@@ -98,12 +98,12 @@ export default function CoursesSection() {
               </div>
 
               {/* Content */}
-              <div className="p-5">
-                <h3 className="font-semibold text-lg mb-2">
+              <div className="p-4">
+                <h3 className="font-semibold text-xl mb-2">
                   {course.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm mb-3">
+                <p className="text-gray-600 text-[16px] mb-3">
                   {course.desc}
                 </p>
 

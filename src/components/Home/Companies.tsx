@@ -27,7 +27,7 @@ export default function Companies() {
     dots: false,
     infinite: true,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -50,16 +50,16 @@ export default function Companies() {
   };
 
   return (
-    <section className="py-16 bg-gray-50 text-gray-800">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-2">
+    <section className="py-12 bg-white  text-gray-800">
+      <div className="max-w-8xl border border-gray-50 shadow-md py-2 mx-auto px-10 text-center ">
+        {/* <h2 className="text-4xl font-semibold mb-2">
           Our Placement Partners
         </h2>
-        <div className="w-15 h-1 bg-red-800 mx-auto  mb-14 rounded"></div>
+        <div className="w-15 h-1 bg-red-800 mx-auto  mb-14 rounded"></div> */}
 
         <Slider {...settings}>
           {companies.map((logo, index) => (
-            <div key={index} className="px-4">
+            <div key={index} className="px-4 py-2">
               <Image
                 src={logo}
                 alt="company"

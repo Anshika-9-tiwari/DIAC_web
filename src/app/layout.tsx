@@ -5,6 +5,14 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/footer";
 import Topbar from "@/components/Topbar/Topbar";
 import Trusted from "@/components/trustedClient/Trusted";
+import { Poppins } from "next/font/google";
+
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,9 +60,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
-        
         <Topbar />
         <Navbar />
         {children}

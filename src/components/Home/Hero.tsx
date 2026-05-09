@@ -21,34 +21,34 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 py-16 lg:py-16 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-10 w-full items-center">
+        <div className="grid lg:grid-cols-2 gap-12 w-full items-center">
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 font-serif leading-tight ">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-10 leading-tight ">
               Become Certified in{" "}
               <span className="text-red-900">
                 Industrial Automation
               </span>
             </h1>
 
-            <p className="mb-10 text-base md:text-lg text-gray-50">
+            <p className="mb-12 text-base md:text-lg text-gray-50">
               Join the best Industrial Automation and Robotics training institute
               in Delhi with 100% placement assistance.
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/courses"
-                className="bg-red-900 text-white px-6 py-3 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-red-800 transition uppercase border"
+                className="bg-red-900 text-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-red-800 transition uppercase border"
               >
                 View Courses
               </Link>
 
               <Link
                 href="/contact"
-                className="border border-white px-6 py-3 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-white hover:text-black transition"
+                className="border border-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-white hover:text-black transition"
               >
                 Contact Us
               </Link>
@@ -56,12 +56,12 @@ export default function Hero() {
           </div>
 
           {/* Enquiry Form */}
-          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md lg:ml-auto">
-            <h2 className="text-xl font-semibold mb-4 text-center">
+          <div className="bg-white rounded-md shadow-lg p-8 w-full max-w-md lg:ml-auto">
+            <h2 className="text-2xl font-semibold mb-5 text-center">
               Enquiry Now
             </h2>
 
-            <form className="space-y-5">
+            <form className="space-y-8">
               <input
                 type="text"
                 placeholder="Full Name"
@@ -100,7 +100,7 @@ export default function Hero() {
 
               </select>
 
-              <button className="w-full bg-[#801717] text-white py-2 rounded font-semibold">
+              <button className="w-full bg-[#801717] text-white py-3 rounded text-xl font-semibold cursor-pointer hover:bg-red-800 transition">
                 Submit
               </button>
             </form>

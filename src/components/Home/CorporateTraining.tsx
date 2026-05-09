@@ -24,29 +24,29 @@ const points = [
 
 export default function CorporateTraining() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-18 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3">
+          <h2 className="text-4xl font-bold mb-2">
             Corporate Training & Industry Partners
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-[18px] py-2 ">
             We provide professional training to leading industries
           </p>
         </div>
 
         {/* 2 Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-15 items-center">
 
           {/* LEFT → Text Content */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#801717]">
+            <h3 className="text-3xl font-semibold mb-4 text-[#801717]">
               Industry-Focused Corporate Training
             </h3>
 
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600  text-[18px] mb-6">
               DIAC offers specialized corporate training programs designed to
               enhance the technical skills of professionals in industrial automation.
             </p>

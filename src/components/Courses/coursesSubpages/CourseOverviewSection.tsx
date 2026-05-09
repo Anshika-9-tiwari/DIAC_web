@@ -7,7 +7,7 @@ import { CheckCircle2 } from "lucide-react";
 export default function CourseOverviewSection() {
 
   /* =========================
-     🔹 NAV LINKS
+      NAV LINKS
   ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
