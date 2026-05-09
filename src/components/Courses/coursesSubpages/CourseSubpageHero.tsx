@@ -18,11 +18,7 @@ export default function CourseSubpageHero() {
     <section className="relative overflow-hidden bg-[#eef3fb] py-16 lg:py-20">
 
       {/* BACKGROUND SHAPES */}
-<<<<<<< HEAD
-      <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-[#d6e3f7] rotate-43 translate-x-55 -translate-y-16"></div>
-=======
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#e7edf7] rotate-45 translate-x-48 -translate-y-16"></div>
->>>>>>> 876578f365226e3727cb3c1b37a2fa376013ff2b
 
       <div className="absolute bottom-0 right-10 w-[300px] h-[290px] bg-[#e7edf7] rotate-45 translate-y-35"></div>
 
