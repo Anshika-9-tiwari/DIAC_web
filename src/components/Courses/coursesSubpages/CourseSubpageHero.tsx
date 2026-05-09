@@ -18,12 +18,16 @@ export default function CourseSubpageHero() {
     <section className="relative overflow-hidden bg-[#eef3fb] py-16 lg:py-20">
 
       {/* BACKGROUND SHAPES */}
+<<<<<<< HEAD
       <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-[#d6e3f7] rotate-43 translate-x-55 -translate-y-16"></div>
+=======
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#e7edf7] rotate-45 translate-x-48 -translate-y-16"></div>
+>>>>>>> 876578f365226e3727cb3c1b37a2fa376013ff2b
 
-      {/* <div className="absolute bottom-0 right-20 w-[300px] h-[300px] bg-[#e7edf7] rotate-45 translate-y-28"></div> */}
+      <div className="absolute bottom-0 right-10 w-[300px] h-[290px] bg-[#e7edf7] rotate-45 translate-y-35"></div>
 
       {/* CONTAINER */}
-      <div className="relative max-w-8xl mx-auto px-8 md:px-10 grid lg:grid-cols-[1.2fr_0.8fr] gap-14 items-start">
+      <div className="relative max-w-8xl mx-auto px-8 md:px-12 grid lg:grid-cols-[1.2fr_0.8fr] gap-14 items-start">
 
         {/* =========================
             LEFT CONTENT
@@ -35,21 +39,21 @@ export default function CourseSubpageHero() {
 
             <div className="w-13 h-13 rounded-full bg-white shadow-md flex items-center justify-center">
               <Image
-                src="/courses/automation.png"
+                src="/courses/Automation.png"
                 alt="Automation"
                 width={35}
                 height={35}
               />
             </div>
 
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#111827] leading-tight">
+            <h1 className="text-3xl lg:text-4xl font-bold text-[#111827] leading-tight">
               Industrial Automation Course
             </h1>
 
           </div>
 
           {/* DESCRIPTION */}
-          <p className="text-[19px] leading-[42px] text-[#1f2937] max-w-4xl mb-12">
+          <p className="text-[18px] leading-[40px] text-[#1f2937] max-w-4xl mb-12">
             Unlock your potential with our industry-leading Industrial
             Automation Course. We transform ambitious learners into
             job-ready automation engineers with hands-on PLC, SCADA,
@@ -115,15 +119,15 @@ export default function CourseSubpageHero() {
 
               <CheckCircle2
                 className="text-[#801717] mt-1"
-                size={24}
+                size={22}
               />
 
               <div>
-                <h3 className="font-semibold text-[20px] mb-3">
+                <h3 className="font-semibold text-[18px] mb-3">
                   Job Guarantee Program
                 </h3>
 
-                <p className="text-[17px] text-[#374151] leading-8">
+                <p className="text-[16px] text-[#374151] leading-6">
                   100% Support Until You’re Hired
                 </p>
               </div>
@@ -135,15 +139,15 @@ export default function CourseSubpageHero() {
 
               <CheckCircle2
                 className="text-[#801717] mt-1"
-                size={24}
+                size={22}
               />
 
               <div>
-                <h3 className="font-semibold text-[20px] mb-3">
+                <h3 className="font-semibold text-[18px] mb-3">
                   Course Duration
                 </h3>
 
-                <p className="text-[17px] text-[#374151] leading-8">
+                <p className="text-[16px] text-[#374151] leading-6">
                   6 Months + Life Time Access
                 </p>
               </div>
@@ -155,15 +159,15 @@ export default function CourseSubpageHero() {
 
               <CheckCircle2
                 className="text-[#801717] mt-1"
-                size={24}
+                size={22}
               />
 
               <div>
-                <h3 className="font-semibold text-[20px] mb-3">
+                <h3 className="font-semibold text-[18px] mb-3">
                   Expert Mentorship
                 </h3>
 
-                <p className="text-[17px] text-[#374151] leading-8">
+                <p className="text-[16px] text-[#374151] leading-6">
                   Learn from Industry Experts
                 </p>
               </div>
@@ -175,15 +179,15 @@ export default function CourseSubpageHero() {
 
               <CheckCircle2
                 className="text-[#801717] mt-1"
-                size={24}
+                size={22}
               />
 
               <div>
-                <h3 className="font-semibold text-[20px] mb-3">
+                <h3 className="font-semibold text-[18px] mb-3">
                   Flexible Learning
                 </h3>
 
-                <p className="text-[17px] text-[#374151] leading-8">
+                <p className="text-[16px] text-[#374151] leading-6">
                   Available in Classroom/Online formats
                 </p>
               </div>
@@ -198,7 +202,7 @@ export default function CourseSubpageHero() {
             {/* BUTTON */}
             <Link
               href="/downloads/industrial-automation-syllabus.pdf"
-              className="bg-[#801717] hover:bg-[#801717d9] transition text-white px-12 py-5 rounded-lg font-semibold text-xl"
+              className="bg-[#801717] hover:bg-[#801717d9] transition text-white px-6 py-4 rounded-lg font-semibold text-xl"
             >
               Download Syllabus
             </Link>
@@ -206,7 +210,7 @@ export default function CourseSubpageHero() {
             {/* BUTTON */}
             <Link
               href="/placement"
-              className="border-2 border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-12 py-5 rounded-lg font-semibold text-xl"
+              className="border-1 border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-6 py-4 rounded-lg font-semibold text-xl"
             >
               Placement Report
             </Link>
@@ -214,9 +218,9 @@ export default function CourseSubpageHero() {
             {/* BUTTON */}
             <Link
               href="/contact"
-              className="border-2 border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-12 py-5 rounded-lg font-semibold text-xl"
+              className="border-1  border-[#801717] text-[#0b1f3a] hover:bg-[#801717] hover:text-white transition px-6 py-4 rounded-lg font-semibold text-xl"
             >
-              Book Free Demo Session
+              Book Free Demo 
             </Link>
 
           </div>
@@ -232,7 +236,7 @@ export default function CourseSubpageHero() {
           <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
 
             <Image
-              src="/images/course-video-thumbnail.jpg"
+              src="/courses/plc-img.jpg"
               alt="Video"
               width={700}
               height={450}
@@ -253,7 +257,7 @@ export default function CourseSubpageHero() {
           </div>
 
           {/* NEXT BATCH */}
-          <div className="mt-10 bg-[#f6ddb4] px-10 py-4 flex items-center gap-4 relative border border-[#f6ddb4] rounded-bl-2xl rounded-tr-2xl shadow-md">
+          <div className="mt-10 bg-[#801717] text-white px-10 py-4 flex items-center gap-4 relative border border-[#f6ddb4] rounded-bl-2xl rounded-tr-2xl shadow-md">
 
             {/* LEFT RIBBON */}
             {/* <div className="absolute left-[-24px] top-0 border-y-[28px] border-r-[24px] border-y-transparent border-r-[#f6ddb4]"></div> */}
@@ -271,9 +275,9 @@ export default function CourseSubpageHero() {
           </div>
 
           {/* NASSCOM */}
-          <div className="mt-12 bg-white border border-[#d6dce8] rounded-2xl px-8 py-6 shadow-sm">
+          <div className="mt-12 bg-white border border-[#d6dce8] rounded-2xl px-6 py-4 shadow-sm">
 
-            <h3 className="text-[#9b1c31] font-bold text-[24px] leading-10">
+            <h3 className="text-[#9b1c31] font-semibold text-[27px] leading-10">
               Accredited by NASSCOM,
             </h3>
 

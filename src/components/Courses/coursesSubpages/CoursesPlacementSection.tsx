@@ -1,194 +1,256 @@
 "use client";
 
 import Image from "next/image";
+import { Download } from "lucide-react";
 import Link from "next/link";
 
+import {
+  TrendingUp,
+  ChartNoAxesCombined,
+  ArrowRight,
+} from "lucide-react";
+
+const companyLogos = [
+  "/image_1.png",
+  "/image_2.png",
+  "/image_3.png",
+  "/image_4.png",
+  "/image_5.png",
+  "/image_6.png",
+  "/image_7.png",
+  "/image_8.png",
+  "/image_9.png",
+  "/image_10.png",
+  "/image_11.png",
+  "/image_12.png",
+];
+
+const placementHighlights = [
+  {
+    name: "Rahul Sharma",
+    image: "/Placedstudent/Raymond.jpg",
+    hike: "120%",
+    previousCompany: "Diploma Engineer",
+    previousRole: "Trainee",
+    newCompanyLogo: "/image_2.png",
+    newRole: "PLC Engineer",
+    newCompany: "Siemens",
+  },
+
+  {
+    name: "Aman Verma",
+    image: "/Placedstudent/Raymond.jpg",
+    hike: "95%",
+    previousCompany: "ITI Electrician",
+    previousRole: "Technician",
+    newCompanyLogo: "/image_1.png",
+    newRole: "Automation Engineer",
+    newCompany: "ABB",
+  },
+];
+
+const batchData = [
+  {
+    label: "Course Duration",
+    weekday: "7 Months",
+    weekend: "9 Months",
+    fasttrack: "60 Days",
+  },
+  {
+    label: "Hours Per Day",
+    weekday: "2–3 Hours",
+    weekend: "3–4 Hours",
+    fasttrack: "6 Hours",
+  },
+  {
+    label: "Training Mode",
+    weekday: "Classroom/Online",
+    weekend: "Classroom/Online",
+    fasttrack: "Classroom/Online",
+  },
+];
+
 export default function PlacementSection() {
-
-  /* =========================
-     COMPANY LOGOS
-  ========================== */
-  const companies = [
-    { name: "Amazon", logo: "/logos/amazon.png" },
-    { name: "Microsoft", logo: "/logos/microsoft.png" },
-    { name: "IBM", logo: "/logos/ibm.png" },
-    { name: "KPMG", logo: "/logos/kpmg.png" },
-    { name: "Google", logo: "/logos/google.png" },
-    { name: "Accenture", logo: "/logos/accenture.png" },
-    { name: "TCS", logo: "/logos/tcs.png" },
-    { name: "EY", logo: "/logos/ey.png" },
-    { name: "Capgemini", logo: "/logos/capgemini.png" },
-    { name: "Genpact", logo: "/logos/genpact.png" },
-    { name: "OYO", logo: "/logos/oyo.png" },
-    { name: "HCL", logo: "/logos/hcl.png" },
-  ];
-
-  /* =========================
-     PLACEMENT CARDS
-  ========================== */
-  const placements = [
-    {
-      name: "Rahul Sharma",
-      hike: "80%",
-      fromCompany: "Trainee Engineer",
-      fromLogo: "/logos/hcl.png",
-      toCompany: "Automation Engineer",
-      toLogo: "/logos/tcs.png",
-    },
-    {
-      name: "Priya Verma",
-      hike: "100%",
-      fromCompany: "Diploma Fresher",
-      fromLogo: "/logos/genpact.png",
-      toCompany: "PLC Engineer",
-      toLogo: "/logos/accenture.png",
-    },
-  ];
-
-  /* =========================
-     TABLE DATA 
-  ========================== */
-  const tableHeaders = ["Track", "Weekdays", "Weekends", "Fast Track"];
-
-  const tableRows = [
-    {
-      label: "Course Duration",
-      values: ["6 Months", "8 Months", "45 Days"],
-    },
-    {
-      label: "Hours Per Day",
-      values: ["2–3 Hours", "3–4 Hours", "6 Hours"],
-    },
-    {
-      label: "Training Mode",
-      values: ["Offline/Online", "Offline/Online", "Offline/Online"],
-    },
-  ];
-
   return (
-    <section className="py-22 bg-gradient-to-br from-[#eef2ff] via-white to-[#f9fafb]" id="placement">
-      <div className="max-w-8xl mx-auto px-6 md:px-15 space-y-32">
+    <section className="bg-gradient-to-b from-[#eef3fb] to-white py-20">
 
-        {/* =========================
-           1.companyLOGOS
-        ========================== */}
-        <div className="grid lg:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto px-6">
 
-          {/* LEFT - STATS */}
-          <div className="bg-white rounded-xl p-15 shadow-sm">
-            <h3 className="text-3xl font-semibold mb-15 text-center">
+        {/* ================= TOP SECTION ================= */}
+        <div className="grid lg:grid-cols-2 gap-15 items-start mb-25">
+
+          {/* LEFT */}
+          <div>
+            <h2 className="text-2xl font-semibold text-[#0b1f3a] mb-10 px-3">
               Placement Stats in Industrial Automation
-            </h3>
+            </h2>
 
-            <div className="space-y-8 text-center">
-              <div>
-                <p className="text-gray-500 text-md">
-                  Maximum salary hike
-                </p>
-                <p className="text-4xl font-bold text-[#801717]">
-                  135%
-                </p>
+            <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8 h-[300px]  flex items-center justify-center">
+
+              <div className="flex items-center gap-15">
+
+                {/* ICON */}
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-100 to-red-100 flex items-center justify-center">
+                  <ChartNoAxesCombined
+                    size={55}
+                    className="text-[#801717]"
+                  />
+                </div>
+
+                {/* STATS */}
+                <div className="space-y-10">
+
+                  <div>
+                    <p className="text-lg text-gray-700 mb-2">
+                      Maximum salary hike
+                    </p>
+
+                    <h3 className="text-4xl font-bold text-[#801717]">
+                      135<span className="text-gray-600">%</span>
+                    </h3>
+                  </div>
+
+                  <div>
+                    <p className="text-lg text-gray-700 mb-2">
+                      Average salary hike
+                    </p>
+
+                    <h3 className="text-4xl font-bold text-gray-700">
+                      75<span className="text-red-900">%</span>
+                    </h3>
+                  </div>
+
+                </div>
+
               </div>
 
-              <div>
-                <p className="text-gray-500 text-md">
-                  Average salary hike
-                </p>
-                <p className="text-3xl font-semibold text-[#0b1f3a]">
-                  75%
-                </p>
-              </div>
             </div>
           </div>
 
-          {/* RIGHT - LOGOS */}
+          {/* RIGHT */}
           <div>
-            <h3 className="text-3xl font-semibold mb-6">
-              Our Students Placed in Top Companies
-            </h3>
+            <h2 className="text-2xl font-semibold text-[#0b1f3a] mb-10">
+              Our Industrial Automation Alumni in Top Companies
+            </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {companies.map((company, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+              {companyLogos.map((logo, i) => (
                 <div
                   key={i}
-                  className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition"
+                  className="bg-white rounded-2xl shadow-md border border-gray-100 h-21 px-2 flex items-center justify-center hover:shadow-xl transition"
                 >
                   <Image
-                    src={company.logo}
-                    alt={company.name}
-                    width={90}
-                    height={40}
+                    src={logo}
+                    alt="company"
+                    width={120}
+                    height={50}
                     className="object-contain"
                   />
                 </div>
               ))}
+
             </div>
           </div>
 
         </div>
 
-        {/* =========================
-             2. PLACEMENT HIGHLIGHTS
-        ========================== */}
-        <div>
-          <h2 className="text-4xl font-bold mb-15 ">
+        {/* ================= SECOND SECTION ================= */}
+        <div className="mb-25">
+
+          <h2 className="text-2xl md:text-4xl font-bold text-[#172c47] mb-12">
             Industrial Automation Placement Highlights
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-12">
 
-            {placements.map((item, i) => (
+            {placementHighlights.map((item, index) => (
               <div
-                key={i}
-                className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-300"
+                key={index}
+                className="rounded-xl overflow-hidden border border-[#d2e5ff] bg-white shadow-md hover:shadow-xl transition"
               >
 
                 {/* TOP */}
-                <div className="flex justify-between items-center p-4 bg-[#eef2f7]">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gray-300" />
-                    <p className="font-semibold">{item.name}</p>
+                <div className="bg-[#eef3fb] px-8 py-4 flex items-center justify-between">
+
+                  <div className="flex items-center gap-5">
+
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={60}
+                      height={60}
+                      className="rounded-full object-cover"
+                    />
+
+                    <h3 className="text-xl font-semibold text-[#0b1f3a]">
+                      {item.name}
+                    </h3>
+
                   </div>
 
-                  <p className="text-[#801717] font-semibold">
-                    {item.hike} Hike ↗
-                  </p>
+                  <div className="flex items-center gap-2 text-2xl font-bold">
+
+                    <span className="text-red-900">
+                      {item.hike}
+                    </span>
+
+                    <span className="text-[#0b1f3a]">
+                      Hike
+                    </span>
+
+                    <TrendingUp
+                      className="text-[#0b1f3a]"
+                      size={28}
+                    />
+
+                  </div>
+
                 </div>
 
                 {/* BOTTOM */}
-                <div className="grid grid-cols-3 items-center p-6 text-center">
+                <div className="grid grid-cols-3 items-center px-8 py-6">
 
-                  {/* FROM */}
-                  <div>
-                    <Image
-                      src={item.fromLogo}
-                      alt="from"
-                      width={80}
-                      height={40}
-                      className="mx-auto object-contain"
-                    />
-                    <p className="text-sm mt-2 text-gray-500">
-                      {item.fromCompany}
+                  {/* OLD */}
+                  <div className="text-center">
+
+                    <h4 className="text-xl font-bold text-gray-700 mb-4">
+                      {item.previousCompany}
+                    </h4>
+
+                    <p className="text-lg font-medium text-[#0b1f3a]">
+                      {item.previousRole}
                     </p>
+
                   </div>
 
                   {/* ARROW */}
-                  <div className="text-xl text-gray-400">
-                    ➜
+                  <div className="flex justify-center">
+                    <ArrowRight
+                      size={35}
+                      className="text-red-900"
+                    />
                   </div>
 
-                  {/* TO */}
-                  <div>
+                  {/* NEW */}
+                  <div className="text-center flex flex-col items-center">
+
                     <Image
-                      src={item.toLogo}
-                      alt="to"
-                      width={80}
-                      height={40}
-                      className="mx-auto object-contain"
+                      src={item.newCompanyLogo}
+                      alt={item.newCompany}
+                      width={120}
+                      height={60}
+                      className="object-contain mb-5"
                     />
-                    <p className="text-sm mt-2 font-medium">
-                      {item.toCompany}
+
+                    <p className="text-xl font-medium text-[#0b1f3a]">
+                      {item.newRole}
                     </p>
+
+                    <p className="text-gray-600 mt-1">
+                      {item.newCompany}
+                    </p>
+
                   </div>
 
                 </div>
@@ -197,63 +259,100 @@ export default function PlacementSection() {
             ))}
 
           </div>
+
         </div>
 
-        {/* =========================
-            3. BATCH TABLE
-        ========================== */}
-        <div>
-          <h2 className="text-4xl font-bold text-center mb-10">
-            Batches Timing for Industrial Automation Course
-          </h2>
+     {/* ================= SECOND SECTION ================= */}
 
-          <div className="bg-white rounded-xl shadow-sm p-6 overflow-x-auto">
+      <div>
 
-            <table className="w-full text-sm text-center border">
+        {/* HEADING */}
+        <h2 className="text-4xl font-bold text-center text-[#0b1f3a] mb-14">
+          Batches Timing for Industrial Automation Course
+        </h2>
 
-              {/* HEAD */}
-              <thead className="bg-gray-100">
+        {/* TABLE BOX */}
+        <div className="bg-[#f7f7f7] rounded-[30px] p-8 md:p-14 border border-gray-100">
+
+          <div className="overflow-x-auto">
+
+            <table className="w-full border-collapse text-center min-w-[850px]">
+
+              {/* HEADER */}
+              <thead>
+
                 <tr>
-                  {tableHeaders.map((head, i) => (
-                    <th key={i} className="p-3 border">
-                      {head}
-                    </th>
-                  ))}
+
+                  <th className="border border-gray-300 px-6 py-5 text-lg font-semibold">
+                    Track
+                  </th>
+
+                  <th className="border border-gray-300 px-6 py-5 text-lg font-semibold">
+                    Weekdays (Tue–Fri)
+                  </th>
+
+                  <th className="border border-gray-300 px-6 py-5 text-lg font-semibold">
+                    Weekends (Sat–Sun)
+                  </th>
+
+                  <th className="border border-gray-300 px-6 py-5 text-lg font-semibold">
+                    Fast Track
+                  </th>
+
                 </tr>
+
               </thead>
 
               {/* BODY */}
               <tbody>
-                {tableRows.map((row, i) => (
-                  <tr key={i}>
-                    <td className="p-3 border font-medium">
-                      {row.label}
+
+                {batchData.map((item, index) => (
+                  <tr key={index}>
+
+                    <td className="border border-gray-300 px-6 py-5 font-semibold text-lg">
+                      {item.label}
                     </td>
 
-                    {row.values.map((val, j) => (
-                      <td key={j} className="p-3 border">
-                        {val}
-                      </td>
-                    ))}
+                    <td className="border border-gray-300 px-6 py-5 text-lg text-gray-700">
+                      {item.weekday}
+                    </td>
+
+                    <td className="border border-gray-300 px-6 py-5 text-lg text-gray-700">
+                      {item.weekend}
+                    </td>
+
+                    <td className="border border-gray-300 px-6 py-5 text-lg text-gray-700">
+                      {item.fasttrack}
+                    </td>
+
                   </tr>
                 ))}
+
               </tbody>
 
             </table>
 
-            {/* CTA */}
-            <div className="text-center mt-10">
-              <Link
-                href="/downloads/industrial-automation-syllabus.pdf">
-                <button className="bg-[#801717] text-white px-6 py-3 rounded-lg hover:bg-red-800 transition cursor-pointer ">
-                   Download Syllabus
-                </button>
-              </Link>
-            </div>
           </div>
+
+          {/* BUTTON */}
+          <div className="flex justify-center mt-12">
+
+            <Link
+              href="/industrial-automation-syllabus.pdf"
+              target="_blank"
+              className="bg-[#801717] hover:bg-[#6d0e0e] transition text-white px-10 py-4 rounded-lg text-xl font-semibold flex items-center gap-3"
+            >
+              <Download size={22} />
+              Download Syllabus
+            </Link>
+
+          </div>
+
         </div>
 
       </div>
+    </div>
+
     </section>
   );
 }
