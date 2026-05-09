@@ -8,11 +8,7 @@ import { CircleCheckBig } from 'lucide-react';
 export default function CourseOverviewSection() {
 
   /* =========================
-<<<<<<< HEAD
-      NAV LINKS
-=======
      NAV LINKS
->>>>>>> 876578f365226e3727cb3c1b37a2fa376013ff2b
   ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
