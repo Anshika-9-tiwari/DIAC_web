@@ -30,14 +30,14 @@ const points = [
 export default function CorporateTraining() {
   return (
     <section className="py-18 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 md:px-9 ">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 ">
 
         {/* Heading */}
         <div className="text-center mb-18">
-          <h2 className="text-3xl md:text-5xl font-bold mb-2 playfair">
+          <h2 className="text-3xl md:text-[40px] font-semibold mb-2 playfair">
             Corporate Training <span className="text-[#801717]">&</span> Industry Partners
           </h2>
-          <p className="text-gray-600 text-[20px] py-2 ">
+          <p className="text-gray-600 text-[19px] py-2 ">
             We provide professional training to leading industries
           </p>
         </div>
@@ -47,11 +47,11 @@ export default function CorporateTraining() {
 
           {/* LEFT → Text Content */}
           <div>
-            <h3 className="text-2xl md:text-4xl font-semibold mb-5 text-[#801717] ">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5 text-[#801717] ">
               Industry-Focused Corporate Training
             </h3>
 
-            <p className="text-gray-700 text-[19px] mb-6">
+            <p className="text-gray-700 text-[18px] mb-6">
               DIAC offers specialized corporate training programs designed to
               enhance the technical skills of professionals in industrial automation.
             </p>
@@ -61,10 +61,10 @@ export default function CorporateTraining() {
                 <li key={index} className="flex items-start gap-3">
                   {/* ICON */}
                     <CircleCheckBig
-                      size={20}
+                      size={18}
                       className="text-[#801717]"
                     />
-                  <span className="text-gray-600 text-[16px]">{item}</span>
+                  <span className="text-gray-600 text-[15px]">{item}</span>
                 </li>
               ))}
             </ul>

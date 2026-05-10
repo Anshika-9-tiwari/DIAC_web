@@ -42,12 +42,12 @@ export default function TopCourses() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wide text-gray-900">
           Our Top-Demand Courses
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 mb-12 max-w-2xl text-sm">
+        <p className="text-gray-600 mb-12 max-w-2xl text-[16px]">
           From foundational PLC programming to advanced Robotics, our courses
           cover the full spectrum of modern Industrial Automation.
         </p>

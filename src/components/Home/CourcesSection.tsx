@@ -63,7 +63,7 @@ export default function CoursesSection() {
           viewport={{ once: true }}
           className="text-center mb-12 md:mb-18"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6 playfair">
+          <h2 className="text-4xl md:text-[40px] font-semibold mb-6 playfair">
             <span className="text-red-800 ">DIAC</span> Courses
           </h2>
           <p className="text-gray-700 text-[18px]">

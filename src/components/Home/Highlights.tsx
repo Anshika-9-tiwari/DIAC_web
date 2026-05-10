@@ -40,7 +40,7 @@ export default function Highlights() {
             return (
               <div
                 key={index}
-                className={`flex flex-col items-center p-6 m-3  ${
+                className={`flex flex-col items-center p-6 md:p-2 m-3  ${
                     index !== highlights.length - 1 ? "md:border-r-2 md:border-gray-200" : ""
                     }`}
               >

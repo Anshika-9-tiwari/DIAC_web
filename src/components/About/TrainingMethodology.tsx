@@ -53,18 +53,18 @@ export default function TrainingMethodology() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wide text-gray-800">
           Training Methodology is Our Key Differentiator
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 mb-12 max-w-2xl text-sm">
+        <p className="text-gray-600 mb-12 max-w-2xl text-[16px]">
           Our programmes are built on a foundation of superior learning combined
           with pragmatism — designed by subject matter experts and seasoned industry leaders.
         </p>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 border border-gray-200">
+        <div className="grid md:grid-cols-3 shadow-sm gap-3">
 
           {items.map((item, index) => {
             const Icon = item.icon;
@@ -72,11 +72,11 @@ export default function TrainingMethodology() {
             return (
               <div
                 key={index}
-                className="p-6 border-b border-r border-gray-200"
+                className="p-6 border-b border-r border-gray-200 shadow-sm"
               >
                 {/* Icon */}
                 <div className="mb-3">
-                  <Icon size={22} className="text-[#801717]" />
+                  <Icon size={25} className="text-[#801717]" />
                 </div>
 
                 {/* Title */}

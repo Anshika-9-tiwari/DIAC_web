@@ -69,7 +69,7 @@ export default function Stats() {
           viewport={{ once: true }}
           className="text-center  mb-18"
         >
-          <h2 className="text-[21px] md:text-[35px] font-bold playfair">
+          <h2 className="text-[21px] md:text-[30px] font-bold playfair">
             Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2 playfair">Tommorrow</span>
           </h2>
         </motion.div>

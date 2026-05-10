@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function WhoWeAre() {
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-15 items-center">
 
         {/* LEFT IMAGE */}
         <div className="relative">
@@ -37,22 +37,22 @@ export default function WhoWeAre() {
           </h2>
 
           {/* Paragraphs */}
-          <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-            DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC), popularly known
+          <p className="text-gray-600 mb-4 text-[16px] leading-relaxed">
+           <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>, popularly known
             as "DIAC", was incorporated in December 2008 with a core objective
             to impart training in cutting-edge Industrial Automation Technologies
             to fresh engineers, bridging the ever-growing demand-supply gap for
             skilled automation engineers.
           </p>
 
-          <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+          <p className="text-gray-600 mb-4 text-[16px] leading-loose">
             With over 15 years of standing in the industry, DIAC has trained and
             placed 10,000+ students across leading MNCs in the field of Industrial
             Automation. Our alumni work with India’s and the world’s most respected
             manufacturing and automation companies.
           </p>
 
-          <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+          <p className="text-gray-600 mb-6 text-[16px] leading-relaxed">
             We also offer customised training programmes designed for working
             professionals seeking to expand their domain knowledge and keep pace
             with rapid advancements in the manufacturing and robotics sectors.
@@ -72,7 +72,7 @@ export default function WhoWeAre() {
             ].map((item, i) => (
               <span
                 key={i}
-                className="px-3 py-1 border border-gray-300 text-gray-700"
+                className="px-3 py-1 border border-gray-300 text-red-900"
               >
                 {item}
               </span>
