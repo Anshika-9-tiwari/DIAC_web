@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function ContactCTA() {
   return (
-    <section className="py-16 bg-white text-center px-5">
-      <div className="max-w-3xl border border-gray-300 py-5 rounded-2xl shadow-xl hover:shadow-2xl mx-auto px-6">
+    <section className="py-16 bg-white text-center px-8">
+      <div className="max-w-3xl border border-gray-300 py-5 rounded-2xl shadow-xl hover:shadow-2xl mx-auto px-6 ">
 
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -14,7 +14,7 @@ export default function ContactCTA() {
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-6 text-[18px]">
           Contact our experts to get the right guidance for your career in industrial automation.
         </p>
 
@@ -23,12 +23,12 @@ export default function ContactCTA() {
           
           <div className="flex items-center gap-2">
             <Phone size={18} className="text-[#801717]" />
-            <span>+91 99534 89987</span>
+            <span className="text-[18px]">+91 99534 89987</span>
           </div>
 
           <div className="flex items-center gap-2">
             <Mail size={18} className="text-[#801717]" />
-            <span>training@diac.co.in</span>
+            <span className="text-[18px]">training@diac.co.in</span>
           </div>
 
         </div>

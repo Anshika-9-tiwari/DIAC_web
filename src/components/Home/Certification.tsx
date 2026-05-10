@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { CircleCheckBig } from "lucide-react";
 
 export default function Certification() {
   return (
-    <section className="py-16 bg-gradient-to-r from-white via-gray-100 to-white">
-      <div className="max-w-7xl mx-auto px-5 ">
+    <section className="py-15 bg-gradient-to-r from-white via-gray-100 to-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         {/* Heading */}
         <motion.div
@@ -16,16 +17,16 @@ export default function Certification() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-3">
-            Certification & Recognition
+          <h2 className="text-[25px] md:text-4xl font-bold mb-3">
+            Certification <span className="text-[#801717]">&</span> Recognition
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-700 md:text-[18px]">
             Our certifications are recognized by industry leaders
           </p>
         </motion.div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Left - Certificate Image */}
           <motion.div
@@ -51,25 +52,57 @@ export default function Certification() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-[#801717]">
+            <h3 className="text-3xl font-semibold mb-4 text-[#801717]">
               Industry Recognized Certification
             </h3>
 
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 text-[18px] mb-4">
               At DIAC, we provide industry-recognized certifications that
               validate your skills in Industrial Automation, PLC, SCADA, and Robotics.
             </p>
 
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 text-[18px] mb-6">
               Our certification ensures that you are job-ready and capable of
               working in real industrial environments with confidence.
             </p>
 
             <ul className="space-y-2 text-gray-700">
-              <li>✔ Recognized by top industries</li>
-              <li>✔ Adds value to your resume</li>
-              <li>✔ Practical skill validation</li>
-              <li>✔ Better placement opportunities</li>
+              <li className="flex items-start gap-2 text-[16px]"> 
+                <span> {/* ICON */}
+                  <CircleCheckBig
+                    size={20}
+                    className="text-[#801717]"
+                  />
+                </span> 
+                    Recognized by top industries
+                </li>
+              <li className="flex items-start gap-2 text-[16px]">
+                 <span> {/* ICON */}
+                    <CircleCheckBig
+                      size={20}
+                      className="text-[#801717]"
+                    />
+                  </span> 
+                     Adds value to your resume
+                </li>
+              <li className="flex items-start gap-2 text-[16px]"> 
+                <span> {/* ICON */}
+                    <CircleCheckBig
+                      size={20}
+                      className="text-[#801717]"
+                    />
+                </span> 
+                     Practical skill validation
+              </li>
+              <li className="flex items-start gap-2 text-[16px]">
+                 <span> {/* ICON */}
+                    <CircleCheckBig
+                      size={20}
+                      className="text-[#801717]"
+                    />
+                  </span> 
+                     Better placement opportunities
+              </li>
             </ul>
           </motion.div>
 

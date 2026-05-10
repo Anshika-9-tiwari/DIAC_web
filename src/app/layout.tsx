@@ -6,7 +6,13 @@ import Footer from "@/components/Footer/footer";
 import Topbar from "@/components/Topbar/Topbar";
 import Trusted from "@/components/trustedClient/Trusted";
 import { Poppins } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -60,7 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${playfair.variable} antialiased`}
       >
         <Topbar />
         <Navbar />

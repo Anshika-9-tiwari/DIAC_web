@@ -10,16 +10,16 @@ export default function Masterclass() {
 
         {/* Left Content */}
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-5">
             Join Our Free Masterclass
           </h2>
 
-          <p className="mb-6 text-gray-200">
+          <p className="mb-8 text-gray-200">
             Kickstart your career in Industrial Automation with our expert-led
             FREE masterclass. Learn PLC, SCADA, and Robotics basics with live demos.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-8">
             <Link
               href="/contact"
               className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition text-center"

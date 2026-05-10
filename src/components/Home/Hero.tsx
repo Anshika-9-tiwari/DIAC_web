@@ -20,14 +20,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-16 lg:py-16 h-full flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 w-full items-center">
+      <div className="relative max-w-7xl mx-auto px-6  md:px-8  py-16 lg:py-16 h-full flex items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-0  w-full items-center">
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-10 leading-tight ">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold mb-10 playfair leading-tight ">
               Become Certified in{" "}
-              <span className="text-red-900">
+              <span className="text-red-900 playfair">
                 Industrial Automation
               </span>
             </h1>

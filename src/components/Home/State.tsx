@@ -67,10 +67,10 @@ export default function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-18"
+          className="text-center  mb-18"
         >
-          <h2 className="text-3xl font-bold">
-            Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2">Tommorrow</span>
+          <h2 className="text-[21px] md:text-[35px] font-bold playfair">
+            Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2 playfair">Tommorrow</span>
           </h2>
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function Stats() {
                 >
                 <Icon size={40} className="mb-3" />
 
-                <h3 className="text-2xl md:text-3xl font-bold font-serif">
+                <h3 className="text-2xl md:text-3xl font-bold font-serif playfair">
                   {item.value}
                 </h3>
 
@@ -105,7 +105,7 @@ export default function Stats() {
           })}
 
         </div>
-        {/* Download Brochure Button */}
+        {/* Download Brochure Button
         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function Stats() {
             >
                 Download Brochure
             </a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

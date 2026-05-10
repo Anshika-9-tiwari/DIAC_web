@@ -43,7 +43,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4">
 
         {/* Heading */}
         <motion.div
@@ -53,10 +53,10 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             What Our Students Say
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-[18px]">
             Real reviews from our successful students
           </p>
         </motion.div>

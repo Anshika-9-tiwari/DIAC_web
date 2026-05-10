@@ -52,8 +52,8 @@ const item = {
 
 export default function CoursesSection() {
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-8xl mx-auto px-20">
+    <section className="py-8  bg-white mb-8">
+      <div className="max-w-8xl mx-auto px-8 md:px-20">
 
         {/* Heading Animation */}
         <motion.div
@@ -61,10 +61,10 @@ export default function CoursesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-18"
+          className="text-center mb-12 md:mb-18"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            <span className="text-red-800">DIAC</span> Courses
+          <h2 className="text-4xl md:text-5xl font-semibold mb-6 playfair">
+            <span className="text-red-800 ">DIAC</span> Courses
           </h2>
           <p className="text-gray-700 text-[18px]">
             Explore industry-oriented courses designed for real-world skills
