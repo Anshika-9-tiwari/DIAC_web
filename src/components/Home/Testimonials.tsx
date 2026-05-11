@@ -1,95 +1,116 @@
 "use client";
 
 import Slider from "react-slick";
-import { motion } from "framer-motion";
-import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Rahul Sharma",
-    review:
-      "Best institute for industrial automation. Trainers are very supportive and placement assistance is great.",
+    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
   },
+
   {
-    name: "Ankit Verma",
-    review:
-      "Learned PLC and SCADA with real projects. Highly recommended for beginners and professionals.",
+    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
   },
+
   {
-    name: "Priya Singh",
-    review:
-      "Amazing experience! Practical training and excellent faculty.",
+    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
   },
+
   {
-    name: "Aman Gupta",
-    review:
-      "Got placed after completing course. DIAC really helped me build my career.",
+    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
+  },
+
+  {
+    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
   },
 ];
 
 export default function Testimonials() {
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3500,
+
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#f5f5f5] overflow-hidden">
+
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
-            What Our Students Say
-          </h2>
-          <p className="text-gray-600 text-[18px]">
-            Real reviews from our successful students
-          </p>
-        </motion.div>
+        {/* HEADING */}
+        <div className="text-center mb-12">
 
-        {/* Slider */}
+          <p className="text-xl md:text-2xl font-medium text-gray-700 mb-4">
+            Real Experiences, Real Achievements
+          </p>
+
+          <h2 className="text-3xl md:text-4xl font-semibold leading-tight max-w-5xl mx-auto">
+            Join the millions of students who have achieved
+            <span className="block text-red-900">
+              Remarkable Success
+            </span>
+          </h2>
+
+        </div>
+
+        {/* TESTIMONIAL SLIDER */}
         <Slider {...settings}>
+
           {testimonials.map((item, index) => (
+
             <div key={index} className="px-3">
-              <motion.div
-                whileHover={{ y: -6 }}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition h-full"
-              >
-                {/* Stars */}
-                <div className="flex mb-3 text-red-900">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={18} fill="currentColor" />
-                  ))}
+
+              <div className="bg-white rounded-md overflow-hidden shadow-sm">
+
+                {/* YOUTUBE VIDEO */}
+                <div className="relative h-[420px]">
+
+                  <iframe
+                    src={item.video}
+                    title="Student Testimonial"
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+
                 </div>
 
-                {/* Review */}
-                <p className="text-gray-600 text-sm mb-4">
-                  "{item.review}"
-                </p>
+              </div>
 
-                {/* Name */}
-                <h4 className="font-semibold text-[#801717]">
-                  {item.name}
-                </h4>
-              </motion.div>
             </div>
           ))}
+
         </Slider>
+
       </div>
+
     </section>
   );
 }

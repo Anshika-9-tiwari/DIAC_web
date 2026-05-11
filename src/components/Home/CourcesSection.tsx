@@ -2,127 +2,186 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+
+const categories = [
+  {
+    name: "Top Courses",
+    link: "/courses",
+  },
+
+  {
+    name: "Industrial Automation Training",
+    link: "/courses/industrial-automation",
+  },
+
+  {
+    name: "PLC Training",
+    link: "/courses/plc-training",
+  },
+
+  {
+    name: "HMI Training",
+    link: "/courses/scada-and-hmi",
+  },
+
+  {
+    name: "Drives & Motors",
+    link: "/courses/drives-and-motors",
+  },
+
+  {
+    name: "Summer/Winter Trainings",
+    link: "/courses/summer-winter-training",
+  },
+
+  {
+    name: "Panel Designing & AutoCAD",
+    link: "/courses/panel-designing-and-autocad",
+  },
+
+  {
+    name: "SCADA Training",
+    link: "/courses/scada-and-hmi",
+  },
+];
 
 const courses = [
   {
     title: "Industrial Automation Training",
-    image: "/hero-banner.jpg",
+    image: "/training-bnner.jpg",
     duration: "6 Months",
+    students: "50k Students",
     desc: "Hands-on training with PLC, SCADA, HMI & Industrial Projects",
-    link: "/courses/industrial-training",
+    link: "/courses/industrial-automation",
   },
+
   {
-    title: "PLC Programming",
+    title: "PLC Programming Training",
     image: "/training-bnner.jpg",
     duration: "3 Months",
+    students: "20k Students",
     desc: "Learn PLC programming with real-time industrial applications",
     link: "/courses/plc-training",
   },
+
   {
-    title: "SCADA & HMI",
-    image: "/hero-banner.jpg",
-    duration: "2 Months",
-    desc: "Master SCADA systems and HMI design with live projects",
-    link: "/courses/scada",
-  },
-  {
-    title: "Robotics Training",
+    title: "SCADA & HMI Training",
     image: "/training-bnner.jpg",
     duration: "4 Months",
-    desc: "Learn industrial robotics and automation systems",
-    link: "/courses/robotics",
+    students: "14k Students",
+    desc: "Master SCADA systems and HMI design with live projects",
+    link: "/courses/scada-and-hmi",
+  },
+
+  {
+    title: "Drives & Motors Training",
+    image: "/training-bnner.jpg",
+    duration: "6 Months",
+    students: "60k Students",
+    desc: "Learn industrial drives, motors and automation systems",
+    link: "/courses/drives-and-motors",
   },
 ];
 
-// Animation Variants
-const container = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
 export default function CoursesSection() {
   return (
-    <section className="py-8  bg-white mb-8">
-      <div className="max-w-8xl mx-auto px-8 md:px-20">
+    <section className="py-12 bg-white mb-5">
 
-        {/* Heading Animation */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-12 md:mb-18"
-        >
-          <h2 className="text-4xl md:text-[40px] font-semibold mb-6 playfair">
-            <span className="text-red-800 ">DIAC</span> Courses
+      <div className="max-w-7xl mx-auto px-8">
+
+        {/* HEADING */}
+        <div className="mb-12 text-center">
+
+          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-8">
+            DAIC Course & Training Programs
           </h2>
-          <p className="text-gray-700 text-[18px]">
-            Explore industry-oriented courses designed for real-world skills
-          </p>
-        </motion.div>
 
-        {/* Grid Animation */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
+          {/* CATEGORY BUTTONS */}
+          <div className="flex flex-wrap justify-center gap-3">
+
+            {categories.map((item, index) => (
+              <Link
+                key={index}
+                href={item.link}
+                className={`px-3 md:px-5 py-[6px] rounded-xl border border-gray-500 text-sm md:text-[14px] font-semibold transition
+                  
+                  ${
+                    index === 0
+                      ? "bg-[#8b0000] text-white border-[#8b0000]"
+                      : "bg-white border-black hover:bg-[#8b0000] hover:text-white hover:border-[#8b0000]"
+                  }
+                `}
+              >
+                {item.name}
+              </Link>
+            ))}
+
+          </div>
+
+        </div>
+
+        {/* COURSES GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {courses.map((course, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={item}
-              whileHover={{ y: -8 }}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 group"
+              className="bg-[#f7f7f7] rounded-md overflow-hidden border border-gray-200 hover:shadow-lg transition"
             >
-              {/* Image */}
-              <div className="relative h-50 overflow-hidden">
+
+              {/* IMAGE */}
+              <div className="relative h-50">
+
                 <Image
                   src={course.image}
                   alt={course.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition duration-300"
+                  className="object-cover"
                 />
+
               </div>
 
-              {/* Content */}
-              <div className="p-4">
-                <h3 className="font-semibold text-xl mb-2">
+              {/* CONTENT */}
+              <div className="p-5">
+
+                <h3 className="text-xl font-semibold mb-3 leading-snug min-h-[60px]">
                   {course.title}
                 </h3>
 
-                <p className="text-gray-600 text-[16px] mb-3">
+                <p className="text-gray-700 text-sm leading-relaxed mb-3">
                   {course.desc}
                 </p>
 
-                <p className="text-sm font-medium text-[#801717] mb-4">
+                {/* RATING */}
+                <div className="text-red-900 text-sm mb-2">
+                  ★★★★★
+                  <span className="text-gray-600 ml-2 text-xs">
+                    {course.students}
+                  </span>
+                </div>
+
+                {/* DURATION */}
+                <p className="text-[#801717] font-semibold text-sm mb-5">
                   Duration: {course.duration}
                 </p>
 
+                {/* BUTTON */}
                 <Link
                   href={course.link}
-                  className="block text-center bg-[#801717] text-white py-2 rounded-lg hover:bg-red-800 transition"
+                  className="block text-center bg-[#8b0000] text-white py-3 rounded-md font-medium hover:bg-red-900 transition"
                 >
                   View Details
                 </Link>
+
               </div>
-            </motion.div>
+
+            </div>
           ))}
 
-        </motion.div>
+        </div>
+
       </div>
+
     </section>
   );
 }

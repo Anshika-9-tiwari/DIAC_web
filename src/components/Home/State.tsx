@@ -67,11 +67,12 @@ export default function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center  mb-18"
+          className="text-center  mb-15"
         >
-          <h2 className="text-[21px] md:text-[30px] font-bold playfair">
+          <h2 className="text-[21px] md:text-[30px] font-bold playfair mb-3">
             Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2 playfair">Tommorrow</span>
           </h2>
+          <p className="text-[18px]">DIAC Learners Have transformed their lives with groundbreaking career advancements in tech</p>
         </motion.div>
 
         {/* Stats Grid */}

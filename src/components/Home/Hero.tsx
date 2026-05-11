@@ -7,17 +7,19 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[650px] lg:min-h-[550px]">
 
-      {/* Background Image */}
-      <Image
-        src="/training-bnner.jpg"
-        alt="DIAC Banner"
-        fill
-        className="object-cover"
-        priority
-      />
+      {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/vdo/Automation Institute.mp4" type="video/mp4" />
+        </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/30 to-black/30"></div>
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-8  md:px-10  py-16 lg:py-16 h-full flex items-center">
