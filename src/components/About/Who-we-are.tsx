@@ -37,7 +37,7 @@ export default function WhoWeAre() {
           </h2>
 
           {/* Paragraphs */}
-          <p className="text-gray-600 mb-4 text-[16px] leading-relaxed">
+          <p className="text-gray-600 mb-4 text-[15px] leading-relaxed">
            <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>, popularly known
             as "DIAC", was incorporated in December 2008 with a core objective
             to impart training in cutting-edge Industrial Automation Technologies

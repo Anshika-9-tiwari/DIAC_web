@@ -8,19 +8,19 @@ const testimonials = [
   },
 
   {
-    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
+    video: "https://www.youtube.com/embed/2mek60hc-gI",
   },
 
   {
-    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
+    video: "https://www.youtube.com/embed/C6v2KMhImEI",
   },
 
   {
-    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
+    video: "https://www.youtube.com/embed/zTmfSWF9csQ",
   },
 
   {
-    video: "https://www.youtube.com/embed/lowsZ4Ywcdc",
+    video: "https://www.youtube.com/embed/47Gyfzy5UTM",
   },
 ];
 

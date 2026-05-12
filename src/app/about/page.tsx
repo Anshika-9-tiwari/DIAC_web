@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PlacementRecord/>
       <Testimonials/>
       <ContactSection/>
-      <FAQSection/>
+      {/* <FAQSection/> */}
     </main>
   );
 }

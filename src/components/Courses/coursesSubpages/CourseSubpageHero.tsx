@@ -229,26 +229,16 @@ export default function CourseSubpageHero() {
         <div className="flex flex-col items-center">
 
           {/* VIDEO */}
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-full h-[280px] md:h-[320px] rounded-lg overflow-hidden shadow-lg">
 
-            <Image
-              src="/courses/plc-img.jpg"
-              alt="Video"
-              width={700}
-              height={450}
-              className="w-full object-cover"
-            />
-
-            {/* PLAY BUTTON */}
-            <button className="absolute inset-0 flex items-center justify-center">
-
-              <div className="w-24 h-24 rounded-full bg-white/95 flex items-center justify-center shadow-xl">
-
-                <div className="ml-1 w-0 h-0 border-l-[24px] border-l-[#3b6fc4] border-y-[16px] border-y-transparent"></div>
-
-              </div>
-
-            </button>
+            {/* YouTube Embed */}
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/R4eJncL7bP8"
+              title="Corporate Training Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
 
           </div>
 

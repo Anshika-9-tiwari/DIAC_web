@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ContactCTA() {
   return (
-    <section className="py-16 bg-white text-center px-8">
+    <section className="py-14 bg-white text-center px-8">
       <div className="max-w-3xl border border-gray-300 py-5 rounded-2xl shadow-xl hover:shadow-2xl mx-auto px-6 ">
 
         {/* Heading */}

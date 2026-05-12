@@ -10,6 +10,8 @@ import Masterclass from "@/components/Home/Free Masterclass";
 import Certification from "@/components/Home/Certification";
 import ContactCTA from "@/components/Home/ContactCTA";
 import Trusted from "@/components/trustedClient/Trusted";
+import JobGuaranteePrograms from "@/components/Home/JobGuranteedProgram";
+import OurServices from "@/components/Home/OurServices";
 
 export default function Home() {
   return (
@@ -21,10 +23,12 @@ export default function Home() {
       <CoursesSection/>
       <State/>
       <CorporateTraining/>
+      <OurServices/>
       <WhyChooseUs/>
       <Testimonials/>
       <Masterclass/>
       <Certification/>
+      <JobGuaranteePrograms/>
       <ContactCTA/>
     </main>
   );

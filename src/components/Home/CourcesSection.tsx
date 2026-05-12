@@ -144,7 +144,7 @@ export default function CoursesSection() {
               {/* CONTENT */}
               <div className="p-5">
 
-                <h3 className="text-xl font-semibold mb-3 leading-snug min-h-[60px]">
+                <h3 className="text-xl font-semibold mb-1 md:mb-3  leading-snug min-h-[60px]">
                   {course.title}
                 </h3>
 

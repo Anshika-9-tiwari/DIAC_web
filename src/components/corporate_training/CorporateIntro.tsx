@@ -43,7 +43,7 @@ export default function CorporateIntro() {
             {/* YouTube Embed */}
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/I-nmYGmcY9I"
               title="Corporate Training Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
