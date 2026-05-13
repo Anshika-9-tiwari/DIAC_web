@@ -20,6 +20,7 @@ export default function Home() {
       <Hero />
       <Highlights />
       <Companies/>
+      <JobGuaranteePrograms/>
       <CoursesSection/>
       <State/>
       <CorporateTraining/>
@@ -28,7 +29,7 @@ export default function Home() {
       <Testimonials/>
       <Masterclass/>
       <Certification/>
-      <JobGuaranteePrograms/>
+      
       <ContactCTA/>
     </main>
   );
