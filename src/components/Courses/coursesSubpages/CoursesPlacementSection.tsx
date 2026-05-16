@@ -72,7 +72,7 @@ const batchData = [
 
 export default function PlacementSection() {
   return (
-    <section className="bg-gradient-to-b from-[#eef3fb] to-white py-20">
+    <section id="placement" className="bg-gradient-to-b from-[#eef3fb] to-white py-20">
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -171,7 +171,7 @@ export default function PlacementSection() {
               >
 
                 {/* TOP */}
-                <div className="bg-[#eef3fb] px-8 py-4 flex items-center justify-between">
+                <div className="bg-[#eef3fb] px-4 md:px-8 py-4 flex items-center justify-between">
 
                   <div className="flex items-center gap-5">
 
@@ -183,13 +183,13 @@ export default function PlacementSection() {
                       className="rounded-full object-cover"
                     />
 
-                    <h3 className="text-xl font-semibold text-[#0b1f3a]">
+                    <h3 className="text-md md:text-xl font-semibold text-[#0b1f3a]">
                       {item.name}
                     </h3>
 
                   </div>
 
-                  <div className="flex items-center gap-2 text-2xl font-bold">
+                  <div className="flex items-center gap-2 text-lg md:text-2xl font-bold">
 
                     <span className="text-red-900">
                       {item.hike}
@@ -267,7 +267,7 @@ export default function PlacementSection() {
       <div>
 
         {/* HEADING */}
-        <h2 className="text-4xl font-bold text-center text-[#0b1f3a] mb-14">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-[#0b1f3a] mb-14">
           Batches Timing for Industrial Automation Course
         </h2>
 
@@ -340,7 +340,7 @@ export default function PlacementSection() {
             <Link
               href="/industrial-automation-syllabus.pdf"
               target="_blank"
-              className="bg-[#801717] hover:bg-[#6d0e0e] transition text-white px-10 py-4 rounded-lg text-xl font-semibold flex items-center gap-3"
+              className="bg-[#801717] hover:bg-[#6d0e0e] transition text-white px-10 py-4  rounded-lg  md:text-xl font-semibold flex items-center gap-3"
             >
               <Download size={22} />
               Download Syllabus

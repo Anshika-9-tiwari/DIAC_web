@@ -13,7 +13,7 @@ export default function CourseOverviewSection() {
   const navItems = [
     { label: "Overview", href: "#overview" },
     { label: "Features", href: "#features" },
-    { label: "Placements", href: "#placements" },
+    { label: "Placements", href: "#placement" },
     { label: "Certification", href: "#certification" },
     { label: "Curriculum", href: "#curriculum" },
     { label: "Projects", href: "#projects" },
@@ -92,7 +92,7 @@ export default function CourseOverviewSection() {
           <div>
 
             {/* TITLE */}
-            <h2 className="text-4xl font-bold text-[#111827] mb-8 mt-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 mt-8 leading-tight">
               Industrial Automation Course Overview
             </h2>
 
@@ -124,7 +124,7 @@ export default function CourseOverviewSection() {
             <div id="features">
 
               {/* HEADING */}
-              <h2 className="text-4xl font-bold text-[#111827] mb-15 ">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-15 ">
                 Key Highlights of Industrial Automation Course
               </h2>
 
@@ -234,7 +234,7 @@ export default function CourseOverviewSection() {
             {/* CORPORATE TRAINING */}
             <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 text-center ">
 
-              <h3 className="text-3xl font-bold mb-5">
+              <h3 className="text-2xl md:text-3xl font-bold mb-5">
                 Corporate Training
               </h3>
 
