@@ -28,7 +28,7 @@ const companyLogos = [
 const placementHighlights = [
   {
     name: "Rahul Sharma",
-    image: "/Placedstudent/Raymond.jpg",
+    image: "/Placedstudent/raymond.jpg",
     hike: "120%",
     previousCompany: "Diploma Engineer",
     previousRole: "Trainee",
@@ -39,7 +39,7 @@ const placementHighlights = [
 
   {
     name: "Aman Verma",
-    image: "/Placedstudent/Raymond.jpg",
+    image: "/Placedstudent/raymond.jpg",
     hike: "95%",
     previousCompany: "ITI Electrician",
     previousRole: "Technician",
