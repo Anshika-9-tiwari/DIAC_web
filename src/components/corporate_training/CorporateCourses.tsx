@@ -126,11 +126,11 @@ export default function CorporateCourses() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-3">
+        <div className="text-center mb-12 md:mb-18">
+          <h2 className="text-2xl md:text-4xl font-bold text-[#0b1f3a] mb-3">
             Corporate Training Solutions (What We Offer)
           </h2>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-[18px] max-w-2xl mx-auto">
             Discover courses across different domains
           </p>
         </div>

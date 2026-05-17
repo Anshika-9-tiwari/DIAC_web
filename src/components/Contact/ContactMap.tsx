@@ -4,8 +4,8 @@ import { MapPin, Phone, Mail, Building } from "lucide-react";
 
 export default function ContactMapSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-black to-gray-800 text-white">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
+    <section  className="py-20 bg-[#fbfcff] text-gray-800 shadow-lg  border border-white/10">
+      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT - MAP */}
         <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg">
@@ -20,18 +20,18 @@ export default function ContactMapSection() {
         <div>
 
           {/* Top Text */}
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4">
             Dynamic Institute of Automation & Controls
           </h2>
 
-          <p className="text-gray-300 mb-8">
+          <p className="text-gray-600 mb-8">
             We are focused on delivering industry-oriented training in
             Industrial Automation, helping students and professionals
             build real-world skills.
           </p>
 
           {/* Card */}
-          <div className="bg-[#080b13] rounded-2xl p-6 border border-white/10 shadow-lg">
+          <div className="bg-white/25 rounded-2xl p-6 border border-red-100 shadow-lg">
 
             <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
               <Building className="text-[#801717]" />
@@ -41,7 +41,7 @@ export default function ContactMapSection() {
             {/* Address */}
             <div className="flex gap-3 mb-5">
               <MapPin className="text-[#801717]" />
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-600 text-md">
                 C-65, Sector 2, Noida, Uttar Pradesh – 201301
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function ContactMapSection() {
             {/* Phone */}
             <div className="flex gap-3 mb-5">
               <Phone className="text-[#801717]" />
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-600 text-md">
                 +91 99534 89987
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function ContactMapSection() {
             {/* Email */}
             <div className="flex gap-3">
               <Mail className="text-[#801717]" />
-              <p className="text-gray-300 text-sm">
+              <p className="text-gray-600 text-md">
                 training@diac.co.in
               </p>
             </div>

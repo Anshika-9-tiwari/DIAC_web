@@ -23,7 +23,7 @@ export default function CorporateTestimonials() {
   ];
 
   return (
-    <section className="py-20 bg-[#f7f7f7]">
+    <section id="reviews" className="py-20 bg-[#fbfcff]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}

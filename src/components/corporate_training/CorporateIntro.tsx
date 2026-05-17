@@ -3,7 +3,7 @@
 export default function CorporateIntro() {
   return (
     <section className="py-20 bg-[#f7f7f7]">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
 
         {/* LEFT */}
         <div className="max-w-xl">
@@ -14,19 +14,19 @@ export default function CorporateIntro() {
           </span>
 
           {/* Heading */}
-          <h2 className="text-4xl font-bold mt-5 mb-4 text-[#0b1f3a] leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-[#0b1f3a] leading-tight">
             Corporate Training Solutions
           </h2>
 
           {/* Paragraph 1 */}
-          <p className="text-gray-600 mb-4 text-[15px] leading-relaxed">
+          <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">
             Organisations across the world are transforming their workforce
             to drive innovation, productivity, and growth. Upskilling and
             reskilling are key to achieving this transformation.
           </p>
 
           {/* Paragraph 2 */}
-          <p className="text-gray-500 text-sm leading-relaxed">
+          <p className="text-gray-600 text-[18px] leading-relaxed">
             DIAC delivers corporate training solutions through a structured,
             assessment-led model. Our approach ensures that every engagement is
             aligned with role requirements, competency standards, and measurable

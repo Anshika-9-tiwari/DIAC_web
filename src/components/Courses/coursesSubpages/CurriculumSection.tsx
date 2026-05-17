@@ -8,6 +8,7 @@ import {
   MonitorPlay,
   Hammer,
 } from "lucide-react";
+import Link from "next/link";
 
 const curriculumData = [
   {
@@ -15,7 +16,7 @@ const curriculumData = [
     description:
       "Learn industrial PLC programming, ladder logic, automation systems, troubleshooting and real-time project implementation used in industries.",
 
-    modules: "13 Modules",
+    modules: "5 Modules",
 
     topics: [
       "Introduction to PLC",
@@ -31,7 +32,7 @@ const curriculumData = [
     description:
       "Master SCADA systems, HMI designing, industrial monitoring systems and real-world automation interfaces.",
 
-    modules: "10 Modules",
+    modules: "6 Modules",
 
     topics: [
       "SCADA Fundamentals",
@@ -39,6 +40,20 @@ const curriculumData = [
       "Alarm Management",
       "Data Logging",
       "Industrial Visualization",
+    ],
+  },
+  {
+    title: "DCS & Robotics Training",
+    description:
+      "Explore Distributed Control Systems and Robotics in industrial automation environments.",
+
+    modules: "4 Modules",
+
+    topics: [
+      "DCS Fundamentals",
+      "Robotics Basics",
+      "Industrial Networking",
+      "Control Strategies",
     ],
   },
 ];
@@ -80,7 +95,7 @@ export default function CurriculumSection() {
               return (
                 <div
                   key={index}
-                  className="bg-[#f8fbfe] border border-[#dbe4f0] rounded-sm overflow-hidden"
+                  className="bg-[#fbfcff] border border-[#dbe4f0] rounded-sm overflow-hidden"
                 >
 
                   {/* TOP CONTENT */}
@@ -108,10 +123,10 @@ export default function CurriculumSection() {
                     onClick={() =>
                       setOpenIndex(isOpen ? -1 : index)
                     }
-                    className="w-full border-t border-[#dbe4f0] px-10 py-8 flex items-center justify-between bg-[#f5f8fc]"
+                    className="w-full border-t border-[#dbe4f0] px-10 py-8 flex items-center justify-between bg-[#fbfcff]"
                   >
 
-                    <h3 className="text-[18px] md:text-[25px] font-semibold">
+                    <h3 className="text-[16px] md:text-[22px] font-semibold">
                       Course Content
                     </h3>
 
@@ -149,6 +164,7 @@ export default function CurriculumSection() {
                           <div className="flex gap-6">
 
                             {/* LINE */}
+                            
                             <div className="flex flex-col items-center">
 
                               <div className="w-4 h-4 rounded-full bg-[#934343]"></div>
@@ -280,11 +296,14 @@ export default function CurriculumSection() {
 
               </div>
 
-              {/* BUTTON */}
-              <button className="w-full bg-[#801717] hover:bg-[#6a1212] text-white text-2xl font-semibold py-6 rounded-xl transition">
-                Download Brochure
-              </button>
-
+               {/* DOWNLOAD BUTTON */}
+                <Link
+                  href="/brochure/industrial-automation.pdf"
+                  target="_blank"
+                  className="block text-center bg-[#801717] hover:bg-[#6a1212] text-white text-[22px] font-semibold py-6 rounded-xl transition"
+                >
+                  Download Brochure
+                </Link>
             </div>
 
           </div>

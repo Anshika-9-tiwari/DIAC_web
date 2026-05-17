@@ -38,7 +38,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-[#f5f1ec]">
+    <section id="faqs" className="py-20 bg-[#fbfcff]">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}
