@@ -20,10 +20,10 @@ const companies = [
 ];
 
 const points = [
-  "Customized industrial training programs",
-  "Hands-on experience with live projects",
-  "Training for working professionals",
-  "Advanced PLC, SCADA & Robotics modules",
+  "Customized Corporate Training Programs",
+  "Hands-on Training with Live Projects",
+  "PLC, SCADA & HMI Training",
+  "Training for Working Professionals",
   "Industry expert trainers",
 ];
 
@@ -48,12 +48,11 @@ export default function CorporateTraining() {
           {/* LEFT → Text Content */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-5 text-[#801717] ">
-              Industry-Focused Corporate Training
+              Corporate Industrial Training Programs
             </h3>
 
             <p className="text-gray-700 text-[18px] mb-6">
-              DIAC offers specialized corporate training programs designed to
-              enhance the technical skills of professionals in industrial automation.
+              DIAC provides customized industrial automation training programs designed for companies, working professionals, and technical teams.
             </p>
 
             <ul className="space-y-3">
@@ -72,7 +71,7 @@ export default function CorporateTraining() {
             {/* Optional CTA */}
             <Link href="/contact">
               <button className="mt-8 bg-[#801717] text-white px-6 py-3 uppercase rounded-md hover:bg-red-800 transition">
-                Request A Free Demo
+                Talk to Our Experts 
               </button>
             </Link>
           </div>

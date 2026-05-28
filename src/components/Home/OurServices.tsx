@@ -117,13 +117,13 @@ export default function OurServices() {
                     <Icon
                       size={58}
                       strokeWidth={1.8}
-                      className="text-black"
+                      className="text-red-900"
                     />
 
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="text-[18px] font-bold uppercase leading-[1.5] text-[#333] whitespace-pre-line hover:text-red-900">
+                  <h3 className="text-[18px] font-semibold uppercase leading-[1.5] text-[#333 whitespace-pre-line hover:text-red-900">
 
                     {service.title}
 

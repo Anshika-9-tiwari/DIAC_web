@@ -11,19 +11,19 @@ export default function ContactForm() {
       <div className="h-45"></div>
 
       {/* OVERLAP CARD */}
-      <div className="max-w-7xl mx-auto px-6 absolute top-35  left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
+      <div className="max-w-7xl mx-auto px-6 absolute top-40  left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2">
 
           {/* LEFT SIDE */}
           <div className="p-10 bg-[#f5f5f5] flex flex-col justify-between">
 
             <div>
-              <h2 className="text-2xl font-semibold mb-8 text-[#0b1f3a]">
+              <h2 className="text-2xl font-semibold tracking-wide mb-10 text-gray-800">
                 Contact Information
               </h2>
 
               {/* Email */}
-              <div className="flex gap-4 mb-8">
+              <div className="flex gap-4 mb-10">
                 <div className="bg-white p-3 rounded-full shadow">
                   <Mail className="text-[#801717]" />
                 </div>
@@ -34,42 +34,31 @@ export default function ContactForm() {
               </div>
 
               {/* Phone */}
-              <div className="flex gap-4 mb-8">
-                <div className="bg-white p-3 rounded-full shadow">
+              <div className="flex gap-4  items-center">
+                <div className="bg-white p-3 rounded-full shadow ">
                   <Phone className="text-[#801717]" />
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500">CALL US</p>
-                  <p className="font-semibold">+91 99534 89987</p>
-                </div>
-              </div>
-
-              {/* Address */}
-              <div className="flex gap-4 mb-10">
-                <div className="bg-white p-3 rounded-full shadow">
-                  <MapPin className="text-[#801717]" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">LOCATION</p>
-                  <p className="font-semibold text-sm">
-                    C-65, Sector 2, Noida – 201301
-                  </p>
+                  <p className="text-md text-gray-600">CALL US</p>
+                  <p className="font-semibold">Service & Training: +91 99534 89987</p>
+                  <p className="font-semibold">Training: +91 99534 89997</p>
+                  <p className="font-semibold">Corporate Training: +91 97112 87737</p>
                 </div>
               </div>
             </div>
 
             {/* SOCIAL MEDIA */}
             <div>
-              <p className="text-sm text-gray-500 mb-3">FOLLOW US</p>
+              <p className="text-sm text-gray-600 mb-3">FOLLOW US</p>
 
-              <div className="flex gap-4">
+              <div className="flex gap-5">
 
                 <a
                   href="https://wa.me/919953489987"
                   target="_blank"
                   className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
                 >
-                  <FaWhatsapp size={18} />
+                  <FaWhatsapp size={20} />
                 </a>
 
                 <a
@@ -77,7 +66,7 @@ export default function ContactForm() {
                   target="_blank"
                   className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
                 >
-                  <FaInstagram size={18} />
+                  <FaInstagram size={20} />
                 </a>
 
                 <a
@@ -85,7 +74,7 @@ export default function ContactForm() {
                   target="_blank"
                   className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
                 >
-                  <FaLinkedin size={18} />
+                  <FaLinkedin size={20} />
                 </a>
 
               </div>
@@ -100,18 +89,18 @@ export default function ContactForm() {
               Send us a Message
             </h2>
 
-            <form className="space-y-5">
+            <form className="space-y-6">
 
               <div className="grid md:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
+                  className="border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
+                  className="border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
               </div>
 
@@ -119,17 +108,17 @@ export default function ContactForm() {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
+                  className="border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
                 <input
                   type="tel"
                   placeholder="Phone"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
+                  className="border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
               </div>
 
               <select
-                className="w-full border px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-[#801717] bg-white"
+                className="w-full border border-gray-300 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-[#801717] bg-white"
                 defaultValue=""
               >
                 <option value="" disabled>Select Course</option>
@@ -147,7 +136,7 @@ export default function ContactForm() {
               <textarea
                 rows={4}
                 placeholder="Message"
-                className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
+                className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
               ></textarea>
 
               <button

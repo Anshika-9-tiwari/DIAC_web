@@ -21,7 +21,7 @@ export default function Certification() {
             Certification <span className="text-[#801717]">&</span> Recognition
           </h2>
           <p className="text-gray-700 md:text-[18px]">
-            Our certifications are recognized by industry leaders
+            Industry-Recognized Certifications for Career Growth
           </p>
         </motion.div>
 
@@ -56,52 +56,59 @@ export default function Certification() {
               Industry Recognized Certification
             </h3>
 
-            <p className="text-gray-600 text-[18px] mb-4">
-              At DIAC, we provide industry-recognized certifications that
-              validate your skills in Industrial Automation, PLC, SCADA, and Robotics.
+            <p className="text-gray-600 text-[16px] mb-4">
+              At DIAC, we provide professional certification programs designed to validate your practical skills in PLC, SCADA, HMI, VFD, Industrial Automation, and Robotics. Our industry-oriented training ensures students gain real-world technical expertise required in modern industrial environments.
             </p>
 
-            <p className="text-gray-600 text-[18px] mb-6">
-              Our certification ensures that you are job-ready and capable of
-              working in real industrial environments with confidence.
+            <p className="text-gray-600 text-[16px] mb-6">
+              The certification helps students strengthen their professional profile, improve job opportunities, and build confidence for working in automation industries and multinational companies.
             </p>
 
             <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2 text-[16px]"> 
+              <li className="flex items-start gap-2 text-[14px]"> 
                 <span> {/* ICON */}
                   <CircleCheckBig
-                    size={20}
+                    size={18}
                     className="text-[#801717]"
                   />
                 </span> 
-                    Recognized by top industries
+                    Industry-recognized certification
                 </li>
-              <li className="flex items-start gap-2 text-[16px]">
+              <li className="flex items-start gap-2 text-[14px]">
                  <span> {/* ICON */}
                     <CircleCheckBig
-                      size={20}
+                      size={18}
                       className="text-[#801717]"
                     />
                   </span> 
-                     Adds value to your resume
+                     Practical skill-based training validation
                 </li>
-              <li className="flex items-start gap-2 text-[16px]"> 
+              <li className="flex items-start gap-2 text-[14px]"> 
                 <span> {/* ICON */}
                     <CircleCheckBig
-                      size={20}
+                      size={18}
                       className="text-[#801717]"
                     />
                 </span> 
-                     Practical skill validation
+                     Enhances resume & career opportunities
               </li>
-              <li className="flex items-start gap-2 text-[16px]">
+              <li className="flex items-start gap-2 text-[14px]">
                  <span> {/* ICON */}
                     <CircleCheckBig
-                      size={20}
+                      size={18}
                       className="text-[#801717]"
                     />
                   </span> 
-                     Better placement opportunities
+                     Improves placement possibilities
+              </li>
+              <li className="flex items-start gap-2 text-[14px]">
+                 <span> {/* ICON */}
+                    <CircleCheckBig
+                      size={18}
+                      className="text-[#801717]"
+                    />
+                  </span> 
+                     Supports real industrial job readiness
               </li>
             </ul>
           </motion.div>

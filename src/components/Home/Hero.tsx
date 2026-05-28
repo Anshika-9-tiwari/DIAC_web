@@ -13,6 +13,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/vdo/automation_institute.mp4" type="video/mp4" />

@@ -2,30 +2,30 @@ import { Briefcase, GraduationCap, Users, Award } from "lucide-react";
 import { FaUserCheck } from "react-icons/fa6";
 
 const highlights = [
-  {
+  { 
     icon: FaUserCheck ,
-    title: "Best Manpower ",
-    subtitle: 'Services'
+    title: "Skilled Manpower",
+    subtitle: 'Industry Experts'
   },
   {
     icon: Briefcase,
-    title: "Placement Assistance",
-    subtitle: '100% '
+    title: "Job Assistance",
+    subtitle: '100% Support'
   },
   {
     icon: GraduationCap,
-    title: "Trained Students",
-    subtitle: '2Lakh+ '
+    title: "Students Trained",
+    subtitle: '5Lakh+ '
   },
   {
     icon: Users,
-    title: "Expert Trainers",
-    subtitle: '2Lakh+ '
+    title: "Corporate Training",
+    subtitle: 'Industrial Programs '
   },
   {
     icon: Award,
     title: "Success Ratio",
-    subtitle: '99%'
+    subtitle: '99.99%'
   },
 ];
 

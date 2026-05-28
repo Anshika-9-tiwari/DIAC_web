@@ -47,38 +47,89 @@ const categories = [
 
 const courses = [
   {
-    title: "Industrial Automation Training",
-    image: "/training-bnner.jpg",
-    duration: "6 Months",
-    students: "50k Students",
+    title: "Full Industrial Automation Training",
+    image: "/home_courses/full_industrial_automation.png",
+    duration: "3 Months",
+    students: "220,000+ Students",
     desc: "Hands-on training with PLC, SCADA, HMI & Industrial Projects",
     link: "/courses/industrial-automation",
   },
 
   {
-    title: "PLC Programming Training",
-    image: "/training-bnner.jpg",
-    duration: "3 Months",
-    students: "20k Students",
+    title: "PLC Vendor Training",
+    image: "/home_courses/plc_vender_training.png",
+    duration: "1 Months",
+    students: "40,000+ Students",
     desc: "Learn PLC programming with real-time industrial applications",
     link: "/courses/plc-training",
   },
 
   {
     title: "SCADA & HMI Training",
-    image: "/training-bnner.jpg",
-    duration: "4 Months",
-    students: "14k Students",
+    image: "/home_courses/scada_hmi.png",
+    duration: "1 Months",
+    students: "18,000+ Students",
     desc: "Master SCADA systems and HMI design with live projects",
     link: "/courses/scada-and-hmi",
   },
 
   {
-    title: "Drives & Motors Training",
-    image: "/training-bnner.jpg",
-    duration: "6 Months",
-    students: "60k Students",
+    title: "Servo & Drive Systems",
+    image: "/home_courses/scada_hmi.png",
+    duration: "1 Months",
+    students: "15,000+ Students",
     desc: "Learn industrial drives, motors and automation systems",
+    link: "/courses/drives-and-motors",
+  },
+  {
+    title: "Job-Oriented Training",
+    image: "/home_courses/job-oriented_training.png",
+    duration: "3 Months",
+    students: "150,000+ Students",
+    desc: " ",
+    link: "/courses/industrial-automation",
+  },
+
+  {
+    title: "Electrical Design",
+    image: "/home_courses/electrical_design.png",
+    duration: "1 Months",
+    students: "12,000+ Students",
+    desc: "",
+    link: "/courses/plc-training",
+  },
+
+  {
+    title: "VFD Drive Training",
+    image: "/home_courses/vfd_drive.png",
+    duration: "1 Months",
+    students: "18,000+ Students",
+    desc: "",
+    link: "/courses/scada-and-hmi",
+  },
+  {
+    title: "Panel Design",
+    image: "/home_courses/panel_design.png",
+    duration: "1 Months",
+    students: "5,000+ Students",
+    desc: "",
+    link: "/courses/drives-and-motors",
+  },
+  {
+    title: "Customized Industrial Training",
+    image: "/home_courses/customise_industrial.png",
+    duration: "1 Months",
+    students: "11,000+ Students",
+    desc: "",
+    link: "/courses/scada-and-hmi",
+  },
+
+  {
+    title: "Industrial IoT",
+    image: "/home_courses/industrial_iot.png",
+    duration: "1 Months",
+    students: "8,000+ Students",
+    desc: "",
     link: "/courses/drives-and-motors",
   },
 ];
@@ -126,7 +177,7 @@ export default function CoursesSection() {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-[#f7f7f7] rounded-md overflow-hidden border border-gray-200 hover:shadow-lg transition"
+              className="bg-[#faf8f8e7] rounded-md overflow-hidden border border-gray-200 hover:shadow-lg transition"
             >
 
               {/* IMAGE */}

@@ -35,7 +35,7 @@ export default function CourseSubpageHero() {
 
             <div className="w-13 h-13 rounded-full bg-white shadow-md flex items-center justify-center">
               <Image
-                src="/courses/Automation.png"
+                src="/courses/automation.png"
                 alt="Automation"
                 width={35}
                 height={35}

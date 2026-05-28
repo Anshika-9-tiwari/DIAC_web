@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Briefcase, Users, Award, TrendingUp } from "lucide-react";
+import {  Users,  TrendingUp, UserPen, FlaskConical, } from "lucide-react";
 
 // Counter Hook
 function useCounter(end: number, duration = 2000) {
@@ -29,31 +29,37 @@ function useCounter(end: number, duration = 2000) {
 }
 
 export default function Stats() {
-  const placement = useCounter(100);
-  const students = useCounter(10000);
+  const trainers = useCounter(500);
+  const partners = useCounter(100);
   const experience = useCounter(15);
-  const salary = useCounter(6);
+  const projects = useCounter(300);
+  const labs = useCounter(10);
 
   const stats = [
     {
-      icon: Briefcase,
-      value: `${placement}%`,
-      label: "Placement Assistance",
+      icon: UserPen,
+      value: `${trainers}+`,
+      label: "Corporate Trainings",
     },
     {
       icon: Users,
-      value: `${students}+`,
-      label: "Students Trained",
+      value: `${partners}+`,
+      label: " Hiring Partners",
     },
     {
-      icon: Award,
+      icon: FlaskConical,
       value: `${experience}+`,
       label: "Years Experience",
     },
     {
       icon: TrendingUp,
-      value: `₹${salary} LPA`,
-      label: "Avg Salary",
+      value: `${projects}+`,
+      label: "Live Industrial Projects",
+    },
+    {
+      icon: TrendingUp,
+      value: `${labs}+`,
+      label: "Hands-on Practical Labs",
     },
   ];
 
@@ -70,13 +76,13 @@ export default function Stats() {
           className="text-center  mb-15"
         >
           <h2 className="text-[21px] md:text-[30px] font-bold playfair mb-3">
-            Launching Industrial Automation  careers for a better <span className="text-red-200 border-b-2 playfair">Tommorrow</span>
+            Build Your Career in Industrial Automation
           </h2>
-          <p className="text-[18px]">DIAC Learners Have transformed their lives with groundbreaking career advancements in tech</p>
+          <p className="text-[18px]">Join thousands of students building successful careers through practical industrial training.</p>
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4  gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-5  gap-8 text-center">
 
           {stats.map((item, index) => {
             const Icon = item.icon;
@@ -94,7 +100,7 @@ export default function Stats() {
                 >
                 <Icon size={40} className="mb-3" />
 
-                <h3 className="text-2xl md:text-3xl font-bold font-serif playfair">
+                <h3 className="text-2xl md:text-3xl font-bold font-serif playfair mb-2">
                   {item.value}
                 </h3>
 

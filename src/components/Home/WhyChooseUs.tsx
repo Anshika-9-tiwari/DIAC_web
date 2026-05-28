@@ -12,33 +12,33 @@ import {
 const advantages = [
   {
     icon: GraduationCap,
-    title: "Practical Training",
-    desc: "Hands-on experience with real industrial equipment Hands-on experience with real industrial equipment, Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "IMMERSIVE CLASSROOM EXPERIENCE",
+    desc: "Gain practical industrial automation skills through interactive classroom sessions, live demonstrations, and hands-on practice on PLC, SCADA, HMI, VFD, and control systems. Our industry-focused training environment helps students build confidence with real-time applications.",
   },
   {
     icon: Cpu,
-    title: "Live Projects",
-    desc: "Work on real-time automation projects. Hands-on experience with real industrial equipment , Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "GLOBALLY RECOGNIZED CERTIFICATION",
+    desc: "Earn industry-recognized certification after successful completion of training programs designed according to current industrial standards. Enhance your professional profile and improve career opportunities in the automation industry",
   },
   {
     icon: Briefcase,
-    title: "Placement Support",
-    desc: "100% placement assistance for students. Hands-on experience with real industrial equipment, Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "HANDS-ON TRAINING BY INDUSTRY EXPERTS",
+    desc: "Learn directly from experienced automation professionals with practical exposure to industrial projects, machine automation, process control, and advanced PLC programming techniques used in modern industries.",
   },
   {
     icon: Users,
-    title: "Expert Trainers",
-    desc: "Learn from experienced industry professionals. Hands-on experience with real industrial equipment, Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "REAL WORLD PROJECTS & CASE STUDIES",
+    desc: "Work on live industrial projects, automation panels, troubleshooting exercises, and case studies that provide practical exposure to real manufacturing and process automation challenges.",
   },
   {
     icon: Award,
-    title: "Certification",
-    desc: "Industry-recognized certification provided . Hands-on experience with real industrial equipment, Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "360° DEGREE CAREER SUPPORT",
+    desc: "Receive complete career assistance including resume building, interview preparation, placement support, career guidance, and continuous technical mentorship to help you succeed in the automation industry. ",
   },
   {
     icon: ShieldCheck,
-    title: "Industry Exposure",
-    desc: "Real industrial visits and exposure. Hands-on experience with real industrial equipment, Work on real-time automation projects. Hands-on experience with real industrial equipment",
+    title: "DIAC ALUMNI NETWORK",
+    desc: "Become part of the DIAC professional alumni network and connect with automation engineers, industry experts, recruiters, and successful professionals working in leading multinational companies worldwide",
   },
 ];
 
@@ -66,18 +66,18 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="p-5 text-justify shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
+                className="p-5  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
               >
                 {/* Icon */}
                 <Icon className="text-[#801717] mb-4" size={35} />
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold mb-4 playfair">
+                <h3 className="text-xl font-semibold leading-8 mb-4 playfair">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 text-[15px] ">
+                <p className="text-gray-600 text-[14px] ">
                   {item.desc}
                 </p>
               </div>

@@ -20,14 +20,12 @@ export default function ContactMapSection() {
         <div>
 
           {/* Top Text */}
-          <h2 className="text-3xl font-bold mb-4">
-            Dynamic Institute of Automation & Controls
+          <h2 className="text-3xl font-bold mb-6 leading-10 tracking-wide">
+            Industrial Automation Training for Real-World Careers
           </h2>
 
           <p className="text-gray-600 mb-8">
-            We are focused on delivering industry-oriented training in
-            Industrial Automation, helping students and professionals
-            build real-world skills.
+            We provide hands-on training in PLC, SCADA, HMI, Robotics, and Industrial Automation technologies to help students and professionals build industry-ready skills and successful careers.
           </p>
 
           {/* Card */}
@@ -35,14 +33,14 @@ export default function ContactMapSection() {
 
             <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
               <Building className="text-[#801717]" />
-              Head Office
+              DIAC Institute Training Center
             </h3>
 
             {/* Address */}
             <div className="flex gap-3 mb-5">
               <MapPin className="text-[#801717]" />
               <p className="text-gray-600 text-md">
-                C-65, Sector 2, Noida, Uttar Pradesh – 201301
+                C-65, 2nd Floor, Metro Station, near Sector-15, C Block, Sector 2, Noida, Uttar Pradesh 201301, India
               </p>
             </div>
 
@@ -50,7 +48,7 @@ export default function ContactMapSection() {
             <div className="flex gap-3 mb-5">
               <Phone className="text-[#801717]" />
               <p className="text-gray-600 text-md">
-                +91 99534 89987
+                Training: +91 99534 89987
               </p>
             </div>
 
@@ -58,7 +56,7 @@ export default function ContactMapSection() {
             <div className="flex gap-3">
               <Mail className="text-[#801717]" />
               <p className="text-gray-600 text-md">
-                training@diac.co.in
+                 training@diac.co.in
               </p>
             </div>
 
