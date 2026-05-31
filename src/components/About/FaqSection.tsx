@@ -5,28 +5,28 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    q: "What courses does DIAC offer?",
-    a: "We offer PLC, SCADA, Robotics, DCS, Industrial Automation, and more specialized training programs.",
+    q: "What is Corporate Training?",
+    a: "Corporate Training refers to structured learning programs designed to improve employee knowledge, skills, and workplace performance.",
   },
   {
-    q: "Where is DIAC located?",
-    a: "We are located in Sector 2, Noida, Delhi/NCR.",
+    q: "What is Industrial Corporate Training?",
+    a: "Industrial Corporate Training focuses specifically on technical and industrial skills required in manufacturing, automation, engineering, and production environments.",
   },
   {
-    q: "Does DIAC offer placement assistance?",
-    a: "Yes, we provide 100% placement assistance with 4000+ hiring partners.",
+    q: "Can DIAC provide training at our facility?",
+    a: "Yes. We offer on-site corporate training programs across India based on organizational requirements.",
   },
   {
-    q: "Who should join DIAC’s courses?",
-    a: "Engineering students, diploma holders, and working professionals looking to upskill in automation.",
+    q: "Do you offer customized training solutions?",
+    a: "Absolutely. Every program can be tailored according to employee skill levels, technologies used, and business objectives.",
   },
   {
-    q: "Does DIAC offer corporate training programmes?",
-    a: "Yes, we provide customized corporate training for industries and working professionals.",
+    q: "What industries benefit from corporate training?",
+    a: "Manufacturing, automotive, pharmaceutical, power, food processing, oil and gas, engineering, and automation industries can significantly benefit from workforce development programs.",
   },
   {
-    q: "How do I book a free demo class?",
-    a: "You can book a demo through our contact page or by calling our support team.",
+    q: "Do participants receive certification?",
+    a: "Yes. Participants receive training completion certificates after successfully completing the program.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faqs" className="py-20 bg-[#fbfcff]">
+    <section id="faqs" className="py-20 bg-base-50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}

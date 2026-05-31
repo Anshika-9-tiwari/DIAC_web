@@ -1,163 +1,61 @@
 "use client";
 
-import { FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
-import { Mail, Phone, MapPin } from "lucide-react";
+import Link from "next/link";
 
-export default function ContactForm() {
+export default function AboutCTA() {
   return (
-    <section className="bg-base-100 py-15 relative">
-      
-      {/* OVERLAP CARD */}
-      <div className="max-w-7xl mx-auto px-6  w-full">
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2">
+    <section className="py-20 bg-white">
 
-          {/* LEFT SIDE */}
-          <div className="p-10 bg-[#f5f5f5] flex flex-col justify-between">
+      <div className="max-w-7xl mx-auto px-6">
 
-            <div>
-              <h2 className="text-2xl font-semibold mb-8 text-[#0b1f3a]">
-                Contact Information
-              </h2>
+        <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-r from-[#801717] via-[#801717] to-[#801717] px-8 md:px-16 py-16 md:py-20 text-center">
 
-              {/* Email */}
-              <div className="flex gap-4 mb-8">
-                <div className="bg-white p-3 rounded-full shadow">
-                  <Mail className="text-[#801717]" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">GENERAL ENQUIRIES</p>
-                  <p className="font-semibold">training@diac.co.in</p>
-                </div>
-              </div>
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#801717]/25 rounded-full blur-[150px]"></div>
 
-              {/* Phone */}
-              <div className="flex gap-4 mb-8">
-                <div className="bg-white p-3 rounded-full shadow">
-                  <Phone className="text-[#801717]" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">CALL US</p>
-                  <p className="font-semibold">+91 99534 89987</p>
-                </div>
-              </div>
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-red-900/20 rounded-full blur-[120px]"></div>
 
-              {/* Address */}
-              <div className="flex gap-4 mb-10">
-                <div className="bg-white p-3 rounded-full shadow">
-                  <MapPin className="text-[#801717]" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">LOCATION</p>
-                  <p className="font-semibold text-sm">
-                    C-65, Sector 2, Noida – 201301
-                  </p>
-                </div>
-              </div>
-            </div>
+          {/* Grid Pattern */}
+          <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
-            {/* SOCIAL MEDIA */}
-            <div>
-              <p className="text-sm text-gray-500 mb-3">FOLLOW US</p>
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/5 to-transparent"></div>
 
-              <div className="flex gap-4">
+          {/* Content */}
+          <div className="relative z-10">
 
-                <a
-                  href="https://wa.me/919953489987"
-                  target="_blank"
-                  className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
-                >
-                  <FaWhatsapp size={18} />
-                </a>
-
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
-                >
-                  <FaInstagram size={18} />
-                </a>
-
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  className="bg-white p-3 rounded-full shadow hover:bg-[#801717] hover:text-white transition"
-                >
-                  <FaLinkedin size={18} />
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="p-10">
-
-            <h2 className="text-2xl font-semibold mb-8 text-[#0b1f3a]">
-              Send us a Message
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Start Your Automation Career With DIAC
             </h2>
 
-            <form className="space-y-5">
+            <p className="max-w-4xl mx-auto text-white/90 text-lg leading-8 mb-10">
+              Join thousands of successful students who upgraded their
+              technical skills and built rewarding careers in Industrial
+              Automation, PLC, SCADA, HMI, Robotics, and Industry 4.0
+              technologies.
+            </p>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
-                />
-              </div>
+            <div className="flex flex-wrap justify-center gap-4">
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
-                />
-              </div>
-
-              <select
-                className="w-full border px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-[#801717] bg-white"
-                defaultValue=""
+              <Link
+                href="/contact"
+                className="bg-white text-[#0b1f3a] px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-105 transition"
               >
-                <option value="" disabled>Select Course</option>
-                <option>PLC Programming & Commissioning</option>
-                <option>SCADA & HMI Training</option>
-                <option>Drives & Motors Training</option>
-                <option>Industrial Robotics Training</option>
-                <option>Process Instrumentation</option>
-                <option>Panel Designing & AutoCAD</option>
-                <option>DCS Training</option>
-                <option>PLC Networking</option>
-                <option>Servo Motors Training</option>
-              </select>
+                Apply Now
+              </Link>
 
-              <textarea
-                rows={4}
-                placeholder="Message"
-                className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="w-full bg-[#801717] text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition"
+              <Link
+                href="/courses"
+                className="border border-white/30 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-[#0b1f3a] transition"
               >
-                Submit Enquiry
-              </button>
+                Explore Courses
+              </Link>
 
-            </form>
+            </div>
+
           </div>
 
         </div>
+
       </div>
 
     </section>

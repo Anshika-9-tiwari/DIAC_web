@@ -2,69 +2,76 @@
 
 const steps = [
   {
-    title: "Needs Assessment",
-    desc: "We audit your team’s current skills, your equipment, and your production challenges.",
+    title: " Training Need Analysis",
+    desc: "We begin by understanding your organization's objectives, workforce challenges, and skill development requirements.",
   },
   {
-    title: "Custom Curriculum",
-    desc: "Training content is mapped to your exact machinery, brands and operating environment.",
+    title: " Skill Gap Assessment",
+    desc: "Our experts identify existing skill gaps and determine the competencies required for improved performance.",
   },
   {
-    title: "Expert Delivery",
-    desc: "Seasoned automation professionals run intensive, hands-on sessions at your site or lab.",
+    title: "Customized Curriculum Design",
+    desc: "Based on assessment results, we create a tailored training roadmap aligned with your business goals.",
   },
   {
-    title: "Skill Assessment",
-    desc: "Practical tests and knowledge checks confirm competency before certification is issued.",
+    title: " Training Delivery",
+    desc: "Training is delivered through interactive sessions, practical demonstrations, workshops, and real-world case studies.",
   },
   {
-    title: "ROI Report",
-    desc: "A detailed impact report with pre/post benchmarks is shared with your management team.",
+    title: " Evaluation and Assessment",
+    desc: "Participant performance is assessed through practical exercises, assignments, and evaluations.",
+  },
+  {
+    title: "Continuous Improvement",
+    desc: "Organizations receive recommendations for ongoing employee development and workforce enhancement.",
   },
 ];
 
 export default function CorporateProcess() {
   return (
-    <section className="py-24 bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="py-24 bg-gradient-to-br from-white to-[#fcf7f7]  text-black">
+      <div className="max-w-7xl mx-auto px-8 text-center">
 
         {/* Label */}
-        <p className="text-xs font-medium tracking-widest text-[#801717] uppercase mb-3 ">
+        <p className="text-xs font-medium tracking-widest text-[#801717] uppercase mb-5">
           Our Approach
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          How Your Corporate Training is Delivered
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Our Corporate Training Process
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-400 max-w-2xl mx-auto mb-16 text-sm">
+        <p className="text-gray-600 max-w-3xl mx-auto mb-16 text-[16px]">
           A structured five-step process ensures every programme is aligned to your
           plant’s specific needs and produces real skill uplift.
         </p>
 
         {/* Steps */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-4 ">
 
           {steps.map((step, i) => (
-            <div key={i} className="flex flex-col items-center">
-
-              {/* Number Circle */}
-              <div className="w-10 h-10 bg-[#801717] rounded-full flex items-center justify-center font-semibold mb-4">
-                {i + 1}
+            <div
+              key={i}
+              className="group relative bg-white rounded-2xl p-6 border border-red-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              {/* Step Number */}
+              <div className="absolute -top-5 left-8">
+                <div className="w-12 h-12 rounded-full bg-[#801717] text-white flex items-center justify-center font-bold text-lg shadow-lg">
+                  {i + 1}
+                </div>
               </div>
 
-              {/* Title */}
-              <h3 className="text-sm font-semibold mb-2">
-                {step.title}
-              </h3>
+              <div className="pt-6">
+                <h3 className="text-xl font-semibold text-[#0b1f3a] mb-4">
+                  {step.title}
+                </h3>
 
-              {/* Description */}
-              <p className="text-xs text-gray-400 leading-relaxed">
-                {step.desc}
-              </p>
-
+                <p className="text-gray-600 leading-7 text-[15px]">
+                  {step.desc}
+                </p>
+              </div>
             </div>
           ))}
 

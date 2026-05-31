@@ -2,121 +2,94 @@
 
 const courses = [
   {
-    tag: "CORE",
-    title: "PLC Programming & Commissioning",
-    desc: "Master Programmable Logic Controllers from ladder logic basics to advanced structured programming and commissioning on live panels.",
+    title: "PLC Programming Training",
+    desc: "Programmable Logic Controllers (PLC) form the foundation of modern industrial automation systems. Our PLC Corporate Training programs help employees develop expertise in:",
     points: [
-      "Siemens S7-300/400/1200/1500 & Allen Bradley",
-      "Ladder diagram, FBD, STL programming",
-      "I/O configuration & field device wiring",
-      "Fault diagnosis & troubleshooting",
+      "PLC architecture",
+      "PLC programming",
+      "Ladder logic development",
+      "Process automation",
+      "Industrial control systems",
+      "Troubleshooting techniques",
+      "System maintenance",
+      "Industrial networking"
     ],
-    duration: "3-5 Days",
-    mode: "On-site / Noida Lab",
   },
   {
-    tag: "VISUALISATION",
-    title: "SCADA & HMI Training",
-    desc: "Build and operate real-time monitoring and control systems using industry-standard SCADA platforms and HMI panels.",
+    title: "SCADA Training",
+    desc: "SCADA systems enable organizations to monitor and control industrial processes efficiently. Our SCADA Corporate Training covers:",
     points: [
-      "WinCC, iFIX, Ignition SCADA platforms",
-      "HMI screen design & tag configuration",
-      "Alarm management & trending",
-      "OPC/Modbus communication protocols",
-    ],
-    duration: "3-4 Days",
-    mode: "Hybrid",
-  },
-  {
-    tag: "MOTION",
-    title: "Drives & Motors Training",
-    desc: "Understand, configure, and maintain AC/DC variable frequency drives and motor control systems.",
-    points: [
-      "VFD selection & parameter setting",
-      "Drive commissioning (Siemens/ABB)",
-      "Motor control circuits",
-      "Energy efficiency diagnostics",
-    ],
-    duration: "2-3 Days",
-    mode: "On-site / Lab",
-  },
-  {
-    tag: "ROBOTICS",
-    title: "Industrial Robotics Training",
-    desc: "Learn robot programming, simulation, and automation integration in manufacturing.",
-    points: [
-      "Robot programming basics",
-      "Pick & place automation",
-      "Industrial robot safety",
-      "Real-time simulation",
-    ],
-    duration: "4-5 Days",
-    mode: "On-site",
-  },
-  {
-    tag: "INSTRUMENTATION",
-    title: "Process Instrumentation",
-    desc: "Understand sensors, transmitters, and industrial measurement systems.",
-    points: [
-      "Pressure, flow, level sensors",
-      "Calibration techniques",
-      "Field instrumentation wiring",
-      "Industrial standards",
-    ],
-    duration: "2-3 Days",
-    mode: "Hybrid",
-  },
-  {
-    tag: "DESIGN",
-    title: "Panel Designing & AutoCAD",
-    desc: "Design industrial panels using AutoCAD and electrical standards.",
-    points: [
-      "Panel layout design",
-      "AutoCAD electrical",
-      "Wiring standards",
-      "Industrial documentation",
-    ],
-    duration: "3 Days",
-    mode: "Lab",
-  },
-  {
-    tag: "ADVANCED",
-    title: "DCS Training",
-    desc: "Learn Distributed Control Systems used in process industries.",
-    points: [
-      "DCS architecture",
-      "Control loops",
-      "System configuration",
+      "SCADA architecture",
       "Real-time monitoring",
+      "Data acquisition systems",
+      "Alarm management",
+      "Process visualization",
+      "Industrial communication protocols",
+      "Report generation",
+      "Remote monitoring systems",
     ],
-    duration: "3-4 Days",
-    mode: "On-site",
   },
   {
-    tag: "NETWORKING",
-    title: "PLC Networking",
-    desc: "Understand industrial communication protocols and networking.",
+    title: "HMI Training",
+    desc: "Human Machine Interface (HMI) systems improve operational visibility and productivity. Training includes:",
     points: [
-      "Profibus, Profinet",
-      "Ethernet/IP",
-      "Modbus TCP/IP",
-      "Network troubleshooting",
+      "HMI design principles",
+      "Screen development",
+      "Industrial visualization",
+      "Process control interfaces",
+      "Alarm systems",
+      "Data management",
     ],
-    duration: "2-3 Days",
-    mode: "Hybrid",
   },
   {
-    tag: "SERVO",
-    title: "Servo Motors Training",
-    desc: "Learn servo systems used in precision automation.",
+    title: "Industrial Robotics Training",
+    desc: "Automation and robotics are transforming manufacturing operations globally. Our Industrial Robotics Training helps participants understand:",
     points: [
-      "Servo drives setup",
-      "Motion control basics",
-      "Positioning systems",
+      "Robotics fundamentals",
+      "Robot programming",
+      "Motion control",
+      "Automated manufacturing",
+      "Robotic integration",
       "Industrial applications",
+      "Maintenance and troubleshooting",
     ],
-    duration: "2-3 Days",
-    mode: "Lab",
+  },
+  {
+    title: "VFD and Servo Drive Training",
+    desc: "Employees learn:",
+    points: [
+      "Motor control principles",
+      "Variable Frequency Drive programming",
+      "Servo motor applications",
+      "Industrial motion control",
+      "Energy optimization",
+      "Maintenance procedures",
+    ],
+  },
+  {
+    title: "Panel Design Training",
+    desc: "Our panel design programs focus on:",
+    points: [
+      "Electrical panel design",
+      "Control panel development",
+      "Wiring standards",
+      "Electrical safety",
+      "Documentation practices",
+      "Industrial implementation",
+    ],
+  },
+  {
+    title: "Industry 4.0 Training",
+    desc: "Organizations preparing for digital transformation can benefit from training in:",
+    points: [
+      "Smart manufacturing",
+      "Industrial IoT",
+      "Data-driven operations",
+      "Digital factories",
+      "Predictive maintenance",
+      "Industrial connectivity",
+      "Automation integration",
+    ],
   },
 ];
 
@@ -127,10 +100,10 @@ export default function CorporateCourses() {
 
         {/* Heading */}
         <div className="text-center mb-12 md:mb-18">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#0b1f3a] mb-3">
-            Corporate Training Solutions (What We Offer)
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-3">
+            Corporate Training Programs Offered by DIAC
           </h2>
-          <p className="text-gray-500 text-[18px] max-w-2xl mx-auto">
+          <p className="text-gray-600 text-[18px] max-w-2xl mx-auto">
             Discover courses across different domains
           </p>
         </div>
@@ -147,22 +120,22 @@ export default function CorporateCourses() {
               {/* RED HEADER */}
               <div className="bg-[#801717] text-white p-5">
 
-                {/* Tag */}
+                {/* Tag
                 <span className="text-[10px] px-3 py-1 bg-white/20 rounded-full">
                   {course.tag}
-                </span>
+                </span> */}
 
                 {/* Title */}
-                <h3 className="mt-3 font-semibold text-lg leading-snug">
+                <h3 className="mt-3 font-semibold text-xl leading-snug">
                   {course.title}
                 </h3>
               </div>
 
               {/* BODY */}
-              <div className="p-5 text-sm text-gray-600">
+              <div className="p-5 text-md text-gray-600">
 
                 {/* Description */}
-                <p className="mb-4">
+                <p className="mb-4 ">
                   {course.desc}
                 </p>
 
@@ -179,12 +152,12 @@ export default function CorporateCourses() {
               </div>
 
               {/* FOOTER */}
-              <div className="border-t p-4 flex justify-between text-sm text-gray-500">
+              {/* <div className="border-t p-4 flex justify-between text-sm text-gray-500">
                 <span>Duration: {course.duration}</span>
                 <span className="text-[#801717] font-medium">
                   {course.mode}
                 </span>
-              </div>
+              </div> */}
 
             </div>
           ))}

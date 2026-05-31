@@ -5,60 +5,54 @@ import Image from "next/image";
 export default function WhoWeAre() {
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-15 items-center">
+     <div className="text-center mb-20 px-5">
+       {/* Small Title */}
+        <p className="text-xs tracking-widest text-[#801717] mb-5 uppercase">
+          Our Story
+        </p>
+
+        {/* Main Heading */}
+        <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+          Who We Are
+        </h1>
+        <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">Empowering the next generation of automation engineers with advanced industrial skills and practical knowledge.</p>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT IMAGE */}
         <div className="relative">
-          <div className="relative w-full h-[300px] md:h-[400px] bg-[#0b2a44]">
+          <div className="relative w-full h-[300px] md:h-[400px] bg-[#0b2a44] rounded-4xl ">
             <Image
               src="/training-bnner.jpg"
               alt="DIAC"
               fill
-              className="object-cover opacity-80"
+              className="object-cover opacity-80 rounded-4xl"
             />
 
             {/* Corner Border Effect */}
-            <div className="absolute top-4 left-4 w-10 h-10 border-t border-l border-gray-300"></div>
-            <div className="absolute bottom-4 right-4 w-10 h-10 border-b border-r border-gray-300"></div>
+            <div className="absolute top-4 left-4 w-10 h-10 border-t border-l border-gray-500"></div>
+            <div className="absolute bottom-4 right-4 w-10 h-10 border-b border-r border-gray-500"></div>
           </div>
         </div>
 
         {/* RIGHT CONTENT */}
         <div>
 
-          {/* Small Title */}
-          <p className="text-xs tracking-widest text-[#801717] mb-2 uppercase">
-            Our Story
-          </p>
-
           {/* Main Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Who We Are
+          <h2 className="text-2xl md:text-4xl font-semibold mb-5 tracking-normal leading-relaxed text-gray-900">
+             Transforming Technical Education Into Real Industry Experience
           </h2>
 
           {/* Paragraphs */}
-          <p className="text-gray-600 mb-4 text-[15px] leading-relaxed">
-           <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>, popularly known
-            as "DIAC", was incorporated in December 2008 with a core objective
-            to impart training in cutting-edge Industrial Automation Technologies
-            to fresh engineers, bridging the ever-growing demand-supply gap for
-            skilled automation engineers.
+          <p className="text-gray-600 mb-4 text-[16px] leading-relaxed">
+           <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>,(Popularly known as “DIAC”) was incorporated in December’ 2008 with a basic objective to impart training of Cutting-edge Industrial Automation Technologies to fresh engineers for bridging the demand-supply gap of ever growing demand of Industrial Automation Engineers and to enhance domain knowledge of working professionals with the advancement in this domain.
           </p>
 
           <p className="text-gray-600 mb-4 text-[16px] leading-loose">
-            With over 15 years of standing in the industry, DIAC has trained and
-            placed 10,000+ students across leading MNCs in the field of Industrial
-            Automation. Our alumni work with India’s and the world’s most respected
-            manufacturing and automation companies.
+           Since its inception, with 14 years of standing, we have trained and placed 8000+ students in the automation industry. Our passed-out students are working with leading MNCs in the field of Industrial Automation.
           </p>
-
-          <p className="text-gray-600 mb-6 text-[16px] leading-relaxed">
-            We also offer customised training programmes designed for working
-            professionals seeking to expand their domain knowledge and keep pace
-            with rapid advancements in the manufacturing and robotics sectors.
-          </p>
-
-          {/* Tags */}
+          {/* Tags
           <div className="flex flex-wrap gap-3 text-xs">
             {[
               "PLC Training",
@@ -77,7 +71,7 @@ export default function WhoWeAre() {
                 {item}
               </span>
             ))}
-          </div>
+          </div> */}
 
         </div>
 

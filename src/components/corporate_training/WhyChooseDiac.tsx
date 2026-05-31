@@ -12,33 +12,33 @@ import {
 const features = [
   {
     icon: Layers,
-    title: "Industry-Relevant Curriculum",
-    desc: "Courses co-developed with automation engineers and constantly updated with the latest PLC, SCADA, and robotics technologies.",
+    title: "Increased Productivity",
+    desc: "Skilled employees perform tasks more efficiently, resulting in improved operational performance and higher productivity levels.",
   },
   {
     icon: Monitor,
-    title: "Modern Labs & Live Equipment",
-    desc: "Hands-on training on real PLCs, HMIs, servo drives, and industrial robots — not simulations alone.",
+    title: "Reduced Downtime",
+    desc: "Properly trained teams can quickly identify and resolve technical issues, minimizing costly production interruptions.",
   },
   {
     icon: Users,
-    title: "Expert Faculty",
-    desc: "Subject matter experts and seasoned industry leaders with real-world automation project experience mentor every batch.",
+    title: "Improved Equipment Utilization",
+    desc: "Employees gain a deeper understanding of industrial equipment, enabling organizations to maximize asset performance.",
   },
   {
     icon: Activity,
-    title: "Measurable ROI",
-    desc: "Pre & post assessments, skill certifications, and performance benchmarks so you can track every rupee of training spend.",
-  },
-  {
-    icon: FileText,
-    title: "DIAC-Certified Credentials",
-    desc: "Recognised certificates awarded on completion — valued by 4000+ hiring partners across India's manufacturing industry.",
+    title: "Better Safety Standards",
+    desc: "Training promotes safe operating procedures and compliance with industry regulations, reducing workplace incidents.",
   },
   {
     icon: Clock,
-    title: "Flexible Delivery",
-    desc: "On-site at your plant, at our Noida facility, or hybrid — scheduled to minimise disruption to your production shifts.",
+    title: "Faster Technology Adoption",
+    desc: "Organizations implementing new technologies can accelerate adoption through structured training programs.",
+  },
+  {
+    icon: FileText,
+    title: "Enhanced Employee Confidence",
+    desc: "Employees who possess advanced technical skills demonstrate greater confidence when handling complex systems and challenges.",
   },
 ];
 
@@ -49,16 +49,16 @@ export default function WhyChooseDIAC() {
 
         {/* Label */}
         <p className="text-xs tracking-widest text-[#801717] uppercase mb-3">
-          Why Choose DIAC
+          benefits of DIAC
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-4">
-          Built for the Industrial Automation Engineer
+        <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-5">
+           Benefits of Industrial Corporate Training
         </h2>
 
         {/* Subtitle */}
-        <p className="text-gray-600 max-w-2xl mb-12">
+        <p className="text-gray-600 max-w-2xl mb-15">
           Since 2008, DIAC has closed the skills gap between industry demand and
           engineering talent across India's manufacturing sector.
         </p>
