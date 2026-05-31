@@ -61,14 +61,14 @@ const courses = [
 export default function CorporateTManufacturing() {
   return (
     <section className="py-20 bg-[#fbfcff]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}
         <div className="text-center mb-12 md:mb-18">
           <h2 className="text-3xl md:text-[42px] font-bold text-[#0b1f3a] mb-6">
             Industrial Corporate Training for Manufacturing Industries
           </h2>
-          <p className="text-gray-600 text-[16px] max-w-4xl mx-auto">
+          <p className="max-w-6xl max-autotext-gray-600 text-[16px] max-w-4xl mx-auto">
            Industrial Corporate Training focuses on improving technical capabilities within industrial environments. <br /> At DIAC, we work with organizations across multiple sectors, including:
           </p>
         </div>

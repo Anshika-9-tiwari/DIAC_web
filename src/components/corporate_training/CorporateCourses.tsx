@@ -96,7 +96,7 @@ const courses = [
 export default function CorporateCourses() {
   return (
     <section className="py-20 bg-[#f7f7f7]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* Heading */}
         <div className="text-center mb-12 md:mb-18">
@@ -132,7 +132,7 @@ export default function CorporateCourses() {
               </div>
 
               {/* BODY */}
-              <div className="p-5 text-md text-gray-600">
+              <div className="p-8 text-md text-gray-600">
 
                 {/* Description */}
                 <p className="mb-4 ">

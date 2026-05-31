@@ -101,7 +101,7 @@ export default function CorporateTestimonials() {
 
   return (
     <section id="reviews" className="py-20 bg-[#fbfcff]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
 
         {/* Label */}
         <p className="text-xs tracking-widest text-[#801717] uppercase mb-5">

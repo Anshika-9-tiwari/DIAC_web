@@ -24,7 +24,7 @@ export default function WhoWeAre() {
         <div className="relative">
           <div className="relative w-full h-[300px] md:h-[400px] bg-[#0b2a44] rounded-4xl ">
             <Image
-              src="/training-bnner.jpg"
+              src="/courses/diacaboutpic.png"
               alt="DIAC"
               fill
               className="object-cover opacity-80 rounded-4xl"

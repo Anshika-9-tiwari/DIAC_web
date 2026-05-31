@@ -46,11 +46,11 @@ export default function CorporateIntro() {
       {/* BOTTOM CONTENT */}
       <div className=" border-t border-gray-200 pt-5 max-w-7xl mx-auto px-8">
 
-        <p className="text-red-900 text-[18px] leading-relaxed mb-4">
+        <p className="max-w-6xl max-auto text-red-900 text-[18px] leading-relaxed mb-4">
           With years of expertise in Industrial Automation, PLC Programming, SCADA Systems, HMI Development, Industrial Robotics, Electrical Systems, and Industry 4.0 technologies, DIAC delivers practical, hands-on training programs that bridge the gap between theoretical knowledge and real-world industrial applications.
         </p>
 
-        <p className="text-gray-600 text-[18px] leading-relaxed ">
+        <p className="max-w-6xl max-auto text-gray-600 text-[18px] leading-relaxed ">
           Whether your organization requires customized employee upskilling programs, automation training workshops, technical competency development, or industrial workforce transformation initiatives, DIAC provides flexible training solutions that align with your business goals and operational objectives.
         </p>
 

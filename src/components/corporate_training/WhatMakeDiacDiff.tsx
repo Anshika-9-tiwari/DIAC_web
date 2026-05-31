@@ -45,16 +45,16 @@ export default function WhatMakeDiacDiff() {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-8 mb-4">
+          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">
            The success of any organization depends on the skills, knowledge, and capabilities of its workforce. As industries continue to adopt advanced automation technologies and digital transformation strategies, employee development becomes a critical factor in achieving sustainable growth.
           </p>
-          <p className="text-gray-600 text-lg leading-8 mb-4">
+          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">
            DIAC's Corporate Training and Industrial Corporate Training programs help organizations build highly skilled teams capable of driving innovation, improving productivity, and supporting long-term business success.
           </p>
-          <p className="text-gray-600 text-lg leading-8 mb-4">
+          <p className="max-w-6xl max-autotext-gray-600 text-lg leading-8 mb-4">
            Whether you are looking to upskill engineers, train maintenance teams, enhance automation capabilities, or prepare your workforce for Industry 4.0, DIAC provides customized solutions that deliver measurable results.
           </p>
-           <p className="text-red-900 text-lg leading-8">
+           <p className="max-w-6xl max-autotext-red-900 text-lg leading-8">
            Contact DIAC today to discuss your corporate training requirements and create a workforce development strategy tailored to your organization's future goals.
           </p>
 

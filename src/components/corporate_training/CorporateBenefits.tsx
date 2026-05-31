@@ -80,10 +80,10 @@ export default function CorporateBenefits() {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-8 mb-2">
+          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-2">
            The modern workplace is evolving faster than ever before. Organizations that invest in employee learning and development consistently outperform competitors in productivity, innovation, and operational efficiency.
           </p>
-          <p className="text-gray-600 text-lg leading-8 mb-4">
+          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">
             As industrial automation and smart manufacturing continue to reshape industries, organizations need employees who can effectively operate, troubleshoot, maintain, and optimize advanced systems.
           </p>
           <p className="text-red-900 font-medium text-lg leading-8 mb-4">
@@ -125,7 +125,7 @@ export default function CorporateBenefits() {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-8">
+          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8">
             With expertise in Industrial Automation, PLC, SCADA, HMI,
             Robotics, Electrical Systems, Industry 4.0, and Smart Manufacturing,
             DIAC delivers practical corporate training programmes that create

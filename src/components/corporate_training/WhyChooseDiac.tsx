@@ -45,7 +45,7 @@ const features = [
 export default function WhyChooseDIAC() {
   return (
     <section className="py-20 bg-[#fcf8f8]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* Label */}
         <p className="text-xs tracking-widest text-[#801717] uppercase mb-3">
