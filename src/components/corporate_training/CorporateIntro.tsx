@@ -2,7 +2,7 @@
 
 export default function CorporateIntro() {
   return (
-    <section className="py-20 bg-[#f7f7f7]">
+    <section className="py-20 bg-base-50">
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
 
         {/* LEFT */}
@@ -14,25 +14,14 @@ export default function CorporateIntro() {
           </span>
 
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-[#0b1f3a] leading-tight">
-            Corporate Training Solutions
+          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-[#0b1f3a] leading-tight md:leading-15">
+            Empower Your Workforce with Industry-Focused Corporate Training Programs
           </h2>
 
           {/* Paragraph 1 */}
-          <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">
-            Organisations across the world are transforming their workforce
-            to drive innovation, productivity, and growth. Upskilling and
-            reskilling are key to achieving this transformation.
+          <p className="text-gray-600 text-[18px] leading-relaxed mb-4">
+            In today's rapidly evolving industrial landscape, organizations must continuously upgrade the skills of their workforce to remain competitive. New technologies, automation systems, digital transformation initiatives, and Industry 4.0 advancements have significantly changed the way industries operate. As a result, companies require highly skilled professionals who can efficiently manage modern industrial systems, automation processes, and emerging technologies.
           </p>
-
-          {/* Paragraph 2 */}
-          <p className="text-gray-600 text-[18px] leading-relaxed">
-            DIAC delivers corporate training solutions through a structured,
-            assessment-led model. Our approach ensures that every engagement is
-            aligned with role requirements, competency standards, and measurable
-            business outcomes.
-          </p>
-
         </div>
 
         {/* RIGHT - VIDEO */}
@@ -52,6 +41,18 @@ export default function CorporateIntro() {
           </div>
 
         </div>
+      </div>
+
+      {/* BOTTOM CONTENT */}
+      <div className=" border-t border-gray-200 pt-5 max-w-7xl mx-auto px-8">
+
+        <p className="max-w-6xl max-auto text-red-900 text-[18px] leading-relaxed mb-4">
+          With years of expertise in Industrial Automation, PLC Programming, SCADA Systems, HMI Development, Industrial Robotics, Electrical Systems, and Industry 4.0 technologies, DIAC delivers practical, hands-on training programs that bridge the gap between theoretical knowledge and real-world industrial applications.
+        </p>
+
+        <p className="max-w-6xl max-auto text-gray-600 text-[18px] leading-relaxed ">
+          Whether your organization requires customized employee upskilling programs, automation training workshops, technical competency development, or industrial workforce transformation initiatives, DIAC provides flexible training solutions that align with your business goals and operational objectives.
+        </p>
 
       </div>
     </section>

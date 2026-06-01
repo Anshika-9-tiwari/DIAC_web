@@ -27,12 +27,12 @@ export default function PlacementHero() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-12 border-t border-gray-800 pt-10">
 
           <div>
-            <h3 className="text-4xl font-bold text-[#801717] font-serif">10,000+</h3>
+            <h3 className="text-4xl font-bold text-[#801717] font-serif">5 Lakh+</h3>
             <p className="text-gray-400 text-sm mt-1">Students Trained</p>
           </div>
 
           <div>
-            <h3 className="text-4xl font-bold text-white font-serif">100%</h3>
+            <h3 className="text-4xl font-bold text-white font-serif">100%</h3>  
             <p className="text-gray-400 text-sm mt-1">Placement Assistance</p>
           </div>
 

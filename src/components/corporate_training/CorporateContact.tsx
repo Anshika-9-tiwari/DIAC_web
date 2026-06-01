@@ -3,7 +3,7 @@
 export default function CorporateContact() {
   return (
     <section className="py-20 bg-[#f7f7f7]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}
         <div className="text-center mb-12">

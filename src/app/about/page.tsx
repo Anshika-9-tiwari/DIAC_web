@@ -1,12 +1,11 @@
 import AboutHero from "@/components/About/AboutHero";
-import ContactSection from "@/components/About/ContactSection";
-import FAQSection from "@/components/About/FaqSection";
+import AboutCTA from "@/components/About/ContactSection";
 import PlacementRecord from "@/components/About/PlacementRecord";
 import Testimonials from "@/components/About/Testimonials";
-import TopCourses from "@/components/About/TopCourses";
 import TrainingMethodology from "@/components/About/TrainingMethodology";
 import VisionMission from "@/components/About/VisionMission";
 import WhoWeAre from "@/components/About/Who-we-are";
+import CoursesSection from "@/components/Home/CourcesSection";
 
 export default function AboutPage() {
   return (
@@ -14,12 +13,11 @@ export default function AboutPage() {
       <AboutHero />
       <WhoWeAre/>
       <TrainingMethodology/>
-      <TopCourses/>
+      <CoursesSection/>
       <VisionMission/>
       <PlacementRecord/>
       <Testimonials/>
-      <ContactSection/>
-      {/* <FAQSection/> */}
+      <AboutCTA/>
     </main>
   );
 }

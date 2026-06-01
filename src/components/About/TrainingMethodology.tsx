@@ -12,33 +12,33 @@ import {
 const items = [
   {
     icon: Wrench,
-    title: "Practical Application Focus",
-    desc: "Students gain thorough understanding of real-world applications through a combination of interactive academic sessions, hands-on practice experience, and exposure to live industrial projects.",
+    title: "Hands-On Practical Training",
+    desc: "Students work on real industrial automation systems, live projects, PLC panels, SCADA software, VFDs, sensors, and industrial networking tools to gain practical experience that matches industry requirements.",
   },
   {
     icon: Laptop,
-    title: "Interactive Learning Environment",
-    desc: "Our modern labs are equipped with cutting-edge industrial technologies and tools. We emphasise practical training to ensure every student is well-prepared for real challenges.",
+    title: "Advanced Automation Labs",
+    desc: "Our modern training labs are equipped with the latest technologies used in Industrial Automation, Robotics, PLC, SCADA, HMI, Electrical Designing, and Control Systems for an immersive learning experience.",
   },
   {
     icon: Sparkles,
-    title: "Continuous Innovation",
-    desc: "Our curriculum is constantly updated to include the most recent developments in Industrial Automation, Robotics, and advanced control systems.",
+    title: "Updated Industry Curriculum",
+    desc: "DIAC continuously upgrades its course modules according to current industrial trends, smart manufacturing technologies, and automation standards to keep students future-ready.",
   },
   {
     icon: Users,
-    title: "Expert Faculty",
-    desc: "Our faculty consists of subject matter experts and seasoned business leaders who mentor students through extensive training sessions.",
+    title: "Experienced Industry Trainers",
+    desc: "Learn directly from certified trainers and industry experts with years of practical experience in automation, electrical systems, panel designing, and industrial projects.With dedicated placement assistance and connections with leading companies across India, DIAC helps students prepare for interviews, technical assessments, and career opportunities in the automation sector.",
   },
   {
     icon: Briefcase,
-    title: "Industry-Linked Placements",
-    desc: "With 4,000+ hiring partners across India and beyond, our placement team ensures students get the best opportunities.",
+    title: "Strong Placement Support",
+    desc: "With dedicated placement assistance and connections with leading companies across India, DIAC helps students prepare for interviews, technical assessments, and career opportunities in the automation sector. ",
   },
   {
     icon: BookOpen,
-    title: "Job-Oriented Curriculum",
-    desc: "Every course is designed with the employer's perspective in mind — covering both foundational and advanced technologies.",
+    title: "Job-Oriented Skill Development",
+    desc: "Every training program is focused on building practical skills demanded by employers — including troubleshooting, programming, industrial communication, panel wiring, and real-time machine automation.",
   },
 ];
 
@@ -48,23 +48,22 @@ export default function TrainingMethodology() {
       <div className="max-w-7xl mx-auto px-6">
                                     {/* bg-[#f5f1ec] */}
         {/* Top Label */}
-        <p className="text-xs tracking-widest text-[#801717] mb-2 uppercase">
+        <p className="text-xs tracking-widest text-[#801717] mb-5 uppercase">
           Our Approach -
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wide text-gray-800">
-          Training Methodology is Our Key Differentiator
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-wide text-gray-800">
+          Industry-Focused Training That Builds Real Careers
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-600 mb-12 max-w-2xl text-[16px]">
-          Our programmes are built on a foundation of superior learning combined
-          with pragmatism — designed by subject matter experts and seasoned industry leaders.
+        <p className="text-gray-600 mb-15 max-w-5xl text-[16px]">
+          At DIAC, we believe technical education should go beyond theory. Our training methodology is designed to prepare students for real industrial environments through practical learning, advanced lab exposure, and mentorship from experienced automation professionals. Every program is structured to help students gain confidence, technical expertise, and placement-ready skills for today’s competitive industry.
         </p>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 shadow-sm gap-3">
+        <div className="grid md:grid-cols-3 shadow-md gap-4">
 
           {items.map((item, index) => {
             const Icon = item.icon;
@@ -72,7 +71,7 @@ export default function TrainingMethodology() {
             return (
               <div
                 key={index}
-                className="p-6 border-b border-r border-gray-200 shadow-sm"
+                className="p-6 border-b border-r border-gray-300 shadow-sm"
               >
                 {/* Icon */}
                 <div className="mb-3">
