@@ -5,7 +5,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import { FaInstagram,  FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaInstagram,  FaYoutube } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 export function ContactForm() {
