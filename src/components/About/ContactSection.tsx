@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutCTA() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-18 bg-white">
 
       <div className="max-w-7xl mx-auto px-6">
 

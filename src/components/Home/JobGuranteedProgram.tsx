@@ -24,7 +24,7 @@ export default function JobGuaranteePrograms() {
       <div className="max-w-7xl mx-auto px-8">
 
         {/* HEADING */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-14 text-gray-800">
 
           <p className="text-[#801717] font-semibold uppercase tracking-widest mb-3">
             Job Guaranteed Programs

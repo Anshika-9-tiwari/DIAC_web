@@ -44,7 +44,7 @@ const advantages = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-18 bg-white">
+    <section className="py-18 bg-white text-gray-700">
       <div className="max-w-7xl mx-auto px-8 md:px-10">
 
         {/* Heading */}

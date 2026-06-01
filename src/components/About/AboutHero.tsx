@@ -23,7 +23,7 @@ export default function AboutHero() {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] overflow-hidden relative">
+    <section className="py-14 md:py-16 bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] text-gray-700 overflow-hidden relative">
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#801717]/5 rounded-full blur-3xl"></div>

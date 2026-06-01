@@ -49,7 +49,7 @@ export default function Highlights() {
                   className="mx-auto mb-3 text-[#801717]"
                 />
                 <h2 className="font-semibold text-lg text-gray-800">{item.title}</h2>
-                <p className="p-2">{item.subtitle}</p>
+                <p className="p-2 text-gray-500">{item.subtitle}</p>
               </div>
             );
           })}

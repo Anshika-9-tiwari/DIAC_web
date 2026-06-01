@@ -59,8 +59,8 @@ export default function Hero() {
           </div>
 
           {/* Enquiry Form */}
-          <div className="bg-white rounded-md shadow-lg p-8 w-full max-w-md lg:ml-auto">
-            <h2 className="text-2xl font-semibold mb-5 text-center">
+          <div className="bg-white text-gray-600  rounded-md shadow-lg p-8 w-full max-w-md lg:ml-auto">
+            <h2 className="text-2xl text-black font-semibold mb-5 text-center">
               Enquiry Now
             </h2>
 

@@ -60,7 +60,7 @@ const courses = [
 
 export default function CorporateTManufacturing() {
   return (
-    <section className="py-20 bg-[#fbfcff]">
+    <section className="py-20 bg-[#fbfcff] text-gray-700">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}

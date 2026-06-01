@@ -60,7 +60,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 bg-[#f5f5f5] overflow-hidden">
+    <section className="py-16 bg-[#f5f5f5] overflow-hidden text-gray-700">
 
       <div className="max-w-7xl mx-auto px-4">
 

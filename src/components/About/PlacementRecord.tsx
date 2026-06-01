@@ -2,7 +2,7 @@
 
 export default function PlacementRecord() {
   return (
-    <section className="py-20 bg-base-50">
+    <section className="py-20 bg-white text-gray-700">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}

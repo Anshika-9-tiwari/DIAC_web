@@ -136,7 +136,7 @@ const courses = [
 
 export default function CoursesSection() {
   return (
-    <section className="py-12 bg-white mb-5">
+    <section className="py-12 bg-white  text-gray-800">
 
       <div className="max-w-7xl mx-auto px-8">
 

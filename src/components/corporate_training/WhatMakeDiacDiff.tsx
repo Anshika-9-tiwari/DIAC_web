@@ -34,7 +34,7 @@ const features = [
 
 export default function WhatMakeDiacDiff() {
   return (
-    <section className="py-20 bg-[#fbfcff]">
+    <section className="py-20 bg-[#fbfcff] text-gray-700">
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-22">
 
@@ -54,7 +54,7 @@ export default function WhatMakeDiacDiff() {
           <p className="max-w-6xl max-autotext-gray-600 text-lg leading-8 mb-4">
            Whether you are looking to upskill engineers, train maintenance teams, enhance automation capabilities, or prepare your workforce for Industry 4.0, DIAC provides customized solutions that deliver measurable results.
           </p>
-           <p className="max-w-6xl max-autotext-red-900 text-lg leading-8">
+           <p className="max-w-6xl max-auto text-red-900 text-lg leading-8">
            Contact DIAC today to discuss your corporate training requirements and create a workforce development strategy tailored to your organization's future goals.
           </p>
 

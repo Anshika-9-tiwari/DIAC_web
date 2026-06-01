@@ -84,7 +84,7 @@ export default function OurServices() {
   };
 
   return (
-    <section className="py-14 bg-[#f8f8f8] overflow-hidden">
+    <section className="py-14 bg-[#f8f8f8] overflow-hidden text-gray-700">
 
       <div className="max-w-7xl mx-auto px-6">
 
