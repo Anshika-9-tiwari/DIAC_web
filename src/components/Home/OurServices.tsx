@@ -53,7 +53,7 @@ export default function OurServices() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
@@ -86,7 +86,7 @@ export default function OurServices() {
   return (
     <section className="py-14 bg-[#f8f8f8] overflow-hidden text-gray-700">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* HEADING */}
         <div className="mb-10">

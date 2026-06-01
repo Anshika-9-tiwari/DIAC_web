@@ -23,13 +23,13 @@ export default function AboutHero() {
   ];
 
   return (
-    <section className="py-14 md:py-16 bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] text-gray-700 overflow-hidden relative">
+    <section className="py-12 md:py-14 bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] text-gray-700 overflow-hidden relative">
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#801717]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-red-50 rounded-full blur-3xl"></div>
 
-      <div className="max-w-[1600px] mx-auto px-6 md:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-8 md:px-12 lg:px-14 relative z-10">
 
         <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-8 xl:gap-12 items-stretch">
 
@@ -83,7 +83,7 @@ export default function AboutHero() {
           {/* RIGHT SIDE */}
           <div className="bg-white rounded-[30px] p-6 md:p-12 border border-red-100 shadow-xl">
 
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#0b1f3a] mb-6 leading-tight">
               Why Students Choose DIAC?
             </h2>
 

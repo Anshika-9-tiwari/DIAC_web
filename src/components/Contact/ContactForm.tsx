@@ -12,13 +12,13 @@ export function ContactForm() {
   return (
     <section className="relative z-20 bg-white text-gray-700">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 ">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 ">
 
         {/* OVERLAP CARD */}
-        <div className="mt-0 lg:-mt-28 bg-white text-gray-700 rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2" >
+       <div className="mt-0 lg:-mt-28 bg-white rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2">
 
           {/* LEFT SIDE */}
-          <div className="bg-[#f5f5f5] p-6 sm:p-8 md:p-10 ">
+          <div className="bg-[#f5f5f5] p-6 sm:p-8 md:p-12 ">
 
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-[#0b1f3a]">
               Contact Information

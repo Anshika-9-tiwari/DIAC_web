@@ -1,40 +1,68 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import Slider from "react-slick";
+
+const items = [
+  "🛡️ Career-Focused Training Programs",
+  "👨‍🎓 Placement Guidance by Experts",
+  "📈 Skill-Based Learning Approach",
+  "🏭 Industry Collaboration for Hiring",
+  "🚀 Learn • Train • Get Placed",
+  "💼 Job-Oriented Automation Courses",
+  "🎯 Practical Hands-On Training",
+];
 
 export default function PlacementTrust() {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    slidesToShow: 4,
+    slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] text-white font-semibold  py-8 text-sm md:text-[16px]">
-        <div className="max-w-8xl mx-auto px-6 flex flex-wrap justify-center items-center gap-4 md:gap-8 text-center">
+    <section className="bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#891414] py-5 overflow-hidden">
+      <div className="max-w-8xl mx-auto">
 
-          <span className="flex items-center gap-2">
-            🛡️ Career-Focused Training Programs
-          </span>
+        <Slider {...settings}>
+          {items.map((item, index) => (
+            <div key={index}>
+              <div className="text-white font-medium text-center text-sm md:text-[18px] px-4 whitespace-nowrap">
+                {item}
+              </div>
+            </div>
+          ))}
+        </Slider>
 
-          <span className="hidden md:block text-white/40">|</span>
-
-          <span className="flex items-center gap-2">
-            👨‍🎓 Placement Guidance by Experts
-          </span>
-
-          <span className="hidden md:block text-white/40">|</span>
-
-          <span className="flex items-center gap-2">
-            📈  Skill-Based Learning Approach
-          </span>
-
-          <span className="flex items-center gap-2">
-            🛡️ Industry Collaboration for Hiring
-          </span>
-
-          <span className="hidden md:block text-white/40">|</span>
-
-          <span className="flex items-center gap-2">
-            👨‍🎓 Learn • Train • Get Placed
-          </span>
-
-        </div>
-
+      </div>
     </section>
   );
 }

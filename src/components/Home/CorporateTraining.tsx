@@ -30,7 +30,7 @@ const points = [
 export default function CorporateTraining() {
   return (
     <section className="py-18 bg-gray-50 text-gray-700">
-      <div className="max-w-7xl mx-auto px-6 md:px-10  ">
+      <div className="max-w-7xl mx-auto px-8 md:px-12  ">
 
         {/* Heading */}
         <div className="text-center mb-18">

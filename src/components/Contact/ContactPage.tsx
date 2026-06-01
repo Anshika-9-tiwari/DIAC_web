@@ -4,9 +4,9 @@ export function ContactPage() {
   return (
     <section className="bg-gradient-to-r from-gray-50 via-[#faf3f3] to-[#f9eeee] border border-gray-200 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 md:px-8 pt-14 md:pt-20 pb-20 md:pb-40">
+      <div className="max-w-7xl mx-auto px-8 md:px-12 pt-14 md:pt-20 pb-20 md:pb-45">
 
-        <p className="text-xs sm:text-sm font-medium tracking-[0.3em] text-[#801717] mb-4 uppercase">
+        <p className="text-xs sm:text-sm font-medium tracking-[0.3em] text-[#801717] mb-5 uppercase">
           Get In Touch
         </p>
 
