@@ -2,7 +2,7 @@
 
 export default function PlacementMessage() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-[#ffff] text-black ">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-[#ffff] text-black ">
       <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* Badge */}
@@ -29,39 +29,6 @@ export default function PlacementMessage() {
               With the rapid growth of Industry 4.0, smart manufacturing, and factory automation, industries across India are actively hiring skilled automation professionals. DIAC bridges the gap between technical education and industrial requirements through practical training, live projects, interview preparation, and placement support.
             </p>
           </div>
-
-          {/* Stats Cards
-          <div className="space-y-5">
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-red-100">
-              <h3 className="text-4xl font-bold text-[#801717]">
-                100%
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Placement Assistance
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-red-100">
-              <h3 className="text-4xl font-bold text-[#801717]">
-                500+
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Hiring Partners
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-red-100">
-              <h3 className="text-4xl font-bold text-[#801717]">
-                5L+
-              </h3>
-              <p className="text-gray-600 mt-2">
-                Students Trained
-              </p>
-            </div>
-
-          </div> */}
-
         </div>
 
         {/* second part */}
@@ -81,7 +48,7 @@ export default function PlacementMessage() {
           <p className="text-gray-700 text-lg leading-8 mb-6">
             India’s industrial automation market is projected to grow significantly over the coming years, driven by automotive, electronics, pharmaceutical, food processing, and manufacturing industries. Reports show strong market growth with increasing adoption of PLC, SCADA, robotics, and IoT technologies across industries.
           </p>
-          <p className="text-gray-800 text-lg font-medium leading-8">
+          <p className="text-gray-800 text-lg leading-8">
             According to recent industry reports:
           </p>
         </div>

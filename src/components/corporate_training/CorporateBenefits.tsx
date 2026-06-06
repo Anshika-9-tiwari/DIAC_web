@@ -101,7 +101,7 @@ export default function CorporateBenefits() {
           {benefits.map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-red-100 rounded-xl p-5 text-center shadow-sm hover:shadow-md transition"
+              className="bg-white border border-red-200 rounded-xl p-5 text-center shadow-sm hover:shadow-md transition"
             >
               <p className="font-semibold text-gray-600 text-md">
                 {item}
@@ -119,7 +119,7 @@ export default function CorporateBenefits() {
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#0b1f3a] mb-6 leading-tight">
-           Why Choose DIAC for 
+            Why Choose DIAC for 
             <span className="block text-[#801717]">
               Corporate Training?
             </span>
@@ -135,7 +135,7 @@ export default function CorporateBenefits() {
         </div>
 
         {/* FEATURE CARDS */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {features.map((item, i) => {
             const Icon = item.icon;

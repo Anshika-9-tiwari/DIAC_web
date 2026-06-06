@@ -23,14 +23,14 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/30 to-black/30"></div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-8  md:px-10  py-16 lg:py-16 h-full flex items-center">
+      <div className="relative max-w-[1500px] mx-auto px-8  md:px-12  py-16 lg:py-16 h-full flex items-center">
         <div className="grid lg:grid-cols-2 gap-10 md:gap-12  w-full items-center">
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl  font-semibold mb-10 playfair leading-tight tracking-wide ">
-              Become Certified in{" "}
-              <span className="text-red-900 playfair">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.08] text-gray-900 mb-8">
+              Become Certified in
+              <span className="block text-[#801717]">
                 Industrial Automation
               </span>
             </h1>
@@ -50,63 +50,90 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="/contact"
+                href="/brochures/industrial-automation.pdf"
+                target="_blank"
                 className="border border-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-white hover:text-black transition"
               >
-                Contact Us
+                Download Brochure
               </Link>
             </div>
           </div>
 
           {/* Enquiry Form */}
-          <div className="bg-white text-gray-600  rounded-md shadow-lg p-8 w-full max-w-md lg:ml-auto">
-            <h2 className="text-2xl text-black font-semibold mb-5 text-center">
-              Enquiry Now
-            </h2>
+          <div className="w-full max-w-md lg:ml-auto">
 
-            <form className="space-y-8">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
-              />
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
 
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
-              />
+              {/* Top Strip */}
+              <div className="bg-[#801717] text-white text-center py-4">
 
-              <input
-                type="tel"
-                placeholder="Phone"
-                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-[#801717]"
-              />
+                <h2 className="text-2xl font-bold mt-1">
+                  Enquiry Now
+                </h2>
+              </div>
 
-              <select
-                className="w-full border border-gray-300 px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-[#801717] bg-white"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Select Course
-                </option>
+              <div className="p-6">
 
-                <option>PLC Programming & Commissioning</option>
-                <option>SCADA & HMI Training</option>
-                <option>Drives & Motors Training</option>
-                <option>Industrial Robotics Training</option>
-                <option>Process Instrumentation</option>
-                <option>Panel Designing & AutoCAD</option>
-                <option>DCS Training</option>
-                <option>PLC Networking</option>
-                <option>Servo Motors Training</option>
+                <p className="text-center text-sm text-gray-600 mb-6">
+                  Get course details, fee structure and placement assistance information.
+                </p>
 
-              </select>
+                <form className="space-y-4">
 
-              <button className="w-full bg-[#801717] text-white py-3 rounded text-xl font-semibold cursor-pointer hover:bg-red-800 transition">
-                Submit
-              </button>
-            </form>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="input input-bordered w-full rounded-xl"
+                  />
+
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="input input-bordered w-full rounded-xl"
+                  />
+
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    className="input input-bordered w-full rounded-xl"
+                  />
+
+                  <textarea
+                    placeholder="Send Your Message"
+                    className="textarea textarea-bordered w-full rounded-xl min-h-[90px]"
+                  />
+
+                  <select
+                    className="select select-bordered w-full rounded-xl"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select Course
+                    </option>
+
+                    <option>PLC Programming & Commissioning</option>
+                    <option>SCADA & HMI Training</option>
+                    <option>Drives & Motors Training</option>
+                    <option>Industrial Robotics Training</option>
+                    <option>Process Instrumentation</option>
+                    <option>Panel Designing & AutoCAD</option>
+                    <option>DCS Training</option>
+                    <option>PLC Networking</option>
+                    <option>Servo Motors Training</option>
+                    <option>Industry 4.0 & IIoT Training</option>
+                    <option>Customized Corporate Training</option>
+                    <option>Other Enquiry</option>
+                  </select>
+
+                  <button className="btn bg-[#801717] hover:bg-red-900 border-none w-full text-white text-lg rounded-xl h-12">
+                    Get Free Consultation
+                  </button>
+
+                </form>
+              </div>
+
+            </div>
+
           </div>
 
         </div>

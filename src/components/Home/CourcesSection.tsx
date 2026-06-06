@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const categories = [
   {
@@ -10,39 +11,51 @@ const categories = [
   },
 
   {
-    name: "Industrial Automation Training",
+    name: "Full Industrial Automation",
     link: "/courses/industrial-automation",
   },
 
   {
-    name: "PLC Training",
+    name: "Job-Oriented Training",
     link: "/courses/plc-training",
   },
 
   {
-    name: "HMI Training",
+    name: "Servo & Drive Systems",
     link: "/courses/scada-and-hmi",
   },
 
   {
-    name: "Drives & Motors",
+    name: " Electrical Design",
     link: "/courses/drives-and-motors",
   },
 
   {
-    name: "Summer/Winter Trainings",
+    name: "PLC Vendor Training",
     link: "/courses/summer-winter-training",
   },
 
   {
-    name: "Panel Designing & AutoCAD",
+    name: "SCADA & HMI",
     link: "/courses/panel-designing-and-autocad",
   },
 
   {
-    name: "SCADA Training",
+    name: "VFD Drive Training",
     link: "/courses/scada-and-hmi",
   },
+  {
+    name: "Industrial IoT",
+    link: "/courses/industrial-iot",
+  },
+  {
+    name: "Panel Design",
+    link: "/courses/panel-designing-and-autocad",
+  },
+  {
+    name: "Customized Industrial Training",
+    link: "/courses/customized-industrial-training",
+  }
 ];
 
 const courses = [
@@ -86,7 +99,7 @@ const courses = [
     image: "/home_courses/job-oriented_training.png",
     duration: "3 Months",
     students: "150,000+ Students",
-    desc: " ",
+    desc: "Career-focused training with practical projects, interview preparation, and placement assistance for freshers.",
     link: "/courses/industrial-automation",
   },
 
@@ -95,7 +108,7 @@ const courses = [
     image: "/home_courses/electrical_design.png",
     duration: "1 Months",
     students: "12,000+ Students",
-    desc: "",
+    desc: "Learn electrical drafting, schematic design, panel layouts, and industry-standard design practices.",
     link: "/courses/plc-training",
   },
 
@@ -104,23 +117,25 @@ const courses = [
     image: "/home_courses/vfd_drive.png",
     duration: "1 Months",
     students: "18,000+ Students",
-    desc: "",
+    desc: "Understand variable frequency drives, motor control systems, commissioning, and troubleshooting techniques.",
     link: "/courses/scada-and-hmi",
   },
+
   {
     title: "Panel Design",
     image: "/home_courses/panel_design.png",
     duration: "1 Months",
     students: "5,000+ Students",
-    desc: "",
+    desc: "Master electrical panel design, component selection, wiring standards, and documentation practices.",
     link: "/courses/drives-and-motors",
   },
+
   {
     title: "Customized Industrial Training",
     image: "/home_courses/customise_industrial.png",
     duration: "1 Months",
     students: "11,000+ Students",
-    desc: "",
+    desc: "Tailored training programs designed to meet specific industrial requirements and workforce needs.",
     link: "/courses/scada-and-hmi",
   },
 
@@ -129,12 +144,17 @@ const courses = [
     image: "/home_courses/industrial_iot.png",
     duration: "1 Months",
     students: "8,000+ Students",
-    desc: "",
+    desc: "Explore Industry 4.0 technologies, smart manufacturing, sensors, cloud connectivity, and data analytics.",
     link: "/courses/drives-and-motors",
   },
 ];
 
 export default function CoursesSection() {
+
+   const [showAll, setShowAll] = useState(false);
+
+  const visibleCourses = showAll ? courses : courses.slice(0, 3);
+
   return (
     <section className="py-12 bg-white  text-gray-800">
 
@@ -143,25 +163,24 @@ export default function CoursesSection() {
         {/* HEADING */}
         <div className="mb-12 text-center">
 
-          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-10">
             DAIC Course & Training Programs
           </h2>
 
           {/* CATEGORY BUTTONS */}
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-5">
 
             {categories.map((item, index) => (
               <Link
                 key={index}
                 href={item.link}
-                className={`px-3 md:px-5 py-[6px] rounded-xl border border-gray-500 text-sm md:text-[14px] font-semibold transition
-                  
-                  ${
-                    index === 0
-                      ? "bg-[#8b0000] text-white border-[#8b0000]"
-                      : "bg-white border-black hover:bg-[#8b0000] hover:text-white hover:border-[#8b0000]"
-                  }
-                `}
+                className={`badge badge-lg py-4 px-5 font-medium transition-all duration-300
+
+                ${
+                  index === 0
+                    ? "badge-error text-white"
+                    : "badge-outline badge-accent text-gray-700 hover:border-[#801717] hover:text-[#801717] hover:bg-red-50"
+                }`}
               >
                 {item.name}
               </Link>
@@ -172,16 +191,17 @@ export default function CoursesSection() {
         </div>
 
         {/* COURSES GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {courses.map((course, index) => (
+          {visibleCourses.map((course, index) => (
+
             <div
               key={index}
-              className="bg-[#faf8f8e7] rounded-md overflow-hidden border border-gray-200 hover:shadow-lg transition"
+              className="card bg-base-100 shadow-lg hover:shadow-2xl border border-base-200 transition-all duration-300 rounded-xl"
             >
 
               {/* IMAGE */}
-              <div className="relative h-50">
+              <figure className="relative h-56">
 
                 <Image
                   src={course.image}
@@ -190,46 +210,78 @@ export default function CoursesSection() {
                   className="object-cover"
                 />
 
-              </div>
+              </figure>
 
               {/* CONTENT */}
-              <div className="p-5">
+              <div className="card-body">
 
-                <h3 className="text-xl font-semibold mb-1 md:mb-3  leading-snug min-h-[60px]">
+                <h3 className="card-title text-[22px] min-h-[70px]">
                   {course.title}
                 </h3>
 
-                <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                <p className="text-[16px] text-gray-600">
                   {course.desc}
                 </p>
 
-                {/* RATING */}
-                <div className="text-red-900 text-sm mb-2">
-                  ★★★★★
-                  <span className="text-gray-600 ml-2 text-xs">
+                <div className="flex items-center gap-4 text-sm mt-2 mb-3">
+
+                  <span className="text-yellow-400 text-[18px]">
+                    ★★★★★
+                  </span>
+
+                  <span className="text-gray-500">
                     {course.students}
                   </span>
+
                 </div>
 
-                {/* DURATION */}
-                <p className="text-[#801717] font-semibold text-sm mb-5">
+                <div className="badge badge-outline badge-error">
                   Duration: {course.duration}
-                </p>
+                </div>
 
-                {/* BUTTON */}
-                <Link
-                  href={course.link}
-                  className="block text-center bg-[#8b0000] text-white py-3 rounded-md font-medium hover:bg-red-900 transition"
-                >
-                  View Details
-                </Link>
+                <div className="card-actions mt-5 grid  grid-col-1 md:grid-cols-2 gap-3">
+
+                  <Link
+                    href={course.link}
+                    className="btn btn-outline bg-red-900 w-full text-white text-lg py-5 "
+                  >
+                    View Details
+                  </Link>
+                  <Link
+                    href="/brochures/industrial-automation.pdf"
+                    target="_blank"
+                    className="btn btn-outline border-[#801717] text-[#801717] hover:bg-[#801717] hover:text-white text-lg py-5 w-full"
+                  >
+                    Download Brochure
+                  </Link>
+
+                </div>
 
               </div>
 
             </div>
+
           ))}
 
         </div>
+
+        {/* SHOW ALL BUTTON */}
+        {courses.length > 3 && (
+
+          <div className="text-center mt-15">
+
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="btn btn-outline px-8 py-6 text-xl border-[#801717] text-red-900 hover:bg-[#801717] hover:text-white transition-all duration-300"
+            >
+              {showAll
+                ? "Show Less"
+                : `View More Courses`}
+            </button>
+
+          </div>
+
+        )}
 
       </div>
 

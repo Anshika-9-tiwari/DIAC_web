@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
+
 const courses = [
   {
     title: "PLC Programming Training",
+    image: "/home_courses/plc_vender_training.png",
     desc: "Programmable Logic Controllers (PLC) form the foundation of modern industrial automation systems. Our PLC Corporate Training programs help employees develop expertise in:",
     points: [
       "PLC architecture",
@@ -12,12 +16,14 @@ const courses = [
       "Industrial control systems",
       "Troubleshooting techniques",
       "System maintenance",
-      "Industrial networking"
+      "Industrial networking",
     ],
   },
+
   {
     title: "SCADA Training",
-    desc: "SCADA systems enable organizations to monitor and control industrial processes efficiently. Our SCADA Corporate Training covers:",
+    image: "/home_courses/scada_hmi.png",
+    desc: "SCADA systems enable organizations to monitor and control industrial processes efficiently.  Our SCADA Corporate Training covers:",
     points: [
       "SCADA architecture",
       "Real-time monitoring",
@@ -29,20 +35,10 @@ const courses = [
       "Remote monitoring systems",
     ],
   },
-  {
-    title: "HMI Training",
-    desc: "Human Machine Interface (HMI) systems improve operational visibility and productivity. Training includes:",
-    points: [
-      "HMI design principles",
-      "Screen development",
-      "Industrial visualization",
-      "Process control interfaces",
-      "Alarm systems",
-      "Data management",
-    ],
-  },
+
   {
     title: "Industrial Robotics Training",
+    image: "/home_courses/industrial_iot.png",
     desc: "Automation and robotics are transforming manufacturing operations globally. Our Industrial Robotics Training helps participants understand:",
     points: [
       "Robotics fundamentals",
@@ -54,9 +50,25 @@ const courses = [
       "Maintenance and troubleshooting",
     ],
   },
+
   {
-    title: "VFD and Servo Drive Training",
-    desc: "Employees learn:",
+    title: "HMI Training",
+    image: "/home_courses/electrical_design.png",
+    desc: "Human Machine Interface (HMI) systems improve operational visibility and productivity. Training includes:",
+    points: [
+      "HMI design principles",
+      "Screen development",
+      "Industrial visualization",
+      "Process control interfaces",
+      "Alarm systems",
+      "Data management",
+    ],
+  },
+
+  {
+    title: "VFD & Servo Drive Training",
+    image: "/home_courses/vfd_drive.png",
+    desc: "Employees gain practical knowledge of modern motion control systems used across industrial environments:",
     points: [
       "Motor control principles",
       "Variable Frequency Drive programming",
@@ -66,9 +78,11 @@ const courses = [
       "Maintenance procedures",
     ],
   },
+
   {
     title: "Panel Design Training",
-    desc: "Our panel design programs focus on:",
+    image: "/home_courses/panel_design.png",
+    desc: "Our panel design programs focus on practical implementation and industry-standard practices:",
     points: [
       "Electrical panel design",
       "Control panel development",
@@ -78,8 +92,10 @@ const courses = [
       "Industrial implementation",
     ],
   },
+
   {
     title: "Industry 4.0 Training",
+    image: "/home_courses/full_industrial_automation.png",
     desc: "Organizations preparing for digital transformation can benefit from training in:",
     points: [
       "Smart manufacturing",
@@ -94,77 +110,115 @@ const courses = [
 ];
 
 export default function CorporateCourses() {
+
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleCourses = showAll
+   ? courses
+   : courses.slice(0, 3);
+
+
   return (
-    <section className="py-20 bg-[#f7f7f7]">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section className="py-20 bg-[#f8f9fb]">
+
+      <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}
-        <div className="text-center mb-12 md:mb-18">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-3">
+        <div className="text-center mb-16">
+
+          <div className="badge badge-outline badge-error px-4 py-3 mb-5">
+            Corporate Training Programs
+          </div>
+
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-4">
             Corporate Training Programs Offered by DIAC
           </h2>
-          <p className="text-gray-600 text-[18px] max-w-2xl mx-auto">
-            Discover courses across different domains
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            Specialized industrial training programs designed to improve
+            workforce productivity, automation expertise, and operational
+            excellence.
           </p>
+
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {courses.map((course, i) => (
+          {visibleCourses.map((course, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl border border-gray-200 overflow-hidden"
+              className="card h-full bg-white shadow-md border border-gray-200 hover:shadow-2xl transition-all duration-300"
             >
 
-              {/* RED HEADER */}
-              <div className="bg-[#801717] text-white p-5">
+              {/* Image */}
+              <figure className="relative h-56 overflow-hidden">
 
-                {/* Tag
-                <span className="text-[10px] px-3 py-1 bg-white/20 rounded-full">
-                  {course.tag}
-                </span> */}
+                <Image
+                  src={course.image}
+                  alt={course.title}
+                  fill
+                  className="object-cover hover:scale-105 transition duration-500"
+                />
+
+              </figure>
+
+              {/* Content */}
+              <div className="card-body flex flex-col">
 
                 {/* Title */}
-                <h3 className="mt-3 font-semibold text-xl leading-snug">
+                <h3 className="card-title text-black text-xl leading-snug">
                   {course.title}
                 </h3>
-              </div>
-
-              {/* BODY */}
-              <div className="p-8 text-md text-gray-600">
 
                 {/* Description */}
-                <p className="mb-4 ">
+                <p className="text-gray-600 text-sm leading-7">
                   {course.desc}
                 </p>
 
                 {/* Points */}
-                <ul className="space-y-2">
+                <ul className="mt-4 space-y-2">
+
                   {course.points.map((point, index) => (
-                    <li key={index} className="flex gap-2">
-                      <span className="text-[#801717]">•</span>
-                      <span className="text-sm">{point}</span>
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 text-sm text-gray-700"
+                    >
+
+                      <span className="text-[#801717] font-bold mt-[2px]">
+                        ✓
+                      </span>
+
+                      <span>{point}</span>
+
                     </li>
                   ))}
+
                 </ul>
 
               </div>
-
-              {/* FOOTER */}
-              {/* <div className="border-t p-4 flex justify-between text-sm text-gray-500">
-                <span>Duration: {course.duration}</span>
-                <span className="text-[#801717] font-medium">
-                  {course.mode}
-                </span>
-              </div> */}
 
             </div>
           ))}
 
         </div>
 
+        {/* View More Button */}
+        {courses.length > 3 && (
+          <div className="text-center mt-12">
+
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="btn bg-[#801717] hover:bg-red-900 text-white text-lg border-none px-8 py-6"
+            >
+              {showAll ? "Show Less" : "View More Courses"}
+            </button>
+
+          </div>
+        )}
+
       </div>
+
     </section>
   );
 }

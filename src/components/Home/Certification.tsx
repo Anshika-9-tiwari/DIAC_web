@@ -15,9 +15,9 @@ export default function Certification() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="md:text-center mb-16"
         >
-          <h2 className="text-[25px] md:text-4xl font-bold mb-3 tracking-wide ">
+          <h2 className="text-[28px] md:text-4xl font-bold mb-3 tracking-wide ">
             Certification <span className="text-[#801717]">&</span> Recognition
           </h2>
           <p className="text-gray-700 md:text-[18px]">

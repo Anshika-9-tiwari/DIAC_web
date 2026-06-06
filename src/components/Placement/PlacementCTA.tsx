@@ -9,18 +9,20 @@ export default function PlacementCTA() {
       <div className="max-w-4xl mx-auto px-6">
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold mb-6">
-         Join and Get Placed — 100% Job Guarantee 
+        <h1 className="text-3xl md:text-5xl font-bold mb-10">
+          Start Your Career with DIAC 
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-200 mb-10 text-lg">
-         Your automation career starts here. Limited seats per batch. Get hands-on training, industry exposure,
-          and dedicated placement support to launch your career.
+        <p className="text-gray-200 mb-4 text-lg ">
+         Industrial Automation is one of the most promising career fields in modern engineering. With industries rapidly adopting automation technologies, skilled professionals are required across India and globally.
+        </p>
+        <p className="text-gray-200 mb-12 text-lg">
+          Join DIAC today and take the first step toward a successful future in Industrial Automation.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-8">
 
           {/* Primary CTA */}
           <Link

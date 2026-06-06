@@ -100,7 +100,7 @@ export default function CorporateTestimonials() {
   };
 
   return (
-    <section id="reviews" className="py-20 bg-[#fbfcff]">
+    <section id="reviews" className="py-16 bg-[#fbfcff]">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Label */}
@@ -128,7 +128,7 @@ export default function CorporateTestimonials() {
               <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition duration-300 min-h-[330px] flex flex-col">
 
                 {/* Stars */}
-                <div className="text-[#801717] mb-3 text-sm">
+                <div className="text-yellow-400 mb-3 text-[14px]">
                   ★★★★★
                 </div>
 

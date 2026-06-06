@@ -116,12 +116,12 @@ export default function Testimonials() {
               <div className="bg-white border border-gray-200 rounded-2xl p-7 h-[320px] flex flex-col">
 
                 {/* Stars */}
-                <div className="flex gap-1 text-[#801717] mb-4">
+                <div className="flex gap-1 text-yellow-400 mb-4">
 
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      size={14}
+                      size={12}
                       fill="currentColor"
                     />
                   ))}

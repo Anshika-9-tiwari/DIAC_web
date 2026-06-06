@@ -15,10 +15,10 @@ export default function PlacementHero() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative z-10 py-18 md:py-22">
+      <div className="relative z-10 py-18 md:py-20">
         <div className="max-w-6xl mx-auto px-8 text-center text-white">
 
           {/* Badge */}
@@ -27,25 +27,25 @@ export default function PlacementHero() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-[32px] md:text-6xl font-bold leading-relaxed tracking-wide mb-6">
-            Launch Your Career With
-            <span className="block text-[#af2b2b] mt-2">
-              DIAC Placement Program
+          <h1 className="text-[32px] md:text-6xl font-bold leading-tight tracking-wide mb-6">
+            Launch Your Career With  DIAC 
+            <span className="block text-gray-200 mt-2">
+             Placement Program
             </span>
           </h1>
 
           {/* Description */}
-          <p className="text-md md:text-xl text-gray-200 max-w-3xl mx-auto mb-15 leading-8">
+          <p className="text-md md:text-lg text-gray-200 max-w-3xl mx-auto mb-12 leading-8">
             Get trained on real industrial automation technologies,
             work on practical projects, and gain the skills required
             by top manufacturing and automation companies across India.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-14">
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6">
-              <h3 className="text-4xl font-bold text-red-700">
+              <h3 className="text-4xl font-bold text-gray-100">
                 5L+
               </h3>
               <p className="text-sm text-gray-300 mt-2">
@@ -54,7 +54,7 @@ export default function PlacementHero() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6">
-              <h3 className="text-4xl font-bold text-white">
+              <h3 className="text-4xl font-bold text-gray-100">
                 100%
               </h3>
               <p className="text-sm text-gray-300 mt-2">
@@ -63,7 +63,7 @@ export default function PlacementHero() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6">
-              <h3 className="text-4xl font-bold text-red-700">
+              <h3 className="text-4xl font-bold text-gray-100">
                 500+
               </h3>
               <p className="text-sm text-gray-300 mt-2">
@@ -72,7 +72,7 @@ export default function PlacementHero() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6">
-              <h3 className="text-4xl font-bold text-white">
+              <h3 className="text-4xl font-bold text-gray-100">
                 4.8★
               </h3>
               <p className="text-sm text-gray-300 mt-2">

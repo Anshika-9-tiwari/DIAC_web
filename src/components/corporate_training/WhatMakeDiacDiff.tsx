@@ -1,32 +1,36 @@
 "use client";
 
 import {
-  Layers,
-  Monitor,
-  Users,
-  Activity,
-  FileText,
-  Clock,
+  BookOpenCheck,
+  Cpu,
+  GraduationCap,
+  Route,
+  BarChart3,
 } from "lucide-react";
 
 const features = [
   {
+    icon: BookOpenCheck,
     title: "Industry-Relevant Curriculum",
     desc: "Every training program is aligned with current industrial requirements and emerging technologies.",
   },
   {
+    icon: Cpu,
     title: "Real Equipment Exposure",
     desc: "Participants gain hands-on experience using industrial automation equipment and systems.",
   },
   {
+    icon: GraduationCap,
     title: "Expert Mentors",
     desc: "Training is delivered by experienced professionals with extensive industry backgrounds.",
   },
   {
+    icon: Route,
     title: "Customized Learning Paths",
     desc: "Programs are designed specifically around your workforce development objectives.",
   },
   {
+    icon: BarChart3,
     title: "Measurable Outcomes",
     desc: "Our focus is not simply training delivery but measurable business impact.",
   },
@@ -38,7 +42,7 @@ export default function WhatMakeDiacDiff() {
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-22">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-6 leading-relaxed">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-6 leading-snug">
             Partner with DIAC for Workforce 
             <span className="block text-[#801717]">
               Transformation
@@ -69,26 +73,37 @@ export default function WhatMakeDiacDiff() {
         <div className="grid md:grid-cols-3 gap-6">
 
           {features.map((item, i) => {
+            const Icon = item.icon;
 
             return (
               <div
                 key={i}
-                className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm hover:-translate-y-1 hover:shadow-lg transition duration-300"
+                className="flex gap-5 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-red-100 transition duration-300"
               >
 
-                {/* Title */}
-                <h3 className="font-semibold text-lg mb-3 text-gray-900">
-                  {item.title}
-                </h3>
+                {/* Icon */}
+                <div className="w-14 h-14 shrink-0 rounded-xl bg-red-50 flex items-center justify-center">
+                  <Icon
+                    size={28}
+                    className="text-[#801717]"
+                  />
+                </div>
 
-                {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {item.desc}
-                </p>
+                {/* Content */}
+                <div>
+
+                  <h3 className="text-xl font-semibold text-[#0b1f3a] mb-2">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    {item.desc}
+                  </p>
+
+                </div>
               </div>
             );
           })}
-
         </div>
 
       </div>

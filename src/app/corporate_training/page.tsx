@@ -26,7 +26,7 @@ export default function CorporatePage() {
       <WhatMakeDiacDiff/>
       {/* <CorporateTestimonials /> */}
       {/* <CorporateContact /> */}
-      <FAQSection/>
+      {/* <FAQSection/> */}
     </main>
   );
 }

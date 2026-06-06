@@ -33,7 +33,7 @@ export default function CorporateTraining() {
       <div className="max-w-7xl mx-auto px-8 md:px-12  ">
 
         {/* Heading */}
-        <div className="text-center mb-18">
+        <div className="md:text-center mb-10 md:mb-18">
           <h2 className="text-3xl md:text-[40px] font-semibold mb-2 playfair">
             Corporate Training <span className="text-[#801717]">&</span> Industry Partners
           </h2>

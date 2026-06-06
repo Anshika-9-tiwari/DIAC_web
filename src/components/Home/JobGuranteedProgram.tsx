@@ -19,7 +19,7 @@ const programs = [
 
 export default function JobGuaranteePrograms() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-12 bg-white">
 
       <div className="max-w-7xl mx-auto px-8">
 
@@ -52,17 +52,14 @@ export default function JobGuaranteePrograms() {
               className="group block overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition duration-300"
             >
 
-              <div className="relative h-[260px] md:h-[300px]">
-
+             <div className="relative h-[170px] sm:h-[220px] md:h-[280px] lg:h-[320px] bg-white">
                 <Image
                   src={program.image}
                   alt={program.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
+                  className="object-contain group-hover:scale-105 transition duration-500"
                 />
-
               </div>
-
             </Link>
           ))}
 

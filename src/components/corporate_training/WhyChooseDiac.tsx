@@ -64,7 +64,7 @@ export default function WhyChooseDIAC() {
         </p>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8 ">
+        <div className="grid md:grid-cols-3 gap-6 ">
 
           {features.map((item, i) => {
             const Icon = item.icon;

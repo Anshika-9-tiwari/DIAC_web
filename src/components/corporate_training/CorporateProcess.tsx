@@ -2,79 +2,78 @@
 
 const steps = [
   {
-    title: " Training Need Analysis",
-    desc: "We begin by understanding your organization's objectives, workforce challenges, and skill development requirements.",
+    title: "Training Need Analysis",
+    desc: "Understanding business objectives, workforce challenges, and training requirements.",
   },
   {
-    title: " Skill Gap Assessment",
-    desc: "Our experts identify existing skill gaps and determine the competencies required for improved performance.",
+    title: "Skill Gap Assessment",
+    desc: "Identifying existing competencies and required technical skills.",
   },
   {
     title: "Customized Curriculum Design",
-    desc: "Based on assessment results, we create a tailored training roadmap aligned with your business goals.",
+    desc: "Creating a tailored learning roadmap aligned with organizational goals.",
   },
   {
-    title: " Training Delivery",
-    desc: "Training is delivered through interactive sessions, practical demonstrations, workshops, and real-world case studies.",
+    title: "Training Delivery",
+    desc: "Interactive sessions, practical workshops, demonstrations, and case studies.",
   },
   {
-    title: " Evaluation and Assessment",
-    desc: "Participant performance is assessed through practical exercises, assignments, and evaluations.",
+    title: "Evaluation & Assessment",
+    desc: "Measuring learning outcomes through assignments and practical assessments.",
   },
   {
     title: "Continuous Improvement",
-    desc: "Organizations receive recommendations for ongoing employee development and workforce enhancement.",
+    desc: "Recommendations for long-term workforce development and upskilling.",
   },
 ];
 
 export default function CorporateProcess() {
   return (
-    <section className="py-24 bg-gradient-to-br from-white to-[#fcf7f7]  text-black">
-      <div className="max-w-7xl mx-auto px-8 text-center">
+    <section className="py-20 bg-gradient-to-b from-white to-[#fcf7f7]">
+      <div className="max-w-7xl mx-auto px-8">
 
-        {/* Label */}
-        <p className="text-xs font-medium tracking-widest text-[#801717] uppercase mb-5">
-          Our Approach
-        </p>
+        {/* Header */}
+        <div className="text-center mb-16">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
-          Our Corporate Training Process
-        </h2>
+          <div className="badge badge-outline badge-error mb-5 px-4 py-3">
+            Our Approach
+          </div>
 
-        {/* Subtext */}
-        <p className="text-gray-600 max-w-3xl mx-auto mb-16 text-[16px]">
-          A structured five-step process ensures every programme is aligned to your
-          plant’s specific needs and produces real skill uplift.
-        </p>
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-5">
+            Our Corporate Training Process
+          </h2>
+
+          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            A structured process designed to align training with business goals,
+            workforce requirements, and measurable outcomes.
+          </p>
+
+        </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-4 ">
+        <div className="overflow-x-auto no-scrollbar snap-x snap-mandatory pb-6">
+          <ul className="steps steps-horizontal w-[1400px] ">
 
-          {steps.map((step, i) => (
-            <div
-              key={i}
-              className="group relative bg-white rounded-2xl p-6 border border-red-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Step Number */}
-              <div className="absolute -top-5 left-8">
-                <div className="w-12 h-12 rounded-full bg-[#801717] text-white flex items-center justify-center font-bold text-lg shadow-lg">
-                  {i + 1}
+            {steps.map((step, index) => (
+             <li
+                key={index}
+                className="step step-error  snap-center text-white"
+              >
+                <div className="w-[230px] mt-6 text-center">
+
+                  <span className="text-lg font-semibold text-[#0b1f3a] block mb-2">
+                    {step.title}
+                  </span>
+
+                  <p className="text-sm text-gray-600 leading-6">
+                    {step.desc}
+                  </p>
+
                 </div>
-              </div>
+              </li>
+            ))}
 
-              <div className="pt-6">
-                <h3 className="text-xl font-semibold text-[#0b1f3a] mb-4">
-                  {step.title}
-                </h3>
-
-                <p className="text-gray-600 leading-7 text-[15px]">
-                  {step.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-
+          </ul>
         </div>
 
       </div>

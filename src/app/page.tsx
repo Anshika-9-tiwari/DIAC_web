@@ -8,15 +8,17 @@ import WhyChooseUs from "@/components/Home/WhyChooseUs";
 import Testimonials from "@/components/Home/Testimonials";
 import Masterclass from "@/components/Home/Free Masterclass";
 import Certification from "@/components/Home/Certification";
-import ContactCTA from "@/components/Home/ContactCTA";
 import Trusted from "@/components/trustedClient/Trusted";
 import JobGuaranteePrograms from "@/components/Home/JobGuranteedProgram";
 import OurServices from "@/components/Home/OurServices";
+import PlacementCTA from "@/components/Placement/PlacementCTA";
+import CorporateTestimonials from "@/components/corporate_training/CorporateTestimonials";
+import WhatMakeDiacDiff from "@/components/Home/WhatMakeDiacDiff";
 
 export default function Home() {
   return (
     <main>
-      <Trusted />
+      {/* <Trusted /> */}
       <Hero />
       <Highlights />
       <Companies/>
@@ -24,13 +26,14 @@ export default function Home() {
       <CoursesSection/>
       <State/>
       <CorporateTraining/>
-      <OurServices/>
+      {/* <OurServices/> */}
       <WhyChooseUs/>
       <Testimonials/>
+      <WhatMakeDiacDiff/>
       <Masterclass/>
       <Certification/>
-      
-      <ContactCTA/>
+      <CorporateTestimonials/>
+      <PlacementCTA/>
     </main>
   );
 }

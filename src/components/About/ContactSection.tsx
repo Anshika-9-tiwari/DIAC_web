@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function AboutCTA() {
   return (
-    <section className="py-18 bg-white">
+    <section className="py-16 bg-white">
 
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-r from-[#801717] via-[#801717] to-[#801717] px-8 md:px-16 py-16 md:py-20 text-center">
+        <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-r from-[#801717] via-[#801717] to-[#801717] px-8 md:px-16 py-16 md:py-15 text-center">
 
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#801717]/25 rounded-full blur-[150px]"></div>
 

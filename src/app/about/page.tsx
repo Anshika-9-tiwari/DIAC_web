@@ -15,7 +15,7 @@ export default function AboutPage() {
       <TrainingMethodology/>
       <CoursesSection/>
       <VisionMission/>
-      <PlacementRecord/>
+      {/* <PlacementRecord/> */}
       <Testimonials/>
       <AboutCTA/>
     </main>
