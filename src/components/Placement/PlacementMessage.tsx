@@ -10,7 +10,7 @@ export default function PlacementMessage() {
           🎯 Career-Focused Training
         </div>
 
-        <div className="grid lg:grid-cols-1 gap-10  mb-14 md:mb-20">
+        <div className="grid lg:grid-cols-1 gap-10  mb-12 md:mb-14">
 
           {/* Content */}
           <div>

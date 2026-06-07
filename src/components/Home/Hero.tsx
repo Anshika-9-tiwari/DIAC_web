@@ -2,8 +2,79 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Hero() {
+
+   const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState("");
+    const [error, setError] = useState("");
+  
+    const [formData, setFormData] = useState({
+      firstname: "",
+      lastname: "",
+      email: "",
+      phone: "",
+      course: "",
+      message: "",
+    });
+  
+    const handleChange = (
+      e: React.ChangeEvent<
+        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+      >
+    ) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+  
+    const handleSubmit = async (
+      e: React.FormEvent<HTMLFormElement>
+    ) => {
+      e.preventDefault();
+  
+      setLoading(true);
+      setError("");
+      setSuccess("");
+  
+      try {
+        const response = await fetch("/api/ContactApi", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        const data = await response.json();
+  
+        if (data.success) {
+          setSuccess("Enquiry submitted successfully!");
+  
+          setFormData({
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            course: "",
+            message: "",
+          });
+          setTimeout(() => {
+          setSuccess("");
+        }, 3000);
+        } else {
+          setError("Something went wrong.");
+        }
+      } catch (err) {
+        setError("Failed to submit enquiry.");
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    
   return (
     <section className="relative w-full min-h-[650px] lg:min-h-[550px]">
 
@@ -23,7 +94,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/30 to-black/30"></div>
 
       {/* Content */}
-      <div className="relative max-w-[1500px] mx-auto px-8  md:px-12  py-16 lg:py-16 h-full flex items-center">
+      <div className="relative max-w-[1550px] mx-auto px-8  md:px-12  py-14 lg:py-16 h-full flex items-center">
         <div className="grid lg:grid-cols-2 gap-10 md:gap-12  w-full items-center">
 
           {/* Left Content */}
@@ -78,32 +149,54 @@ export default function Hero() {
                   Get course details, fee structure and placement assistance information.
                 </p>
 
-                <form className="space-y-4">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-5"
+                >
 
                   <input
                     type="text"
-                    placeholder="Full Name"
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handleChange}
+                    placeholder="First Name"
+                    required
                     className="input input-bordered w-full rounded-xl"
                   />
 
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="Phone Number"
+                    required
                     className="input input-bordered w-full rounded-xl"
                   />
 
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     placeholder="Email Address"
                     className="input input-bordered w-full rounded-xl"
                   />
 
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Send Your Message"
                     className="textarea textarea-bordered w-full rounded-xl min-h-[90px]"
                   />
 
                   <select
+                    name="course"
+                    value={formData.course}
+                    onChange={handleChange}
+                    required
                     className="select select-bordered w-full rounded-xl"
                     defaultValue=""
                   >
@@ -125,8 +218,24 @@ export default function Hero() {
                     <option>Other Enquiry</option>
                   </select>
 
-                  <button className="btn bg-[#801717] hover:bg-red-900 border-none w-full text-white text-lg rounded-xl h-12">
-                    Get Free Consultation
+                  {success && (
+                    <div className="alert alert-success shadow-lg">
+                      <span>{success}</span>
+                    </div>
+                  )}
+
+                  {error && (
+                    <div className="alert alert-error">
+                      <span>{error}</span>
+                    </div>
+                  )}
+
+                  {/* submit button */}
+
+                  <button className="btn bg-[#801717] hover:bg-red-900 border-none w-full text-white text-lg rounded-xl h-12 transition disabled:opacity-70">
+                     
+                    {loading ? "Submitting..." : "Get Free Consultation"}
+                    
                   </button>
 
                 </form>

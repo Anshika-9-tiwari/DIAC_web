@@ -74,7 +74,7 @@ const timelineData = [
 
 export default function PlacementTimeline() {
   return (
-    <section className="py-18 bg-white">
+    <section className="py-16 bg-white">
 
       <div className="max-w-7xl mx-auto px-8">
 

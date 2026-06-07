@@ -38,7 +38,7 @@ const features = [
 
 export default function WhatMakeDiacDiff() {
   return (
-    <section className="py-20 bg-[#fbfcff] text-gray-700">
+    <section className="py-18 bg-[#fbfcff] text-gray-700">
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-22">
 

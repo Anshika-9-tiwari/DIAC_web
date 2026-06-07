@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Mail,
   Phone,
@@ -9,6 +10,76 @@ import { FaInstagram,  FaYoutube } from "react-icons/fa";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 export function ContactForm() {
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    course: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setError("");
+    setSuccess("");
+
+    try {
+      const response = await fetch("/api/ContactApi", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSuccess("Enquiry submitted successfully!");
+
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          course: "",
+          message: "",
+        });
+        setTimeout(() => {
+          setSuccess("");
+        }, 3000);
+      } else {
+        setError("Something went wrong.");
+      }
+    } catch (err) {
+      setError("Failed to submit enquiry.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section className="relative z-20 bg-white text-gray-700">
 
@@ -147,20 +218,31 @@ export function ContactForm() {
               Send us a Message
             </h2>
 
-            <form className="space-y-5">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-5"
+            >
 
               {/* NAME */}
               <div className="grid sm:grid-cols-2 gap-4">
 
                 <input
                   type="text"
+                  name="firstname"
+                  value={formData.firstname}
+                  onChange={handleChange}
                   placeholder="First Name"
+                  required
                   className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
 
                 <input
                   type="text"
+                  name="lastname"
+                  value={formData.lastname}
+                  onChange={handleChange}
                   placeholder="Last Name"
+                  required
                   className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
 
@@ -171,13 +253,21 @@ export function ContactForm() {
 
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email"
+                  required
                   className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
 
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Phone"
+                  required
                   className="border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
                 />
 
@@ -185,10 +275,14 @@ export function ContactForm() {
 
               {/* COURSE */}
               <select
+                name="course"
+                value={formData.course}
+                onChange={handleChange}
+                required
                 className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717] bg-white"
-                defaultValue=""
               >
-                <option value="" disabled>Select Course</option>
+                <option value="">Select Course</option>
+
                 <option>PLC Programming & Commissioning</option>
                 <option>SCADA & HMI Training</option>
                 <option>Drives & Motors Training</option>
@@ -198,22 +292,37 @@ export function ContactForm() {
                 <option>DCS Training</option>
                 <option>PLC Networking</option>
                 <option>Servo Motors Training</option>
-
               </select>
 
               {/* MESSAGE */}
               <textarea
                 rows={5}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Message"
                 className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717]"
               ></textarea>
 
+              {success && (
+                <div className="alert alert-success shadow-lg">
+                  <span>{success}</span>
+                </div>
+              )}
+
+              {error && (
+                <div className="alert alert-error">
+                  <span>{error}</span>
+                </div>
+              )}
+
               {/* BUTTON */}
               <button
                 type="submit"
-                className="w-full bg-[#801717] text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition"
+                disabled={loading}
+                className="w-full bg-[#801717] text-white py-3 rounded-lg font-semibold hover:bg-red-800 transition disabled:opacity-70"
               >
-                Submit Enquiry
+                {loading ? "Submitting..." : "Submit Enquiry"}
               </button>
 
             </form>

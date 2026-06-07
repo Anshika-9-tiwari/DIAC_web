@@ -29,7 +29,7 @@ const steps = [
 
 export default function CorporateProcess() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#fcf7f7]">
+    <section className="py-18 bg-gradient-to-b from-white to-[#fcf7f7]">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Header */}

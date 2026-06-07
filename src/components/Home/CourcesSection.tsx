@@ -1,5 +1,6 @@
 "use client";
 
+import { Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -239,8 +240,7 @@ export default function CoursesSection() {
                   Duration: {course.duration}
                 </div>
 
-                <div className="card-actions mt-5 grid  grid-col-1 md:grid-cols-2 gap-3">
-
+                <div className="card-actions mt-5 grid  grid-col-1 md:grid-cols-2 gap-5">
                   <Link
                     href={course.link}
                     className="btn btn-outline bg-red-900 w-full text-white text-lg py-5 "
@@ -252,7 +252,8 @@ export default function CoursesSection() {
                     target="_blank"
                     className="btn btn-outline border-[#801717] text-[#801717] hover:bg-[#801717] hover:text-white text-lg py-5 w-full"
                   >
-                    Download Brochure
+                    <Download size={18} />
+                     Brochure
                   </Link>
 
                 </div>

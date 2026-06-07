@@ -18,7 +18,7 @@ export default function PlacementHero() {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative z-10 py-18 md:py-20">
+      <div className="relative z-10 py-16 md:py-18">
         <div className="max-w-6xl mx-auto px-8 text-center text-white">
 
           {/* Badge */}
