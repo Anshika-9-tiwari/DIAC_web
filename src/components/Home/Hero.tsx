@@ -161,7 +161,7 @@ export default function Hero() {
                     onChange={handleChange}
                     placeholder="First Name"
                     required
-                    className="input input-bordered w-full rounded-xl"
+                    className="input input-bordered w-full rounded-xl focus:border-[#801717]"
                   />
 
                   <input
@@ -171,7 +171,7 @@ export default function Hero() {
                     onChange={handleChange}
                     placeholder="Phone Number"
                     required
-                    className="input input-bordered w-full rounded-xl"
+                    className="input input-bordered w-full rounded-xl focus:outline-none focus:border-[#801717]"
                   />
 
                   <input
@@ -181,7 +181,7 @@ export default function Hero() {
                     onChange={handleChange}
                     required
                     placeholder="Email Address"
-                    className="input input-bordered w-full rounded-xl"
+                    className="input input-bordered w-full rounded-xl focus:border-[#801717]"
                   />
 
                   <textarea
@@ -189,7 +189,7 @@ export default function Hero() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Send Your Message"
-                    className="textarea textarea-bordered w-full rounded-xl min-h-[90px]"
+                    className="textarea textarea-bordered w-full rounded-xl min-h-[90px] focus:outline-none focus:border-[#801717]"
                   />
 
                   <select
@@ -197,12 +197,9 @@ export default function Hero() {
                     value={formData.course}
                     onChange={handleChange}
                     required
-                    className="select select-bordered w-full rounded-xl"
-                    defaultValue=""
+                    className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717] bg-white"
                   >
-                    <option value="" disabled>
-                      Select Course
-                    </option>
+                    <option value="">Select Course</option>
 
                     <option>PLC Programming & Commissioning</option>
                     <option>SCADA & HMI Training</option>
@@ -213,8 +210,7 @@ export default function Hero() {
                     <option>DCS Training</option>
                     <option>PLC Networking</option>
                     <option>Servo Motors Training</option>
-                    <option>Industry 4.0 & IIoT Training</option>
-                    <option>Customized Corporate Training</option>
+                    <option>Industrial IoT & Industry 4.0</option>
                     <option>Other Enquiry</option>
                   </select>
 

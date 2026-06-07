@@ -292,6 +292,8 @@ export function ContactForm() {
                 <option>DCS Training</option>
                 <option>PLC Networking</option>
                 <option>Servo Motors Training</option>
+                <option>Industrial IoT & Industry 4.0</option>
+                <option>Other</option>
               </select>
 
               {/* MESSAGE */}

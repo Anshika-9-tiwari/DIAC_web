@@ -3,13 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { CircleCheckBig } from 'lucide-react';
+import { useState } from "react";
 
 
 export default function CourseOverviewSection() {
 
-  /* =========================
-     NAV LINKS
-  ========================== */
+  /* ========================= NAV LINKS ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
     { label: "Features", href: "#features" },
@@ -21,9 +20,7 @@ export default function CourseOverviewSection() {
     { label: "FAQs", href: "#faqs" },
   ];
 
-  /* =========================
-      HIGHLIGHTS
-  ========================== */
+  /* ========================= HIGHLIGHTS ========================== */
   const highlights = [
     "100% Placement Support",
     "Unlimited Course Repeats",
@@ -32,6 +29,76 @@ export default function CourseOverviewSection() {
     "Flexible Timing",
     "Real Industry Projects",
   ];
+
+  // const handleSubmit
+  const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState("");
+    const [error, setError] = useState("");
+  
+    const [formData, setFormData] = useState({
+      firstname: "",
+      lastname: "",
+      email: "",
+      phone: "",
+      course: "",
+      message: "",
+    });
+  
+    const handleChange = (
+      e: React.ChangeEvent<
+        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+      >
+    ) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+  
+    const handleSubmit = async (
+      e: React.FormEvent<HTMLFormElement>
+    ) => {
+      e.preventDefault();
+  
+      setLoading(true);
+      setError("");
+      setSuccess("");
+  
+      try {
+        const response = await fetch("/api/ContactApi", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        const data = await response.json();
+  
+        if (data.success) {
+          setSuccess("Enquiry submitted successfully!");
+  
+          setFormData({
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            course: "",
+            message: "",
+          });
+          setTimeout(() => {
+            setSuccess("");
+          }, 3000);
+        } else {
+          setError("Something went wrong.");
+        }
+      } catch (err) {
+        setError("Failed to submit enquiry.");
+      } finally {
+        setLoading(false);
+      }
+    };
+  
 
   return (
     <>
@@ -176,12 +243,18 @@ export default function CourseOverviewSection() {
 
               {/* FORM */}
               <div className="p-8">
-
-                <form className="space-y-10">
+           
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-10">
 
                   {/* INPUT */}
                   <input
                     type="text"
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handleChange}
+                    required
                     placeholder="Your name"
                     className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
@@ -189,6 +262,10 @@ export default function CourseOverviewSection() {
                   {/* INPUT */}
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                     placeholder="Your email address"
                     className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
@@ -196,33 +273,52 @@ export default function CourseOverviewSection() {
                   {/* INPUT */}
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     placeholder="Phone"
                     className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
                   />
 
                   {/* TEXTAREA */}
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={3}
                     placeholder="Message"
                     className="w-full border-b border-gray-300 pb-2 text-[18px] resize-none focus:outline-none"
                   />
 
                   {/* CAPTCHA */}
-                  <div className="border rounded-md p-5 bg-[#fafafa]">
+                  {/* <div className="border rounded-md p-5 bg-[#fafafa]">
                     <div className="flex items-center gap-4">
                       <div className="w-8 h-8 border-2 rounded"></div>
-                      <span className="text-gray-700">
+                      <span typeof="checkbox" className="text-gray-700">
                         I'm not a robot
                       </span>
                     </div>
-                  </div>
+                  </div> */}
+
+                  {success && (
+                    <div className="alert alert-success shadow-lg">
+                      <span>{success}</span>
+                    </div>
+                  )}
+
+                  {error && (
+                    <div className="alert alert-error">
+                      <span>{error}</span>
+                    </div>
+                  )}
 
                   {/* BUTTON */}
                   <button
                     type="submit"
-                    className="w-full bg-[#801717] hover:bg-[#861616] transition text-white py-4 rounded-xl text-2xl font-semibold cursor-pointer"
+                    disabled={loading}
+                    className="w-full bg-[#801717] hover:bg-[#861616] transition text-white py-4 rounded-xl text-2xl font-semibold transition cursor-pointer disabled:opacity-70"
                   >
-                    Submit
+                    {loading ? "Submitting..." : "Submit"}
                   </button>
 
                 </form>
