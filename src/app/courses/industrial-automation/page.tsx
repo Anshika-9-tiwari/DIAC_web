@@ -1,4 +1,3 @@
-import FAQSection from "@/components/About/FaqSection";
 import CorporateTestimonials from "@/components/corporate_training/CorporateTestimonials";
 import CourseAudienceSection from "@/components/Courses/coursesSubpages/CourseAudienceSection";
 import CourseOverviewSection from "@/components/Courses/coursesSubpages/CourseOverviewSection";
