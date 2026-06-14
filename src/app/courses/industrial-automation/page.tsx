@@ -11,7 +11,7 @@ import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesP
 
 
 
-export default function IndustrialAutomation() {
+export default function IndustrialAutomationPage() {
   return (
     <main>
        <CourseSubpageHero/>
