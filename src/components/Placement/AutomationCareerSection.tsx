@@ -43,7 +43,7 @@ export default function AutomationCareerSection() {
               Career Opportunities
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
               Growing Demand for Skilled
               <span className="block text-[#801717]">
                 Automation Engineers
@@ -80,7 +80,7 @@ export default function AutomationCareerSection() {
         {/* Features */}
         <div className="mb-24">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-[#0b1f3a] mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-14">
             Our Industry-Oriented {" "}
             <span className=" text-[#801717]">
               Training Approach
@@ -118,7 +118,7 @@ export default function AutomationCareerSection() {
         {/* Who Can Apply */}
         <div className="text-center">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-15">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-15">
             Who Can Apply?
           </h2>
           
@@ -127,7 +127,7 @@ export default function AutomationCareerSection() {
             {candidates.map((item, index) => (
               <div
                 key={index}
-                className="badge badge-lg badge-outline badge-error py-6 px-6"
+                className="badge badge-lg badge-outline text-[#801717] border-red-900 py-6 px-6"
               >
                 {item}
               </div>

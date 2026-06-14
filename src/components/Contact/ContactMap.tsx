@@ -15,15 +15,14 @@ export function ContactMapSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-8 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
         {/* MAP */}
-        <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
-
-          <iframe
-            src="https://www.google.com/maps?q=Noida+Sector+2&output=embed"
-            className="w-full h-[280px] sm:h-[350px] md:h-[420px]"
-            loading="lazy"
-          ></iframe>
-
-        </div>
+          <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+            <iframe
+              width="100%"
+              height="420"
+              src="https://maps.google.com/maps?q=C-65,%202nd%20Floor,%20Near%20Sector-15%20Metro%20Station,%20Sector%202,%20Noida,%20Uttar%20Pradesh%20201301&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              className="w-full h-[280px] sm:h-[350px] md:h-[420px]"
+            />
+          </div>
 
         {/* RIGHT CONTENT */}
         <div>
@@ -60,7 +59,7 @@ export function ContactMapSection() {
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                 C-65, 2nd Floor, Metro Station, near Sector-15,
                 C Block, Sector 2, Noida,
-                Uttar Pradesh 201301, India
+                Uttar Pradesh 201301, India 
               </p>
 
             </div>

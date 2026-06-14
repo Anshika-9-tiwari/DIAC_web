@@ -99,7 +99,7 @@ export default function Hero() {
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.08] text-gray-900 mb-8">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.08] text-black mb-8">
               Become Certified in
               <span className="block text-[#801717]">
                 Industrial Automation
@@ -143,7 +143,7 @@ export default function Hero() {
                 </h2>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 ">
 
                 <p className="text-center text-sm text-gray-600 mb-6">
                   Get course details, fee structure and placement assistance information.
@@ -161,7 +161,7 @@ export default function Hero() {
                     onChange={handleChange}
                     placeholder="First Name"
                     required
-                    className="input input-bordered w-full rounded-xl focus:border-[#801717]"
+                    className="input input-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl focus:border-[#801717]"
                   />
 
                   <input
@@ -171,7 +171,7 @@ export default function Hero() {
                     onChange={handleChange}
                     placeholder="Phone Number"
                     required
-                    className="input input-bordered w-full rounded-xl focus:outline-none focus:border-[#801717]"
+                    className="input input-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl focus:outline-none focus:border-[#801717]"
                   />
 
                   <input
@@ -181,7 +181,7 @@ export default function Hero() {
                     onChange={handleChange}
                     required
                     placeholder="Email Address"
-                    className="input input-bordered w-full rounded-xl focus:border-[#801717]"
+                    className="input input-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl focus:border-[#801717]"
                   />
 
                   <textarea
@@ -189,7 +189,7 @@ export default function Hero() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Send Your Message"
-                    className="textarea textarea-bordered w-full rounded-xl min-h-[90px] focus:outline-none focus:border-[#801717]"
+                    className="textarea textarea-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl min-h-[90px] focus:outline-none focus:border-[#801717]"
                   />
 
                   <select
@@ -197,7 +197,7 @@ export default function Hero() {
                     value={formData.course}
                     onChange={handleChange}
                     required
-                    className="w-full border px-4 py-3 rounded-lg focus:outline-none focus:border-[#801717] bg-white"
+                    className="w-full border px-4 py-3 text-gray-700 rounded-lg focus:outline-none focus:border-[#801717] bg-white"
                   >
                     <option value="">Select Course</option>
 

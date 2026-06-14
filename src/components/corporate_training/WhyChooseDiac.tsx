@@ -53,7 +53,7 @@ export default function WhyChooseDIAC() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-5">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-5">
            Benefits of Industrial Corporate Training
         </h2>
 

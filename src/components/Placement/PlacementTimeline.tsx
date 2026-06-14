@@ -85,7 +85,7 @@ export default function PlacementTimeline() {
             Placement Journey
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
             Career Support & Placement Assistance
           </h2>
 
@@ -124,17 +124,17 @@ export default function PlacementTimeline() {
                     item.side === "start"
                       ? "timeline-start md:text-end"
                       : "timeline-end"
-                  } mb-8`}
+                  } mb-10`}
                 >
-                  <div className="card bg-base-100 shadow-md border border-gray-200 hover:shadow-xl transition">
+                  <div className="card bg-base-50 text-gray-800 shadow-md border border-gray-200 hover:shadow-xl transition">
 
                     <div className="card-body">
 
-                      <h3 className="card-title text-[#801717]">
+                      <h3 className="card-title text-[#801717] text-xl mb-2">
                         {item.title}
                       </h3>
 
-                      <ul className="space-y-3 text-sm">
+                      <ul className="space-y-3 text-[16px]">
 
                         {item.points.map((point, i) => (
                           <li

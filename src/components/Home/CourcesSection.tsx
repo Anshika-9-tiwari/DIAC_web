@@ -175,12 +175,12 @@ export default function CoursesSection() {
               <Link
                 key={index}
                 href={item.link}
-                className={`badge badge-lg py-4 px-5 font-medium transition-all duration-300
+                className={`badge badge-lg py-5 px-5 font-medium transition-all duration-300
 
                 ${
                   index === 0
-                    ? "badge-error text-white"
-                    : "badge-outline badge-accent text-gray-700 hover:border-[#801717] hover:text-[#801717] hover:bg-red-50"
+                    ? "badge-error bg-[#801717] text-white"
+                    : "badge-outline badge-accent text-gray-700 border-[#801717] hover:text-[#801717] hover:bg-red-50"
                 }`}
               >
                 {item.name}
@@ -198,7 +198,7 @@ export default function CoursesSection() {
 
             <div
               key={index}
-              className="card bg-base-100 shadow-lg hover:shadow-2xl border border-base-200 transition-all duration-300 rounded-xl"
+              className="card bg-base-50 shadow-lg hover:shadow-2xl border border-gray-200 transition-all duration-300 rounded-xl"
             >
 
               {/* IMAGE */}
@@ -236,7 +236,7 @@ export default function CoursesSection() {
 
                 </div>
 
-                <div className="badge badge-outline badge-error">
+                <div className="badge badge-outline border-red-900 text-red-800">
                   Duration: {course.duration}
                 </div>
 

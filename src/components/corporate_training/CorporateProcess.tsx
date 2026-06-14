@@ -39,7 +39,7 @@ export default function CorporateProcess() {
             Our Approach
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-5">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-5">
             Our Corporate Training Process
           </h2>
 

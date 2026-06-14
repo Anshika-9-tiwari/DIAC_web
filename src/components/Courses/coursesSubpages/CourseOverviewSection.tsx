@@ -4,6 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { CircleCheckBig } from 'lucide-react';
 import { useState } from "react";
+import {
+  RefreshCw,
+  Factory,
+  Zap,
+  Target,
+  ClipboardList,
+  CalendarDays,
+} from "lucide-react";
 
 
 export default function CourseOverviewSection() {
@@ -11,103 +19,89 @@ export default function CourseOverviewSection() {
   /* ========================= NAV LINKS ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
-    { label: "Features", href: "#features" },
-    { label: "Placements", href: "#placement" },
-    { label: "Certification", href: "#certification" },
     { label: "Curriculum", href: "#curriculum" },
     { label: "Projects", href: "#projects" },
+    { label: "Certification", href: "#certification" },
+    { label: "Placements", href: "#placements" },
+    { label: "Industry Demand & Eligibility", href: "#industry-demand" },
     { label: "Reviews", href: "#reviews" },
     { label: "FAQs", href: "#faqs" },
   ];
 
-  /* ========================= HIGHLIGHTS ========================== */
-  const highlights = [
-    "100% Placement Support",
-    "Unlimited Course Repeats",
-    "Mock Interviews",
-    "1:1 Doubt Sessions",
-    "Flexible Timing",
-    "Real Industry Projects",
+  const overviewCards = [
+    {
+      icon: RefreshCw,
+      title: "Learn Until You're Placed",
+      description:
+        "Continuous support until you land your target automation role — repeat sessions, mock interviews, and referrals included.",
+      iconBg: "bg-blue-50",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: Factory,
+      title: "10+ Real Industrial Projects",
+      description:
+        "Build water treatment plants, conveyor systems, bottle filling lines, and packaging machines from scratch.",
+      iconBg: "bg-orange-50",
+      iconColor: "text-orange-600",
+    },
+    {
+      icon: Zap,
+      title: "Real Hardware Practice",
+      description:
+        "Hands-on with Siemens S7-1200/S7-1500, TIA Portal, SINAMICS VFDs, live panels, and industrial networking equipment.",
+      iconBg: "bg-green-50",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: Target,
+      title: "Personalised Mentorship",
+      description:
+        "1:1 guidance from trainers with real industrial backgrounds in manufacturing, power, pharma, and process industries.",
+      iconBg: "bg-purple-50",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: ClipboardList,
+      title: "Interview Preparation",
+      description:
+        "Technical mock interviews, resume building, and unlimited practice sessions until you clear your target company's hiring process.",
+      iconBg: "bg-amber-50",
+      iconColor: "text-amber-600",
+    },
+    {
+      icon: CalendarDays,
+      title: "Flexible Batch Schedules",
+      description:
+        "Weekday, weekend, and evening batches available — so your upskilling doesn't interrupt your current commitments.",
+      iconBg: "bg-cyan-50",
+      iconColor: "text-cyan-600",
+    },
   ];
 
-  // const handleSubmit
-  const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState("");
-    const [error, setError] = useState("");
+  /* ========================= HIGHLIGHTS ========================== */
+  const highlights = [
+    "Manufacturing",
+    "Automotive",
+    "Oil & Gas",
+    "Pharmaceuticals",
+    "Food & Beverage",
+    "Power Plants",
+    "Infrastructure",
+    "Water Treatment Plants",
+    "Chemical Industries",
+    "Smart Manufacturing Facilities",
   
-    const [formData, setFormData] = useState({
-      firstname: "",
-      lastname: "",
-      email: "",
-      phone: "",
-      course: "",
-      message: "",
-    });
-  
-    const handleChange = (
-      e: React.ChangeEvent<
-        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-      >
-    ) => {
-      setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-      });
-    };
-  
-    const handleSubmit = async (
-      e: React.FormEvent<HTMLFormElement>
-    ) => {
-      e.preventDefault();
-  
-      setLoading(true);
-      setError("");
-      setSuccess("");
-  
-      try {
-        const response = await fetch("/api/ContactApi", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-  
-        const data = await response.json();
-  
-        if (data.success) {
-          setSuccess("Enquiry submitted successfully!");
-  
-          setFormData({
-            firstname: "",
-            lastname: "",
-            email: "",
-            phone: "",
-            course: "",
-            message: "",
-          });
-          setTimeout(() => {
-            setSuccess("");
-          }, 3000);
-        } else {
-          setError("Something went wrong.");
-        }
-      } catch (err) {
-        setError("Failed to submit enquiry.");
-      } finally {
-        setLoading(false);
-      }
-    };
-  
+  ];  
 
   return (
     <>
       {/* =========================
          STICKY NAVBAR
       ========================== */}
-      <div className="sticky top-2 z-40 bg-white border-b border-gray-200 shadow-sm">
+      <div className="sticky top-2 z-40 bg-white text-gray-800 border-b border-gray-200 shadow-sm py-1.5">
 
-        <div className="max-w-8xl mx-auto px-6 ">
+        <div className="max-w-8xl mx-auto px-8 ">
 
           <div className="flex items-center justify-around overflow-x-auto whitespace-nowrap">
 
@@ -149,201 +143,88 @@ export default function CourseOverviewSection() {
       ========================== */}
       <section
         id="overview"
-        className="py-16 bg-white"
+        className="py-12 md:py-16 bg-white"
       >
-        <div className="max-w-8xl mx-auto px-6 md:px-12 grid lg:grid-cols-[1fr_420px] gap-14 items-start">
+        <div className="max-w-7xl mx-auto px-8 md:px-12 ">
 
-          {/* =========================
-              LEFT CONTENT
-          ========================== */}
-          <div>
+          {/* SECTION HEADER */}
+          <div className=" text-center mb-16 mt-8  ">
 
-            {/* TITLE */}
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-8 mt-8 leading-tight">
-              Industrial Automation Course Overview
-            </h2>
-
-            {/* DESCRIPTION */}
-            <p className="text-[18px] leading-[44px] text-[#1f2937] mb-12">
-              Our Industrial Automation Course is carefully designed
-              to bridge the gap between theoretical and practical
-              industrial requirements. Learn PLC, SCADA, HMI,
-              Robotics, DCS, and real-time automation systems with
-              hands-on projects and complete placement support.
+            <p className="uppercase tracking-[4px] text-[#801717] font-semibold text-sm mb-4">
+              Why Choose DIAC
             </p>
 
-            {/* SUCCESS IMAGE */}
-            <div className="mb-25">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+              Job-Oriented Industrial Automation Training
+            </h2>
 
-              <Image
-                src="/courses/success_img.jpg"
-                alt="Success Process"
-                width={700}
-                height={500}
-                className="w-full max-w-4xl"
-              />
+            <p className="max-w-6xl  text-lg md:text-xl leading-9 text-gray-600">
+              DIAC is committed to delivering industry-relevant training that bridges the gap between academic knowledge and practical industrial requirements. With 17+ Years of Industrial Automation Training Experience, our training methodology focuses on real hardware exposure, project-based learning, and expert mentorship to ensure students become job-ready professionals.
+            </p>
 
-            </div>
+          </div>
 
-            {/* =========================
-                FEATURES SECTION
-            ========================== */}
-            <div id="features">
+          {/* OVERVIEW CARDS */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
 
-              {/* HEADING */}
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-15 ">
-                Key Highlights of Industrial Automation Course
-              </h2>
+            {overviewCards.map((card, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
+              >
+                <div
+                  className={`w-16 h-16 rounded-2xl ${card.iconBg} flex items-center justify-center text-3xl mb-6`}
+                >
+                  <card.icon className={card.iconColor} size={28} />
+                </div>
 
-              {/* GRID */}
-              <div className="grid md:grid-cols-2 gap-8">
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                  {card.title}
+                </h3>
 
-                {highlights.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg shadow-md border border-gray-50 px-6 py-5 flex items-center gap-5 hover:shadow-lg transition"
-                  >
-
-                    {/* ICON */}
-                    <CircleCheckBig
-                      size={28}
-                      className="text-[#801717]"
-                    />
-
-                    {/* TEXT */}
-                    <h3 className="text-[19px] font-medium text-[#111827]">
-                      {item}
-                    </h3>
-
-                  </div>
-                ))}
-
+                <p className="text-gray-600 leading-8 text-lg">
+                  {card.description}
+                </p>
               </div>
-
-            </div>
+            ))}
 
           </div>
 
           {/* =========================
-              RIGHT SIDEBAR
+              FEATURES SECTION
           ========================== */}
-          <div className="space-y-10 sticky top-30 h-fit">
+          <div id="industry-hiring">
 
-            {/* FORM */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden ">
+            {/* HEADING */}
+            <div className="max-w-7xl mb-16 mt-8  border-t border-gray-200 pt-8 ">
 
-              {/* TOP */}
-              <div className="bg-[#faf3ef] py-8 px-6">
-
-                <h3 className="text-3xl font-semibold text-center text-[#111827]">
-                  Request more information
-                </h3>
-
-              </div>
-
-              {/* FORM */}
-              <div className="p-8">
-           
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-10">
-
-                  {/* INPUT */}
-                  <input
-                    type="text"
-                    name="firstname"
-                    value={formData.firstname}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your name"
-                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
-                  />
-
-                  {/* INPUT */}
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your email address"
-                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
-                  />
-
-                  {/* INPUT */}
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Phone"
-                    className="w-full border-b border-gray-300 pb-2 text-[18px] focus:outline-none"
-                  />
-
-                  {/* TEXTAREA */}
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={3}
-                    placeholder="Message"
-                    className="w-full border-b border-gray-300 pb-2 text-[18px] resize-none focus:outline-none"
-                  />
-
-                  {/* CAPTCHA */}
-                  {/* <div className="border rounded-md p-5 bg-[#fafafa]">
-                    <div className="flex items-center gap-4">
-                      <div className="w-8 h-8 border-2 rounded"></div>
-                      <span typeof="checkbox" className="text-gray-700">
-                        I'm not a robot
-                      </span>
-                    </div>
-                  </div> */}
-
-                  {success && (
-                    <div className="alert alert-success shadow-lg">
-                      <span>{success}</span>
-                    </div>
-                  )}
-
-                  {error && (
-                    <div className="alert alert-error">
-                      <span>{error}</span>
-                    </div>
-                  )}
-
-                  {/* BUTTON */}
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-[#801717] hover:bg-[#861616] transition text-white py-4 rounded-xl text-2xl font-semibold transition cursor-pointer disabled:opacity-70"
-                  >
-                    {loading ? "Submitting..." : "Submit"}
-                  </button>
-
-                </form>
-
-              </div>
-
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+                Industries Hiring Automation Professionals
+              </h2>
             </div>
 
-            {/* CORPORATE TRAINING */}
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 text-center ">
+            {/* GRID */}
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 ">
 
-              <h3 className="text-2xl md:text-3xl font-bold mb-5">
-                Corporate Training
-              </h3>
+              {highlights.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-md border border-red-100 px-6 py-5 flex items-center gap-5 hover:shadow-lg transition"
+                >
 
-              <p className="text-[22px] text-gray-600 mb-10">
-                Enterprise training for teams
-              </p>
+                  {/* ICON */}
+                  <CircleCheckBig
+                    size={28}
+                    className="text-[#801717]"
+                  />
 
-              <Link
-                href="/corporate-training"
-                className="block bg-[#801717] hover:bg-[#8b1818] transition text-white py-3 rounded-md text-xl font-semibold"
-              >
-                Get a quote
-              </Link>
+                  {/* TEXT */}
+                  <h3 className="text-[19px] font-medium text-[#111827]">
+                    {item}
+                  </h3>
+
+                </div>
+              ))}
 
             </div>
 

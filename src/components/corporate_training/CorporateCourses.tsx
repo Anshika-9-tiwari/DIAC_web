@@ -130,7 +130,7 @@ export default function CorporateCourses() {
             Corporate Training Programs
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b1f3a] mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
             Corporate Training Programs Offered by DIAC
           </h2>
 

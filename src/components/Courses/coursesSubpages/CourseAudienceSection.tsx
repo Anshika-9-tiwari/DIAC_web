@@ -1,74 +1,64 @@
 "use client";
 
-import Image from "next/image";
-import { CircleCheckBig } from 'lucide-react';
-import { Check } from "lucide-react";
+import { CircleCheckBig } from "lucide-react";
 
 const audience = [
-  "Aspiring Industrial Automation Engineers",
-  "PLC / SCADA Professionals",
+  "B.Tech / B.E. Students & Graduates",
+  "Diploma Engineering Students",
+  "ITI Students (Electrician, Electronics, Instrumentation)",
+  "Final Year Students & Freshers",
   "Electrical & Electronics Engineers",
-  "Career Changers",
   "Instrumentation Engineers",
-  "Diploma & B.Tech Students",
+  "Maintenance & Production Engineers",
+  "Automation Professionals",
+  "Corporate Employees Seeking Upskilling",
 ];
 
 export default function CourseAudienceSection() {
   return (
-    <section className="py-20 bg-white">
+    <section 
+      id="industry-demand" 
+      className="py-18 bg-gradient-to-b from-white to-[#fffdfd]">
 
-      <div className="max-w-[1800px] mx-auto px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto px-8">
 
-        {/* MAIN BOX */}
-        <div className="bg-white rounded-[35px] border border-[#eceff5] overflow-hidden shadow-lg">
+        <div className="bg-white rounded-[32px] border border-red-100 shadow-[0_18px_60px_rgba(0,0,0,0.08)] p-6 md:p-12 lg:p-14">
 
-          <div className="grid lg:grid-cols-2 items-center">
-
-            {/* LEFT IMAGE */}
-            <div className="relative h-[300px] md:h-[350px] lg:h-[550px]">
-
-              <Image
-                src="/courses/student.png"
-                alt="Course Student"
-                fill
-                className="object-contain object-bottom"
-              />
-
+          {/* Badge */}
+          <div className="flex justify-center mb-8">
+            <div className="badge badge-outline badge-error px-5 py-4">
+              Eligibility Criteria
             </div>
+          </div>
 
-            {/* RIGHT CONTENT */}
-            <div className="px-8 md:px-14 lg:px-20 py-14">
+          {/* Heading */}
+          <h2 className="text-[33px] md:text-[45px] font-bold text-gray-800 text-center leading-tight mb-8">
+            Who Can Enroll & Eligibility
+          </h2>
 
-              <h2 className="text-4xl md:text-4xl font-bold text-[#111827] mb-12 leading-tight">
-                Who is this course for?
-              </h2>
+          {/* Description */}
+          <p className="text-[16px] md:text-lg leading-9 text-gray-600 text-center max-w-5xl mx-auto mb-12">
+            This Industrial Automation Training Program is ideal for students, fresh graduates, working professionals, and corporate employees who  want to build expertise in PLC, SCADA, HMI, Industrial Networking, VFD, and Automation Technologies. No prior automation experience is required, making it suitable for both beginners and experienced professionals.
+          </p>
 
-              <div className="space-y-6">
+          {/* Audience Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                {audience.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-6"
-                  >
+            {audience.map((item, index) => (
+              <div
+                key={index}
+                className="group flex items-start gap-4 p-5 rounded-2xl border border-red-100 bg-white hover:border-[#801717]/30 hover:shadow-lg transition-all duration-300"
+              >
+                <CircleCheckBig
+                  size={22}
+                  className="text-[#801717] mt-1 shrink-0"
+                />
 
-                    {/* ICON */}
-                    <CircleCheckBig
-                      size={25}
-                      className="text-[#801717]"
-                      strokeWidth={2}
-                    />
-
-                    {/* TEXT */}
-                    <p className="text-[20px] md:text-[22px] text-[#222] leading-relaxed">
-                      {item}
-                    </p>
-
-                  </div>
-                ))}
-
+                <p className="text-[17px] text-gray-700 leading-7 font-medium">
+                  {item}
+                </p>
               </div>
-
-            </div>
+            ))}
 
           </div>
 

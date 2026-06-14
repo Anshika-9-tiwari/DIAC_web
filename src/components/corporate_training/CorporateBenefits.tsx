@@ -118,7 +118,7 @@ export default function CorporateBenefits() {
             Why Choose DIAC
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0b1f3a] mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
             Why Choose DIAC for 
             <span className="block text-[#801717]">
               Corporate Training?
