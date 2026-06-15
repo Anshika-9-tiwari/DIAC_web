@@ -79,7 +79,7 @@ export default function CoursesProjectSection() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-[#0b1f3a] mb-6">
-            Real Systems You'll Build
+            Real Systems You will Build
           </h2>
 
           <p className="max-w-4xl mx-auto text-lg md:text-xl text-gray-600 leading-9">

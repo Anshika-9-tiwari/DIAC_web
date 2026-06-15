@@ -49,7 +49,7 @@ export default function PlacementSupportSection() {
           </p>
 
           <h2 className="text-[33px] md:text-5xl font-bold text-gray-800 mb-6">
-            We Don't Just Train You —{""}
+            We Do not Just Train You —{""}
             <span>
               We Help You Get Hired
             </span>

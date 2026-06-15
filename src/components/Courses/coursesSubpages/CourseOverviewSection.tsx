@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { CircleCheckBig } from 'lucide-react';
-import { useState } from "react";
 import {
   RefreshCw,
   Factory,

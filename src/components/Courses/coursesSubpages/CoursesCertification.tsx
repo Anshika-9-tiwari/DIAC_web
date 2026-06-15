@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Check, CircleCheckBig } from "lucide-react";
+import {  CircleCheckBig } from "lucide-react";
 
 const certificationPoints = [
   {

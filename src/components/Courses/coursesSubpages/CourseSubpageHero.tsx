@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
 import {
-  CheckCircle2,
   CircleCheckBig,
   Download,
   PlayCircle,

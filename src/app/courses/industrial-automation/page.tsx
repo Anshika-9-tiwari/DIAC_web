@@ -7,7 +7,7 @@ import CoursesPlacementSection from "@/components/Courses/coursesSubpages/Course
 import CourseSubpageHero from "@/components/Courses/coursesSubpages/CourseSubpageHero";
 import CurriculumSection from "@/components/Courses/coursesSubpages/CurriculumSection";
 import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesIndustryDemand";
-import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectSection"
+import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 
 
 

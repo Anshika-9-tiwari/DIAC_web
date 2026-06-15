@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, Wrench, CheckCircle2, CircleCheckBig } from "lucide-react";
+import { Briefcase, Wrench, CircleCheckBig } from "lucide-react";
 
 const jobRoles = [
   "Automation Engineer",
