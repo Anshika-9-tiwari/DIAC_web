@@ -2,19 +2,16 @@
 
 import { CircleCheckBig } from "lucide-react";
 
-const audience = [
-  "B.Tech / B.E. Students & Graduates",
-  "Diploma Engineering Students",
-  "ITI Students (Electrician, Electronics, Instrumentation)",
-  "Final Year Students & Freshers",
-  "Electrical & Electronics Engineers",
-  "Instrumentation Engineers",
-  "Maintenance & Production Engineers",
-  "Automation Professionals",
-  "Corporate Employees Seeking Upskilling",
-];
+interface Props {
+  data: {
+    badge: string;
+    title: string;
+    description: string;
+    audience: string[];
+  };
+}
 
-export default function CourseAudienceSection() {
+export default function CourseAudienceSection({data,}: Props) {
   return (
     <section 
       id="industry-demand" 
@@ -27,24 +24,24 @@ export default function CourseAudienceSection() {
           {/* Badge */}
           <div className="flex justify-center mb-8">
             <div className="badge badge-outline badge-error px-5 py-4">
-              Eligibility Criteria
+              {data.badge}
             </div>
           </div>
 
           {/* Heading */}
           <h2 className="text-[33px] md:text-[45px] font-bold text-gray-800 text-center leading-tight mb-8">
-            Who Can Enroll & Eligibility
+            {data.title}
           </h2>
 
           {/* Description */}
           <p className="text-[16px] md:text-lg leading-9 text-gray-600 text-center max-w-5xl mx-auto mb-12">
-            This Industrial Automation Training Program is ideal for students, fresh graduates, working professionals, and corporate employees who  want to build expertise in PLC, SCADA, HMI, Industrial Networking, VFD, and Automation Technologies. No prior automation experience is required, making it suitable for both beginners and experienced professionals.
+            {data.description}
           </p>
 
           {/* Audience Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-            {audience.map((item, index) => (
+            {data.audience.map((item, index) => (
               <div
                 key={index}
                 className="group flex items-start gap-4 p-5 rounded-2xl border border-red-100 bg-white hover:border-[#801717]/30 hover:shadow-lg transition-all duration-300"

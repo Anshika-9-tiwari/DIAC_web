@@ -11,59 +11,33 @@ import {
   Cog,
 } from "lucide-react";
 
+interface Props {
+  data: {
+    sectionTag: string;
+    title: string;
+    description: string;
 
-const projects = [
-  {
-    icon: Droplets,
-    title: "Water Treatment Plant",
-    desc: "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
-    tech: "PLC • SCADA • HMI",
-  },
-  {
-    icon: Package,
-    title: "Bottle Filling Plant",
-    desc: "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
-    tech: "PLC • HMI • SENSORS",
-  },
-  {
-    icon: MoveHorizontal,
-    title: "Conveyor Automation",
-    desc: "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
-    tech: "PLC • VFD • NETWORKING",
-  },
-  {
-    icon: Settings,
-    title: "Packaging Machine",
-    desc: "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
-    tech: "PLC • SERVO • HMI",
-  },
-  {
-    icon: TrafficCone,
-    title: "Traffic Light Control",
-    desc: "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
-    tech: "PLC • HMI",
-  },
-  {
-    icon: BarChart3,
-    title: "Tank Level Monitoring",
-    desc: "PID-controlled level system with continuous trending, alarm logging, and data export.",
-    tech: "PLC • SCADA • PID",
-  },
-  {
-    icon: Factory,
-    title: "Smart Factory App",
-    desc: "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
-    tech: "TIA PORTAL • SCADA",
-  },
-  {
-    icon: Cog,
-    title: "Process Automation",
-    desc: "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
-    tech: "PLC • INSTRUMENTATION",
-  },
-];
+    projects: {
+      icon: string;
+      title: string;
+      desc: string;
+      tech: string;
+    }[];
+  };
+}
 
-export default function CoursesProjectSection() {
+const iconMap = {
+  Droplets,
+  Package,
+  MoveHorizontal,
+  Settings,
+  TrafficCone,
+  BarChart3,
+  Factory,
+  Cog,
+};
+
+export default function CoursesProjectSection({ data,}: Props) {
   return (
     <section 
       id="projects"
@@ -74,16 +48,16 @@ export default function CoursesProjectSection() {
         {/* Header */}
         <div className="text-center mb-18">
 
-          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-4">
-            Industrial Projects
+          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-5">
+            {data.sectionTag}
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0b1f3a] mb-6">
-            Real Systems You will Build
+          <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-800 mb-6">
+            {data.title}
           </h2>
 
           <p className="max-w-4xl mx-auto text-lg md:text-xl text-gray-600 leading-9">
-            Every student implements complete automation projects — from wiring and programming to live commissioning — just like in real industry.
+            {data.description}
           </p>
 
         </div>
@@ -91,18 +65,19 @@ export default function CoursesProjectSection() {
         {/* Cards */}
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
 
-          {projects.map((project, index) => {
-            const Icon = project.icon;
+          {data.projects.map((project, index) => {
+
+            const Icon = iconMap[project.icon as keyof typeof iconMap];
 
             return (
               <div
                 key={index}
-                className="card bg-white border border-gray-300 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-2xl"
+                className="card bg-white border border-gray-200 shadow hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-2xl"
               >
                 <div className="card-body">
 
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center mb-5">
+                  <div className="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center mb-5 shadow">
                     <Icon
                       size={28}
                       className="text-[#801717]"
@@ -110,7 +85,7 @@ export default function CoursesProjectSection() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                  <h3 className="text-[22px] font-medium text-gray-700 mb-3">
                     {project.title}
                   </h3>
 
@@ -121,7 +96,7 @@ export default function CoursesProjectSection() {
 
                   {/* Tech Badge */}
                   <div>
-                    <span className="badge badge-lg bg-red-50 text-[#801717] border-0 px-4 py-4 font-semibold">
+                    <span className="badge badge-lg bg-red-50 text-gray-600 border-0 px-4 py-5 font-semibold shadow">
                       {project.tech}
                     </span>
                   </div>

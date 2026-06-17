@@ -52,7 +52,7 @@ export default function JobGuaranteePrograms() {
               className="group block overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition duration-300"
             >
 
-             <div className="relative h-[170px] sm:h-[220px] md:h-[280px] lg:h-[320px] bg-white">
+             <div className="relative h-[170px] sm:h-[220px] md:h-[280px] lg:h-[320px] bg-gray-100">
                 <Image
                   src={program.image}
                   alt={program.title}

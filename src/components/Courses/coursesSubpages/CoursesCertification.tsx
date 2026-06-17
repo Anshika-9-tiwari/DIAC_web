@@ -4,26 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import {  CircleCheckBig } from "lucide-react";
 
-const certificationPoints = [
-  {
-    title: "Hands-on Practical Training",
-    desc: "Gain real-world experience through live projects and industrial automation applications.",
-  },
-  {
-    title: "Industry-Recognized Certification",
-    desc: "Validate your skills in PLC, SCADA, HMI, VFD, and Industrial Networking.",
-  },
-  {
-    title: "Career Advancement Opportunities",
-    desc: "Enhance employability and prepare for roles in manufacturing, process, and automation industries.",
-  },
-  {
-    title: "Industry-Oriented Training",
-    desc: "Our training programs are designed to replicate real industrial environments and workflows. Participants learn the technologies, tools, standards, and troubleshooting techniques commonly used in modern industries.",
-  },
-];
+interface Props {
+  data: {
+    sectionTag: string;
+    title: string;
+    description: string;
+    image: string;
 
-export default function CoursesCertification() {
+    points: {
+      title: string;
+      desc: string;
+    }[];
+  };
+}
+
+
+export default function CoursesCertification({data,}: Props) {
   return (
     <section
       id="certification"
@@ -34,18 +30,16 @@ export default function CoursesCertification() {
         {/* TOP HEADING */}
         <div className="text-center mb-18">
 
-          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-4">
-            Certification
+          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-5">
+            {data.sectionTag}
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0b1f3a] mb-6">
-            Credentials That Open Doors
+          <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-700 mb-6">
+            {data.title}
           </h2>
 
-          <p className="max-w-3xl mx-auto text-[16px] md:text-xl text-gray-700 leading-8">
-            Earn an industry-recognised certificate that validates your skills
-            and demonstrates practical expertise in industrial automation
-            technologies.
+          <p className="max-w-4xl mx-auto text-[16px] md:text-xl text-gray-700 leading-8">
+            {data.description}
           </p>
 
         </div>
@@ -54,9 +48,9 @@ export default function CoursesCertification() {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-18 items-center">
 
           {/* LEFT SIDE */}
-          <div className="space-y-5">
+          <div className="space-y-6">
 
-            {certificationPoints.map((item, index) => (
+            {data.points.map((item, index) => (
               <div
                 key={index}
                 className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 shadow-sm hover:shadow-lg transition-all duration-300"
@@ -67,7 +61,7 @@ export default function CoursesCertification() {
                   {/* ICON */}
                   <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
                     <CircleCheckBig
-                      size={24}
+                      size={22}
                       className="text-red-800"
                     />
                   </div>
@@ -75,11 +69,11 @@ export default function CoursesCertification() {
                   {/* CONTENT */}
                   <div>
 
-                    <h3 className="text-xl md:text-[22px] font-semibold text-gray-800 mb-3">
+                    <h3 className="text-lg md:text-[22px] font-medium text-gray-800 mb-3">
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-600 text-lg leading-8">
+                    <p className="text-gray-600 text-[16px] md:text-lg leading-8">
                       {item.desc}
                     </p>
 
@@ -110,7 +104,7 @@ export default function CoursesCertification() {
             <div className="relative w-full max-w-[500px] h-[550px]">
 
               <Image
-                src="/courses/certificate_1.jpg"
+                src={data.image}
                 alt="Industrial Automation Certificate"
                 fill
                 className="object-contain"

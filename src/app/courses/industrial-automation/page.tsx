@@ -3,27 +3,59 @@ import CourseAudienceSection from "@/components/Courses/coursesSubpages/CourseAu
 import CourseOverviewSection from "@/components/Courses/coursesSubpages/CourseOverviewSection";
 import CoursesCertification from "@/components/Courses/coursesSubpages/CoursesCertification";
 import CoursesFAQSection from "@/components/Courses/coursesSubpages/coursesFAQ";
-import CoursesPlacementSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
 import CourseSubpageHero from "@/components/Courses/coursesSubpages/CourseSubpageHero";
 import CurriculumSection from "@/components/Courses/coursesSubpages/CurriculumSection";
 import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesIndustryDemand";
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
+import { industrialAutomationCourse } from "@/data/courses/industrial-automation";
+import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
 
 
 
 export default function IndustrialAutomationPage() {
   return (
     <main>
-       <CourseSubpageHero/>
-       <CourseOverviewSection/>
-       <CurriculumSection/>
-       <CoursesProjectSection/>
-       <CoursesCertification/>
-       <CoursesPlacementSection/>
-       <CoursesIndustryDemand/>
-       <CourseAudienceSection/>
+
+        <CourseSubpageHero
+          data={industrialAutomationCourse.hero}
+        />
+
+        <CourseOverviewSection
+          data={industrialAutomationCourse.overview}
+        />
+        
+        <CurriculumSection
+          data={{
+            ...industrialAutomationCourse.curriculum,
+            modules: industrialAutomationCourse.curriculum.module,
+          }}
+        />
+
+        <CoursesProjectSection
+          data={industrialAutomationCourse.projects}
+        />
+
+        <CoursesCertification
+          data={industrialAutomationCourse.certification}
+        />
+        
+       <PlacementSupportSection
+          data={industrialAutomationCourse.placement}
+        />
+
+       <CoursesIndustryDemand
+         data={industrialAutomationCourse.industryDemand}
+       />
+
+       <CourseAudienceSection
+         data={industrialAutomationCourse.audience}
+       />
+
        <CorporateTestimonials/>
-       <CoursesFAQSection/>
+
+       <CoursesFAQSection
+         data={industrialAutomationCourse.faq}
+       />
     </main>
   );
 }

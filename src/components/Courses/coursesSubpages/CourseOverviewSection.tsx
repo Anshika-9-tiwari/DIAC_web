@@ -11,8 +11,26 @@ import {
   CalendarDays,
 } from "lucide-react";
 
+interface Props {
+  data: {
+    sectionTag: string;
+    title: string;
+    description: string;
 
-export default function CourseOverviewSection() {
+    cards: {
+      icon: any;
+      title: string;
+      description: string;
+      iconBg: string;
+      iconColor: string;
+    }[];
+
+    industriesTitle: string;
+    industries: string[];
+  };
+}
+
+export default function CourseOverviewSection({ data,}: Props) {
 
   /* ========================= NAV LINKS ========================== */
   const navItems = [
@@ -26,71 +44,14 @@ export default function CourseOverviewSection() {
     { label: "FAQs", href: "#faqs" },
   ];
 
-  const overviewCards = [
-    {
-      icon: RefreshCw,
-      title: "Learn Until You're Placed",
-      description:
-        "Continuous support until you land your target automation role — repeat sessions, mock interviews, and referrals included.",
-      iconBg: "bg-blue-50",
-      iconColor: "text-blue-600",
-    },
-    {
-      icon: Factory,
-      title: "10+ Real Industrial Projects",
-      description:
-        "Build water treatment plants, conveyor systems, bottle filling lines, and packaging machines from scratch.",
-      iconBg: "bg-orange-50",
-      iconColor: "text-orange-600",
-    },
-    {
-      icon: Zap,
-      title: "Real Hardware Practice",
-      description:
-        "Hands-on with Siemens S7-1200/S7-1500, TIA Portal, SINAMICS VFDs, live panels, and industrial networking equipment.",
-      iconBg: "bg-green-50",
-      iconColor: "text-green-600",
-    },
-    {
-      icon: Target,
-      title: "Personalised Mentorship",
-      description:
-        "1:1 guidance from trainers with real industrial backgrounds in manufacturing, power, pharma, and process industries.",
-      iconBg: "bg-purple-50",
-      iconColor: "text-purple-600",
-    },
-    {
-      icon: ClipboardList,
-      title: "Interview Preparation",
-      description:
-        "Technical mock interviews, resume building, and unlimited practice sessions until you clear your target company's hiring process.",
-      iconBg: "bg-amber-50",
-      iconColor: "text-amber-600",
-    },
-    {
-      icon: CalendarDays,
-      title: "Flexible Batch Schedules",
-      description:
-        "Weekday, weekend, and evening batches available — so your upskilling doesn't interrupt your current commitments.",
-      iconBg: "bg-cyan-50",
-      iconColor: "text-cyan-600",
-    },
-  ];
-
-  /* ========================= HIGHLIGHTS ========================== */
-  const highlights = [
-    "Manufacturing",
-    "Automotive",
-    "Oil & Gas",
-    "Pharmaceuticals",
-    "Food & Beverage",
-    "Power Plants",
-    "Infrastructure",
-    "Water Treatment Plants",
-    "Chemical Industries",
-    "Smart Manufacturing Facilities",
-  
-  ];  
+  const iconMap = {
+    RefreshCw,
+    Factory,
+    Zap,
+    Target,
+    ClipboardList,
+    CalendarDays,
+  };
 
   return (
     <>
@@ -148,16 +109,16 @@ export default function CourseOverviewSection() {
           {/* SECTION HEADER */}
           <div className=" text-center mb-16 mt-8  ">
 
-            <p className="uppercase tracking-[4px] text-[#801717] font-semibold text-sm mb-4">
-              Why Choose DIAC
+            <p className="uppercase tracking-[4px] text-[#801717] font-semibold text-sm mb-5">
+             {data.sectionTag}
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
-              Job-Oriented Industrial Automation Training
+            <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 leading-tight mb-6">
+              {data.title}
             </h2>
 
-            <p className="max-w-6xl  text-lg md:text-xl leading-9 text-gray-600">
-              DIAC is committed to delivering industry-relevant training that bridges the gap between academic knowledge and practical industrial requirements. With 17+ Years of Industrial Automation Training Experience, our training methodology focuses on real hardware exposure, project-based learning, and expert mentorship to ensure students become job-ready professionals.
+            <p className="max-w-6xl text-[17px] md:text-lg  leading-9 text-gray-600">
+             {data.description} 
             </p>
 
           </div>
@@ -165,26 +126,35 @@ export default function CourseOverviewSection() {
           {/* OVERVIEW CARDS */}
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
 
-            {overviewCards.map((card, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
-              >
+            {data.cards.map((card, index) => {
+
+              const Icon =
+                iconMap[card.icon as keyof typeof iconMap];
+
+              return (
                 <div
-                  className={`w-16 h-16 rounded-2xl ${card.iconBg} flex items-center justify-center text-3xl mb-6`}
+                  key={index}
+                  className="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
                 >
-                  <card.icon className={card.iconColor} size={28} />
+                  <div
+                    className={`w-16 h-16 rounded-2xl ${card.iconBg} flex items-center justify-center text-3xl mb-6`}
+                  >
+                    <Icon
+                      className={card.iconColor}
+                      size={28}
+                    />
+                  </div>
+
+                  <h3 className="text-lg md:text-2xl font-medium text-gray-800 mb-4">
+                    {card.title}
+                  </h3>
+
+                  <p className="text-gray-600 leading-8 text-lg">
+                    {card.description}
+                  </p>
                 </div>
-
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-                  {card.title}
-                </h3>
-
-                <p className="text-gray-600 leading-8 text-lg">
-                  {card.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
 
           </div>
 
@@ -194,17 +164,17 @@ export default function CourseOverviewSection() {
           <div id="industry-hiring">
 
             {/* HEADING */}
-            <div className="max-w-7xl mb-16 mt-8  border-t border-gray-200 pt-8 ">
+            <div className="max-w-7xl mb-16 mt-10  border-t border-gray-200 pt-9 ">
 
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
-                Industries Hiring Automation Professionals
+              <h2 className="text-[32px] md:text-[45px] font-semibold text-gray-800 leading-tight mb-6">
+                {data.industriesTitle}
               </h2>
             </div>
 
             {/* GRID */}
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 ">
 
-              {highlights.map((item, index) => (
+              {data.industries.map((item, index) => (
                 <div
                   key={index}
                   className="bg-white rounded-lg shadow-md border border-red-100 px-6 py-5 flex items-center gap-5 hover:shadow-lg transition"
