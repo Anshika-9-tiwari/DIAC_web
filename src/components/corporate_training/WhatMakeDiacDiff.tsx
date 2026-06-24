@@ -10,9 +10,9 @@ import {
 
 const features = [
   {
-    icon: BookOpenCheck,
-    title: "Industry-Relevant Curriculum",
-    desc: "Every training program is aligned with current industrial requirements and emerging technologies.",
+    icon: BarChart3,
+    title: "Measurable Outcomes",
+    desc: "Our focus is not simply training delivery but measurable business impact.",
   },
   {
     icon: Cpu,
@@ -30,19 +30,20 @@ const features = [
     desc: "Programs are designed specifically around your workforce development objectives.",
   },
   {
-    icon: BarChart3,
-    title: "Measurable Outcomes",
-    desc: "Our focus is not simply training delivery but measurable business impact.",
+    icon: BookOpenCheck,
+    title: "Industry-Relevant Curriculum",
+    desc: "Every training program is aligned with current industrial requirements and emerging technologies.",
   },
+  
 ];
 
 export default function WhatMakeDiacDiff() {
   return (
     <section className="py-18 bg-[#fbfcff] text-gray-700">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="mb-22">
+        <div className="mb-20">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 leading-snug">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-6 leading-snug">
             Partner with DIAC for Workforce 
             <span className="block text-[#801717]">
               Transformation
@@ -65,7 +66,7 @@ export default function WhatMakeDiacDiff() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-20">
+        <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-20">
            What Makes DIAC Different?
         </h2>
 
@@ -78,14 +79,14 @@ export default function WhatMakeDiacDiff() {
             return (
               <div
                 key={i}
-                className="flex gap-5 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-red-100 transition duration-300"
+                className="flex gap-5 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-red-100 transition duration-300"
               >
 
                 {/* Icon */}
-                <div className="w-14 h-14 shrink-0 rounded-xl bg-red-50 flex items-center justify-center">
+                <div className="w-12 h-12 shrink-0 rounded-xl bg-red-900 flex items-center justify-center">
                   <Icon
-                    size={28}
-                    className="text-[#801717]"
+                    size={26}
+                    className="text-[#f7f7f7]"
                   />
                 </div>
 

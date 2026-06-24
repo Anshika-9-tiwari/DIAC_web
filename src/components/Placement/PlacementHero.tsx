@@ -22,7 +22,7 @@ export default function PlacementHero() {
         <div className="max-w-6xl mx-auto px-8 text-center text-white">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#801717]/30 backdrop-blur-sm border border-red-500/40 text-red-100 px-5 py-2 rounded-full text-sm mb-10">
+          <div className="inline-flex items-center gap-2 bg-[#801717] backdrop-blur-sm border border-red-500/40 text-red-100 px-5 py-2 rounded-full text-sm mb-10">
             🎯 100% Placement Assistance with Career Support
           </div>
 

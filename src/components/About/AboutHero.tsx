@@ -36,11 +36,11 @@ export default function AboutHero() {
           {/* LEFT SIDE */}
           <div className="flex flex-col justify-center">
 
-            <span className="inline-flex w-fit px-4 py-2 rounded-full bg-red-50 border border-red-100 text-[#801717] text-sm font-medium mb-6">
+            <span className="inline-flex w-fit px-4 py-1 rounded-full bg-red-900 border border-red-100 text-[#f7f7f7] text-xs font-medium mb-6">
               ABOUT DIAC
             </span>
 
-            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.05] text-[#0b1f3a] mb-8">
+            <h1 className="text-4xl md:text-[45px] xl:text-6xl font-bold leading-[1.05] text-[#141517] mb-8">
               Building Future
               <br />
               <span className="text-[#801717]">
@@ -81,9 +81,9 @@ export default function AboutHero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="bg-white rounded-[30px] p-6 md:p-12 border border-red-100 shadow-xl">
+          <div className="bg-white rounded-[30px] p-6 md:p-12 border border-red-100 shadow-xl text-center">
 
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#0b1f3a] mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#1a1c1f] mb-6 leading-tight">
               Why Students Choose DIAC?
             </h2>
 

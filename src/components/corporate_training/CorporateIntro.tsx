@@ -2,7 +2,7 @@
 
 export default function CorporateIntro() {
   return (
-    <section className="py-20 bg-white ">
+    <section className="py-18 bg-white ">
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
 
         {/* LEFT */}
@@ -14,7 +14,7 @@ export default function CorporateIntro() {
           </span>
 
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-[#0b1f3a] leading-tight md:leading-15">
+          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-slate-800 leading-tight md:leading-15">
             Empower Your Workforce with Industry-Focused Corporate Training Programs
           </h2>
 

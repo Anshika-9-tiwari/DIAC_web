@@ -79,12 +79,14 @@ export default function Navbar() {
                 />
               </div>
 
-              <ul className="absolute left-0 top-full hidden group-hover:block bg-white text-black rounded-md w-60 mt-3 p-2 shadow-lg z-50">
-                {coursesDropdown.map((course, index) => (
-                  <li key={index} className="p-2 hover:bg-gray-100 rounded">
-                    <Link href={course.href}>{course.name}</Link>
-                  </li>
-                ))}
+              <ul className="absolute left-0 top-full pt-3 hidden group-hover:block z-50">
+                <div className="bg-white text-black rounded-md w-72 p-2 shadow-lg border border-gray-100">
+                  {coursesDropdown.map((course, index) => (
+                    <li key={index} className="p-2 hover:bg-gray-100 rounded">
+                      <Link href={course.href}>{course.name}</Link>
+                    </li>
+                  ))}
+                </div>
               </ul>
             </li>
           </ul>

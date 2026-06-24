@@ -41,7 +41,6 @@ export default function CourseOverviewSection({ data,}: Props) {
     { label: "Placements", href: "#placements" },
     { label: "Industry Demand & Eligibility", href: "#industry-demand" },
     { label: "Reviews", href: "#reviews" },
-    { label: "FAQs", href: "#faqs" },
   ];
 
   const iconMap = {

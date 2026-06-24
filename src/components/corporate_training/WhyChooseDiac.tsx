@@ -48,12 +48,12 @@ export default function WhyChooseDIAC() {
       <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* Label */}
-        <p className="text-xs tracking-widest text-[#801717] uppercase mb-3">
-          benefits of DIAC
-        </p>
+        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-wide">
+          Benifits of DIAC
+        </span>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-5">
+        <h2 className="text-[31px] md:text-[45px] font-bold text-gray-800 mb-5">
            Benefits of Industrial Corporate Training
         </h2>
 

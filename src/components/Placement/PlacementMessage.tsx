@@ -6,15 +6,15 @@ export default function PlacementMessage() {
       <div className="max-w-7xl mx-auto px-8 md:px-12">
 
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#801717] border border-black text-[#ffff] px-4 py-2 rounded-full text-sm mb-6">
+        <div className="inline-flex items-center gap-2 bg-[#801717] border border-black text-[#ffff] px-4 py-1 rounded-full text-xs mb-6">
           🎯 Career-Focused Training
         </div>
 
-        <div className="grid lg:grid-cols-1 gap-10  mb-12 md:mb-14">
+        <div className="grid lg:grid-cols-1 gap-10  mb-12 md:mb-12">
 
           {/* Content */}
           <div>
-            <h2 className="text-3xl md:text-5xl leading-relaxed font-bold mb-6">
+            <h2 className="text-3xl md:text-[45px] leading-snug font-bold mb-6">
               Placement Assistance at DIAC - Build  Your Career in
               <span className="block text-[#801717]">
                  Industrial Automation
@@ -34,7 +34,7 @@ export default function PlacementMessage() {
         {/* second part */}
 
         <div>
-          <h2 className="text-3xl md:text-5xl leading-relaxed tracking-normal font-bold mb-6">
+          <h2 className="text-[31px] md:text-[45px] leading-relaxed tracking-normal font-bold mb-6">
             Why Industrial Automation is a {" "}
             <span className=" text-[#801717]">
               Fast-Growing Career
@@ -48,7 +48,7 @@ export default function PlacementMessage() {
           <p className="text-gray-700 text-lg leading-8 mb-6">
             India’s industrial automation market is projected to grow significantly over the coming years, driven by automotive, electronics, pharmaceutical, food processing, and manufacturing industries. Reports show strong market growth with increasing adoption of PLC, SCADA, robotics, and IoT technologies across industries.
           </p>
-          <p className="text-gray-800 text-lg leading-8">
+          <p className="text-gray-800 text-xl leading-8 font-bold">
             According to recent industry reports:
           </p>
         </div>

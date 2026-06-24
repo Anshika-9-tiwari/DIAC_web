@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { CircleCheckBig } from "lucide-react";
 
 export default function Hero() {
 
@@ -99,33 +100,44 @@ export default function Hero() {
 
           {/* Left Content */}
           <div className="text-white">
-            <h1 className="text-4xl md:text-6xl xl:text-7xl font-bold leading-[1.08] text-black mb-8">
-              Become Certified in
-              <span className="block text-[#801717]">
-                Industrial Automation
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight text-white mb-8">
+              Become an Industrial Automation Engineer
+              <span className="block text-white">
+                 in 3–6 Months
               </span>
             </h1>
 
-            <p className="mb-12 text-base md:text-lg text-gray-50">
-              Join the best Industrial Automation and Robotics training institute
-              in Delhi with 100% placement assistance.
-            </p>
+            <div className="mb-12 space-y-4">
+              {[
+                "Build Job-Ready Automation Skills",
+                "Live Industrial Projects",
+                "Placement Assistance with 100+ Hiring Partners",
+                "Training Since 2008",
+              ].map((item, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <CircleCheckBig size={20} className="text-white shrink-0" />
+                  <p className="text-base md:text-lg text-white">
+                    {item}
+                  </p>
+                </div>
+              ))}
+            </div>
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/courses"
-                className="bg-red-900 text-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-red-800 transition uppercase border"
+                className="bg-transparent text-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-red-800 transition uppercase border tracking-wide"
               >
-                View Courses
+                Book Free Demo Class
               </Link>
 
               <Link
                 href="/brochures/industrial-automation.pdf"
                 target="_blank"
-                className="border border-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-white hover:text-black transition"
+                className="border border-white px-8 py-4 text-center rounded-tr-xl rounded-bl-xl font-semibold hover:bg-white hover:text-black transition tracking-wide"
               >
-                Download Brochure
+                Download Course Brochure
               </Link>
             </div>
           </div>
@@ -138,7 +150,7 @@ export default function Hero() {
               {/* Top Strip */}
               <div className="bg-[#801717] text-white text-center py-4">
 
-                <h2 className="text-2xl font-bold mt-1">
+                <h2 className="text-2xl font-bold mt-1 tracking-wide">
                   Enquiry Now
                 </h2>
               </div>
@@ -189,7 +201,7 @@ export default function Hero() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Send Your Message"
-                    className="textarea textarea-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl min-h-[90px] focus:outline-none focus:border-[#801717]"
+                    className="textarea textarea-bordered border-gray-300 bg-white text-gray-800 w-full rounded-xl min-h-[50px] focus:outline-none focus:border-[#801717]"
                   />
 
                   <select
@@ -200,17 +212,16 @@ export default function Hero() {
                     className="w-full border px-4 py-3 text-gray-700 rounded-lg focus:outline-none focus:border-[#801717] bg-white"
                   >
                     <option value="">Select Course</option>
-
-                    <option>PLC Programming & Commissioning</option>
-                    <option>SCADA & HMI Training</option>
+                    <option>Industrial Automation Training</option>
+                    <option>SCADA & HMI</option>
+                    <option>VFD Drive Training</option>
+                    <option>Electrical Design</option>
                     <option>Drives & Motors Training</option>
-                    <option>Industrial Robotics Training</option>
                     <option>Process Instrumentation</option>
                     <option>Panel Designing & AutoCAD</option>
-                    <option>DCS Training</option>
                     <option>PLC Networking</option>
                     <option>Servo Motors Training</option>
-                    <option>Industrial IoT & Industry 4.0</option>
+                    <option>Robotics Training</option>
                     <option>Other Enquiry</option>
                   </select>
 

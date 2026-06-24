@@ -46,15 +46,14 @@ export default function TrainingMethodology() {
   return (
     <section className="py-20 bg-gray-50 shadow-lg"> 
       <div className="max-w-7xl mx-auto px-6">
-                                    {/* bg-[#f5f1ec] */}
         {/* Top Label */}
-        <p className="text-xs tracking-widest text-[#801717] mb-5 uppercase">
-          Our Approach -
-        </p>
+        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
+          Our Approach-
+        </span>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-wide text-gray-800">
-          Industry-Focused Training That Builds Real Careers
+        <h2 className="text-[35px] md:text-[42px] font-semibold mb-6 text-gray-800">
+          DIAC <span className="text-[#801717]">Advantage</span>
         </h2>
 
         {/* Subtext */}

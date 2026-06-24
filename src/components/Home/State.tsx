@@ -64,7 +64,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-14 text-white bg-gray-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] backdrop-blur-md">
+    <section className="py-18 text-white bg-gray-50 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 ">
 
         {/* Heading */}
@@ -75,14 +75,14 @@ export default function Stats() {
           viewport={{ once: true }}
           className="text-center  mb-15"
         >
-          <h2 className="text-[21px] md:text-[30px] font-bold playfair mb-3">
+          <h2 className="text-[22px] md:text-[32px] font-bold playfair mb-3">
             Build Your Career in Industrial Automation
           </h2>
           <p className="text-[18px]">Join thousands of students building successful careers through practical industrial training.</p>
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5  gap-8 text-center">
+        <div className="flex flex-wrap justify-center md:grid md:grid-cols-5 gap-10 text-center">
 
           {stats.map((item, index) => {
             const Icon = item.icon;
@@ -94,10 +94,9 @@ export default function Stats() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className={`flex flex-col items-center ${
-                    index !== stats.length - 1 ? "md:border-r-2" : ""
-                    }`}
-                >
+                className={`w-[140px] md:w-auto flex flex-col items-center ${
+                  index !== stats.length - 1 ? "md:border-r-2" : ""
+                }`}>
                 <Icon size={40} className="mb-3" />
 
                 <h3 className="text-2xl md:text-3xl font-bold font-serif playfair mb-2">
@@ -112,22 +111,6 @@ export default function Stats() {
           })}
 
         </div>
-        {/* Download Brochure Button
-        <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="flex justify-center mt-14"
-            >
-            <a
-                href="/brochure.pdf"
-                download
-                className="bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-red-900 hover:text-white hover:border-2 hover:border-white shadow-lg transition duration-300 "
-            >
-                Download Brochure
-            </a>
-        </motion.div> */}
       </div>
     </section>
   );

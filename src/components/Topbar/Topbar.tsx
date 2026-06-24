@@ -5,8 +5,6 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Topbar() {
 
-  const year = new Date().getFullYear();
-
   return (
     <div className="bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] text-white border-b border-white/10">
 
@@ -14,10 +12,6 @@ export default function Topbar() {
 
     {/* Left */}
     <div className="flex items-center gap-4 md:gap-8 text-sm">
-
-      <span className="hidden lg:flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs font-medium">
-        🔥 Admissions Open {year}-{String(year + 1).slice(-2)}
-      </span>
 
       <a
         href="tel:+919953489987"
@@ -40,14 +34,20 @@ export default function Topbar() {
     </div>
 
     {/* Center */}
-    <div className="hidden lg:flex items-center">
+    {/* <div className="hidden lg:flex items-center">
       <span className="text-sm font-medium tracking-wide">
         🎯 100% Placement Assistance & Career Support
       </span>
-    </div>
+    </div> */}
 
     {/* Right */}
     <div className="flex items-center gap-3">
+
+      <div className="hidden lg:flex items-center mr-3">
+        <span className="text-sm font-medium tracking-wide">
+          🎯 100% Placement Assistance & Career Support
+        </span>
+      </div>
 
       <a
         href="https://wa.me/919953489987"

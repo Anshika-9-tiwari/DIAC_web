@@ -5,17 +5,19 @@ import Image from "next/image";
 export default function WhoWeAre() {
   return (
     <section className="bg-white py-20">
-     <div className="text-center mb-20 px-5">
+     <div className="text-center mb-18 px-5">
        {/* Small Title */}
-        <p className="text-xs tracking-widest text-[#801717] mb-5 uppercase">
+        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
           Our Story
-        </p>
+        </span>
 
         {/* Main Heading */}
-        <h1 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+        <h1 className="text-[35px] md:text-[45px] font-bold mb-6 text-gray-800">
           Who We Are
         </h1>
-        <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">Empowering the next generation of automation engineers with advanced industrial skills and practical knowledge.</p>
+        <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">
+          Empowering the next generation of automation engineers with advanced industrial skills and practical knowledge.
+        </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center">

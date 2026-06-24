@@ -42,9 +42,9 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}
-        <p className="text-xs tracking-widest text-[#801717] mb-2 uppercase">
+        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
           Common Questions
-        </p>
+        </span>
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-900">

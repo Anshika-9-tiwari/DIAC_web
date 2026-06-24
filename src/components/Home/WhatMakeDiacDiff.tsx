@@ -32,7 +32,7 @@ export default function WhatMakeDiacDiff() {
       <div className="max-w-7xl mx-auto px-8">
         
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 ">
+        <h2 className="text-[32px] md:text-[44px] font-bold text-gray-800 mb-6 ">
            What Makes DIAC Different?
         </h2>
 
@@ -49,14 +49,14 @@ export default function WhatMakeDiacDiff() {
             return (
               <div
                 key={i}
-                className="flex flex-col gap-6 bg-white border border-gray-100 border-l-5 border-l-red-800 rounded-xl p-8 shadow-sm hover:shadow-lg hover:border-red-100 transition duration-300"
+                className="flex flex-col gap-6 bg-white border border-gray-200 border-l-5 border-l-red-800 rounded-xl p-8 shadow-sm hover:shadow-lg hover:border-l-red-700 transition duration-300"
               >
 
                 {/* Icon */}
-                <div className="w-14 h-14 shrink-0 rounded-xl bg-red-100 flex items-center justify-center">
+                <div className="w-14 h-14 shrink-0 rounded-xl bg-red-900 flex items-center justify-center">
                   <Icon
                     size={28}
-                    className="text-[#801717]"
+                    className="text-[#f7f7f7]"
                   />
                 </div>
 

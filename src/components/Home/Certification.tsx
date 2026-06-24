@@ -6,7 +6,7 @@ import { CircleCheckBig } from "lucide-react";
 
 export default function Certification() {
   return (
-    <section className="py-15 bg-gradient-to-r from-white via-gray-100 to-white text-gray-800">
+    <section className="py-18 bg-gradient-to-r from-white via-gray-100 to-white text-gray-800">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         {/* Heading */}
@@ -17,7 +17,7 @@ export default function Certification() {
           viewport={{ once: true }}
           className="md:text-center mb-16"
         >
-          <h2 className="text-[28px] md:text-4xl font-bold mb-3 tracking-wide ">
+          <h2 className="text-[33px] md:text-[44px] font-bold mb-3 tracking-wide ">
             Certification <span className="text-[#801717]">&</span> Recognition
           </h2>
           <p className="text-gray-700 md:text-[18px]">

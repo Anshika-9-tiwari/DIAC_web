@@ -27,7 +27,7 @@ const testimonials = [
 export default function Testimonials() {
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 4,
@@ -46,7 +46,7 @@ export default function Testimonials() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
 
@@ -60,7 +60,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-16 bg-[#f5f5f5] overflow-hidden text-gray-800">
+    <section className="py-18 bg-[#f5f5f5] overflow-hidden text-gray-800">
 
       <div className="max-w-7xl mx-auto px-4">
 
@@ -90,7 +90,7 @@ export default function Testimonials() {
               <div className="bg-white rounded-md overflow-hidden shadow-sm">
 
                 {/* YOUTUBE VIDEO */}
-                <div className="relative h-[420px]">
+                <div className="relative aspect-[9/16] w-full max-w-[320px] mx-auto">
 
                   <iframe
                     src={item.video}

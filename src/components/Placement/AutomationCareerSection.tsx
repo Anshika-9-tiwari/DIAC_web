@@ -39,11 +39,12 @@ export default function AutomationCareerSection() {
 
           <div>
 
-            <div className="badge badge-outline badge-error mb-5">
+            <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5">
               Career Opportunities
-            </div>
+            </span>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+
+            <h2 className="text-3xl md:text-[43px] font-bold text-gray-800 mb-6">
               Growing Demand for Skilled
               <span className="block text-[#801717]">
                 Automation Engineers
@@ -61,7 +62,7 @@ export default function AutomationCareerSection() {
           </div>
 
           {/* Right Card */}
-          <div className="bg-gradient-to-br from-[#801717] to-[#a11c1c] text-white rounded-3xl p-10">
+          <div className="bg-gradient-to-br from-[#801717] to-[#a11c1c] text-white rounded-3xl p-10 text-center">
 
             <TrendingUp size={60} className="mb-6" />
 
@@ -80,7 +81,7 @@ export default function AutomationCareerSection() {
         {/* Features */}
         <div className="mb-24">
 
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-14">
+          <h2 className="text-3xl md:text-[45px] font-bold text-center text-gray-800 mb-14">
             Our Industry-Oriented {" "}
             <span className=" text-[#801717]">
               Training Approach
@@ -97,7 +98,7 @@ export default function AutomationCareerSection() {
             {features.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 bg-[#fafafa] border border-gray-200 rounded-xl p-6"
+                className="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-6"
               >
                 <CheckCircle2
                   size={24}
@@ -125,7 +126,7 @@ export default function AutomationCareerSection() {
           <div className="flex flex-wrap justify-center gap-4">
 
             {candidates.map((item, index) => (
-              <div
+              <div  
                 key={index}
                 className="badge badge-lg badge-outline text-[#801717] border-red-900 py-6 px-6"
               >

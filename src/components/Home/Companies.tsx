@@ -44,7 +44,7 @@ export default function Companies() {
       },
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 3 },
       },
     ],
   };
@@ -52,10 +52,6 @@ export default function Companies() {
   return (
     <section className="py-10 bg-white  text-gray-800">
       <div className="max-w-8xl border border-gray-50 py-2 mx-auto px-10 text-center ">
-        {/* <h2 className="text-4xl font-semibold mb-2">
-          Our Placement Partners
-        </h2>
-        <div className="w-15 h-1 bg-red-800 mx-auto  mb-14 rounded"></div> */}
 
         <Slider {...settings}>
           {companies.map((logo, index) => (

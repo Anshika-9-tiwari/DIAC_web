@@ -34,7 +34,7 @@ export default function CorporateTraining() {
 
         {/* Heading */}
         <div className="md:text-center mb-10 md:mb-18">
-          <h2 className="text-3xl md:text-[40px] font-semibold mb-2 playfair">
+          <h2 className="text-3xl md:text-[42px] font-semibold mb-2 playfair">
             Corporate Training <span className="text-[#801717]">&</span> Industry Partners
           </h2>
           <p className="text-gray-600 text-[19px] py-2 ">
@@ -45,7 +45,7 @@ export default function CorporateTraining() {
         {/* 2 Column Layout */}
         <div className="grid lg:grid-cols-2 gap-15 items-start">
 
-          {/* LEFT → Text Content */}
+          {/* LEFT Content */}
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-5 text-[#801717] ">
               Corporate Industrial Training Programs
@@ -69,11 +69,18 @@ export default function CorporateTraining() {
             </ul>
 
             {/* Optional CTA */}
-            <Link href="/contact">
-              <button className="mt-8 bg-[#801717] text-white px-6 py-3 uppercase rounded-md hover:bg-red-800 transition">
+            <div className="flex gap-3">
+              <Link href="/contact">
+              <button className="mt-8 bg-[#801717] text-white px-5 py-3 uppercase rounded-md hover:bg-red-800 transition tracking-wide">
                 Talk to Our Experts 
               </button>
-            </Link>
+              </Link>
+              <Link href="/corporate_training">
+                <button className="mt-8 bg-[#801717] text-white px-5 py-3 uppercase rounded-md hover:bg-red-800 transition tracking-wide">
+                   View more 
+                </button>
+              </Link>
+            </div>
           </div>
 
           {/* RIGHT → Logos Grid */}

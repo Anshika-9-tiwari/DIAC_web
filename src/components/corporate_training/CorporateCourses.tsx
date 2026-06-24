@@ -126,11 +126,11 @@ export default function CorporateCourses() {
         {/* Heading */}
         <div className="text-center mb-16">
 
-          <div className="badge badge-outline badge-error px-4 py-3 mb-5">
-            Corporate Training Programs
-          </div>
+          <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5">
+            Corporate Training Program
+          </span>  
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-4">
             Corporate Training Programs Offered by DIAC
           </h2>
 

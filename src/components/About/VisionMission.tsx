@@ -13,8 +13,8 @@ export default function VisionMission() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-15 tracking-wide ">
-          Vision, Mission & Values
+        <h2 className="text-[32px] md:text-[44px] font-bold text-gray-800 mb-10 ">
+           What Makes DIAC Different?
         </h2>
 
         {/* Grid */}

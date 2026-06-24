@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Masterclass() {
   return (
-    <section className="py-14 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] text-white">
+    <section className="py-18 bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#a11c1c] text-white">
       <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-12 items-stretch">
 
         {/* Left Content */}

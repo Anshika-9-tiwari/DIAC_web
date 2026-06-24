@@ -35,11 +35,9 @@ export default function CorporateProcess() {
         {/* Header */}
         <div className="text-center mb-16">
 
-          <div className="badge badge-outline badge-error mb-5 px-4 py-3">
-            Our Approach
-          </div>
+          <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5">Our Approach</span>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-5">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-5">
             Our Corporate Training Process
           </h2>
 
@@ -52,27 +50,23 @@ export default function CorporateProcess() {
 
         {/* Steps */}
         <div className="overflow-x-auto no-scrollbar snap-x snap-mandatory pb-6">
-          <ul className="steps steps-horizontal w-[1400px] ">
-
+          <ul className="steps steps-horizontal w-[1400px]">
             {steps.map((step, index) => (
-             <li
+              <li
                 key={index}
-                className="step step-error  snap-center text-white"
+                className="step snap-center step-natural"
               >
                 <div className="w-[230px] mt-6 text-center">
-
-                  <span className="text-lg font-semibold text-[#0b1f3a] block mb-2">
+                  <span className="text-lg font-semibold text-red-900 block mb-2">
                     {step.title}
                   </span>
 
                   <p className="text-sm text-gray-600 leading-6">
                     {step.desc}
                   </p>
-
                 </div>
               </li>
             ))}
-
           </ul>
         </div>
 

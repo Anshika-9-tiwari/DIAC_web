@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
 
         {/* Heading */}
         <div className="text-center mb-15">
-          <h2 className="text-3xl md:text-[40px] font-semibold mb-4">
+          <h2 className="text-[35px] md:text-[42px] font-semibold mb-4">
             DIAC <span className="text-[#801717]">Advantage</span>
           </h2>
           <p className="text-gray-600 text-[18px]">
@@ -66,13 +66,13 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="p-5  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
+                className="p-6  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
               >
                 {/* Icon */}
                 <Icon className="text-[#801717] mb-4" size={35} />
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold leading-8 mb-4 playfair">
+                <h3 className="text-xl font-medium leading-8 mb-4">
                   {item.title}
                 </h3>
 

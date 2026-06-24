@@ -65,7 +65,7 @@ export default function CorporateTManufacturing() {
 
         {/* Heading */}
         <div className="text-center mb-12 md:mb-18">
-          <h2 className="text-3xl md:text-[42px] font-bold text-gray-800 mb-6">
+          <h2 className="text-[32px] md:text-[43px] font-bold text-gray-800 mb-6">
             Industrial Corporate Training for Manufacturing Industries
           </h2>
           <p className="max-w-6xl max-autotext-gray-600 text-[16px]  mx-auto">

@@ -81,11 +81,11 @@ export default function PlacementTimeline() {
         {/* Heading */}
         <div className="text-center mb-16">
 
-          <div className="badge badge-error badge-outline mb-5">
+          <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-6 tracking-wider">
             Placement Journey
-          </div>
+          </span>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-[45px] font-bold text-gray-900 mb-4">
             Career Support & Placement Assistance
           </h2>
 

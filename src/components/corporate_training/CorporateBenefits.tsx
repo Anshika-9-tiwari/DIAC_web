@@ -67,13 +67,13 @@ export default function CorporateBenefits() {
       <div className="max-w-7xl mx-auto px-8">
 
         {/* SECTION 1 */}
-        <div className=" mb-16">
+        <div className=" mb-15">
 
-          <span className="inline-block px-4 py-2 rounded-full bg-red-50 text-[#801717] text-sm font-medium mb-5">
+          <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium">
             Why Corporate Training Matters
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8 leading-relaxed">
+          <h2 className="text-4xl md:text-[45px] font-bold text-gray-800 mt-5 mb-8 leading-snug">
             Why Corporate Training is Essential for
             <span className="block text-[#801717]">
               Modern Organizations
@@ -86,10 +86,10 @@ export default function CorporateBenefits() {
           <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">
             As industrial automation and smart manufacturing continue to reshape industries, organizations need employees who can effectively operate, troubleshoot, maintain, and optimize advanced systems.
           </p>
-          <p className="text-red-900 font-medium text-lg leading-8 mb-4">
+          <p className="text-gray-600  text-lg leading-8 mb-4">
             Corporate training is no longer an option—it is a strategic business investment.
           </p>
-          <p className="text-gray-800 text-lg leading-8">
+          <p className="text-red-900 text-xl leading-8 font-medium ">
             Corporate training plays a critical role in helping businesses:
           </p>
 
@@ -114,11 +114,11 @@ export default function CorporateBenefits() {
         {/* SECTION 2 */}
         <div className="mb-16">
 
-          <span className="inline-block px-4 py-2 rounded-full bg-red-50 text-[#801717] text-sm font-medium mb-5">
+          <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5">
             Why Choose DIAC
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-6 leading-tight">
             Why Choose DIAC for 
             <span className="block text-[#801717]">
               Corporate Training?
@@ -143,11 +143,11 @@ export default function CorporateBenefits() {
             return (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-8 border border-red-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
 
-                <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6">
-                  <Icon className="text-[#801717]" size={28} />
+                <div className="w-14 h-14 rounded-xl bg-[#801717] flex items-center justify-center mb-6">
+                  <Icon className="text-[#ffff]" size={28} />
                 </div>
 
                 <h3 className="text-xl font-semibold text-[#0b1f3a] mb-4">

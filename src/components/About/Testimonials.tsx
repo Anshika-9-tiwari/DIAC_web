@@ -72,7 +72,7 @@ export default function Testimonials() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -92,9 +92,9 @@ export default function Testimonials() {
         {/* Heading */}
         <div className="text-center mb-14">
 
-          <p className="text-[#801717] font-semibold uppercase tracking-widest mb-5">
-            Student Reviews
-          </p>
+        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
+          Student Review
+        </span>
 
           <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-6">
             What Our Students Say
