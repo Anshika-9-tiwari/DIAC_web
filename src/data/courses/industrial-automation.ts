@@ -539,7 +539,7 @@ export const industrialAutomationCourse = {
     description:
       "Earn an industry-recognised certificate that validates your skills and demonstrates practical expertise in industrial automation technologies.",
 
-    image: "/courses/certificate_1.jpg",
+    image: "/courses/diac_certification.jpg",
 
     points: [
       {

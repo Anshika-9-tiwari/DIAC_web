@@ -1,3 +1,4 @@
+//career opportunity, indutry oriented, training, who can apply
 "use client";
 
 import {
@@ -62,7 +63,7 @@ export default function AutomationCareerSection() {
           </div>
 
           {/* Right Card */}
-          <div className="bg-gradient-to-br from-[#801717] to-[#a11c1c] text-white rounded-3xl p-10 text-center">
+          <div className="bg-gradient-to-br from-[#801717] to-[#a11c1c] text-white rounded-3xl p-10 text-center flex flex-col justify-center items-center">
 
             <TrendingUp size={60} className="mb-6" />
 

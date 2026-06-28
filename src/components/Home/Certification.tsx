@@ -20,7 +20,7 @@ export default function Certification() {
           <h2 className="text-[33px] md:text-[44px] font-bold mb-3 tracking-wide ">
             Certification <span className="text-[#801717]">&</span> Recognition
           </h2>
-          <p className="text-gray-700 md:text-[18px]">
+          <p className="text-gray-800 md:text-[18px]">
             Industry-Recognized Certifications for Career Growth
           </p>
         </motion.div>
@@ -37,9 +37,9 @@ export default function Certification() {
             className="flex justify-center"
           >
             <Image
-              src="/hero-banner.jpg"
+              src="/courses/diac_certification.jpg"
               alt="certificate"
-              width={500}
+              width={520}
               height={300}
               className="rounded-xl shadow-lg object-contain"
             />
@@ -52,7 +52,7 @@ export default function Certification() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-semibold mb-4 text-[#801717]">
+            <h3 className="text-[31px] font-semibold mb-4 text-[#801717]">
               Industry Recognized Certification
             </h3>
 
@@ -65,47 +65,47 @@ export default function Certification() {
             </p>
 
             <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2 text-[14px]"> 
+              <li className="flex items-start gap-2 text-[15px]"> 
                 <span> {/* ICON */}
                   <CircleCheckBig
                     size={18}
-                    className="text-[#801717]"
+                    className="text-[#801717]  mt-0.5"
                   />
                 </span> 
                     Industry-recognized certification
                 </li>
-              <li className="flex items-start gap-2 text-[14px]">
+              <li className="flex items-start gap-2 text-[15px]">
                  <span> {/* ICON */}
                     <CircleCheckBig
                       size={18}
-                      className="text-[#801717]"
+                      className="text-[#801717]  mt-0.5"
                     />
                   </span> 
                      Practical skill-based training validation
                 </li>
-              <li className="flex items-start gap-2 text-[14px]"> 
+              <li className="flex items-start gap-2 text-[15px]"> 
                 <span> {/* ICON */}
                     <CircleCheckBig
                       size={18}
-                      className="text-[#801717]"
+                      className="text-[#801717]  mt-0.5"
                     />
                 </span> 
                      Enhances resume & career opportunities
               </li>
-              <li className="flex items-start gap-2 text-[14px]">
+              <li className="flex items-start gap-2 text-[15px]">
                  <span> {/* ICON */}
                     <CircleCheckBig
                       size={18}
-                      className="text-[#801717]"
+                      className="text-[#801717]  mt-0.5"
                     />
                   </span> 
                      Improves placement possibilities
               </li>
-              <li className="flex items-start gap-2 text-[14px]">
+              <li className="flex items-start gap-2 text-[15px]">
                  <span> {/* ICON */}
                     <CircleCheckBig
                       size={18}
-                      className="text-[#801717]"
+                      className="text-[#801717] mt-0.5"
                     />
                   </span> 
                      Supports real industrial job readiness

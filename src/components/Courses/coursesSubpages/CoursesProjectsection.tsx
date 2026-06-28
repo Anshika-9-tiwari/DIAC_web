@@ -72,15 +72,15 @@ export default function CoursesProjectSection({ data,}: Props) {
             return (
               <div
                 key={index}
-                className="card bg-white border border-gray-200 shadow hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-2xl"
+                className="card bg-white border border-gray-300 shadow hover:shadow-xl hover:-translate-y-2 transition-all duration-300 rounded-2xl"
               >
                 <div className="card-body">
 
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center mb-5 shadow">
+                  <div className="w-14 h-14 rounded-2xl bg-red-900 flex items-center justify-center mb-5 shadow">
                     <Icon
                       size={28}
-                      className="text-[#801717]"
+                      className="text-[#ffff]"
                     />
                   </div>
 
@@ -96,7 +96,7 @@ export default function CoursesProjectSection({ data,}: Props) {
 
                   {/* Tech Badge */}
                   <div>
-                    <span className="badge badge-lg bg-red-50 text-gray-600 border-0 px-4 py-5 font-semibold shadow">
+                    <span className="badge badge-lg bg-red-900 text-[#f7f7f7] border-0 px-4 py-5 font-semibold shadow">
                       {project.tech}
                     </span>
                   </div>

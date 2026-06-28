@@ -1,14 +1,11 @@
-import {
-  Briefcase,
-  Cpu,
-  Factory,
-  GraduationCap,
-} from "lucide-react";
+"use client"
+
+import Image from "next/image";
 
 const timelineData = [
   {
     title: "Placement Support at DIAC",
-    icon: Briefcase,
+    icon: "/placement_icons/hiring.svg",
     side: "start",
     points: [
       "Resume Building Assistance",
@@ -19,10 +16,9 @@ const timelineData = [
       "Industrial Project Exposure",
     ],
   },
-
   {
     title: "Technical Skill Development",
-    icon: Cpu,
+    icon: "/placement_icons/technical-support.svg",
     side: "end",
     points: [
       "PLC Programming",
@@ -35,10 +31,9 @@ const timelineData = [
       "Sensors & Instrumentation",
     ],
   },
-
   {
     title: "Job Opportunities in Multiple Industries",
-    icon: Factory,
+    icon: "/placement_icons/job-search.svg",
     side: "start",
     points: [
       "Manufacturing Industries",
@@ -51,10 +46,9 @@ const timelineData = [
       "Automation Solution Providers",
     ],
   },
-
   {
     title: "Job Roles After Training",
-    icon: GraduationCap,
+    icon: "/placement_icons/job-offer.svg",
     side: "end",
     points: [
       "PLC Programmer",
@@ -110,12 +104,16 @@ export default function PlacementTimeline() {
                   <hr className="bg-[#801717]" />
                 )}
 
-                {/* Icon */}
-                <div className="timeline-middle">
-                  <Icon
-                    size={30}
-                    className="text-[#801717]"
-                  />
+               <div className="timeline-middle">
+                  <div className="w-16 h-16 rounded-full bg-white shadow-md border border-red-100 flex items-center justify-center p-3">
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={34}
+                      height={34}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
 
                 {/* Card */}

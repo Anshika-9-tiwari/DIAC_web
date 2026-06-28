@@ -66,18 +66,18 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="p-6  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
+                className="p-5  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
               >
                 {/* Icon */}
-                <Icon className="text-[#801717] mb-4" size={35} />
+                <Icon className="text-[#801717] mb-6" size={36} />
 
                 {/* Title */}
-                <h3 className="text-xl font-medium leading-8 mb-4">
+                <h3 className="text-xl font-medium leading-8 mb-4 text-center">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 text-[14px] ">
+                <p className="text-gray-600 text-[14px] text-center">
                   {item.desc}
                 </p>
               </div>
