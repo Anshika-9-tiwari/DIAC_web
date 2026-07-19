@@ -57,7 +57,7 @@ export default function CourseOverviewSection({ data,}: Props) {
       {/* =========================
          STICKY NAVBAR
       ========================== */}
-      <div className="sticky top-2 z-40 bg-white text-gray-800 border-b border-gray-200 shadow-sm py-1.5">
+      <div className="sticky top-2 z-40 bg-white text-gray-900 border-b border-gray-200 shadow-sm py-1.5">
 
         <div className="max-w-8xl mx-auto px-8 ">
 
@@ -112,7 +112,7 @@ export default function CourseOverviewSection({ data,}: Props) {
              {data.sectionTag}
             </p>
 
-            <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 leading-tight mb-6">
+            <h2 className="text-[32px] md:text-[45px] font-bold text-gray-900 leading-tight mb-6">
               {data.title}
             </h2>
 
@@ -133,7 +133,7 @@ export default function CourseOverviewSection({ data,}: Props) {
               return (
                 <div
                   key={index}
-                  className="bg-white border border-gray-300 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
+                  className="bg-white border border-slate-400 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
                 >
                   <div
                     className={`w-16 h-16 rounded-2xl ${card.iconBg} flex items-center justify-center text-3xl mb-6`}
@@ -144,7 +144,7 @@ export default function CourseOverviewSection({ data,}: Props) {
                     />
                   </div>
 
-                  <h3 className="text-lg md:text-2xl font-medium text-gray-800 mb-4">
+                  <h3 className="text-lg md:text-2xl font-medium text-gray-900 mb-4">
                     {card.title}
                   </h3>
 
@@ -165,7 +165,7 @@ export default function CourseOverviewSection({ data,}: Props) {
             {/* HEADING */}
             <div className="max-w-7xl mb-16 mt-10  border-t border-gray-200 pt-9 ">
 
-              <h2 className="text-[32px] md:text-[45px] font-semibold text-gray-800 leading-tight mb-6">
+              <h2 className="text-[32px] md:text-[45px] font-semibold text-gray-900 leading-tight mb-6">
                 {data.industriesTitle}
               </h2>
             </div>

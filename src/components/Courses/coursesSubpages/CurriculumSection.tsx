@@ -40,7 +40,7 @@ export default function CurriculumSection({ data }: Props) {
              {data.sectionTag}
           </p>
 
-          <h2 className="text-[35px] md:text-[46px] font-semibold text-gray-800 mb-6">
+          <h2 className="text-[35px] md:text-[46px] font-semibold text-gray-900 mb-6">
             {data.title}
           </h2>
 
@@ -112,7 +112,7 @@ export default function CurriculumSection({ data }: Props) {
 
               <div>
 
-                <h3 className="text-3xl md:text-[36px] font-semibold text-gray-800 mb-6">
+                <h3 className="text-3xl md:text-[36px] font-semibold text-gray-900 mb-6">
                   {current.title}
                 </h3>
 

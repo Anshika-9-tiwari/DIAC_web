@@ -53,12 +53,12 @@ export default function WhyChooseDIAC() {
         </span>
 
         {/* Heading */}
-        <h2 className="text-[31px] md:text-[45px] font-bold text-gray-800 mb-5">
+        <h2 className="text-[31px] md:text-[45px] font-bold text-gray-900 mb-5">
            Benefits of Industrial Corporate Training
         </h2>
 
         {/* Subtitle */}
-        <p className="text-gray-600 max-w-2xl mb-15">
+        <p className="text-gray-700 max-w-2xl mb-15">
           Since 2008, DIAC has closed the skills gap between industry demand and
           engineering talent across India's manufacturing sector.
         </p>
@@ -85,7 +85,7 @@ export default function WhyChooseDIAC() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

@@ -37,7 +37,7 @@ export default function CorporateProcess() {
 
           <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5">Our Approach</span>
 
-          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-5">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-900 mb-5">
             Our Corporate Training Process
           </h2>
 

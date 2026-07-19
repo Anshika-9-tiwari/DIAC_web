@@ -18,14 +18,13 @@ const coursesDropdown = [
   { name: "All Courses", href: "/courses" },
   { name: "Industrial Automation Training", href: "/courses/industrial-automation" },
   { name: "SCADA & HMI", href: "/courses/scada-and-hmi" },
-  { name: "VFD Drive Training", href: "/courses/vfd-training" },
+  { name: "VFD Drive Training", href: "/courses/vfd-drive-training" },
   { name: "Electrical Design", href: "/courses/electrical-design" },
-  { name: "Drives & Motors Training", href: "/courses/drives-and-motors" },
-  { name: "Process Instrumentation", href: "/courses/process-instrumentation" },
-  { name: "Panel Designing & AutoCAD", href: "/courses/panel-designing-and-autocad" },
-  { name: "PLC Networking", href: "/courses/plc-networking" },
-  { name: "Servo Motors Training", href: "/courses/servo-motors" },
-  { name: "Robotics Training", href: "/courses/robotics-training" },
+  { name: "Industrial IOT training", href: "/courses/industrial-iot-training" },
+  { name: "Servo & Drive System", href: "/courses/servo-and-drive-system" },
+  { name: "Panel Design", href: "/courses/panel-design" },
+  { name: "PLC Vender Training", href: "/courses/plc-vender-training" },
+  { name: "Customized Industrial Training", href: "/courses/customized-industrial-training" },
 ];
 
 export default function Navbar() {

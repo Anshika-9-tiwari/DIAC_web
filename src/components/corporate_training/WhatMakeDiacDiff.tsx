@@ -39,11 +39,11 @@ const features = [
 
 export default function WhatMakeDiacDiff() {
   return (
-    <section className="py-18 bg-[#fbfcff] text-gray-700">
+    <section className="py-18 bg-[#fbfcff] text-gray-800">
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-20">
 
-          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-6 leading-snug">
+          <h2 className="text-[32px] md:text-[45px] font-bold text-gray-900 mb-6 leading-snug">
             Partner with DIAC for Workforce 
             <span className="block text-[#801717]">
               Transformation
@@ -66,7 +66,7 @@ export default function WhatMakeDiacDiff() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-[32px] md:text-[45px] font-bold text-gray-800 mb-20">
+        <h2 className="text-[32px] md:text-[45px] font-bold text-gray-900 mb-20">
            What Makes DIAC Different?
         </h2>
 

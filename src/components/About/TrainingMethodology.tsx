@@ -28,12 +28,12 @@ const items = [
   {
     icon: Users,
     title: "Experienced Industry Trainers",
-    desc: "Learn directly from certified trainers and industry experts with years of practical experience in automation, electrical systems, panel designing, and industrial projects.With dedicated placement assistance and connections with leading companies across India, DIAC helps students prepare for interviews, technical assessments, and career opportunities in the automation sector.",
+    desc: "Learn directly from certified trainers and industry experts with years of practical experience in automation, electrical systems, panel designing, and industrial projects.",
   },
   {
     icon: Briefcase,
     title: "Strong Placement Support",
-    desc: "With dedicated placement assistance and connections with leading companies across India, DIAC helps students prepare for interviews, technical assessments, and career opportunities in the automation sector. ",
+    desc: "With dedicated placement assistance and connections with leading companies across India, DIAC helps students prepare for interviews, technical assessments, and career opportunities in the automation sector.",
   },
   {
     icon: BookOpen,
@@ -44,21 +44,27 @@ const items = [
 
 export default function TrainingMethodology() {
   return (
-    <section className="py-20 bg-gray-50 shadow-lg"> 
+    <section className="py-20 bg-gray-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-6">
+
         {/* Top Label */}
         <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
-          Our Approach-
+          Our Approach
         </span>
 
         {/* Heading */}
-        <h2 className="text-[35px] md:text-[42px] font-semibold mb-6 text-gray-800">
+        <h2 className="text-[35px] md:text-[42px] font-semibold mb-6 text-gray-900">
           DIAC <span className="text-[#801717]">Advantage</span>
         </h2>
 
-        {/* Subtext */}
-        <p className="text-gray-600 mb-15 max-w-5xl text-[16px]">
-          At DIAC, we believe technical education should go beyond theory. Our training methodology is designed to prepare students for real industrial environments through practical learning, advanced lab exposure, and mentorship from experienced automation professionals. Every program is structured to help students gain confidence, technical expertise, and placement-ready skills for today’s competitive industry.
+        <p className="text-gray-700 mb-15 max-w-5xl text-[16px] leading-7">
+          At DIAC, we believe technical education should go beyond theory. Our
+          training methodology is designed to prepare students for real
+          industrial environments through practical learning, advanced lab
+          exposure, and mentorship from experienced automation professionals.
+          Every program is structured to help students gain confidence,
+          technical expertise, and placement-ready skills for today&apos;s
+          competitive industry.
         </p>
 
         {/* Grid */}
@@ -72,18 +78,20 @@ export default function TrainingMethodology() {
                 key={index}
                 className="p-6 border-b border-r border-gray-300 shadow-sm"
               >
+
                 {/* Icon */}
-                <div className="mb-3">
-                  <Icon size={25} className="text-[#801717]" />
+                <div className="w-14 h-14 mb-5 rounded-2xl bg-[#801717] flex items-center justify-center shadow-md">
+                  <Icon
+                    size={26}
+                    strokeWidth={2}
+                    className="text-white"
+                  />
                 </div>
 
-                {/* Title */}
-                <h3 className="font-semibold mb-2 text-gray-900">
+                <h3 className="font-semibold text-lg mb-3 text-gray-900">
                   {item.title}
                 </h3>
-
-                {/* Desc */}
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-700 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -96,4 +104,3 @@ export default function TrainingMethodology() {
     </section>
   );
 }
-

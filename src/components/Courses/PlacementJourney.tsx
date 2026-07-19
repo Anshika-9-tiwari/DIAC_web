@@ -37,7 +37,7 @@ export default function PlacementJourney() {
   ];
 
   return (
-    <section className="py-20 bg-[#f7f7f7]">
+    <section className="py-20 bg-[#f8f7f7]">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}

@@ -12,10 +12,10 @@ export default function WhoWeAre() {
         </span>
 
         {/* Main Heading */}
-        <h1 className="text-[35px] md:text-[45px] font-bold mb-6 text-gray-800">
+        <h1 className="text-[35px] md:text-[45px] font-bold mb-6 text-gray-900">
           Who We Are
         </h1>
-        <p className="text-gray-600 mb-4 text-[18px] leading-relaxed">
+        <p className="text-gray-700 mb-4 text-[18px] leading-relaxed">
           Empowering the next generation of automation engineers with advanced industrial skills and practical knowledge.
         </p>
       </div>
@@ -42,12 +42,12 @@ export default function WhoWeAre() {
         <div>
 
           {/* Main Heading */}
-          <h2 className="text-2xl md:text-4xl font-semibold mb-5 tracking-normal leading-relaxed text-gray-900">
+          <h2 className="text-[30px] md:text-[36px] font-semibold mb-5  text-gray-900 leading-snug">
              Transforming Technical Education Into Real Industry Experience
           </h2>
 
           {/* Paragraphs */}
-          <p className="text-gray-600 mb-4 text-[16px] leading-relaxed">
+          <p className="text-gray-600 mb-4 text-[16px] leading-relaxed text">
            <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>,(Popularly known as “DIAC”) was incorporated in December’ 2008 with a basic objective to impart training of Cutting-edge Industrial Automation Technologies to fresh engineers for bridging the demand-supply gap of ever growing demand of Industrial Automation Engineers and to enhance domain knowledge of working professionals with the advancement in this domain.
           </p>
 

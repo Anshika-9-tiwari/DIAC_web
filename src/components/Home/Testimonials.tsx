@@ -60,18 +60,18 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-18 bg-[#f5f5f5] overflow-hidden text-gray-800">
+    <section className="py-18 bg-[#f5f5f5] overflow-hidden text-gray-900">
 
       <div className="max-w-7xl mx-auto px-4">
 
         {/* HEADING */}
         <div className="text-center mb-12">
 
-          <p className="text-lg md:text-xl font-medium text-gray-700 mb-4">
+          <p className="text-lg md:text-xl font-medium text-gray-800 mb-4">
             Real Experiences, Real Achievements
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold leading-snug max-w-5xl tracking-wide mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold leading-snug max-w-5xl  mx-auto">
             Join the millions of students who have achieved
             <span className="block text-red-900">
               Remarkable Success

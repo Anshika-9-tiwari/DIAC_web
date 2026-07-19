@@ -109,7 +109,7 @@ export default function CorporateTestimonials() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-5">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#08172b] mb-5">
           What Our Students Say
         </h2>
 

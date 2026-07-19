@@ -28,7 +28,7 @@ export default function PlacementSupportSection({data,}: Props) {
             {data.badge}
           </p>
 
-          <h2 className="text-[34px] md:text-[45px] font-semibold text-gray-800 mb-6">
+          <h2 className="text-[34px] md:text-[45px] font-semibold text-gray-900 mb-6">
             {data.title}
           </h2>
 

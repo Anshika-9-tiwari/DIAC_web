@@ -1,8 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
   output   = "../src/generated/prisma"
@@ -13,15 +8,46 @@ datasource db {
 }
 
 model Enquiry_Form {
-  id        String   @id @default(cuid())
+  id String @id @default(cuid())
 
-  firstname  String
-  lastname   String
+  // Personal Details
+  firstname String
+  lastname  String?
   phone     String
   email     String?
 
-  course    String?
-  message   String?
+  // General Enquiry
+  course  String?
+  message String?
 
+  // Customized Industrial Training
+  organization        String?
+  industry            String?
+  trainingRequirement String?
+  participants        Int?
+  trainingMode        TrainingMode?
+
+  // Enquiry Type
+  enquiryType EnquiryType @default(GENERAL)
+
+  // Timestamps
   createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+
+  @@index([email])
+  @@index([phone])
+  @@index([enquiryType])
+  @@index([createdAt])
+}
+
+enum EnquiryType {
+  GENERAL
+  CUSTOMIZED_TRAINING
+  BROCHURE
+}
+
+enum TrainingMode {
+  ONLINE
+  OFFLINE
+  ON_SITE
 }

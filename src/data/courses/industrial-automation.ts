@@ -35,8 +35,8 @@ export const industrialAutomationCourse = {
         title: "Learn Until You're Placed",
         description:
           "Continuous support until you land your target automation role — repeat sessions, mock interviews, and referrals included.",
-        iconBg: "bg-blue-50",
-        iconColor: "text-blue-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
 
       {
@@ -44,8 +44,8 @@ export const industrialAutomationCourse = {
         title: "10+ Real Industrial Projects",
         description:
           "Build water treatment plants, conveyor systems, bottle filling lines, and packaging machines from scratch.",
-        iconBg: "bg-orange-50",
-        iconColor: "text-orange-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
 
       {
@@ -53,8 +53,8 @@ export const industrialAutomationCourse = {
         title: "Real Hardware Practice",
         description:
           "Hands-on with Siemens S7-1200/S7-1500, TIA Portal, SINAMICS VFDs, live panels, and industrial networking equipment.",
-        iconBg: "bg-green-50",
-        iconColor: "text-green-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
 
       {
@@ -62,8 +62,8 @@ export const industrialAutomationCourse = {
         title: "Personalised Mentorship",
         description:
           "1:1 guidance from trainers with real industrial backgrounds in manufacturing, power, pharma, and process industries.",
-        iconBg: "bg-purple-50",
-        iconColor: "text-purple-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
 
       {
@@ -71,8 +71,8 @@ export const industrialAutomationCourse = {
         title: "Interview Preparation",
         description:
           "Technical mock interviews, resume building, and unlimited practice sessions until you clear your target company's hiring process.",
-        iconBg: "bg-amber-50",
-        iconColor: "text-amber-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
 
       {
@@ -80,8 +80,8 @@ export const industrialAutomationCourse = {
         title: "Flexible Batch Schedules",
         description:
           "Weekday, weekend, and evening batches available — so your upskilling doesn't interrupt your current commitments.",
-        iconBg: "bg-cyan-50",
-        iconColor: "text-cyan-600",
+        iconBg: "bg-red-900",
+        iconColor: "text-white",
       },
     ],
 

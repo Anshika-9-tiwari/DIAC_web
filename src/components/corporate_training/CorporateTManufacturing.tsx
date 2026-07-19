@@ -60,12 +60,12 @@ const courses = [
 
 export default function CorporateTManufacturing() {
   return (
-    <section className="py-20 bg-[#fbfcff] text-gray-700">
+    <section className="py-20 bg-[#fbfcff] text-gray-900">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}
         <div className="text-center mb-12 md:mb-18">
-          <h2 className="text-[32px] md:text-[43px] font-bold text-gray-800 mb-6">
+          <h2 className="text-[32px] md:text-[43px] font-bold text-gray-900 mb-6">
             Industrial Corporate Training for Manufacturing Industries
           </h2>
           <p className="max-w-6xl max-autotext-gray-600 text-[16px]  mx-auto">
@@ -97,7 +97,7 @@ export default function CorporateTManufacturing() {
               </div>
 
               {/* BODY */}
-              <div className="p-5 text-md text-gray-600">
+              <div className="p-5 text-md text-gray-800">
 
                 {/* Description */}
                 <p className="mb-4 ">

@@ -13,7 +13,7 @@ export default function VisionMission() {
         </p>
 
         {/* Heading */}
-        <h2 className="text-[32px] md:text-[44px] font-bold text-gray-800 mb-10 ">
+        <h2 className="text-[32px] md:text-[44px] font-bold text-gray-900 mb-10 ">
            What Makes DIAC Different?
         </h2>
 
@@ -28,7 +28,7 @@ export default function VisionMission() {
               Our Vision
             </h3>
 
-            <p className="text-gray-600 text-[15px] leading-relaxed">
+            <p className="text-gray-700 text-[15px] leading-relaxed">
               To be India’s most trusted and outcome-driven Industrial Automation
               training institute — equipping every engineer with the skills,
               confidence, and industry readiness to excel in the Fourth Industrial Revolution.
@@ -43,7 +43,7 @@ export default function VisionMission() {
               Our Mission
             </h3>
 
-            <p className="text-gray-600 text-[15px] leading-relaxed">
+            <p className="text-gray-700 text-[15px] leading-relaxed">
               To bridge the demand-supply gap for Industrial Automation engineers
               by delivering pragmatic, hands-on training programmes in partnership
               with industry, enabling fresh graduates and working professionals
@@ -59,13 +59,13 @@ export default function VisionMission() {
               Our Values
             </h3>
 
-            <p className="text-gray-600 text-[16px] mb-4">
+            <p className="text-gray-700 text-[16px] mb-4">
               Everything we do is guided by a commitment to excellence in education
               and real industry impact.
             </p>
 
             {/* Values List */}
-            <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+            <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
               <p>• Practical Excellence</p>
               <p>• Industry Relevance</p>
               <p>• Student Success</p>

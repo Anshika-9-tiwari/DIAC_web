@@ -44,7 +44,7 @@ const advantages = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-18 bg-white text-gray-800">
+    <section className="py-18 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto px-8 md:px-10">
 
         {/* Heading */}
@@ -66,20 +66,25 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={index}
-                className="p-5  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center border-t-4 border-red-900"
+                className="p-5  shadow-md hover:shadow-lg rounded-2xl flex flex-col items-center justify-center gap-6 border-t-4 border-red-900"
               >
-                {/* Icon */}
-                <Icon className="text-[#801717] mb-6" size={36} />
 
-                {/* Title */}
-                <h3 className="text-xl font-medium leading-8 mb-4 text-center">
-                  {item.title}
-                </h3>
+                {/* icons */}
+                <div className="w-14 h-14 shrink-0 rounded-xl bg-red-900 flex items-center justify-center">
+                  <Icon className="text-white" size={30} />
+                </div>
 
-                {/* Description */}
-                <p className="text-gray-600 text-[14px] text-center">
-                  {item.desc}
-                </p>
+               <div>
+                 {/* Title */}
+                  <h3 className="text-xl font-medium leading-8 text-center mb-2">
+                    {item.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-600 text-[14px] text-center">
+                    {item.desc}
+                  </p>
+               </div>
               </div>
             );
           })}

@@ -9,7 +9,7 @@ export default function CoursesLayout() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white text-gray-900">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* MOBILE BUTTON */}
@@ -89,11 +89,11 @@ export default function CoursesLayout() {
             {courses.map((course, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden border-t-2 border-red-800"
+                className="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden border-t-4 border-red-800"
               >
 
                 {/* HEADER */}
-                <div className="bg-[#f1f4f8] p-5 font-semibold text-gray-800">
+                <div className="bg-white p-5 font-semibold text-gray-800 shadow-md">
                   {course.name}
                 </div>
 

@@ -96,11 +96,11 @@ export default function Testimonials() {
           Student Review
         </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0b1f3a] mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#07172b] mb-6">
             What Our Students Say
           </h2>
 
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-gray-700 max-w-3xl mx-auto">
             Real feedback from students who completed Industrial Automation,
             PLC, SCADA, HMI, Robotics and other training programs at DIAC.
           </p>
@@ -141,11 +141,11 @@ export default function Testimonials() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-[#0b1f3a]">
+                    <h4 className="font-semibold text-[#071629]">
                       {review.name}
                     </h4>
 
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-600">
                       Verified Student
                     </p>
                   </div>

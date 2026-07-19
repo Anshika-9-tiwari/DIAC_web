@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CorporateHero() {
   return (
-    <section className="py-12 md:py-14 relative bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] text-gray-800 overflow-hidden">
+    <section className="py-12 md:py-14 relative bg-gradient-to-br from-white via-[#fcf7f7] to-[#f5f5f5] text-gray-900 overflow-hidden">
 
       {/* Red Glow Effects */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#801717]/5 rounded-full blur-[150px]" />

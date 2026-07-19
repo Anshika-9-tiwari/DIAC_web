@@ -31,7 +31,7 @@ export default function CoursesIndustryDemand({data,}: Props) {
             {data.badge}
           </div>
 
-          <h2 className="text-[34px] md:text-[45px] font-bold text-[#0b1f3a] mb-8">
+          <h2 className="text-[34px] md:text-[45px] font-bold text-gray-900 mb-8">
             {data.title}
           </h2>
 

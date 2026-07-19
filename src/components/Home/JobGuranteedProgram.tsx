@@ -35,7 +35,7 @@ export default function JobGuaranteePrograms() {
             Job Guaranteed Programs
           </p>
 
-          <h2 className="text-[34px] md:text-[45px] font-bold mb-6 text-gray-800">
+          <h2 className="text-[34px] md:text-[45px] font-bold mb-6 text-gray-900">
             Industry-Focused Career Programs
           </h2>
 

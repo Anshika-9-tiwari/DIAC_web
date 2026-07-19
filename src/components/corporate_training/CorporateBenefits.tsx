@@ -73,14 +73,14 @@ export default function CorporateBenefits() {
             Why Corporate Training Matters
           </span>
 
-          <h2 className="text-4xl md:text-[45px] font-bold text-gray-800 mt-5 mb-8 leading-snug">
+          <h2 className="text-4xl md:text-[45px] font-bold text-gray-900 mt-5 mb-8 leading-snug">
             Why Corporate Training is Essential for
             <span className="block text-[#801717]">
               Modern Organizations
             </span>
           </h2>
 
-          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-2">
+          <p className="max-w-6xl max-auto text-gray-700 text-lg leading-8 mb-2">
            The modern workplace is evolving faster than ever before. Organizations that invest in employee learning and development consistently outperform competitors in productivity, innovation, and operational efficiency.
           </p>
           <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">

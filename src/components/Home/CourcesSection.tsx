@@ -35,7 +35,7 @@ export default function CoursesSection() {
 
 
   return (
-    <section className="py-18 bg-white  text-gray-800">
+    <section className="py-18 bg-white  text-gray-900">
 
       <div className="max-w-7xl mx-auto px-6">
 

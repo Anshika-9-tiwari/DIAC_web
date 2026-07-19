@@ -52,7 +52,7 @@ export default function CoursesProjectSection({ data,}: Props) {
             {data.sectionTag}
           </p>
 
-          <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-800 mb-6">
+          <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-900 mb-6">
             {data.title}
           </h2>
 

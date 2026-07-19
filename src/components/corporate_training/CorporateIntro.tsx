@@ -14,7 +14,7 @@ export default function CorporateIntro() {
           </span>
 
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-slate-800 leading-tight md:leading-15">
+          <h2 className="text-3xl md:text-4xl font-bold mt-5 mb-4 text-slate-900 leading-tight md:leading-12">
             Empower Your Workforce with Industry-Focused Corporate Training Programs
           </h2>
 

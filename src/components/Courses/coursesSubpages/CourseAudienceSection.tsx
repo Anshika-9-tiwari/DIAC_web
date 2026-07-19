@@ -29,7 +29,7 @@ export default function CourseAudienceSection({data,}: Props) {
           </div>
 
           {/* Heading */}
-          <h2 className="text-[33px] md:text-[45px] font-bold text-gray-800 text-center leading-tight mb-8">
+          <h2 className="text-[33px] md:text-[45px] font-bold text-gray-900 text-center leading-tight mb-8">
             {data.title}
           </h2>
 

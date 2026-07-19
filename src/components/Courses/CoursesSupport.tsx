@@ -9,12 +9,12 @@ export default function ContactSupport() {
       <div className="max-w-4xl mx-auto px-6">
 
         {/* TOP LABEL */}
-        <p className="text-sm tracking-widest text-gray-300 mb-4">
+        <p className="text-sm tracking-widest text-gray-200 mb-4">
           FOR QUERIES, FEEDBACK OR ASSISTANCE
         </p>
 
         {/* HEADING */}
-        <h2 className="text-3xl md:text-5xl font-bold text-gray-200 mb-10">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-100 mb-10">
           Contact DIAC Learner Support
         </h2>
 
@@ -24,7 +24,7 @@ export default function ContactSupport() {
           {/* CALL BUTTON */}
           <a
             href="tel:+9199534 89987"
-            className="flex items-center justify-center gap-3 border border-gray-300 text-gray-300 px-8 py-4 rounded-lg font-medium hover:shadow-xl transition"
+            className="flex items-center justify-center gap-3 border border-gray-200 text-gray-200 px-8 py-4 rounded-lg font-medium hover:shadow-xl transition"
           >
             <Phone size={20} />
             +91 99534 89987
@@ -34,9 +34,9 @@ export default function ContactSupport() {
           <a
             href="https://wa.me/9199534 89987"
             target="_blank"
-            className="flex items-center justify-center gap-3 border border-gray-300 text-gray-300 px-8 py-4 rounded-lg font-medium hover:shadow-xl transition"
+            className="flex items-center justify-center gap-3 border border-gray-200 text-gray-200 px-8 py-4 rounded-lg font-medium hover:shadow-xl transition"
           >
-            <MessageCircle size={20} className="text-gray-300" />
+            <MessageCircle size={20} className="text-gray-200" />
            +91 99534 89987
           </a>
 

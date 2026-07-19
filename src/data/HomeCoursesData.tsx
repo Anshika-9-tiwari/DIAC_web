@@ -16,7 +16,7 @@ export const courses = [
     duration: "1 Months",
     students: "5,000+ Students",
     desc: "Master electrical panel design, component selection, wiring standards, and documentation practices.",
-    link: "/courses/drives-and-motors",
+    link: "/courses/panel-design",
   },
 
   {
@@ -26,7 +26,7 @@ export const courses = [
     duration: "1 Months",
     students: "8,000+ Students",
     desc: "Explore Industry 4.0 technologies, smart manufacturing, sensors, cloud connectivity, and data analytics.",
-    link: "/courses/drives-and-motors",
+    link: "/courses/industrial-iot-training",
   },
 
   {
@@ -36,7 +36,7 @@ export const courses = [
     duration: "1 Months",
     students: "12,000+ Students",
     desc: "Learn electrical drafting, schematic design, panel layouts, and industry-standard design practices.",
-    link: "/courses/plc-training",
+    link: "/courses/electrical-design",
   },
 
   {
@@ -56,7 +56,7 @@ export const courses = [
     duration: "1 Months",
     students: "40,000+ Students",
     desc: "Learn PLC programming with real-time industrial applications",
-    link: "/courses/plc-training",
+    link: "/courses/plc-vender-training",
   },
 
   {
@@ -66,7 +66,7 @@ export const courses = [
     duration: "1 Months",
     students: "15,000+ Students",
     desc: "Learn industrial drives, motors and automation systems",
-    link: "/courses/drives-and-motors",
+    link: "/courses/servo-and-drive-system",
   },
   {
     title: "Job-Oriented Training",
@@ -85,7 +85,7 @@ export const courses = [
     duration: "1 Months",
     students: "18,000+ Students",
     desc: "Understand variable frequency drives, motor control systems, commissioning, and troubleshooting techniques.",
-    link: "/courses/scada-and-hmi",
+    link: "/courses/vfd-drive-training",
   },
 
   {
@@ -95,6 +95,6 @@ export const courses = [
     duration: "As per requirement ",
     students: "11,000+ Students",
     desc: "Tailored training programs designed to meet specific industrial requirements and workforce needs.",
-    link: "/courses/scada-and-hmi",
+    link: "/courses/customized-industrial-training",
   },
 ];
