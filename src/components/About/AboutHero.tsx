@@ -53,7 +53,7 @@ export default function AboutHero() {
             </p>
 
             <p className="text-gray-600 text-lg xl:text-xl leading-8 max-w-2xl mb-10">
-              DIAC is one of India's leading Industrial Automation Training
+              DIAC is one of India&apos;s leading Industrial Automation Training
               Institutes focused on practical learning, real industrial
               exposure, and career-driven technical education. We help
               students and working professionals master PLC, SCADA, HMI,

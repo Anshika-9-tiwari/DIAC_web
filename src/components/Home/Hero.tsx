@@ -141,7 +141,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/30 to-black/30"></div>
 
         {/* Content */}
-        <div className="relative max-w-[1600px] mx-auto px-8 md:px-14 py-14 lg:py-16 h-full flex items-center">
+        <div className="relative max-w-[1600px] mx-auto px-8 md:px-12 py-14 lg:py-16 h-full flex items-center">
 
           <div className="grid lg:grid-cols-2 gap-10 md:gap-12 w-full items-center">
 
