@@ -1,6 +1,6 @@
 import AboutHero from "@/components/About/AboutHero";
 import AboutCTA from "@/components/About/ContactSection";
-import Testimonials from "@/components/About/Testimonials";
+import AboutTestimonials from "@/components/About/Testimonials";
 import TrainingMethodology from "@/components/About/TrainingMethodology";
 import VisionMission from "@/components/About/VisionMission";
 import WhoWeAre from "@/components/About/Who-we-are";
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <TrainingMethodology/>
       <CoursesSection/>
       <VisionMission/>
-      <Testimonials/>
+      <AboutTestimonials/>
       <AboutCTA/>
     </main>
   );

@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import { industrialAutomationCourse } from "@/data/courses/industrial-iot-training";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 
@@ -43,10 +44,13 @@ export default function IndustrialIOTPage() {
           data={industrialAutomationCourse.placement}
         />
 
+       <CourseCareerOutcomes data={industrialAutomationCourse.career} />
+
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}
        />
-
+     
+       
        <CourseAudienceSection
          data={industrialAutomationCourse.audience}
        />

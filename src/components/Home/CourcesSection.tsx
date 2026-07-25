@@ -43,7 +43,7 @@ export default function CoursesSection() {
         <div className="mb-12 text-center">
 
           <h2 className="text-[34px] md:text-[45px] font-bold leading-snug mb-10">
-            DAIC Course & Training Programs
+            DIAC Course & Training Programs
           </h2>
 
           {/* CATEGORY BUTTONS */}

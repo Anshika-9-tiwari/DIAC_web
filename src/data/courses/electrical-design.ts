@@ -4,14 +4,18 @@ export const industrialAutomationCourse = {
   hero: {
     badge: "Job-Oriented Electrical Design Program",
 
-    title: "Electrical Design Training",
+    title: "Electrical Design Training with Industry-Standard Software",
 
     icon: "/courses/automation.png",
 
     paragraph1:
-      "Electrical Design Training Course at DIAC is designed to help students and professionals develop practical skills in electrical schematic design, control panel design, power distribution systems, cable sizing, and industrial electrical drafting.",
+      "Design Industrial Electrical Schematics & Control Panels",
     paragraph2:
-      "This industry-focused program combines theoretical concepts with hands-on software training to prepare learners for real-world engineering projects in manufacturing, automation, and infrastructure sectors.",
+      "Hands-on Training with Industry-Standard Software",
+    paragraph3:
+      "Real Project-Based Design Experience",
+    paragraph4:
+      "Build a Career in Electrical Design Engineering",
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -413,7 +417,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Motor Control Center (MCC) Design",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Design MCC panels with motor starters, protection devices, power distribution, safety circuits, and industrial standards compliance.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -421,7 +425,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "PLC Control Panel Design",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Design PLC control panels with I/O modules, wiring, terminals, power supplies, and organized component layouts.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -429,7 +433,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "VFD Control Panel Design",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Design VFD panels for motor speed control, protection, efficient operation, cooling, and reliable industrial performance.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -437,7 +441,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Power Distribution Panel Design",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Design power distribution panels with breakers, busbars, protection devices, load balancing, and electrical safety compliance.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -445,7 +449,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Industrial Wiring Diagrams",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Create detailed industrial wiring diagrams for control circuits, power connections, field devices, and maintenance reference documentation.",
         tech: "PLC • HMI",
       },
 
@@ -453,7 +457,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Electrical Schematic Development",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Develop accurate electrical schematics for industrial automation systems, ensuring clear documentation, safety, and easy troubleshooting processes.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -461,7 +465,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "Cable Scheduling & Load Calculations",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Prepare cable schedules, perform load calculations, select cable sizes, and ensure safe electrical system performance.",
         tech: "TIA PORTAL • SCADA",
       },
 
@@ -469,7 +473,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Complete Industrial Electrical Documentation",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Prepare comprehensive electrical documentation including schematics, layouts, cable schedules, BOM, and installation guidelines professionally.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -538,6 +542,28 @@ export const industrialAutomationCourse = {
     tools: [
       "EPLAN Electric P8",
       "AutoCAD Electrica",
+    ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in Electrical Design Engineer",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+      "Electrical Design Engineer",
+      "Control Panel Design Engineer",
+      "Electrical Draftsman",
+      "EPLAN Design Engineer",
+      "AutoCAD Electrical Engineer",
+      "Project Design Engineer",
+      "Industrial Automation Design Engineer",
+      "Electrical Project Engineer",,
     ],
   },
 

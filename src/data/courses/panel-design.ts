@@ -5,15 +5,17 @@ export const industrialAutomationCourse = {
     badge: "Job-Oriented Electrical Panel Design Program",
 
     title: "Become a Professional Electrical Panel Design Engineer",
-
     icon: "/courses/automation.png",
-
     paragraph1:
-      "Electrical Panel Design is one of the most essential skills in industrial automation and power distribution. Every manufacturing plant, factory, commercial building, and infrastructure project requires well-designed electrical control panels to ensure safe, reliable, and efficient operations.",
+      "Design Professional Electrical Control Panels",
     paragraph2:
-      "Our Panel Design Training is designed to provide practical knowledge of electrical panel engineering, including power distribution, control panel design, AutoCAD Electrical drafting, component selection, wiring diagrams, cable sizing, BOM preparation, and industry standards. The course combines classroom concepts with live industrial projects, enabling students to develop job-ready skills that meet the requirements of modern industries.",
+      "Master Electrical Drawings & Panel Documentation",
+    paragraph3:
+      "Hands-on Training on Real Industrial Panels",
+    paragraph4:
+      "Industry-Ready Skills for Panel Design Engineers",
 
-    videoUrl:
+       videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
 
     syllabusPdf:
@@ -349,7 +351,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "PCC Panel Design",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Design PCC panels with power distribution, protection systems, busbars, breakers, and reliable industrial electrical operations.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -357,7 +359,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "MCC Panel Design",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Design MCC panels featuring motor feeders, starters, protection devices, control circuits, and efficient power management.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -365,7 +367,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "PLC Control Panel",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Develop PLC control panels with organized wiring, I/O modules, power supplies, relays, and industrial automation components.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -373,7 +375,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "VFD Control Panel",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Design VFD control panels for precise motor speed control, protection, energy efficiency, and reliable industrial performance.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -381,7 +383,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Motor Starter Panels",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Design motor starter panels with DOL, Star-Delta, soft starters, protection, and safe motor control solutions.",
         tech: "PLC • HMI",
       },
 
@@ -389,7 +391,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "APFC Panel",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Design APFC panels for automatic power factor correction, capacitor bank control, reduced losses, and improved efficiency.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -397,7 +399,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "Industrial Control Panel",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Create industrial control panels integrating PLCs, HMIs, relays, sensors, and automation devices for process control.",
         tech: "TIA PORTAL • SCADA",
       },
 
@@ -405,7 +407,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Electrical Distribution Panel",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Design electrical distribution panels with breakers, busbars, metering, protection systems, and balanced power distribution.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -472,6 +474,28 @@ export const industrialAutomationCourse = {
       "Microsoft Excel",
       "Microsoft Word",
       "PDF Documentation Tools"
+    ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in electrical panels Engineer",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+      "Design industrial electrical panels independently",
+      "Create professional AutoCAD electrical drawings",
+      "Select electrical components correctly",
+      "Prepare complete engineering documentation",
+      "Understand industrial wiring standards",
+      "Execute electrical panel projects",
+      "Support automation system integration",
+      "Work confidently in manufacturing and EPC industries",
     ],
   },
 
@@ -599,4 +623,4 @@ export const industrialAutomationCourse = {
     },
   ],
 },
-};
+};              

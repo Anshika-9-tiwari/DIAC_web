@@ -80,13 +80,13 @@ export default function CorporateBenefits() {
             </span>
           </h2>
 
-          <p className="max-w-6xl max-auto text-gray-700 text-lg leading-8 mb-2">
+          <p className="max-w-6xl max-auto text-gray-700 text-[16px] leading-8 mb-2">
            The modern workplace is evolving faster than ever before. Organizations that invest in employee learning and development consistently outperform competitors in productivity, innovation, and operational efficiency.
           </p>
-          <p className="max-w-6xl max-auto text-gray-600 text-lg leading-8 mb-4">
+          <p className="max-w-6xl max-auto text-gray-700 text-[16px] leading-8 mb-4">
             As industrial automation and smart manufacturing continue to reshape industries, organizations need employees who can effectively operate, troubleshoot, maintain, and optimize advanced systems.
           </p>
-          <p className="text-gray-600  text-lg leading-8 mb-4">
+          <p className="text-gray-700  text-[16px] leading-8 mb-4">
             Corporate training is no longer an option—it is a strategic business investment.
           </p>
           <p className="text-red-900 text-xl leading-8 font-medium ">

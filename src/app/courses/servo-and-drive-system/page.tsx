@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
 import { industrialAutomationCourse } from "@/data/courses/servo-and-drive-system";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 export default function ServoDrivePage() {
@@ -41,6 +42,8 @@ export default function ServoDrivePage() {
        <PlacementSupportSection
           data={industrialAutomationCourse.placement}
         />
+
+       <CourseCareerOutcomes data={industrialAutomationCourse.career} />
 
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}

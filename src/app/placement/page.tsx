@@ -1,4 +1,5 @@
 import AboutCTA from "@/components/About/ContactSection";
+import AboutTestimonials from "@/components/About/Testimonials";
 import Testimonials from "@/components/Home/Testimonials";
 import AutomationCareerSection from "@/components/Placement/AutomationCareerSection";
 import PlacementCTA from "@/components/Placement/PlacementCTA";
@@ -18,7 +19,9 @@ export default function PlacementPage() {
       <PlacementTimeline/>
       <AutomationCareerSection/>
       {/* <PlacementCTA/> */}
+     
       <Testimonials/>
+      <AboutTestimonials/>
       <AboutCTA/>
     </main>
   );

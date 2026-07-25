@@ -30,9 +30,9 @@ export default function CoursesCertification({data,}: Props) {
         {/* TOP HEADING */}
         <div className="text-center mb-18">
 
-          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-5">
+          <div className="badge badge-outline badge-error px-5 py-4 mb-6 tracking-wider">
             {data.sectionTag}
-          </p>
+          </div>
 
           <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-900 mb-6">
             {data.title}
@@ -48,12 +48,12 @@ export default function CoursesCertification({data,}: Props) {
         <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 lg:gap-18 items-start">
 
           {/* LEFT SIDE */}
-          <div className="space-y-6">
+          <div className="space-y-4">
 
             {data.points.map((item, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-5 md:p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+                className="bg-white border border-gray-200 rounded-xl px-5 md:px-6 py-5 shadow-sm hover:shadow-lg transition-all duration-300"
               >
 
                 <div className="flex items-start gap-3">
@@ -69,7 +69,7 @@ export default function CoursesCertification({data,}: Props) {
                   {/* CONTENT */}
                   <div>
 
-                    <h3 className="text-lg md:text-[22px] font-medium text-gray-800 mb-2">
+                    <h3 className="text-lg md:text-[22px] font-medium text-gray-800 ">
                       {item.title}
                     </h3>
 

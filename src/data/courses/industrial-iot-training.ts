@@ -4,14 +4,18 @@ export const industrialAutomationCourse = {
   hero: {
     badge: "Job-Oriented Industrial IOT Program",
 
-    title: "Industrial IoT for Smart Manufacturing & Industry 4.0",
+    title: "Industrial IoT (IIoT) Training with Smart Factory Applications",
 
     icon: "/courses/automation.png",
 
     paragraph1:
-      "Industrial Internet of Things (IIoT) is transforming manufacturing by connecting machines, PLCs, sensors, SCADA systems, and cloud platforms to enable real-time monitoring, predictive maintenance, remote diagnostics, and data-driven decision-making.",
+      "Build End-to-End Industrial IoT Solutions",
     paragraph2:
-      "Our Industrial IoT (IIoT) Training provides hands-on knowledge of industrial networking, IoT devices, PLC-to-cloud communication, data acquisition, edge computing, dashboards, industrial protocols, and Industry 4.0 technologies. Students gain practical experience through live industrial projects using modern IoT hardware and software.",
+      "Learn Industrial Communication & Cloud Integration",
+    paragraph3:
+      "Hands-on Training with Smart Factory Projects",
+    paragraph4:
+      "Prepare for Industry 4.0 & Digital Manufacturing Careers",
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -349,7 +353,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Smart Factory Dashboard",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Monitor production, machine status, alarms, energy consumption, and KPIs through real-time industrial IoT dashboards.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -357,7 +361,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "Industrial Energy Monitoring",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Track energy consumption, power quality, equipment efficiency, and electrical performance for optimized industrial energy management.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -365,7 +369,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "PLC Cloud Connectivity",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Connect PLC systems to cloud platforms for remote monitoring, data access, analytics, and secure industrial automation.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -373,7 +377,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Remote Pump Monitoring",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Monitor pump status, pressure, flow, faults, and performance remotely with real-time IoT connectivity and alerts.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -381,7 +385,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Machine Health Monitoring",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Monitor machine vibration, temperature, runtime, faults, and performance to improve reliability and reduce unexpected downtime.",
         tech: "PLC • HMI",
       },
 
@@ -389,7 +393,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Temperature & Humidity Monitoring",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Monitor environmental temperature and humidity with sensors, real-time dashboards, alarms, and historical data logging.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -397,7 +401,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "Predictive Maintenance System",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Analyze equipment data to predict failures, schedule maintenance, reduce downtime, and improve operational reliability proactively.",
         tech: "TIA PORTAL • SCADA",
       },
 
@@ -405,7 +409,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Production Monitoring System",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Track production output, machine utilization, downtime, efficiency, and real-time manufacturing performance through IoT dashboards.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -486,6 +490,28 @@ export const industrialAutomationCourse = {
       "Grafana",
       "InfluxDB",
     ],
+  },
+
+ career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in Industrial IoT Engineer",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+     "Design Industrial IoT solutions",
+     "Connect PLCs with cloud platforms",
+     "Configure industrial communication protocols",
+     "Develop real-time monitoring dashboards",
+     "Integrate PLC, HMI, SCADA, and IoT systems",
+     "Implement remote monitoring solutions",
+     "Analyze industrial data",
+     "Work confidently on Industry 4.0 and Smart Factory projects",
+    ]
   },
 
   audience: {
@@ -603,4 +629,4 @@ export const industrialAutomationCourse = {
   },
 ],
   },
-};
+};       

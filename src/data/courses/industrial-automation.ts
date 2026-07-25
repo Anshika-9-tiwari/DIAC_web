@@ -4,15 +4,18 @@ export const industrialAutomationCourse = {
   hero: {
     badge: "Job-Oriented Industrial Training Program",
 
-    title: "Industrial Automation Training",
+    title: "Full Industrial Automation Training",
 
     icon: "/courses/automation.png",
 
     paragraph1:
-      "Industrial Automation Training Program at DIAC is designed to equip students, working professionals, and corporate teams with the practical skills required in today's automated industries. This comprehensive program covers Relay Logic Control (RLC), PLC Programming, HMI, SCADA, Industrial Networking, VFD & Motion Control, Process Instrumentation, Panel Designing, and Siemens TIA Portal.",
-
+      "100% Practical Lab Training with Live Industrial Projects",
     paragraph2:
-      "Through a combination of classroom learning, hands-on laboratory sessions, and real-world industrial projects, participants gain the knowledge and confidence to work on modern automation systems used across manufacturing, process, power, automotive, pharmaceutical, and infrastructure industries.",
+      "Job-Oriented Curriculum Designed for Industry ",
+    paragraph3:
+      "Placement Assistance & Live Industry Projects ",
+    paragraph4:
+      "Industry-Focused Curriculum Designed for Career Success ",  
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -603,6 +606,28 @@ export const industrialAutomationCourse = {
       "Industrial Networking",
     ],
   },
+
+  career: {
+  sectionTag: "Career Outcomes",
+
+  title: "Build Your Career in SCADA & HMI",
+
+  description:
+    "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments.",
+
+  opportunitiesTitle: "Career Opportunities",
+
+  opportunities: [
+    "SCADA Engineer",
+    "HMI Programmer",
+    "Automation Engineer",
+    "Control System Engineer",
+    "PLC SCADA Engineer",
+    "Industrial Automation Specialist",
+    "Commissioning Engineer",
+    "Technical Support Engineer",
+  ],
+},
 
   audience: {
     badge: "Eligibility Criteria",

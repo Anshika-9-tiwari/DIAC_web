@@ -209,10 +209,10 @@ export default function Hero() {
             {/* Enquiry Form */}
             <div className="w-full max-w-md lg:ml-auto">
 
-              <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
+              <div className="bg-white backdrop-blur-md rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
 
                 {/* Form Heading */}
-                <div className="bg-[#801717] text-white text-center py-4">
+                <div className="bg-white text-gray-900 border border-gray-50 shadow text-center py-4">
 
                   <h2 className="text-2xl font-bold mt-1 tracking-wide">
                     Enquiry Now

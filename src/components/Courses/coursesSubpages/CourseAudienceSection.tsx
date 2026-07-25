@@ -14,7 +14,7 @@ interface Props {
 export default function CourseAudienceSection({data,}: Props) {
   return (
     <section 
-      id="industry-demand" 
+      id="eligbility" 
       className="py-18 bg-gradient-to-b from-white to-[#fffdfd]">
 
       <div className="max-w-7xl mx-auto px-8">

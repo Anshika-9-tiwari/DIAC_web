@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import { industrialAutomationCourse } from "@/data/courses/plc-vender-training";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 export default function PlcVenderPage() {
@@ -46,9 +47,12 @@ export default function PlcVenderPage() {
          data={industrialAutomationCourse.industryDemand}
        />
 
+       <CourseCareerOutcomes data={industrialAutomationCourse.career} />
+
        <CourseAudienceSection
          data={industrialAutomationCourse.audience}
        />
+
 
        <CorporateTestimonials/>
 

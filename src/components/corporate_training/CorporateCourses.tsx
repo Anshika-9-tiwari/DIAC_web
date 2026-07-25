@@ -167,9 +167,9 @@ export default function CorporateCourses() {
               <div className="card-body flex flex-col">
 
                 {/* Title */}
-                <h3 className="card-title text-black text-xl leading-snug">
+                <h2 className="card-title text-black text-xl leading-snug">
                   {course.title}
-                </h3>
+                </h2>
 
                 {/* Description */}
                 <p className="text-gray-600 text-sm leading-7">

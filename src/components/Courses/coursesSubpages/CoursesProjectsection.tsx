@@ -48,9 +48,9 @@ export default function CoursesProjectSection({ data,}: Props) {
         {/* Header */}
         <div className="text-center mb-18">
 
-          <p className="text-[#801717] uppercase tracking-[4px] font-semibold text-sm mb-5">
+          <div className="badge badge-outline badge-error px-5 py-4 mb-6 tracking-wider">
             {data.sectionTag}
-          </p>
+          </div>
 
           <h2 className="text-[35px] md:text-[45px] font-semibold text-gray-900 mb-6">
             {data.title}
@@ -90,16 +90,16 @@ export default function CoursesProjectSection({ data,}: Props) {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 text-lg leading-8 mb-5">
+                  <p className="text-gray-600 text-lg leading-8">
                     {project.desc}
                   </p>
 
                   {/* Tech Badge */}
-                  <div>
+                  {/* <div>
                     <span className="badge badge-lg bg-red-900 text-[#f7f7f7] border-0 px-4 py-5 font-semibold shadow">
                       {project.tech}
                     </span>
-                  </div>
+                  </div> */}
 
                 </div>
               </div>

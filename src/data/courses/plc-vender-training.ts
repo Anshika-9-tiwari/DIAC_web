@@ -4,14 +4,18 @@ export const industrialAutomationCourse = {
   hero: {
     badge: "Job-Oriented PlC Vender Program",
 
-    title: "Master Multiple PLC Platforms with Industry-Focused Training",
+    title: "PLC Vendor Training with Multi-Brand Industrial PLCs",
 
     icon: "/courses/automation.png",
 
     paragraph1:
-      "Industrial automation companies use different PLC brands depending on project requirements, industry standards, and customer preferences. Our PLC Vendor Training is designed to help students and working professionals learn programming, configuration, troubleshooting, and communication across multiple PLC platforms.",
+      "Hands-on Training on Multiple PLC Brands ",
     paragraph2:
-      "The course covers PLC programming, HMI development, SCADA integration, industrial communication protocols, and live automation projects. Training is delivered using real industrial hardware and software to prepare candidates for automation careers in manufacturing, process industries, and machine automation.",
+      "Develop PLC Programming & Troubleshooting Skills",
+    paragraph3:
+      "Industrial Communication & System Integration",
+    paragraph4:
+      "Real Industrial Projects for Multi-Vendor Applications",
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -316,7 +320,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Conveyor Automation",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Automate conveyor operations with PLC control, sensors, motor drives, and efficient material handling for industrial production.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -324,7 +328,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "Bottle Filling System",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Automate bottle filling processes with PLC, sensors, flow control, accurate filling, and production line synchronization.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -332,7 +336,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "Traffic Signal Automation",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Control traffic signals automatically using PLC logic, timers, sensors, and intelligent traffic management for safety.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -340,7 +344,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Automatic Water Level Control",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Monitor and control water levels using sensors, pumps, PLC automation, and overflow protection for efficient operation.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -348,7 +352,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Boiler Automation",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Automate boiler operations by controlling temperature, pressure, fuel supply, safety systems, and steam generation efficiently.",
         tech: "PLC • HMI",
       },
 
@@ -356,7 +360,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Pump Control System",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Control pump operation using PLC, pressure sensors, level switches, protection features, and energy-efficient automation techniques.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -364,7 +368,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "VFD Automation",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Control motor speed with VFD technology, improving energy efficiency, process accuracy, and smooth industrial equipment operation.",
         tech: "TIA PORTAL • SCADA",
       },
 
@@ -372,7 +376,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Packaging Machine Automation",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Automate packaging machines using PLC, sensors, servo systems, and conveyors for faster, accurate production processes.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -457,6 +461,28 @@ export const industrialAutomationCourse = {
       "Wonderware InTouch",
       "Ignition SCADA",
       "AutoCAD (Basic Electrical Documentation)",
+    ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in PLC Engineer",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+      "Program PLCs from multiple vendors",
+      "Develop professional HMI applications",
+      "Build SCADA monitoring systems",
+      "Configure industrial communication protocols",
+      "Integrate PLC, HMI, and SCADA systems",
+      "Troubleshoot industrial automation systems",
+      "Execute live industrial automation projects",
+      "Work confidently in manufacturing, OEM, and process industries",
     ],
   },
 

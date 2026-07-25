@@ -47,9 +47,9 @@ export default function CorporateTraining() {
 
           {/* LEFT Content */}
           <div>
-            <h3 className="text-2xl md:text-[32px] font-semibold mb-5 text-[#801717] ">
+            <h2 className="text-2xl md:text-[32px] font-semibold mb-5 text-[#801717] ">
               Corporate Industrial Training Programs
-            </h3>
+            </h2>
 
             <p className="text-gray-700 text-[18px] mb-6">
               DIAC provides customized industrial automation training programs designed for companies, working professionals, and technical teams.

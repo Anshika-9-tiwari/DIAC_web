@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import { industrialAutomationCourse } from "@/data/courses/electrical-design";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 
@@ -43,6 +44,13 @@ export default function ElectricalDesignPage() {
           data={industrialAutomationCourse.placement}
         />
 
+        <CourseCareerOutcomes
+          data={{
+            ...industrialAutomationCourse.career,
+            opportunities: industrialAutomationCourse.career.opportunities.filter((o): o is string => !!o),
+          }}
+        />
+       
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}
        />

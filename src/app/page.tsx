@@ -13,6 +13,7 @@ import CorporateTestimonials from "@/components/corporate_training/CorporateTest
 import WhatMakeDiacDiff from "@/components/Home/WhatMakeDiacDiff";
 import PlacementTrust from "@/components/Placement/PlacementTrust";
 import AboutCTA from "@/components/About/ContactSection";
+import AboutTestimonials from "@/components/About/Testimonials";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
       <WhatMakeDiacDiff/>
       <Masterclass/>
       <Certification/>
-      <CorporateTestimonials/>
+      <AboutTestimonials/>
       <AboutCTA/>
     </main>
   );

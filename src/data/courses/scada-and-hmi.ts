@@ -6,14 +6,15 @@ export const industrialAutomationCourse = {
 
     title: "SCADA & HMI Training",
 
-    icon: "/courses/automation.png",
-
     paragraph1:
-      "Master the technologies that power modern industrial automation with DIAC's SCADA & HMI Training Program. This industry-focused course is designed to help students, engineers, and working professionals learn real-time monitoring, process visualization, alarm management, data logging, and industrial control system development.",
-
-    paragraph2:
-      "The training follows current industry standards and 2026 automation technologies to prepare candidates for high-demand automation careers.",
-
+      "100% Practical Lab Training with Live Industrial Projects",
+      paragraph2:
+      "Industry-Oriented Curriculum Designed by Automation Experts",
+      paragraph3:
+      "Hands-on Training on Real-Time Industrial Applications",
+      paragraph4:
+      "Industry-Focused Curriculum Designed for Career Success",
+    
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
 
@@ -224,7 +225,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Water Treatment Plant Monitoring",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Monitor pumps, valves, flow, pressure, pH, water quality, alarms, and real-time treatment plant performance.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -232,7 +233,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "Tank Level Monitoring System",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Monitor tank levels, overflow, low-level alerts, pump status, and liquid storage operations continuously.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -240,7 +241,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "Boiler Automation System",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Control boiler temperature, pressure, fuel supply, steam generation, safety alarms, and operational efficiency automatically.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -248,7 +249,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Conveyor Monitoring System",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Track conveyor speed, motor status, product movement, faults, emergency stops, and production line efficiency.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -256,7 +257,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Motor Control & Monitoring",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Monitor motor speed, current, voltage, temperature, faults, energy usage, and remote start-stop operations efficiently.",
         tech: "PLC • HMI",
       },
 
@@ -264,7 +265,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Energy Management System",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Monitor energy consumption, power quality, demand trends, equipment efficiency, and optimize overall electrical performance.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -272,7 +273,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "Process Visualization Projects",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Create interactive dashboards displaying live process data, alarms, trends, equipment status, and production analytics visually.",
         tech: "SCADA",
       },
 
@@ -280,7 +281,15 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Manufacturing Monitoring Dashboard",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Display real-time production metrics, machine status, downtime analysis, OEE, alarms, and operational performance insights.",
+        tech: "HMI",
+      },
+
+      {
+        icon: "Package",
+        title: "Smart Factory Monitoring Application",
+        desc:
+          "Integrate industrial devices, monitor production, analyze performance, visualize data, and enable intelligent factory automation.",
         tech: "HMI",
       },
     ],
@@ -351,6 +360,28 @@ export const industrialAutomationCourse = {
       "Industrial HMI Panels",
       "Communication Networks",
       "PLC",
+    ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in SCADA & HMI",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments.",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+      "SCADA Engineer",
+      "HMI Programmer",
+      "Automation Engineer",
+      "Control System Engineer",
+      "PLC SCADA Engineer",
+      "Industrial Automation Specialist",
+      "Commissioning Engineer",
+      "Technical Support Engineer",
     ],
   },
 

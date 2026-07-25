@@ -15,11 +15,11 @@ const programs = [
     image: "/courses/job2.svg",
     link: "/courses/electrical-design-training",
   },
-  {
-    title: "Women's Industrial Automation",
-    image: "/courses/job3.svg",
-    link: "/courses/electrical-design-training",
-  },
+  // {
+  //   title: "Women's Industrial Automation",
+  //   image: "/courses/job3.svg",
+  //   link: "/courses/electrical-design-training",
+  // },
 ];
 
 export default function JobGuaranteePrograms() {

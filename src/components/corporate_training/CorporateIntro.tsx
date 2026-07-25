@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function CorporateIntro() {
   return (
@@ -27,16 +28,15 @@ export default function CorporateIntro() {
         {/* RIGHT - VIDEO */}
         <div className="w-full">
 
-          <div className="relative w-full h-[280px] md:h-[320px] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full h-[280px] md:h-[340px] rounded-lg overflow-hidden shadow-lg">
 
             {/* YouTube Embed */}
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/I-nmYGmcY9I"
-              title="Corporate Training Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+             <Image
+                src="/corporate_intro_img.jpeg"
+                alt="corporate_intro"
+                fill
+                className="object-cover  rounded-xl"
+              />
 
           </div>
 
@@ -46,7 +46,7 @@ export default function CorporateIntro() {
       {/* BOTTOM CONTENT */}
       <div className=" border-t border-gray-200 pt-5 max-w-7xl mx-auto px-8">
 
-        <p className="max-w-6xl max-auto text-red-900 text-[16px] leading-relaxed mb-4">
+        <p className="max-w-6xl max-auto text-gray-600 text-[16px] leading-relaxed mb-4">
           With years of expertise in Industrial Automation, PLC Programming, SCADA Systems, HMI Development, Industrial Robotics, Electrical Systems, and Industry 4.0 technologies, DIAC delivers practical, hands-on training programs that bridge the gap between theoretical knowledge and real-world industrial applications.
         </p>
 

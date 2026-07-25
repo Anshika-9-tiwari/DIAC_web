@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { CircleCheckBig } from 'lucide-react';
 import {
+  CircleCheckBig,
   RefreshCw,
   Factory,
   Zap,
   Target,
   ClipboardList,
   CalendarDays,
+  Building2,
 } from "lucide-react";
 
 interface Props {
@@ -30,8 +31,7 @@ interface Props {
   };
 }
 
-export default function CourseOverviewSection({ data,}: Props) {
-
+export default function CourseOverviewSection({ data }: Props) {
   /* ========================= NAV LINKS ========================== */
   const navItems = [
     { label: "Overview", href: "#overview" },
@@ -39,7 +39,11 @@ export default function CourseOverviewSection({ data,}: Props) {
     { label: "Projects", href: "#projects" },
     { label: "Certification", href: "#certification" },
     { label: "Placements", href: "#placements" },
-    { label: "Industry Demand & Eligibility", href: "#industry-demand" },
+    {
+      label: "Industry Demand & ", href: "#industry-demand",
+    },
+    { label: "Eligibility", href: "#eligbility" },
+    { label: "Career", href: "#career" },
     { label: "Reviews", href: "#reviews" },
   ];
 
@@ -55,143 +59,220 @@ export default function CourseOverviewSection({ data,}: Props) {
   return (
     <>
       {/* =========================
-         STICKY NAVBAR
+          STICKY NAVBAR
       ========================== */}
       <div className="sticky top-2 z-40 bg-white text-gray-900 border-b border-gray-200 shadow-sm py-1.5">
-
-        <div className="max-w-8xl mx-auto px-8 ">
-
-          <div className="flex items-center justify-around overflow-x-auto whitespace-nowrap">
+        <div className="max-w-8xl mx-auto px-8 md:px-12">
+          <div className="flex items-center justify-between gap-8 overflow-x-auto whitespace-nowrap">
 
             {/* NAV LINKS */}
-            <div className="flex items-center gap-12 min-w-max">
-
+            <div className="flex items-center gap-8 lg:gap-12 min-w-max">
               {navItems.map((item, index) => (
                 <Link
                   key={index}
                   href={item.href}
-                  className={`py-6 text-[18px] font-medium transition border-b-2  ${
+                  className={`py-5 text-[15px] md:text-[17px] font-medium transition border-b-2 ${
                     index === 0
-                      ? "border-[#801717] text-[#801717] "
+                      ? "border-[#801717] text-[#801717]"
                       : "border-transparent hover:text-[#801717]"
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
-
             </div>
 
-            {/* BUTTON */}
+            {/* ENROLL BUTTON */}
             <Link
               href="/contact"
-              className="hidden lg:flex bg-[#801717] hover:bg-[#6d1313] transition text-white px-8 py-4 rounded-md font-semibold"
+              className="hidden lg:flex shrink-0 bg-[#801717] hover:bg-[#6d1313] transition text-white px-8 py-3 rounded-lg font-semibold"
             >
               Enroll Now
             </Link>
 
           </div>
-
         </div>
-
       </div>
 
       {/* =========================
-          OVERVIEW SECTION
+          OVERVIEW
       ========================== */}
       <section
         id="overview"
         className="py-12 md:py-16 bg-white"
       >
-        <div className="max-w-7xl mx-auto px-8 md:px-12 ">
+        <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-10">
 
-          {/* SECTION HEADER */}
-          <div className=" text-center mb-16 mt-8  ">
+          {/* ================= HEADER ================= */}
+          <div className="text-center max-w-6xl mx-auto mb-12 md:mb-14">
 
-            <p className="uppercase tracking-[4px] text-[#801717] font-semibold text-sm mb-5">
-             {data.sectionTag}
-            </p>
+            <div className="badge badge-outline badge-error px-5 py-4 mb-5 tracking-wider">
+              {data.sectionTag}
+            </div>
 
-            <h2 className="text-[32px] md:text-[45px] font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-[30px] md:text-[44px] font-bold text-gray-900 leading-tight mb-5">
               {data.title}
             </h2>
 
-            <p className="max-w-6xl text-[17px] md:text-lg  leading-9 text-gray-600">
-             {data.description} 
+            <p className="text-[16px] md:text-lg leading-8 text-gray-600">
+              {data.description}
             </p>
 
           </div>
 
-          {/* OVERVIEW CARDS */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+          {/* ================= OVERVIEW CARDS ================= */}
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
 
             {data.cards.map((card, index) => {
-
               const Icon =
-                iconMap[card.icon as keyof typeof iconMap];
+                iconMap[
+                  card.icon as keyof typeof iconMap
+                ];
 
               return (
                 <div
                   key={index}
-                  className="bg-white border border-slate-400 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
+                  className="group bg-white border border-gray-200 rounded-2xl p-6 md:p-7 hover:border-red-100 hover:shadow-xl transition-all duration-300"
                 >
+                  {/* ICON */}
                   <div
-                    className={`w-16 h-16 rounded-2xl ${card.iconBg} flex items-center justify-center text-3xl mb-6`}
+                    className={`w-14 h-14 rounded-2xl ${card.iconBg} flex items-center justify-center mb-5 group-hover:scale-105 transition-transform duration-300`}
                   >
                     <Icon
                       className={card.iconColor}
-                      size={28}
+                      size={25}
                     />
                   </div>
 
-                  <h3 className="text-lg md:text-2xl font-medium text-gray-900 mb-4">
+                  {/* TITLE */}
+                  <h3 className="text-xl md:text-[22px] font-semibold text-gray-900 mb-3">
                     {card.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-8 text-lg">
+                  {/* DESCRIPTION */}
+                  <p className="text-gray-600 leading-7 text-[15px] md:text-base">
                     {card.description}
                   </p>
+
                 </div>
               );
             })}
 
           </div>
 
-          {/* =========================
-              FEATURES SECTION
-          ========================== */}
-          <div id="industry-hiring">
+          {/* =====================================================
+              INDUSTRIES / FEATURES
+          ====================================================== */}
+          <div
+            id="industry-hiring"
+            className="border-t border-gray-200 pt-12"
+          >
 
-            {/* HEADING */}
-            <div className="max-w-7xl mb-16 mt-10  border-t border-gray-200 pt-9 ">
+            <div className="bg-[#f8f8f8] border border-gray-200 rounded-3xl overflow-hidden">
 
-              <h2 className="text-[32px] md:text-[45px] font-semibold text-gray-900 leading-tight mb-6">
-                {data.industriesTitle}
-              </h2>
-            </div>
+              <div className="grid lg:grid-cols-[0.75fr_1.25fr]">
 
-            {/* GRID */}
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 ">
+                {/* ================= LEFT ================= */}
+                <div className="relative bg-[#801717] text-white p-7 md:p-10 lg:p-12 overflow-hidden">
 
-              {data.industries.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg shadow-md border border-red-100 px-6 py-5 flex items-center gap-5 hover:shadow-lg transition"
-                >
+                  {/* Background Decoration */}
+                  <div className="absolute -top-20 -right-20 w-56 h-56 rounded-full border-[30px] border-white/5" />
 
-                  {/* ICON */}
-                  <CircleCheckBig
-                    size={28}
-                    className="text-[#801717]"
-                  />
+                  <div className="absolute -bottom-24 -left-16 w-60 h-60 rounded-full border-[40px] border-white/5" />
 
-                  {/* TEXT */}
-                  <h3 className="text-[19px] font-medium text-[#111827]">
-                    {item}
-                  </h3>
+                  <div className="relative z-10">
+
+                    {/* ICON */}
+                    <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center mb-7">
+                      <Building2
+                        size={27}
+                        className="text-white"
+                      />
+                    </div>
+
+                    {/* LABEL */}
+                    <p className="text-xs font-semibold tracking-[3px] uppercase text-white/70 mb-4">
+                      Career Opportunities
+                    </p>
+
+                    {/* TITLE */}
+                    <h2 className="text-[28px] md:text-[35px] font-semibold leading-tight mb-5">
+                      {data.industriesTitle}
+                    </h2>
+
+                    {/* DESCRIPTION */}
+                    <p className="text-white/75 text-[15px] md:text-base leading-7 max-w-md">
+                      Build practical skills relevant to
+                      modern industries and explore career
+                      opportunities across multiple
+                      industrial sectors.
+                    </p>
+
+                    {/* SMALL STAT */}
+                    {/* <div className="mt-8 pt-7 border-t border-white/15">
+
+                      <p className="text-3xl font-bold">
+                        {data.industries.length}+
+                      </p>
+
+                      <p className="text-sm text-white/70 mt-1">
+                        Industry sectors covered
+                      </p>
+
+                    </div> */}
+
+                  </div>
+                </div>
+
+                {/* ================= RIGHT INDUSTRIES ================= */}
+                <div className="bg-white p-5 md:p-8 lg:p-10">
+
+                  <div className="grid sm:grid-cols-2 gap-3">
+
+                    {data.industries.map(
+                      (item, index) => (
+
+                        <div
+                          key={index}
+                          className="group flex items-center gap-4 p-4 rounded-xl border border-gray-100 bg-white hover:border-red-100 hover:bg-[#801717]/[0.025] hover:shadow-sm transition-all duration-300"
+                        >
+
+                          {/* CHECK ICON */}
+                          <div className="w-9 h-9 rounded-xl bg-[#801717]/5 flex items-center justify-center shrink-0 group-hover:bg-[#801717] transition-colors duration-300">
+
+                            <CircleCheckBig
+                              size={18}
+                              className="text-[#801717] group-hover:text-white transition-colors duration-300"
+                            />
+
+                          </div>
+
+                          {/* TEXT */}
+                          <div className="flex-1">
+
+                            <span className="block text-[10px] font-semibold tracking-wider text-gray-400 uppercase mb-0.5">
+                              Industry{" "}
+                              {String(
+                                index + 1
+                              ).padStart(2, "0")}
+                            </span>
+
+                            <h3 className="text-[15px] md:text-base font-semibold text-gray-800 leading-6">
+                              {item}
+                            </h3>
+
+                          </div>
+
+                        </div>
+
+                      )
+                    )}
+
+                  </div>
 
                 </div>
-              ))}
+
+              </div>
 
             </div>
 

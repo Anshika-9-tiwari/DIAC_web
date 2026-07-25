@@ -48,10 +48,10 @@ export default function WhoWeAre() {
 
           {/* Paragraphs */}
           <p className="text-gray-600 mb-4 text-[16px] leading-relaxed text">
-           <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>,(Popularly known as “DIAC”) was incorporated in December’ 2008 with a basic objective to impart training of Cutting-edge Industrial Automation Technologies to fresh engineers for bridging the demand-supply gap of ever growing demand of Industrial Automation Engineers and to enhance domain knowledge of working professionals with the advancement in this domain.
+           <span className="text-[#801717]">DYNAMIC INSTITUTE OF AUTOMATION & CONTROLS (DIAC)</span>, Popularly known as “DIAC” was incorporated in December’ 2008 with a basic objective to impart training of Cutting-edge Industrial Automation Technologies to fresh engineers for bridging the demand-supply gap of ever growing demand of Industrial Automation Engineers and to enhance domain knowledge of working professionals with the advancement in this domain.
           </p>
 
-          <p className="text-gray-600 mb-4 text-[16px] leading-loose">
+          <p className="text-gray-600 mb-4 text-[16px] leading-snug">
            Since its inception, with 14 years of standing, we have trained and placed 8000+ students in the automation industry. Our passed-out students are working with leading MNCs in the field of Industrial Automation.
           </p>
           {/* Tags

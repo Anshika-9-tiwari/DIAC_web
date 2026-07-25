@@ -9,10 +9,13 @@ export const industrialAutomationCourse = {
     icon: "/courses/automation.png",
 
     paragraph1:
-      "Servo motors and drive systems play a vital role in modern industrial automation by providing high-speed, accurate, and precise motion control. They are widely used in CNC machines, robotics, packaging machines, printing machines, textile machinery, semiconductor manufacturing, and automated production lines.",
-
+      "Master Servo Motor Programming & Drive Configuration",
     paragraph2:
-      "Our Servo & Drive Systems Training is designed to provide comprehensive knowledge of servo motor technology, servo drive configuration, motion control, industrial communication, troubleshooting, and system commissioning. The course emphasizes practical learning using real industrial servo systems and live automation applications.",
+      "Hands-on Training on Industrial Motion Control Systems",
+    paragraph3:
+      "Learn PLC Integration & Industrial Communication",
+    paragraph4:
+      "Develop Skills for High-Precision Industrial Automation",
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -345,7 +348,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Conveyor Position Control",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Control conveyor positioning accurately using servo systems, sensors, encoders, and PLC-based automation for precise operations.",
         tech: "PLC • SCADA • HMI",
       },
 
@@ -353,7 +356,7 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "Pick & Place Automation",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Automate pick-and-place applications with servo motors, sensors, PLC control, and synchronized material handling processes.",
         tech: "PLC • HMI • SENSORS",
       },
 
@@ -361,7 +364,7 @@ export const industrialAutomationCourse = {
         icon: "MoveHorizontal",
         title: "Packaging Machine Servo Control",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Control packaging machines using servo drives for accurate positioning, speed synchronization, and high-speed production efficiency.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -369,7 +372,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Rotary Table Automation",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Automate rotary table indexing with servo motors, position control, precise rotation, and synchronized industrial operations.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -377,7 +380,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "CNC Axis Control",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Control CNC machine axes with servo systems for precise positioning, smooth motion, and accurate machining performance.",
         tech: "PLC • HMI",
       },
 
@@ -385,7 +388,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Robotic Motion Control",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Implement robotic motion control using servo drives for coordinated movement, positioning accuracy, and automated manufacturing applications.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -393,7 +396,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "Flying Shear Application",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Synchronize flying shear systems with conveyor speed for accurate cutting, continuous production, and minimal material waste.",
         tech: "TIA PORTAL • SCADA",
       },
 
@@ -401,7 +404,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Material Handling Automation",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Automate material handling systems with conveyors, servo drives, sensors, and PLC-based intelligent process control.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -486,6 +489,28 @@ export const industrialAutomationCourse = {
       "Panasonic PANATERM",
       "Beckhoff TwinCAT (Introduction)"
     ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in servo drives Engineer",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+     "Configure industrial servo drives",
+     "Program motion control applications",
+     "Integrate servo systems with PLCs",
+     "Commission servo-driven machines",
+     "Optimize positioning accuracy",
+     "Troubleshoot servo drive faults",
+     "Execute industrial motion control projects",
+     "Work confidently in automation, robotics, CNC, and machine manufacturing industries",
+    ]
   },
 
   audience: {

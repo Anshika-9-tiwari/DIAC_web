@@ -4,15 +4,18 @@ export const industrialAutomationCourse = {
   hero: {
     badge: "Job-Oriented VFD Drive Training",
 
-    title: "VFD Drive Training",
+    title: "VFD Drive Training with Hands-on Industrial Applications",
 
     icon: "/courses/automation.png",
 
     paragraph1:
-      "VFD (Variable Frequency Drive) Training is a specialized industrial automation course designed to help students and professionals learn motor speed control, energy-saving techniques, drive configuration, troubleshooting, and industrial applications.",
-
+      "Configure & Program Leading VFD Brands",
     paragraph2:
-      " At DIAC, the training focuses on practical implementation of VFD systems used in manufacturing plants, process industries, and automation projects. The curriculum is designed accordin.",
+      "Real-Time Motor Control & Energy Optimization",
+    paragraph3:
+      "Industrial Fault Diagnosis & Commissioning Skills",
+    paragraph4:
+      "Career-Focused Training with Industry Certification",
 
     videoUrl:
       "https://www.youtube.com/embed/R4eJncL7bP8",
@@ -191,7 +194,7 @@ export const industrialAutomationCourse = {
         icon: "Droplets",
         title: "Conveyor Belt Speed Control System",
         desc:
-          "Pumping, filtration, dosing, and level control sequences with full SCADA monitoring and alarm management.",
+          "Control conveyor belt speed using PLC and VFD for smooth material handling and efficient production.",
         tech: "VFD • Drive • HMI",
       },
 
@@ -199,15 +202,15 @@ export const industrialAutomationCourse = {
         icon: "Package",
         title: "Pump Control Automation",
         desc:
-          "Conveyor-driven filling with reject logic, batch counters, and recipe-based HMI control.",
+          "Automate pump operations with level sensors, pressure monitoring, protection, alarms, and energy-efficient control systems.",
         tech: "PLC • VFD • SENSORS",
       },
 
       {
         icon: "MoveHorizontal",
-        title: "Conveyor AutomationHVAC Motor Control Application",
+        title: "HVAC Motor Control Application",
         desc:
-          "Multi-zone conveyor with product sorting, interlocking, and VFD speed control.",
+          "Monitor and control HVAC motors for temperature regulation, airflow management, energy efficiency, and reliable operation.",
         tech: "PLC • VFD • NETWORKING",
       },
 
@@ -215,7 +218,7 @@ export const industrialAutomationCourse = {
         icon: "Settings",
         title: "Multi-Motor Synchronization Project",
         desc:
-          "Servo-driven packaging with product detection, batch counting, and full alarm handling.",
+          "Synchronize multiple motors with precise speed control, load balancing, coordinated operation, and real-time performance monitoring.",
         tech: "PLC • SERVO • HMI",
       },
 
@@ -223,7 +226,7 @@ export const industrialAutomationCourse = {
         icon: "TrafficCone",
         title: "Energy Saving Automation System",
         desc:
-          "PLC-based adaptive traffic management with HMI override and fault diagnostics.",
+          "Optimize equipment operation, reduce energy consumption, monitor power usage, and improve overall industrial efficiency automatically.",
         tech: "PLC • HMI • VFD",
       },
 
@@ -231,7 +234,7 @@ export const industrialAutomationCourse = {
         icon: "BarChart3",
         title: "Industrial Process Control Project",
         desc:
-          "PID-controlled level system with continuous trending, alarm logging, and data export.",
+          "Automate industrial processes using PLC logic, sensors, actuators, alarms, and real-time monitoring for reliable performance.",
         tech: "PLC • SCADA • PID",
       },
 
@@ -239,7 +242,7 @@ export const industrialAutomationCourse = {
         icon: "Factory",
         title: "PLC & VFD Integrated Automation Project",
         desc:
-          "OEE monitoring and production data acquisition with SCADA dashboard on TIA Portal.",
+          "Integrate PLC and VFD for intelligent motor control, speed regulation, automation, and industrial process optimization.",
         tech: "TIA PORTAL • VFD",
       },
 
@@ -247,7 +250,7 @@ export const industrialAutomationCourse = {
         icon: "Cog",
         title: "Industrial Troubleshooting Case Studies",
         desc:
-          "Chemical process simulation with closed-loop PID control, interlocks, and safety systems.",
+          "Solve real industrial automation faults through practical troubleshooting, diagnostics, maintenance techniques, and hands-on case studies.",
         tech: "PLC • INSTRUMENTATION",
       },
     ],
@@ -312,6 +315,30 @@ export const industrialAutomationCourse = {
       "Industrial Sensors & Control Devices",
       "Industrial Networking Basics",
       "Automation Testing Equipment",
+    ],
+  },
+
+  career: {
+    sectionTag: "Career Outcomes",
+
+    title: "Build Your Career in VFD Drive Training",
+
+    description:
+      "After completing the SCADA & HMI Training Course, students can pursue careers in industrial automation, manufacturing, process industries, and smart factory environments",
+
+    opportunitiesTitle: "Career Opportunities",
+
+    opportunities: [
+      "VFD Engineer",
+      "Automation Engineer",
+      "Electrical Automation Engineer",
+      "Maintenance Engineer",
+      "Commissioning Engineer",
+      "Service Engineer",
+      "Control Panel Engineer",
+      "PLC & Drive Engineer",
+      "Industrial Automation Technician",
+      "Project Engineer",
     ],
   },
 
@@ -426,4 +453,4 @@ faq: {
     },
   ],
 },
-};
+};                                              

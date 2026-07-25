@@ -10,6 +10,7 @@ import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesP
 
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
 import { industrialAutomationCourse } from "@/data/courses/vfd-drive-training";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 
@@ -44,6 +45,8 @@ export default function VFD_DrivePage() {
           data={industrialAutomationCourse.placement}
         />
 
+       <CourseCareerOutcomes data={industrialAutomationCourse.career} />
+       
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}
        />

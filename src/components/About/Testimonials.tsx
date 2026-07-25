@@ -50,7 +50,7 @@ const reviews = [
   },
 ];
 
-export default function Testimonials() {
+export default function AboutTestimonials() {
   const settings = {
     dots: false,
     infinite: true,

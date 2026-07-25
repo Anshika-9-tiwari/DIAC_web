@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import { industrialAutomationCourse } from "@/data/courses/panel-design";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 
@@ -42,6 +43,8 @@ export default function PanelDesignPage() {
        <PlacementSupportSection
           data={industrialAutomationCourse.placement}
         />
+
+       <CourseCareerOutcomes data={industrialAutomationCourse.career} />
 
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}

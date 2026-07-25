@@ -9,6 +9,7 @@ import CoursesIndustryDemand from "@/components/Courses/coursesSubpages/CoursesI
 import CoursesProjectSection from "@/components/Courses/coursesSubpages/CoursesProjectsection";
 import PlacementSupportSection from "@/components/Courses/coursesSubpages/CoursesPlacementSection";
 import { industrialAutomationCourse } from "@/data/courses/scada-and-hmi";
+import CourseCareerOutcomes from "@/components/Courses/coursesSubpages/CourseCareerOutcomes";
 
 
 export default function ScadaHmiPage() {
@@ -16,7 +17,7 @@ export default function ScadaHmiPage() {
     <main>
 
         <CourseSubpageHero
-          data={industrialAutomationCourse.hero}
+          data={{ ...industrialAutomationCourse.hero, icon: "" }}
         />
 
         <CourseOverviewSection
@@ -41,6 +42,8 @@ export default function ScadaHmiPage() {
        <PlacementSupportSection
           data={industrialAutomationCourse.placement}
         />
+
+        <CourseCareerOutcomes data={industrialAutomationCourse.career} />
 
        <CoursesIndustryDemand
          data={industrialAutomationCourse.industryDemand}
