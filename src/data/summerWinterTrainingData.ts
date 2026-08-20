@@ -74,14 +74,14 @@ export const summerWinterTrainingData = {
     paragraph:
       "Our focus is not just on theory but on practical implementation, project development, and preparing students for future internships and engineering careers. With hands-on PLC, SCADA, and HMI training, project mentoring, and certification, students complete the program with the confidence to work in modern industrial automation environments.",
 
-    points: [
-      "Practical implementation instead of theory-only learning",
-      "Hands-on PLC, SCADA and HMI training",
-      "Mini, major and final-year project mentoring",
-      "Industry-focused technical guidance",
-      "Modern automation lab exposure",
-      "Industry-recognized certification",
-      "Career and internship-oriented learning",
-    ],
+    // points: [
+    //   "Practical implementation instead of theory-only learning",
+    //   "Hands-on PLC, SCADA and HMI training",
+    //   "Mini, major and final-year project mentoring",
+    //   "Industry-focused technical guidance",
+    //   "Modern automation lab exposure",
+    //   "Industry-recognized certification",
+    //   "Career and internship-oriented learning",
+    // ],
   },
 };
