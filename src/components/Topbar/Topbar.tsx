@@ -2,6 +2,7 @@
 
 import { Mail, Phone } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 export default function Topbar() {
 
@@ -11,14 +12,26 @@ export default function Topbar() {
   <div className="max-w-[1600px] mx-auto px-4 md:px-8 h-12 flex items-center justify-between">
 
     {/* Left */}
-    <div className="flex items-center gap-4 md:gap-8 text-sm">
+    <div className="flex items-center gap-4 md:gap-6 text-sm">
 
       <a
         href="tel:+919953489987"
         className="flex items-center gap-2 hover:text-red-200 transition"
       >
+        Support & Training :
         <Phone size={15} />
-        <span>+91 99534 89987</span>
+        <span> +91 99534 89987</span>
+      </a>
+
+      <span className="hidden md:block text-white/40">|</span>
+
+      <a
+        href="tel:+919953489987"
+        className="hidden lg:flex items-center gap-2 hover:text-red-200 transition"
+      >
+        HR:
+        <Phone size={15} />
+        <span> +91 97112 87737</span> 
       </a>
 
       <span className="hidden md:block text-white/40">|</span>
@@ -33,19 +46,12 @@ export default function Topbar() {
 
     </div>
 
-    {/* Center */}
-    {/* <div className="hidden lg:flex items-center">
-      <span className="text-sm font-medium tracking-wide">
-        🎯 100% Placement Assistance & Career Support
-      </span>
-    </div> */}
-
     {/* Right */}
     <div className="flex items-center gap-3">
 
       <div className="hidden lg:flex items-center mr-3">
         <span className="text-sm font-medium tracking-wide">
-          🎯 100% Placement Assistance & Career Support
+          🎯 100% Placement Assistance
         </span>
       </div>
 
@@ -53,27 +59,36 @@ export default function Topbar() {
         href="https://wa.me/919953489987"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#801717] transition"
+        className="hidden md:flex w-8 h-8 rounded-full bg-white/10 items-center justify-center hover:bg-white hover:text-[#801717] transition"
       >
         <FaWhatsapp size={15} />
       </a>
 
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/diactraining/"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#801717] transition"
+        className="hidden lg:flex  w-8 h-8 rounded-full bg-white/10  items-center justify-center hover:bg-white hover:text-[#801717] transition"
       >
         <FaInstagram size={15} />
       </a>
 
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/school/diactraining/"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-[#801717] transition"
+        className="hidden lg:flex w-8 h-8 rounded-full bg-white/10  items-center justify-center hover:bg-white hover:text-[#801717] transition"
       >
         <FaLinkedin size={15} />
+      </a>
+      
+      <a
+        href="https://www.facebook.com/DIACTRAINING"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden lg:flex w-8 h-8 rounded-full bg-white/10 items-center justify-center hover:bg-white hover:text-[#801717] transition"
+      >
+        <FaFacebook size={15} />
       </a>
 
     </div>
@@ -83,5 +98,3 @@ export default function Topbar() {
 </div>
   );
 }
-
-//className="object-cover group-hover:scale-110 transition duration-300"  transition duration-300

@@ -2,7 +2,6 @@ import AboutCTA from "@/components/About/ContactSection";
 import AboutTestimonials from "@/components/About/Testimonials";
 import Testimonials from "@/components/Home/Testimonials";
 import AutomationCareerSection from "@/components/Placement/AutomationCareerSection";
-import PlacementCTA from "@/components/Placement/PlacementCTA";
 import PlacementHero from "@/components/Placement/PlacementHero";
 import PlacementMessage from "@/components/Placement/PlacementMessage";
 import PlacementTimeline from "@/components/Placement/PlacementTimeline";

@@ -6,7 +6,6 @@ import { useState } from "react";
 
 import {
   CircleCheckBig,
-  Download,
   Phone,
   Mail,
   User,
@@ -243,17 +242,17 @@ export default function CourseSubpageHero({ data }: Props) {
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact/#contact-form"
                   className="inline-flex justify-center items-center  bg-[#801717] hover:bg-[#6b1313] text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg"
                 >
                  Book Free Demo
                 </Link>
 
                 <Link
-                  href="/contact"
+                  href="tel:+919953489987"
                   className="inline-flex justify-center items-center border border-white/60 bg-white/10 backdrop-blur-md text-white hover:bg-white hover:text-gray-900 px-7 py-4 rounded-xl font-semibold transition-all duration-300"
                 >
-                  Book Free Demo
+                  Call now
                 </Link>
 
               </div>

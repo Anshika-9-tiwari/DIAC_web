@@ -3,11 +3,7 @@
 
 import {
   TrendingUp,
-  Factory,
-  Cpu,
   CheckCircle2,
-  GraduationCap,
-  Briefcase,
 } from "lucide-react";
 
 const features = [

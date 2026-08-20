@@ -62,9 +62,7 @@ export default function BrochurePopup({
         },
 
         body: JSON.stringify({
-          // Identify enquiry source/type
           enquiryType: "BROCHURE",
-          // Common fields
           firstname: formData.firstname,
           lastname: "",
           email: formData.email,
@@ -79,7 +77,6 @@ export default function BrochurePopup({
       const data = await response.json();
 
       if (response.ok && data.success) {
-        // Open brochure after successful enquiry submission
         window.open(
           brochureLink,
           "_blank",

@@ -173,7 +173,7 @@ export default function CoursesSection() {
       <BrochurePopup
         isOpen={showPopup}
         onClose={() => setShowPopup(false)}
-        brochureLink="/brochure/industrial-automation.pdf"
+        brochureLink="/brochure/diac-brochure.pdf"
         courseName={selectedBrochure}
       />
       

@@ -15,6 +15,7 @@ import {
 import {
   FaFacebook,
   FaLinkedin,
+  FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
 
@@ -252,11 +253,18 @@ export function ContactForm() {
 
                 {/* FACEBOOK */}
                 <a
-                  href="#"
+                  href="https://www.facebook.com/DIACTRAINING"
                   className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#801717] hover:text-white transition"
                   aria-label="Facebook"
                 >
                   <FaFacebook size={18} />
+                </a>
+                <a
+                  href="https://x.com/DiacTraining"
+                  className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#801717] hover:text-white transition"
+                  aria-label="Facebook"
+                >
+                  <FaTwitter size={18} />
                 </a>
 
                 {/* WHATSAPP */}
@@ -272,7 +280,7 @@ export function ContactForm() {
 
                 {/* INSTAGRAM */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/diactraining/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#801717] hover:text-white transition"
@@ -283,7 +291,7 @@ export function ContactForm() {
 
                 {/* LINKEDIN */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/school/diactraining/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#801717] hover:text-white transition"
@@ -294,7 +302,7 @@ export function ContactForm() {
 
                 {/* YOUTUBE */}
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@diactraining"
                   className="w-11 h-11 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#801717] hover:text-white transition"
                   aria-label="YouTube"
                 >
@@ -306,7 +314,7 @@ export function ContactForm() {
 
           {/* =====RIGHT SIDE - CONTACT FORM========= */}
 
-          <div className="p-6 sm:p-8 md:p-10">
+          <div className="p-6 sm:p-8 md:p-10" id="contact-form">
 
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-[#0b1f3a]">
               Send us a Message

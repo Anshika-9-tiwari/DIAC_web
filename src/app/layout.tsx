@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/footer";
 import Topbar from "@/components/Topbar/Topbar";
-import Trusted from "@/components/trustedClient/Trusted";
+import Trusted from "@/components/clients/ClientHero";
 import { Poppins } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 

@@ -5,18 +5,13 @@ import Link from "next/link";
 import { CircleCheckBig } from 'lucide-react';
 
 const companies = [
-  "/image.png",
-  "/image_1.png",
-  "/image_2.png",
-  "/image_3.png",
-  "/image_4.png",
-  "/image_5.png",
-  "/image_6.png",
-  "/image_7.png",
-  "/image_4.png",
-  "/image_5.png",
-  "/image_6.png",
-  "/image_7.png",
+  '/home-clients/image_1.png',
+  '/home-clients/image_2.png',
+  '/home-clients/image_3.png',
+  '/home-clients/image_4.png',
+  '/home-clients/image_5.png',
+  '/home-clients/image_6.png',
+  '/home-clients/image_7.png',
 ];
 
 const points = [
