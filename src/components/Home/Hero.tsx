@@ -212,7 +212,7 @@ export default function Hero() {
               <div className="bg-white backdrop-blur-md rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
 
                 {/* Form Heading */}
-                <div className="bg-white text-gray-900 border border-gray-50 shadow text-center py-4">
+                <div className="bg-white text-gray-900 border border-zinc-50 shadow-xs text-center py-4">
 
                   <h2 className="text-2xl font-bold mt-1 tracking-wide">
                     Enquiry Now
@@ -340,7 +340,7 @@ export default function Hero() {
       <BrochurePopup
         isOpen={showBrochurePopup}
         onClose={() => setShowBrochurePopup(false)}
-        brochureLink="/brochures/industrial-automation.pdf"
+        brochureLink="/brochure/industrial-automation.pdf"
         courseName="Industrial Automation Training"
       />
     </>
