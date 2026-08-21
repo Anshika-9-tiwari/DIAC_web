@@ -152,9 +152,9 @@ export default function Navbar() {
               DESKTOP MENU
           ========================== */}
 
-          <div className="hidden lg:flex items-center gap-12">
+          <div className="hidden lg:flex items-center gap-10">
 
-            <ul className="flex items-center gap-10 text-lg font-medium">
+            <ul className="flex items-center gap-7 text-lg font-medium">
 
               {navLinks.map((link, index) => {
                 const Icon = link.icon;
