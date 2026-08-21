@@ -36,7 +36,7 @@ export default function SummerWinterTrainingPage() {
         data={summerWinterTrainingData.whyChoose}
       />
 
-      <SummerWinterCTA />
+      {/* <SummerWinterCTA /> */}
 
     </main>
   );

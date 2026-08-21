@@ -17,7 +17,7 @@ interface Props {
     badge: string;
     title: string;
     duration: string;
-    description: string;
+    // description: string;
     points: string[];
     image: string;
   };
@@ -33,7 +33,7 @@ export default function SummerWinterHero({ data }: Props) {
         {/* Decorative Glow */}
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-[#801717]/5 rounded-full blur-3xl" />
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-16">
 
           <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 lg:gap-20 items-center">
 
@@ -66,9 +66,9 @@ export default function SummerWinterHero({ data }: Props) {
               </h1>
 
               {/* Description */}
-              <p className="text-gray-600 text-base md:text-lg leading-8 max-w-2xl mb-7">
+              {/* <p className="text-gray-600 text-base md:text-lg leading-8 max-w-2xl mb-7">
                 {data.description}
-              </p>
+              </p> */}
 
               {/* Points */}
               <div className="space-y-2 mb-9">
@@ -100,7 +100,7 @@ export default function SummerWinterHero({ data }: Props) {
 
                 {/* ENQUIRE */}
                 <Link
-                  href="/contact"
+                  href="/contact/#contact-form"
                   className="inline-flex items-center justify-center bg-[#801717] hover:bg-[#681313] text-white px-7 py-4 rounded-xl font-semibold transition shadow-lg"
                 >
                   Enquire Now

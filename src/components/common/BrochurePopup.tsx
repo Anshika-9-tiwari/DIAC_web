@@ -40,9 +40,22 @@ export default function BrochurePopup({
   };
 
   const handleClose = () => {
+    if (loading) return;
+
     setFormData(initialFormData);
     setError("");
     onClose();
+  };
+
+  const downloadBrochure = () => {
+    const link = document.createElement("a");
+
+    link.href = brochureLink;
+    link.download = brochureLink.split("/").pop() || "brochure.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleSubmit = async (
@@ -63,11 +76,19 @@ export default function BrochurePopup({
 
         body: JSON.stringify({
           enquiryType: "BROCHURE",
+
           firstname: formData.firstname,
+
           lastname: "",
+
           email: formData.email,
+
           phone: formData.phone,
-          course: courseName || "General Course Brochure",
+
+          course:
+            courseName ||
+            "General Course Brochure",
+
           message: `Brochure download request for ${
             courseName || "course"
           }`,
@@ -77,17 +98,15 @@ export default function BrochurePopup({
       const data = await response.json();
 
       if (response.ok && data.success) {
-        window.open(
-          brochureLink,
-          "_blank",
-          "noopener,noreferrer"
-        );
+
+        // Automatically download brochure
+        downloadBrochure();
 
         // Reset form
         setFormData(initialFormData);
 
-        // Close popup
         onClose();
+
         return;
       }
 
@@ -104,20 +123,25 @@ export default function BrochurePopup({
         typeof firstError === "string"
           ? firstError
           : data.message ||
-            "Something went wrong. Please check your details."
+              "Something went wrong. Please check your details."
       );
+
     } catch (err) {
+
       console.error(
         "Brochure request submission error:",
         err
       );
+
       setError(
         "Failed to submit your request. Please try again."
       );
+
     } finally {
       setLoading(false);
     }
   };
+
   if (!isOpen) return null;
 
   return (
@@ -135,18 +159,19 @@ export default function BrochurePopup({
         <button
           type="button"
           onClick={handleClose}
-          className="absolute top-4 right-4 text-gray-600 hover:text-black transition"
+          disabled={loading}
+          className="absolute top-4 right-4 text-gray-600 hover:text-black transition disabled:opacity-50"
           aria-label="Close brochure popup"
         >
           <X size={22} />
         </button>
 
+        {/* HEADING */}
         <h3 className="text-2xl font-bold text-gray-800 text-center mb-2">
           Download Brochure
         </h3>
 
         {/* COURSE NAME */}
-
         {courseName && (
           <p className="text-[#801717] font-semibold text-center mb-2">
             {courseName}
@@ -158,7 +183,6 @@ export default function BrochurePopup({
         </p>
 
         {/* FORM */}
-
         <form
           onSubmit={handleSubmit}
           className="space-y-4"
@@ -172,7 +196,8 @@ export default function BrochurePopup({
             onChange={handleChange}
             required
             placeholder="Full Name"
-            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717]"
+            disabled={loading}
+            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717] disabled:bg-gray-100"
           />
 
           {/* EMAIL */}
@@ -183,7 +208,8 @@ export default function BrochurePopup({
             onChange={handleChange}
             required
             placeholder="Email"
-            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717]"
+            disabled={loading}
+            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717] disabled:bg-gray-100"
           />
 
           {/* PHONE */}
@@ -194,9 +220,11 @@ export default function BrochurePopup({
             onChange={handleChange}
             required
             placeholder="Phone Number"
-            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717]"
+            disabled={loading}
+            className="input input-bordered w-full border-gray-300 bg-white text-gray-800 focus:border-[#801717] disabled:bg-gray-100"
           />
 
+          {/* ERROR */}
           {error && (
             <div className="alert alert-error text-sm">
               <span>{error}</span>
@@ -210,12 +238,16 @@ export default function BrochurePopup({
             className="btn bg-[#801717] hover:bg-red-900 text-white w-full border-none disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <Download size={18} />
+
             {loading
               ? "Submitting..."
               : "Download Now"}
           </button>
+
         </form>
+
       </div>
+
     </div>
   );
 }

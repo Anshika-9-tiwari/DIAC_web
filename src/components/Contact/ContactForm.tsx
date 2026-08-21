@@ -32,6 +32,8 @@ const courses = [
   "Panel Design",
   "Customized Industrial Training",
   "PLC Vendor Training",
+  "Corporate Training",
+  "Other"
 ];
 
 const initialFormData = {

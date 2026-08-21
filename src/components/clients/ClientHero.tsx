@@ -11,7 +11,7 @@ export default function ClientHero() {
 
       <div className="absolute -bottom-32 -left-32 w-[400px] h-[400px] rounded-full bg-[#801717]/5 blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-14 md:py-18">
 
         <div className="grid lg:grid-cols-[1.3fr_0.7fr] gap-12 lg:gap-20 items-center">
 
@@ -55,7 +55,7 @@ export default function ClientHero() {
           </div>
 
           {/* RIGHT FEATURE CARD */}
-          <div className="relative">
+          {/* <div className="relative">
 
             <div className="bg-white rounded-3xl border border-gray-200 shadow-xl p-7 md:p-9">
 
@@ -105,7 +105,7 @@ export default function ClientHero() {
 
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 

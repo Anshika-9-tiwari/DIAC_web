@@ -342,7 +342,7 @@ export default function Hero() {
       <BrochurePopup
         isOpen={showBrochurePopup}
         onClose={() => setShowBrochurePopup(false)}
-        brochureLink="/brochure/industrial-automation.pdf"
+        brochureLink="/brochure/diac-brochure.pdf"
         courseName="Industrial Automation Training"
       />
     </>

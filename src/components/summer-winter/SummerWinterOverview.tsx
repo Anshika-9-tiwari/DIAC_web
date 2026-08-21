@@ -1,4 +1,3 @@
-"use client";
 
 import { BookOpen, Factory, GraduationCap } from "lucide-react";
 
@@ -13,7 +12,7 @@ interface Props {
 
 export default function SummerWinterOverview({ data }: Props) {
   return (
-    <section className="py-18 md:py-24 bg-white">
+    <section className="py-15 md:py-22 bg-white">
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
@@ -22,9 +21,9 @@ export default function SummerWinterOverview({ data }: Props) {
           {/* LEFT */}
           <div className="lg:sticky lg:top-28 h-fit">
 
-            <p className="text-sm uppercase tracking-[4px] text-[#801717] font-semibold mb-5">
+            <div className="inline-flex items-center gap-2 bg-[#801717] text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 shadow-md">
               {data.sectionTag}
-            </p>
+            </div>
 
             <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
               {data.title}

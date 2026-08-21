@@ -7,6 +7,7 @@ import {
   X,
   ChevronDown,
   Home,
+  User,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -35,6 +36,10 @@ const navLinks = [
   {
     name: "Contact",
     href: "/contact",
+  },
+  {
+    name: "Clients",
+    href: "/clients",
   },
 ];
 
@@ -84,6 +89,7 @@ const coursesDropdown = [
     href: "/courses/summer-winter-training",
   },
 ];
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

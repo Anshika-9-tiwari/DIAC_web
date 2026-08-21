@@ -1,4 +1,3 @@
-"use client";
 
 import {
   Cpu,
@@ -28,15 +27,15 @@ interface Props {
 
 export default function SummerWinterLearning({ items }: Props) {
   return (
-    <section className="py-18 md:py-24 bg-[#f8f9fc]">
+    <section className="py-14 md:py-18 bg-[#f8f9fc]">
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         <div className="text-center mb-14">
 
-          <p className="text-sm uppercase tracking-[4px] text-[#801717] font-semibold mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#801717] text-white px-5 py-2 rounded-full text-sm font-semibold mb-8 shadow-md">
             Training Curriculum
-          </p>
+          </div>
 
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900">
             What You&apos;ll Learn

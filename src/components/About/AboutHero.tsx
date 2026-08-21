@@ -70,7 +70,7 @@ export default function AboutHero() {
               </Link>
 
               <Link
-                href="/contact"
+                href="/contact/#contact-form"
                 className="border border-gray-300 bg-white px-8 py-4 rounded-xl font-semibold hover:shadow-md transition"
               >
                 Book Free Demo

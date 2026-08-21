@@ -1,4 +1,3 @@
-"use client";
 
 import {
   GraduationCap,
@@ -11,7 +10,7 @@ interface Props {
 
 export default function SummerWinterEligibility({ items }: Props) {
   return (
-    <section className="py-18 md:py-24 bg-[#f8f9fc]">
+    <section className="py-14 md:py-20 bg-[#f8f9fc]">
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 

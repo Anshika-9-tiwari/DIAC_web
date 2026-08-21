@@ -5,16 +5,16 @@ import { clients } from "@/data/clientsData";
 
 export default function ClientLogos() {
   return (
-    <section className="py-18 md:py-24 bg-white">
+    <section className="py-14 md:py-18 bg-white">
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
         <div className="text-center mb-14">
 
-          <p className="text-[#801717] text-sm font-semibold uppercase tracking-[4px] mb-4">
+         <div className="inline-flex items-center gap-2 bg-[#801717] text-white px-5 py-2 rounded-full text-sm font-semibold mb-6 shadow-md">
             Our Clients
-          </p>
+          </div>
 
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900 mb-5">
             Companies That Trust DIAC
