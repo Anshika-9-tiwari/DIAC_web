@@ -21,7 +21,7 @@ export default function CorporateIntro() {
 
           {/* Paragraph 1 */}
           <p className="text-gray-600 text-[16px] leading-relaxed mb-4">
-            In today's rapidly evolving industrial landscape, organizations must continuously upgrade the skills of their workforce to remain competitive. New technologies, automation systems, digital transformation initiatives, and Industry 4.0 advancements have significantly changed the way industries operate. As a result, companies require highly skilled professionals who can efficiently manage modern industrial systems, automation processes, and emerging technologies.
+            In today&apos;s rapidly evolving industrial landscape, organizations must continuously upgrade the skills of their workforce to remain competitive. New technologies, automation systems, digital transformation initiatives, and Industry 4.0 advancements have significantly changed the way industries operate. As a result, companies require highly skilled professionals who can efficiently manage modern industrial systems, automation processes, and emerging technologies.
           </p>
         </div>
 

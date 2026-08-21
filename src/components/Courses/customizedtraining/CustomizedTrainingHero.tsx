@@ -7,11 +7,6 @@ export default function CustomizedTrainingHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white to-red-50/98 py-16 md:py-24">
 
-      {/* Background Effects */}
-      {/* <div className="absolute -top-32 -right-32 w-[450px] h-[450px] bg-[#801717]/5 rounded-full blur-3xl" />
-
-      <div className="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-[#801717]/5 rounded-full blur-3xl" /> */}
-
       <div className="relative max-w-7xl mx-auto px-6 md:px-10">
 
         <div className="max-w-5xl">
@@ -33,13 +28,13 @@ export default function CustomizedTrainingHero() {
           {/* Description */}
           <p className="text-base md:text-lg text-gray-700 leading-8 mb-6 max-w-4xl">
             At DIAC, we understand that every organization has unique
-            skill-development needs. That's why we offer customized industrial
-            training programs tailored to your team's technical requirements,
+            skill-development needs. That&apos;s why we offer customized industrial
+            training programs tailored to your team&apos;s technical requirements,
             industry domain, and skill gaps.
           </p>
 
           <p className="text-base md:text-lg text-gray-700 leading-8 mb-8 max-w-4xl">
-            Whether you're upskilling fresh engineering graduates, training
+            Whether you&apos;re upskilling fresh engineering graduates, training
             working professionals, or preparing your workforce for new
             technologies, our industry-aligned curriculum, hands-on labs, and
             expert trainers ensure practical, job-ready learning outcomes.

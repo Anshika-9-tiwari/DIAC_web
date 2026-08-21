@@ -147,7 +147,7 @@ export default function CustomizedTrainingForm() {
             </h2>
 
             <p className="text-base md:text-lg text-gray-600 leading-8 mb-8">
-              Let us design a training program that fits your organization's
+              Let us design a training program that fits your organization&apos;s
               goals — get in touch with our team to discuss your requirements.
             </p>
             <div className="space-y-4">

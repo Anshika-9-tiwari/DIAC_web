@@ -1,11 +1,7 @@
 "use client";
 
 import {
-  Award,
   CircleCheckBig,
-  Clock,
-  MapPin,
-  Users,
 } from "lucide-react";
 
 const benefits = [
@@ -17,28 +13,6 @@ const benefits = [
   "Post-training assessment & certification",
 ];
 
-// const highlights = [
-//   {
-//     icon: Users,
-//     title: "Flexible Batches",
-//     desc: "Designed for teams of all sizes",
-//   },
-//   {
-//     icon: Clock,
-//     title: "Flexible Duration",
-//     desc: "Based on your training goals",
-//   },
-//   {
-//     icon: MapPin,
-//     title: "Multiple Modes",
-//     desc: "Online, offline or on-site",
-//   },
-//   {
-//     icon: Award,
-//     title: "Certification",
-//     desc: "Assessment & certification",
-//   },
-// ];
 
 export default function CustomizedTrainingWhy() {
   return (
@@ -59,7 +33,7 @@ export default function CustomizedTrainingWhy() {
 
           <p className="text-base md:text-lg text-gray-600 leading-8">
             Our customized industrial training programs are designed around
-            your organization's technical requirements, workforce skill gaps,
+            your organization&apos;s technical requirements, workforce skill gaps,
             and long-term business objectives.
           </p>
 

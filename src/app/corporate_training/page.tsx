@@ -1,9 +1,7 @@
 // app/corporate-training/page.tsx
 
 import AboutCTA from "@/components/About/ContactSection";
-import FAQSection from "@/components/About/FaqSection";
 import CorporateBenefits from "@/components/corporate_training/CorporateBenefits";
-import CorporateContact from "@/components/corporate_training/CorporateContact";
 import CorporateCourses from "@/components/corporate_training/CorporateCourses";
 import CorporateHero from "@/components/corporate_training/CorporateHero";
 import CorporateIntro from "@/components/corporate_training/CorporateIntro";

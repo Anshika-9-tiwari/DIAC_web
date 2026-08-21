@@ -21,7 +21,7 @@ export const industrialAutomationCourse = {
       "https://www.youtube.com/embed/R4eJncL7bP8",
 
     syllabusPdf:
-      "/downloads/industrial-automation-syllabus.pdf",
+      "/brochure/diac-brochure.pdf",
   },
 
   overview: {

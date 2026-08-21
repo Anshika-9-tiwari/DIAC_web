@@ -9,7 +9,6 @@ import Testimonials from "@/components/Home/Testimonials";
 import Masterclass from "@/components/Home/Free Masterclass";
 import Certification from "@/components/Home/Certification";
 import JobGuaranteePrograms from "@/components/Home/JobGuranteedProgram";
-import CorporateTestimonials from "@/components/corporate_training/CorporateTestimonials";
 import WhatMakeDiacDiff from "@/components/Home/WhatMakeDiacDiff";
 import PlacementTrust from "@/components/Placement/PlacementTrust";
 import AboutCTA from "@/components/About/ContactSection";

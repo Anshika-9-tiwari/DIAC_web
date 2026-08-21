@@ -12,7 +12,9 @@ import {
   Trophy,
   Download,
   CheckCircle2,
+  Briefcase,
 } from "lucide-react";
+import { FaBackspace } from "react-icons/fa";
 
 const steps = [
   {
@@ -106,12 +108,12 @@ export default function PlacementJourney() {
               </div>
 
               <Link
-                href="/placement-report.pdf"
+                href="/placement"
                 target="_blank"
                 className="inline-flex items-center gap-2 bg-[#801717] text-white px-7 py-4 rounded-xl font-semibold hover:bg-[#6b1313] shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <Download size={19} />
-                Download Placement Report
+                <Briefcase size={19} />
+                 Explopre Placement
               </Link>
 
             </div>

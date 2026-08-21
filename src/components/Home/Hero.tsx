@@ -16,6 +16,8 @@ const courses = [
   "Panel Design",
   "Customized Industrial Training",
   "PLC Vendor Training",
+  "Corporate Training",
+  "Other"
 ];
 
 const initialFormData = {
@@ -207,7 +209,7 @@ export default function Hero() {
             </div>
 
             {/* Enquiry Form */}
-            <div className="w-full max-w-md lg:ml-auto">
+            <div className="w-full max-w-md lg:ml-auto" id="contact">
 
               <div className="bg-white backdrop-blur-md rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
 

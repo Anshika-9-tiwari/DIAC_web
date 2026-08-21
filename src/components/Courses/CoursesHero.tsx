@@ -178,7 +178,7 @@ export default function CoursesHero() {
         onClose={() =>
           setShowBrochurePopup(false)
         }
-        brochureLink="/brochures/industrial-automation.pdf"
+        brochureLink="/brochure/diac-brochure.pdf"
         courseName="All Courses"
       />
     </>
