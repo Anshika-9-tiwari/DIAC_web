@@ -10,11 +10,11 @@ export default function Masterclass() {
 
         {/* Left Content */}
         <div className="flex flex-col justify-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-10">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 md:mb-10">
             Join Our Free Masterclass
           </h2>
 
-          <p className="mb-12 text-gray-200">
+          <p className="mb-8 md:mb-12 text-gray-200">
             Kickstart your career in Industrial Automation with our expert-led
             FREE masterclass. Learn PLC, SCADA, and Robotics basics with live demos.
           </p>
@@ -37,9 +37,9 @@ export default function Masterclass() {
         </div>
 
         {/* Right Image (Full Height) */}
-        <div className="relative w-full h-[300px] md:h-[420px] lg:h-full">
+        <div className="relative w-full h-[300px]  lg:h-[350px]">
           <Image
-            src="/training-bnner.jpg"
+            src="/courses/diacaboutpic.png"
             alt="Free Masterclass"
             fill
             className="object-cover rounded-xl"

@@ -140,12 +140,12 @@ export default function Hero() {
         </video>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/30 to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/60 to-black/50"></div>
 
         {/* Content */}
-        <div className="relative max-w-[1600px] mx-auto px-8 md:px-12 py-14 lg:py-16 h-full flex items-center">
+        <div className="relative max-w-[1610px] mx-auto px-8 md:px-12 py-14 lg:py-16 h-full flex items-center">
 
-          <div className="grid lg:grid-cols-2 gap-10 md:gap-12 w-full items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-10 w-full items-center">
 
             {/* Left Side Content */}
             <div className="text-white">

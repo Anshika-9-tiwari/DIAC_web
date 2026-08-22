@@ -52,7 +52,7 @@ const reviews = [
 
 export default function AboutTestimonials() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 600,
     autoplay: true,
@@ -66,103 +66,111 @@ export default function AboutTestimonials() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
         },
       },
-
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <section className="py-20 bg-[#fafafa]">
+    <section className="py-14 md:py-20 bg-[#fafafa] overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        {/* Heading */}
-        <div className="text-center mb-14">
+        {/* HEADING */}
+        <div className="text-center mb-10 md:mb-14">
 
-        <span className="inline-block text-xs px-4 py-1 bg-[#801717] text-[#f7f7f7] rounded-full font-medium mb-5 tracking-widest">
-          Student Review
-        </span>
+          <span className="inline-block text-xs px-4 py-2 bg-[#801717] text-white rounded-full font-medium mb-5 tracking-widest">
+            Student Review
+          </span>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#07172b] mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#07172b] mb-5">
             What Our Students Say
           </h2>
 
-          <p className="text-gray-700 max-w-3xl mx-auto">
+          <p className="text-gray-700 max-w-3xl mx-auto leading-7 text-sm md:text-base">
             Real feedback from students who completed Industrial Automation,
             PLC, SCADA, HMI, Robotics and other training programs at DIAC.
           </p>
 
         </div>
 
-        {/* Carousel */}
-        <Slider {...settings}>
+        {/* SLIDER */}
+        <div className="w-full">
 
-          {reviews.map((review, index) => (
-            <div key={index} className="px-3">
+          <Slider {...settings}>
 
-              <div className="bg-white border border-gray-200 rounded-2xl p-7 h-[320px] flex flex-col">
+            {reviews.map((review, index) => (
 
-                {/* Stars */}
-                <div className="flex gap-1 text-yellow-400 mb-4">
+              <div
+                key={index}
+                className="px-2 md:px-3"
+              >
 
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      size={12}
-                      fill="currentColor"
-                    />
-                  ))}
+                <div className="bg-white border border-gray-200 rounded-2xl p-5 md:p-7 h-[310px] md:h-[320px] flex flex-col shadow-sm">
 
-                </div>
+                  {/* STARS */}
+                  <div className="flex gap-1 text-yellow-400 mb-4">
 
-                {/* User */}
-                <div className="flex items-center gap-4 mt-4">
-
-                  <div className="w-12 h-12 rounded-full bg-[#801717] flex items-center justify-center">
-
-                    <UserRound
-                      size={20}
-                      className="text-white"
-                    />
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        size={13}
+                        fill="currentColor"
+                      />
+                    ))}
 
                   </div>
 
-                  <div>
-                    <h4 className="font-semibold text-[#071629]">
-                      {review.name}
-                    </h4>
+                  {/* USER */}
+                  <div className="flex items-center gap-3 md:gap-4">
 
-                    <p className="text-xs text-gray-600">
-                      Verified Student
-                    </p>
+                    <div className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-[#801717] flex items-center justify-center shrink-0">
+
+                      <UserRound
+                        size={19}
+                        className="text-white"
+                      />
+
+                    </div>
+
+                    <div className="min-w-0">
+
+                      <h4 className="font-semibold text-[#071629] text-base md:text-lg truncate">
+                        {review.name}
+                      </h4>
+
+                      <p className="text-xs text-gray-500">
+                        Verified Student
+                      </p>
+
+                    </div>
+
                   </div>
 
-                </div>
+                  {/* REVIEW */}
+                  <p className="text-gray-600 text-sm leading-6 mt-5 overflow-hidden">
+                    "{review.text}"
+                  </p>
 
-                {/* Review */}
-                <p className="text-gray-600 text-sm leading-relaxed flex-1 overflow-hidden mt-6">
-                  "{review.text}"
-                </p>
+                </div>
 
               </div>
 
-            </div>
-          ))}
+            ))}
 
-        </Slider>
+          </Slider>
+
+        </div>
 
       </div>
 

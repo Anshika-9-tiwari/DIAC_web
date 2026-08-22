@@ -5,13 +5,15 @@ import Link from "next/link";
 import { CircleCheckBig } from 'lucide-react';
 
 const companies = [
-  '/home-clients/image_1.png',
-  '/home-clients/image_2.png',
-  '/home-clients/image_3.png',
-  '/home-clients/image_4.png',
-  '/home-clients/image_5.png',
-  '/home-clients/image_6.png',
-  '/home-clients/image_7.png',
+  "/clients/37.png",
+  "/clients/Active Systems.png",
+  "/clients/Adani Energy Solution Ltd.png",
+  "/clients/Addverb Technology.png",
+  "/clients/Amazon India.png",
+  "/clients/Anon Automation.png",
+  "/clients/Anzo Controls.png",
+  "/clients/Brandco.png",
+  "/clients/Caterpillar Electric.png",
 ];
 
 const points = [

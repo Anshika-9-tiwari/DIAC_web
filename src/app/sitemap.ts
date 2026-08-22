@@ -1,13 +1,14 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://diac-web.vercel.app/";
+  const baseUrl = "https://www.diac.co.in";
 
   return [
+    // Main Pages
     {
-      url: `${baseUrl}`,
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "daily",
+      changeFrequency: "weekly",
       priority: 1,
     },
 
@@ -15,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.9,
+      priority: 0.8,
     },
 
     {
@@ -28,99 +29,105 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/corporate_training`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
 
     {
       url: `${baseUrl}/placement`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
 
     {
       url: `${baseUrl}/blogs`,
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.8,
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
 
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.7,
     },
 
     // Courses
     {
       url: `${baseUrl}/courses/industrial-automation`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.9,
-    },
-
-    {
-      url: `${baseUrl}/courses/plc-training`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
     },
 
     {
       url: `${baseUrl}/courses/scada-and-hmi`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/drives-and-motors`,
+      url: `${baseUrl}/courses/vfd-drive-training`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/process-instrumentation`,
+      url: `${baseUrl}/courses/electrical-design`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/panel-designing-and-autocad`,
+      url: `${baseUrl}/courses/industrial-iot-training`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/dcs-training`,
+      url: `${baseUrl}/courses/servo-and-drive-system`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/plc-networking`,
+      url: `${baseUrl}/courses/panel-design`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/servo-motors`,
+      url: `${baseUrl}/courses/plc-vender-training`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
 
     {
-      url: `${baseUrl}/courses/robotics-training`,
+      url: `${baseUrl}/courses/customized-industrial-training`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/clients`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+
+    {
+      url: `${baseUrl}/summer-winter-training`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
       priority: 0.8,
     },
   ];
