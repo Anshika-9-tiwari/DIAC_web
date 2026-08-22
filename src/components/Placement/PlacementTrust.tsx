@@ -1,6 +1,8 @@
 "use client";
 
-import Slider from "react-slick";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+
 import {
   ShieldCheck,
   GraduationCap,
@@ -29,61 +31,61 @@ const items = [
 ];
 
 export default function PlacementTrust() {
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 5000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    slidesToShow: 4,
-    slidesToScroll: 1,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "start",
+      dragFree: true,
+    },
+    [
+      Autoplay({
+        delay: 3000,
+        stopOnInteraction: false,
+        stopOnMouseEnter: false,
+      }),
+    ]
+  );
 
   return (
     <section className="bg-gradient-to-r from-[#5a0f0f] via-[#801717] to-[#891414] py-5 overflow-hidden">
-      <div className="max-w-8xl mx-auto">
+      
+      <div
+        ref={emblaRef}
+        className="overflow-hidden w-full"
+      >
 
-        <Slider {...settings}>
+        <div className="flex">
+
           {items.map((item, index) => {
             const Icon = item.icon;
 
             return (
-              <div key={index}>
-                <div className="flex items-center justify-center gap-3 text-white font-medium text-sm md:text-[18px] px-6 whitespace-nowrap">
-                  <Icon size={20} className="shrink-0" />
-                  <span>{item.text}</span>
+              <div
+                key={index}
+                className="flex-[0_0_auto] px-6 sm:px-8 md:px-10 lg:px-12"
+              >
+
+                <div className="flex items-center justify-center gap-3 text-white font-medium text-sm md:text-base lg:text-lg whitespace-nowrap">
+
+                  <Icon
+                    size={20}
+                    className="shrink-0"
+                  />
+
+                  <span>
+                    {item.text}
+                  </span>
+
                 </div>
+
               </div>
             );
           })}
-        </Slider>
+
+        </div>
 
       </div>
+
     </section>
   );
 }

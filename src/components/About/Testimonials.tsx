@@ -1,8 +1,7 @@
 "use client";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { UserRound, Star } from "lucide-react";
 
 const reviews = [
@@ -53,35 +52,20 @@ const reviews = [
 ];
 
 export default function AboutTestimonials() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 600,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-    ],
-  };
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "start",
+      dragFree: true,
+    },
+    [
+      Autoplay({
+        delay: 4000,
+        stopOnInteraction: false,
+        stopOnMouseEnter: true,
+      }),
+    ]
+  );
 
   return (
     <section className="py-14 md:py-20 bg-[#fafafa] overflow-hidden">
@@ -106,19 +90,19 @@ export default function AboutTestimonials() {
 
         </div>
 
-        {/* SLIDER */}
-        <div className="w-full">
+        {/* EMBLA SLIDER */}
+        <div ref={emblaRef} className="overflow-hidden">
 
-          <Slider {...settings}>
+          <div className="flex">
 
             {reviews.map((review, index) => (
 
               <div
                 key={index}
-                className="px-2 md:px-3"
+                className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] px-2 md:px-3"
               >
 
-                <div className="bg-white border border-gray-200 rounded-2xl p-5 md:p-7 h-[310px] md:h-[320px] flex flex-col shadow-sm">
+                <div className="bg-white border border-gray-200 rounded-2xl p-5 md:p-7 min-h-[310px] md:h-[320px] flex flex-col shadow-sm">
 
                   {/* STARS */}
                   <div className="flex gap-1 text-yellow-400 mb-4">
@@ -160,7 +144,7 @@ export default function AboutTestimonials() {
                   </div>
 
                   {/* REVIEW */}
-                  <p className="text-gray-600 text-sm leading-6 mt-5 overflow-hidden">
+                  <p className="text-gray-600 text-sm leading-6 mt-5">
                     "{review.text}"
                   </p>
 
@@ -170,7 +154,7 @@ export default function AboutTestimonials() {
 
             ))}
 
-          </Slider>
+          </div>
 
         </div>
 
