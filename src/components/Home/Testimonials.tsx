@@ -1,6 +1,8 @@
 "use client";
 
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
@@ -22,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     slidesToShow: 4,

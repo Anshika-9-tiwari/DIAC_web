@@ -1,6 +1,8 @@
 "use client";
 
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { UserRound, Star } from "lucide-react";
 
 const reviews = [
@@ -52,7 +54,7 @@ const reviews = [
 
 export default function AboutTestimonials() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     autoplay: true,
