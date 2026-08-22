@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 4,
@@ -38,27 +38,30 @@ export default function Testimonials() {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
   };
 
   return (
-    <section className="py-12 md:py-18 bg-[#f5f5f5] text-gray-900 overflow-hidden">
+    <section className="testimonials-section py-12 md:py-18 bg-[#f5f5f5] text-gray-900 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* HEADING */}
         <div className="text-center mb-10 md:mb-12">
@@ -68,46 +71,118 @@ export default function Testimonials() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-semibold leading-snug max-w-5xl mx-auto">
+
             Join the millions of students who have achieved
 
             <span className="block text-red-900 mt-1">
               Remarkable Success
             </span>
+
           </h2>
 
         </div>
 
-        {/* TESTIMONIAL SLIDER */}
-        <Slider {...settings}>
+        {/* SLIDER */}
+        <div className="testimonial-slider">
 
-          {testimonials.map((item, index) => (
+          <Slider {...settings}>
 
-            <div key={index} className="px-2 md:px-3">
+            {testimonials.map((item, index) => (
 
-              <div className="bg-white rounded-md overflow-hidden shadow-sm mx-auto max-w-[280px]">
+              <div
+                key={index}
+                className="testimonial-slide px-2 md:px-3"
+              >
 
-                {/* VIDEO */}
-                <div className="relative aspect-[9/16] w-full">
+                <div className="bg-white rounded-xl overflow-hidden shadow-sm mx-auto w-full max-w-[280px]">
 
-                  <iframe
-                    src={item.video}
-                    title={`Student Testimonial ${index + 1}`}
-                    className="absolute inset-0 w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  <div className="relative aspect-[9/16] w-full">
+
+                    <iframe
+                      src={item.video}
+                      title={`Student Testimonial ${index + 1}`}
+                      className="absolute inset-0 w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+
+                  </div>
 
                 </div>
 
               </div>
 
-            </div>
+            ))}
 
-          ))}
+          </Slider>
 
-        </Slider>
+        </div>
 
       </div>
+
+      {/* RESPONSIVE FIX */}
+      <style jsx global>{`
+        .testimonial-slider {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .testimonial-slider .slick-list {
+          overflow: hidden;
+        }
+
+        .testimonial-slider .slick-track {
+          display: flex;
+          align-items: stretch;
+        }
+
+        .testimonial-slider .slick-slide {
+          height: auto;
+        }
+
+        .testimonial-slider .slick-slide > div {
+          height: 100%;
+        }
+
+        /* TABLET */
+        @media (max-width: 1199px) {
+          .testimonial-slider .slick-slide {
+            width: 33.3333% !important;
+          }
+        }
+
+        /* SMALL TABLET */
+        @media (max-width: 767px) {
+          .testimonial-slider .slick-slide {
+            width: 50% !important;
+          }
+
+          .testimonial-slide {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+          }
+
+          .testimonial-slider .slick-dots {
+            bottom: -35px;
+          }
+        }
+
+        /* MOBILE */
+        @media (max-width: 479px) {
+          .testimonial-slider .slick-slide {
+            width: 100% !important;
+          }
+
+          .testimonial-slide {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+          }
+
+          .testimonial-slider .slick-dots {
+            bottom: -35px;
+          }
+        }
+      `}</style>
 
     </section>
   );
